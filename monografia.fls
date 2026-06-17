@@ -33,6 +33,8 @@ INPUT O:\programas\miktex\tex\generic\iftex\iftex.sty
 INPUT O:\programas\miktex\tex\latex\geometry\geometry.cfg
 INPUT O:\programas\miktex\tex\latex\geometry\geometry.cfg
 INPUT O:\programas\miktex\tex\latex\geometry\geometry.cfg
+INPUT .\schoenflies.tex
+INPUT .\schoenflies.tex
 INPUT O:\programas\miktex\tex\latex\lipsum\lipsum.sty
 INPUT O:\programas\miktex\tex\latex\lipsum\lipsum.sty
 INPUT O:\programas\miktex\tex\latex\l3packages\l3keys2e\l3keys2e.sty
@@ -196,9 +198,9 @@ INPUT intro.aux
 INPUT .\preliminares.aux
 INPUT .\preliminares.aux
 INPUT preliminares.aux
-INPUT .\schoenflies general.aux
-INPUT .\schoenflies general.aux
-INPUT schoenflies general.aux
+INPUT .\schoenflies.aux
+INPUT .\schoenflies.aux
+INPUT schoenflies.aux
 INPUT .\homologia simplicial.aux
 INPUT .\homologia simplicial.aux
 INPUT homologia simplicial.aux
@@ -251,8 +253,26 @@ INPUT .\preliminares.tex
 INPUT .\preliminares.tex
 INPUT .\alexander.tex
 INPUT .\alexander.tex
-INPUT .\schoenflies general.tex
-INPUT .\schoenflies general.tex
+INPUT .\schoenflies.tex
+INPUT .\schoenflies.tex
+OUTPUT schoenflies.aux
+INPUT .\schoenflies.tex
+INPUT .\schoenflies.tex
+INPUT schoenflies.tex
+INPUT O:\programas\miktex\fonts\tfm\public\cm\cmbx12.tfm
+INPUT O:\programas\miktex\fonts\tfm\public\cm\cmbx10.tfm
+INPUT O:\programas\miktex\fonts\tfm\public\cm\cmti10.tfm
+INPUT O:\programas\miktex\fonts\tfm\public\cm\cmr8.tfm
+INPUT O:\programas\miktex\fonts\tfm\public\cm\cmmi10.tfm
+INPUT O:\programas\miktex\fonts\tfm\public\cm\cmmi8.tfm
+INPUT O:\programas\miktex\fonts\tfm\public\cm\cmsy10.tfm
+INPUT O:\programas\miktex\fonts\tfm\public\cm\cmsy8.tfm
+INPUT O:\programas\miktex\fonts\tfm\public\cm\cmex10.tfm
+INPUT O:\programas\miktex\fonts\tfm\public\amsfonts\cmextra\cmex8.tfm
+INPUT O:\programas\miktex\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT O:\programas\miktex\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT O:\programas\miktex\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT O:\programas\miktex\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT .\puntos problematicos.tex
 INPUT .\puntos problematicos.tex
 INPUT .\fox artin.tex
@@ -272,9 +292,9 @@ INPUT intro.aux
 INPUT .\preliminares.aux
 INPUT .\preliminares.aux
 INPUT preliminares.aux
-INPUT .\schoenflies general.aux
-INPUT .\schoenflies general.aux
-INPUT schoenflies general.aux
+INPUT .\schoenflies.aux
+INPUT .\schoenflies.aux
+INPUT schoenflies.aux
 INPUT .\homologia simplicial.aux
 INPUT .\homologia simplicial.aux
 INPUT homologia simplicial.aux
@@ -285,7 +305,23 @@ INPUT O:\programas\miktex\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT O:\programas\miktex\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT O:\programas\miktex\fonts\type1\public\amsfonts\cm\cmcsc10.pfb
 INPUT O:\programas\miktex\fonts\type1\public\amsfonts\cm\cmcsc10.pfb
+INPUT O:\programas\miktex\fonts\type1\public\amsfonts\cm\cmmi10.pfb
+INPUT O:\programas\miktex\fonts\type1\public\amsfonts\cm\cmmi10.pfb
+INPUT O:\programas\miktex\fonts\type1\public\amsfonts\cm\cmmi8.pfb
+INPUT O:\programas\miktex\fonts\type1\public\amsfonts\cm\cmmi8.pfb
+INPUT O:\programas\miktex\fonts\type1\public\amsfonts\cm\cmr10.pfb
+INPUT O:\programas\miktex\fonts\type1\public\amsfonts\cm\cmr10.pfb
 INPUT O:\programas\miktex\fonts\type1\public\amsfonts\cm\cmr12.pfb
 INPUT O:\programas\miktex\fonts\type1\public\amsfonts\cm\cmr12.pfb
 INPUT O:\programas\miktex\fonts\type1\public\amsfonts\cm\cmr17.pfb
 INPUT O:\programas\miktex\fonts\type1\public\amsfonts\cm\cmr17.pfb
+INPUT O:\programas\miktex\fonts\type1\public\amsfonts\cm\cmr8.pfb
+INPUT O:\programas\miktex\fonts\type1\public\amsfonts\cm\cmr8.pfb
+INPUT O:\programas\miktex\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT O:\programas\miktex\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT O:\programas\miktex\fonts\type1\public\amsfonts\cm\cmsy8.pfb
+INPUT O:\programas\miktex\fonts\type1\public\amsfonts\cm\cmsy8.pfb
+INPUT O:\programas\miktex\fonts\type1\public\amsfonts\cm\cmti10.pfb
+INPUT O:\programas\miktex\fonts\type1\public\amsfonts\cm\cmti10.pfb
+INPUT O:\programas\miktex\fonts\type1\public\amsfonts\symbols\msbm10.pfb
+INPUT O:\programas\miktex\fonts\type1\public\amsfonts\symbols\msbm10.pfb

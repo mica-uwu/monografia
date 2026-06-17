@@ -1,0 +1,28 @@
+\chapter{Schoenflies}
+
+\begin{teo}
+    Sea $f:Q\to \s^n$ una función continua entre una $n$-célula $Q$ y $\s^n$ tal que el conjunto $X=\{x\in\s^n :\# f^{-1}(x)> 1\}$ es finito y $f^{-1}(X)$ está contenido en el interior de $Q$ y es finito.
+
+    Entonces, si escribimos $\s^n - f(\mathring{Q})= D_1\sqcup D_2$, se tiene que $f(Q)=D_1\cup f(\partial Q)$ o $f(Q)=D_2\cup f(\partial Q)$
+\end{teo}
+
+\begin{dem}
+
+    Llamamos $h=f|_{\mathring{Q}}$, $h$ es continua e inyectiva entre espacios métricos compactos, entonces es un homeo sobre su imagen. Como vimos antes en el teorema de separación de Jordan-Brouwer, $h(\mathring{Q})$ separa $\s^n$ en dos componentes conexas, y estas componentes son bolas homológicas.
+
+    En principio tenemos dos opciones:
+
+    \begin{itemize}
+        \item $f(Q)\subset f(\partial Q)$
+        \item $f(\mathring{Q})$ intersecta $D_1\sqcup D_2$
+    \end{itemize}
+    
+    Supongamos $f(Q)\subset f(\partial Q)$. En ese caso podríamos considerar la composición $h^{-1}\circ f$. Esta sería una función continua que fija $\partial Q$ y manda $Q$ en $\partial Q$, esto es absurdo.
+
+    Obtuvimos entonces que $f(Q)$ intersecta por lo menos a una de las regiones $D_1$, $D_2$. Llamemos $D$ a una de las dos, tal que $f(Q)\cap D\neq\varnothing$.
+
+    Como $f^{-1}(X)\cap\partial Q=\varnothing$, se cumple que $f$ es inyectiva en $\partial Q$ y $f^{-1}(f(\partial Q))=\partial Q$.
+
+\end{dem}
+
+\comm{chequear C. Thomassen, The Jordan-Schoenflies theorem and the classification of surfaces}

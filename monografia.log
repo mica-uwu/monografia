@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.5)  12 JUN 2026 03:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.5)  17 JUN 2026 00:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -422,7 +422,7 @@ Package caption Info: New subtype `subtable' on input line 238.
 \c@df=\count333
  (monografia.aux (intro.aux) (preliminares.aux)
 No file alexander.aux.
-(schoenflies general.aux)
+(schoenflies.aux)
 No file puntos problematicos.aux.
 No file fox artin.aux.
 No file hooked rug.aux.
@@ -515,9 +515,21 @@ Package caption Info: End \AtBeginDocument code.
 {C:/Users/cumpc/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [0
 
 
-] (monografia.aux (intro.aux) (preliminares.aux)
+]
+\openout2 = `schoenflies.aux'.
+
+ (schoenflies.tex [4
+
+
+
+
+
+
+]
+Cap\'itulo 2
+) [5] (monografia.aux (intro.aux) (preliminares.aux)
 No file alexander.aux.
-(schoenflies general.aux)
+(schoenflies.aux)
 No file puntos problematicos.aux.
 No file fox artin.aux.
 No file hooked rug.aux.
@@ -530,17 +542,17 @@ L3 programming layer <2025-11-06>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 16987 strings out of 467871
- 332696 string characters out of 5430401
- 802081 words of memory out of 5000000
- 45395 multiletter control sequences out of 15000+600000
- 634170 words of font info for 64 fonts, out of 8000000 for 9000
+ 17093 strings out of 467871
+ 335041 string characters out of 5430401
+ 807123 words of memory out of 5000000
+ 45494 multiletter control sequences out of 15000+600000
+ 637922 words of font info for 78 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 117i,5n,121p,818b,188s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr12.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on monografia.pdf (2 pages, 48146 bytes).
+ 117i,7n,121p,818b,854s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmmi10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmmi8.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr12.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr17.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr8.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmsy8.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmti10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on monografia.pdf (4 pages, 140500 bytes).
 PDF statistics:
- 32 PDF objects out of 1000 (max. 8388607)
+ 78 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
