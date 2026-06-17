@@ -198,15 +198,15 @@ INPUT intro.aux
 INPUT .\preliminares.aux
 INPUT .\preliminares.aux
 INPUT preliminares.aux
-INPUT .\schoenflies.aux
-INPUT .\schoenflies.aux
-INPUT schoenflies.aux
 INPUT .\homologia simplicial.aux
 INPUT .\homologia simplicial.aux
 INPUT homologia simplicial.aux
 INPUT .\homologia singular.aux
 INPUT .\homologia singular.aux
 INPUT homologia singular.aux
+INPUT .\schoenflies.aux
+INPUT .\schoenflies.aux
+INPUT schoenflies.aux
 OUTPUT monografia.aux
 INPUT O:\programas\miktex\fonts\tfm\public\cm\cmr9.tfm
 INPUT O:\programas\miktex\fonts\tfm\public\cm\cmr6.tfm
@@ -251,6 +251,12 @@ INPUT .\intro.tex
 INPUT .\intro.tex
 INPUT .\preliminares.tex
 INPUT .\preliminares.tex
+INPUT .\homologia simplicial.tex
+INPUT .\homologia simplicial.tex
+INPUT .\homologia singular.tex
+INPUT .\homologia singular.tex
+INPUT .\jordan.tex
+INPUT .\jordan.tex
 INPUT .\alexander.tex
 INPUT .\alexander.tex
 INPUT .\schoenflies.tex
@@ -279,12 +285,6 @@ INPUT .\fox artin.tex
 INPUT .\fox artin.tex
 INPUT .\hooked rug.tex
 INPUT .\hooked rug.tex
-INPUT .\homologia simplicial.tex
-INPUT .\homologia simplicial.tex
-INPUT .\homologia singular.tex
-INPUT .\homologia singular.tex
-INPUT .\jordan.tex
-INPUT .\jordan.tex
 INPUT monografia.aux
 INPUT .\intro.aux
 INPUT .\intro.aux
@@ -292,15 +292,15 @@ INPUT intro.aux
 INPUT .\preliminares.aux
 INPUT .\preliminares.aux
 INPUT preliminares.aux
-INPUT .\schoenflies.aux
-INPUT .\schoenflies.aux
-INPUT schoenflies.aux
 INPUT .\homologia simplicial.aux
 INPUT .\homologia simplicial.aux
 INPUT homologia simplicial.aux
 INPUT .\homologia singular.aux
 INPUT .\homologia singular.aux
 INPUT homologia singular.aux
+INPUT .\schoenflies.aux
+INPUT .\schoenflies.aux
+INPUT schoenflies.aux
 INPUT O:\programas\miktex\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT O:\programas\miktex\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT O:\programas\miktex\fonts\type1\public\amsfonts\cm\cmcsc10.pfb

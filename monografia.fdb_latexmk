@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1781667128.71099 "o:/monografia/monografia.tex" "monografia.pdf" "monografia" 1781667130.06817 0
+["pdflatex"] 1781667422.62865 "o:/monografia/monografia.tex" "monografia.pdf" "monografia" 1781667423.95944 0
   "C:/Users/cumpc/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1765008476 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/cumpc/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1764906329 13321486 7346ed293b4ec23729dba7d80dcb3274 ""
   "O:/programas/miktex/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -163,14 +163,14 @@
   "intro.tex" 1781242344 1574 3fba26fba29ceb736ffb9731c4b4bb9a ""
   "jordan.aux" 0 -1 0 ""
   "jordan.tex" 1781245425 41 16178e33b247f45a52f996ded0813656 ""
-  "monografia.aux" 1781667129 479 d06d3fdd433eaee2c13b4991f603d4ec "pdflatex"
-  "monografia.tex" 1781666858 1803 035dc7d662985706596634b253233fc7 ""
-  "o:/monografia/monografia.tex" 1781666858 1803 035dc7d662985706596634b253233fc7 ""
+  "monografia.aux" 1781667423 479 e8754b98ed0b4a19514394400e46845a "pdflatex"
+  "monografia.tex" 1781667420 1801 76b1ba6683578862acd870655b910416 ""
+  "o:/monografia/monografia.tex" 1781667420 1801 76b1ba6683578862acd870655b910416 ""
   "preliminares.aux" 1781243392 949 d7a1c9dd3b31b08a99baf4c8fedd0ced ""
   "preliminares.tex" 1781242404 228 6318f649624b13b4cebfbc0dd4bc8db1 ""
   "puntos problematicos.aux" 0 -1 0 ""
   "puntos problematicos.tex" 1781666813 40 7a8e1112f17b0fb990e66406937b0251 ""
-  "schoenflies.aux" 1781667129 1004 ba2ee38ce2445b93f1f9bdca61fa7b53 "pdflatex"
+  "schoenflies.aux" 1781667423 1008 1c13f9bb49a9015a46f3e0a74bb93da9 "pdflatex"
   "schoenflies.tex" 1781667126 1519 b25bed91eb93dd68b9696ddb7ca3270f ""
   (generated)
   "monografia.aux"
