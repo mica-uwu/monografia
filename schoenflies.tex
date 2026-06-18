@@ -1,5 +1,7 @@
 \chapter{Schoenflies}
 
+\comm{Agregar: Toda variedad compacta con borde tiene entorno collar.}
+
 \begin{teo}
     Sea $f:Q\to \s^n$ una función continua entre una $n$-célula $Q$ y $\s^n$ tal que el conjunto $X=\{x\in\s^n :\# f^{-1}(x)> 1\}$ es finito y $f^{-1}(X)$ está contenido en el interior de $Q$ y es finito.
 
@@ -8,7 +10,7 @@
 
 \begin{dem}
 
-    Llamamos $h=f|_{\mathring{Q}}$, $h$ es continua e inyectiva entre espacios métricos compactos, entonces es un homeo sobre su imagen. Como vimos antes en el teorema de separación de Jordan-Brouwer, $h(\mathring{Q})$ separa $\s^n$ en dos componentes conexas, y estas componentes son bolas homológicas.
+    Llamamos $h=f|_{\mathring{Q}}$, $h$ es continua e inyectiva entre espacios métricos compactos, entonces es un homeo sobre su imagen. Como vimos antes en el teorema de separación de Jordan-Brouwer, $h(\mathring{Q})$ separa $\s^n$ en dos componentes conexas (y estas componentes son bolas homológicas).
 
     En principio tenemos dos opciones:
 
@@ -17,12 +19,128 @@
         \item $f(\mathring{Q})$ intersecta $D_1\sqcup D_2$
     \end{itemize}
     
-    Supongamos $f(Q)\subset f(\partial Q)$. En ese caso podríamos considerar la composición $h^{-1}\circ f$. Esta sería una función continua que fija $\partial Q$ y manda $Q$ en $\partial Q$, esto es absurdo.
+    Supongamos $f(Q)\subset f(\partial Q)$. En ese caso podríamos considerar la composición $h^{-1}\circ f$. Esta sería una función continua que fija $\partial Q$ y manda $Q$ en $\partial Q$, esto es absurdo. 
+    
+    \comm{escribir esto con más detalle?}
 
-    Obtuvimos entonces que $f(Q)$ intersecta por lo menos a una de las regiones $D_1$, $D_2$. Llamemos $D$ a una de las dos, tal que $f(Q)\cap D\neq\varnothing$.
+    Obtuvimos entonces que $f(Q)$ intersecta por lo menos a una de las regiones $D_1$, $D_2$. Llamemos $D$ a una tal que $f(Q)\cap D\neq\varnothing$.
 
-    Como $f^{-1}(X)\cap\partial Q=\varnothing$, se cumple que $f$ es inyectiva en $\partial Q$ y $f^{-1}(f(\partial Q))=\partial Q$.
+    Como $f^{-1}(X)\cap\partial Q=\varnothing$, se cumple que $f$ es inyectiva en $\partial Q$. Además $f^{-1}(f(\partial Q))=\partial Q$. 
+
+    $\partial{Q}$ no separa $Q$, $f(\partial{Q})$ separa $\s^n$, entonces $f(Q)\subset\overline{D}$. \comm{escribir mejor}
+
+    Si la inclusión es estricta, 
+
+
+    % $\int{Q}$ es conexo, entonces $f(\int{Q})$ es conexo. Además $f(\int{Q})\cap D\neq\varnothing$, entonces $f(\int{Q})\subset D$. Por lo tanto $f(Q)=D\cup f(\partial Q)$.%    
 
 \end{dem}
 
-\comm{chequear C. Thomassen, The Jordan-Schoenflies theorem and the classification of surfaces}
+Idea de la prueba: Dado un encaje $\phi:\s^{n-1}\to\s^n$, consideramos $D$ la clausura de una componente de $\s^n - \phi(\s^{n-1})$. Queremos probar que $D\simeq \D^n$.
+
+Asumimos que $D$ es una variedad con borde.\duda{ñññ} Por lo tanto el borde tiene un entorno homeomorfo a $\s^{n-1}\times [0,1]$ en $D$. Llamamos $\hat{\phi}:\s^{n-1}\times [0,1]\to\s^n$ al encaje, que es una extensión de $\phi$.
+
+Sean $X, Y$ las dos componentes de $\s^n-\hat{\phi}(\s^{n-1}\times [0,1])$ tal que $X\subset D$. Vamos a ver que existe un mapa sobreyectivo $f:\s^n\to\s^n$ tal que manda $X$, $Y$ en dos puntos distintos $x$, $y$, y es inyectiva en $\s^n-X\cup Y$. Una vez tenemos eso, restringiendo $f$ a $D$ tenemos como imagen un disco $\D\subset\s^n$.
+
+La clave para esto es probar que bajo estas hipótesis $D$ cumple $D\simeq D/X$. Más específicamente, $D$ va a ser un $\textbf{conjunto celular}$.
+
+\begin{df}
+    Un subconjunto $X$ de una $n$-variedad es $\textbf{celular}$ si para todo abierto $U$ que contiene a $X$ existe una familia de conjuntos $\{D_i,\in\N\}$ tales que 
+    
+    \begin{itemize}
+        \item $X=\cap_{i=1}^\infty D_i$
+        \item $D_i\simeq\D$, $D_i\subset U$ para todo $i\in\N$
+        \item Los $D_i$ están encajados: $D_{i+1}\subset\mathring{D_i}$
+    \end{itemize}
+\end{df}
+
+\begin{obs}
+    Como los $D_i$ son cerrados, $X$ necesariamente es cerrado.
+\end{obs}
+
+\begin{df}
+
+    Dada $M$ una $n$-variedad compacta con borde, $X_1,\dots,X_k$ subconjuntos cerrados y disjuntos dos a dos. Llamamos $\textbf{colapsar}$ $X_1,\dots ,X_k$ en $M$ a considerar el espacio cociente $M'=M/ \sim $ dado por $x\sim x'\iff x,x'\in X_i$ para algún $i\in\{1,\dots,k\}$.
+
+\end{df}
+
+Lo interesante de los conjuntos celulares, es que al colapsarlos obtenemos una variedad homeomorfa a la que teníamos originalmente.
+
+\begin{lema}
+    Sea $M$ una $n$-variedad compacta con borde, $X$ subconjunto celular de $\mathring{M}$. Entonces el espacio $M'$ obtenido de colapsar $X$ es homeomorfo a $M$.
+\end{lema}
+
+\begin{dem}
+    Construyamos un mapa sobreyectivo $f:M\to M$ tal que $f|_{M-X}$ es inyectiva y $f(X)=x_0$ para algún $x_0\in M$. Este mapa va a ser el límite de una sucesión de homeos que construimos inductivamente, empezando por $f_1:= Id$.
+
+    Tenemos $X=\bigcap\limits^{\infty} D_i$, con $D_i$ discos encajados como en la definición. Para definir $f_{k+1}$, vamos a asumir que ya tenemos definido un homeo $f_k$. Por ser un homeo, $f_k$ va a cumplir:
+
+    \begin{itemize}
+        \item $f_k(D_k)\simeq f_k(D_{k+1})\simeq\D^n$
+        \item $f_k(D_{k+1})\subset\mathring{f(D_k)}$
+    \end{itemize}
+
+    Elegimos ahora un homeo $\hat{g}_{k+1}:f_k(D_k)\to f_k(D_k)$ tal que $\hat{g}_{k+1}|_{\partial(f_k(D_k))}\equiv Id$ y $diam\big(\hat{g}_{k+1}(f_k(D_{k+1}))\big)<\frac{1}{k+1}$. Lo extendemos a un homeo $g_{k+1}:M\to M$ como $g_{k+1}\equiv Id$ afuera de $f_k(D_k)$.
+
+    Definimos $f_{k+1}:= g_{k+1}\circ f_i$.
+
+    Veamos que la sucesión $f_k(p)$ converge para todo $p\in M$. Separemos en los casos $p\in X$, $p\in M-X$.
+
+    Veamos el caso $p\in X$. Entonces $f_k(p)\in f_k(D_k)$ para todo $k\in\N$.
+
+    Por construcción, las $f_k$ cumplen $f_1(D_1)\supset f_2(D_2)\supset f_3(D_3)\supset\dots$ y $\lim\limits_{k\to\infty}diam(D_k)=0$. Por lo tanto, la intersección $\bigcap\limits^\infty f_k(D_k)$ consiste de un único punto $x_0$, y se cumple que $\lim\limits_{k\to\infty}f_k(p)=x_0$.
+
+
+\end{dem}
+
+\begin{teo}
+    Invariancia del dominio:
+
+    $U$ abierto de $\R^n$, $h:U\to\R^n$ continua e inyectiva, entonces $h(U)$ es abierto de $\R^n$.
+\end{teo}
+
+
+\begin{dem}
+
+    Vemos $S^n$ como la compactificación de $R^n$, queremos probar que $h(U)$ es abierto en $S^n$.
+
+    Sea $x\in U$, entonces $x$ es centro de un disco $D$ de dimensión $n$ contenido en $U$.
+
+    Probemos que $h(D-\partial D)$ es un abierto de $\S^n$.
+
+    $h$ continua e inyectiva, entonces $h|_{\partial D}$, $h|_{D}$ son encajes.
+
+    Por el teorema de la sección anterior \comm{insertar bien la referencia} tenemos que $\tilde{H}_0(\s^n - h(\partial D))=\Z$, es decir, $H_0(\s^n - h(\partial D))=\Z\oplus\Z$. O sea, $\s^n - h(\partial D)$ está conformado por dos componentes conexas por caminos que son disjuntas entre sí. 
+    
+    Estas componentes van a ser $\s^n-h(D)$ y $h(D-\partial D)$. Para asegurarnos, tenemos que comprobar que las dos son conexas por caminos. Como $D-\partial D$ es conexo por caminos, entonces $h(D-\partial D)$ también.
+    
+    Ahora, el mismo teorema nos dice que $\tilde{H}_i(\s^n - h(D))=0\fall i\in\N$, por lo tanto $H_0(\s^n - h(\partial D))=\Z$ y entonces $\s^n - h(\partial D)$ es conexo por caminos.
+
+    Para la conclusión del teorema, basta observar dos cosas. Primero, que para conjuntos abiertos las componentes conexas siempre son conexas por caminos.
+    
+    Segundo, que si un espacio se descompone en finitas componentes conexas, entonces las componentes son abiertas.
+    
+    Como $\s^n-h(\partial D) = \s^n-h(D) \sqcup h(D-\partial D) $ es abierto, entonces sus dos componentes conexas son abiertos de $\s^n-h(\partial D)$ conexos por caminos, y por lo tanto son abiertos de $\s^n$.
+
+    Obtuvimos entonces que $h(D-\partial D)$ es abierto de $\s^n$.
+\end{dem}
+
+Con esto tenemos un resultado para variedades topológicas:
+
+\begin{cor}
+
+    Sean $M$, $N$ $n$-variedades con $M$ compacta, $N$ conexa. Entonces, si $h:M\to N$ es un encaje, necesariamente es un homeomorfismo.
+
+\end{cor}
+
+\begin{dem}
+
+    Veamos que $h(M)$ es abierto y cerrado en $N$. 
+
+    Por el teorema de invariancia del dominio, tenemos que $h(M)$ es abierto en $N$.
+    
+    Como $M$ es compacto y $f$ un encaje, entonces $h(M)$ es compacto. Como $N$ es hausdorff, entonces $h(M)$ es cerrado.
+    
+    Por lo tanto $h(M)=N$ y entonces $h:M\to N$ es un homeo.
+
+\end{dem}
