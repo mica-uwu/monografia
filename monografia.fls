@@ -33,8 +33,8 @@ INPUT C:\Program Files\MiKTeX\tex\generic\iftex\iftex.sty
 INPUT C:\Users\micaela.berezan\AppData\Roaming\MiKTeX\tex\latex\geometry\geometry.cfg
 INPUT C:\Users\micaela.berezan\AppData\Roaming\MiKTeX\tex\latex\geometry\geometry.cfg
 INPUT C:\Users\micaela.berezan\AppData\Roaming\MiKTeX\tex\latex\geometry\geometry.cfg
-INPUT .\schoenflies.tex
-INPUT .\schoenflies.tex
+INPUT .\summary.tex
+INPUT .\summary.tex
 INPUT C:\Users\micaela.berezan\AppData\Roaming\MiKTeX\tex\latex\lipsum\lipsum.sty
 INPUT C:\Users\micaela.berezan\AppData\Roaming\MiKTeX\tex\latex\lipsum\lipsum.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\l3packages\l3keys2e\l3keys2e.sty
@@ -189,6 +189,16 @@ INPUT C:\Users\micaela.berezan\AppData\Roaming\MiKTeX\tex\latex\newfloat\newfloa
 INPUT C:\Users\micaela.berezan\AppData\Roaming\MiKTeX\tex\latex\newfloat\newfloat.sty
 INPUT C:\Users\micaela.berezan\AppData\Roaming\MiKTeX\tex\latex\caption\subcaption.sty
 INPUT C:\Users\micaela.berezan\AppData\Roaming\MiKTeX\tex\latex\caption\subcaption.sty
+INPUT C:\Users\micaela.berezan\AppData\Roaming\MiKTeX\tex\latex\parskip\parskip.sty
+INPUT C:\Users\micaela.berezan\AppData\Roaming\MiKTeX\tex\latex\parskip\parskip.sty
+INPUT C:\Users\micaela.berezan\AppData\Roaming\MiKTeX\tex\latex\kvoptions\kvoptions.sty
+INPUT C:\Users\micaela.berezan\AppData\Roaming\MiKTeX\tex\latex\kvoptions\kvoptions.sty
+INPUT C:\Users\micaela.berezan\AppData\Roaming\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Users\micaela.berezan\AppData\Roaming\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Users\micaela.berezan\AppData\Roaming\MiKTeX\tex\latex\kvsetkeys\kvsetkeys.sty
+INPUT C:\Users\micaela.berezan\AppData\Roaming\MiKTeX\tex\latex\kvsetkeys\kvsetkeys.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\etoolbox\etoolbox.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\etoolbox\etoolbox.sty
 INPUT .\monografia.aux
 INPUT .\monografia.aux
 INPUT monografia.aux
@@ -198,6 +208,9 @@ INPUT intro.aux
 INPUT .\preliminares.aux
 INPUT .\preliminares.aux
 INPUT preliminares.aux
+INPUT .\summary.aux
+INPUT .\summary.aux
+INPUT summary.aux
 INPUT .\homologia simplicial.aux
 INPUT .\homologia simplicial.aux
 INPUT homologia simplicial.aux
@@ -266,36 +279,26 @@ INPUT .\intro.tex
 INPUT .\intro.tex
 INPUT .\preliminares.tex
 INPUT .\preliminares.tex
-INPUT .\homologia simplicial.tex
-INPUT .\homologia simplicial.tex
-INPUT .\homologia singular.tex
-INPUT .\homologia singular.tex
-INPUT .\jordan.tex
-INPUT .\jordan.tex
-INPUT .\alexander.tex
-INPUT .\alexander.tex
-INPUT .\schoenflies.tex
-INPUT .\schoenflies.tex
-OUTPUT schoenflies.aux
-INPUT .\schoenflies.tex
-INPUT .\schoenflies.tex
-INPUT schoenflies.tex
+INPUT .\summary.tex
+INPUT .\summary.tex
+OUTPUT summary.aux
+INPUT .\summary.tex
+INPUT .\summary.tex
+INPUT summary.tex
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmti10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi8.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmsy8.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex8.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbx8.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbx6.tfm
+INPUT .\homologia simplicial.tex
+INPUT .\homologia simplicial.tex
+INPUT .\homologia singular.tex
+INPUT .\homologia singular.tex
+INPUT .\jordan.tex
+INPUT .\jordan.tex
+INPUT .\alexander.tex
+INPUT .\alexander.tex
+INPUT .\schoenflies.tex
+INPUT .\schoenflies.tex
 INPUT .\puntos problematicos.tex
 INPUT .\puntos problematicos.tex
 INPUT .\fox artin.tex
@@ -309,6 +312,9 @@ INPUT intro.aux
 INPUT .\preliminares.aux
 INPUT .\preliminares.aux
 INPUT preliminares.aux
+INPUT .\summary.aux
+INPUT .\summary.aux
+INPUT summary.aux
 INPUT .\homologia simplicial.aux
 INPUT .\homologia simplicial.aux
 INPUT homologia simplicial.aux
@@ -333,20 +339,10 @@ INPUT fox artin.aux
 INPUT .\hooked rug.aux
 INPUT .\hooked rug.aux
 INPUT hooked rug.aux
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmcsc10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmcsc10.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi6.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi6.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
@@ -355,11 +351,5 @@ INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr17.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr17.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmti10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmti10.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm10.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm10.pfb
