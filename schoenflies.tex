@@ -36,16 +36,18 @@
 
 \end{dem}
 
+\comm{ahora una prueba como la gente aver}
+
 Idea de la prueba: Dado un encaje $\phi:\s^{n-1}\to\s^n$, consideramos $D$ la clausura de una componente de $\s^n - \phi(\s^{n-1})$. Queremos probar que $D\simeq \D^n$.
 
-Asumimos que $D$ es una variedad con borde.\duda{ñññ} Por lo tanto el borde tiene un entorno homeomorfo a $\s^{n-1}\times [0,1]$ en $D$. Llamamos $\hat{\phi}:\s^{n-1}\times [0,1]\to\s^n$ al encaje, que es una extensión de $\phi$.
+Asumimos que $D$ es una variedad con borde.\duda{pq vale asumir esto ñññ} Por lo tanto el borde tiene un entorno homeomorfo a $\s^{n-1}\times [0,1]$ en $D$. \comm{agregar esta prueba} Llamamos $\hat{\phi}:\s^{n-1}\times [0,1]\to\s^n$ al encaje, que es una extensión de $\phi$.
 
 Sean $X, Y$ las dos componentes de $\s^n-\hat{\phi}(\s^{n-1}\times [0,1])$ tal que $X\subset D$. Vamos a ver que existe un mapa sobreyectivo $f:\s^n\to\s^n$ tal que manda $X$, $Y$ en dos puntos distintos $x$, $y$, y es inyectiva en $\s^n-X\cup Y$. Una vez tenemos eso, restringiendo $f$ a $D$ tenemos como imagen un disco $\D\subset\s^n$.
 
 La clave para esto es probar que bajo estas hipótesis $D$ cumple $D\simeq D/X$. Más específicamente, $D$ va a ser un $\textbf{conjunto celular}$.
 
 \begin{df}
-    Un subconjunto $X$ de una $n$-variedad es $\textbf{celular}$ si para todo abierto $U$ que contiene a $X$ existe una familia de conjuntos $\{D_i,\in\N\}$ tales que 
+    Un subconjunto $X$ de una $n$-variedad es $\textbf{celular}$ si para todo abierto $U$ que contiene a $X$ existe una familia de conjuntos $\{D_i,i\in\N\}$ tales que 
     
     \begin{itemize}
         \item $X=\cap_{i=1}^\infty D_i$
@@ -64,31 +66,48 @@ La clave para esto es probar que bajo estas hipótesis $D$ cumple $D\simeq D/X$.
 
 \end{df}
 
-Lo interesante de los conjuntos celulares, es que al colapsarlos obtenemos una variedad homeomorfa a la que teníamos originalmente.
+Lo interesante de los conjuntos celulares es que al colapsarlos obtenemos una variedad homeomorfa a la que teníamos originalmente.
 
 \begin{lema}
     Sea $M$ una $n$-variedad compacta con borde, $X$ subconjunto celular de $\mathring{M}$. Entonces el espacio $M'$ obtenido de colapsar $X$ es homeomorfo a $M$.
 \end{lema}
 
 \begin{dem}
-    Construyamos un mapa sobreyectivo $f:M\to M$ tal que $f|_{M-X}$ es inyectiva y $f(X)=x_0$ para algún $x_0\in M$. Este mapa va a ser el límite de una sucesión de homeos que construimos inductivamente, empezando por $f_1:= Id$.
+    Tenemos $X=\bigcap\limits^{\infty} D_i$, con $D_i$ discos encajados como en la definición. Construyamos un mapa sobreyectivo $f:M\to M$ tal que $f|_{M-X}$ es inyectiva y $f(X)=x_0$ para algún $x_0\in M$. Este mapa va a ser el límite de una sucesión de homeos que construimos inductivamente, empezando por $f_1:= Id$.
 
-    Tenemos $X=\bigcap\limits^{\infty} D_i$, con $D_i$ discos encajados como en la definición. Para definir $f_{k+1}$, vamos a asumir que ya tenemos definido un homeo $f_k$. Por ser un homeo, $f_k$ va a cumplir:
+    Para definir $f_{k+1}$, vamos a asumir que ya tenemos definido un homeo $f_k$. Lo modificamos de la siguiente manera:
 
+    Vamos a elegir un homeomorfismo auxiliar $\hat{g}_{k+1}:f_k(D_k)\to f_k(D_k)$ tal que 
+    
     \begin{itemize}
-        \item $f_k(D_k)\simeq f_k(D_{k+1})\simeq\D^n$
-        \item $f_k(D_{k+1})\subset\mathring{f(D_k)}$
+        \item $\hat{g}_{k+1}|_{\partial(f_k(D_k))}\equiv Id$
+        \item $\diam\big(\hat{g}_{k+1}(f_k(D_{k+1}))\big)<\frac{1}{k+1}$
     \end{itemize}
+    
+    Una vez tenemos eso, lo extendemos a un homeo $g_{k+1}:M\to M$ como $g_{k+1}\equiv Id$ afuera de $f_k(D_k)$. Definimos $f_{k+1}:= g_{k+1}\circ f_k$.
+    
+%    Por ser un homeo, $f_k$ va a cumplir:
 
-    Elegimos ahora un homeo $\hat{g}_{k+1}:f_k(D_k)\to f_k(D_k)$ tal que $\hat{g}_{k+1}|_{\partial(f_k(D_k))}\equiv Id$ y $diam\big(\hat{g}_{k+1}(f_k(D_{k+1}))\big)<\frac{1}{k+1}$. Lo extendemos a un homeo $g_{k+1}:M\to M$ como $g_{k+1}\equiv Id$ afuera de $f_k(D_k)$.
+%    \begin{itemize}
+%        \item $f_k(D_k)\simeq f_k(D_{k+1})\simeq\D^n$
+%        \item $f_k(D_{k+1})\subset\mathring{f(D_k)}$
+%    \end{itemize}
 
-    Definimos $f_{k+1}:= g_{k+1}\circ f_i$.
+    Ahora hay que verificar que la familia de funciones $\{f_k\}$ converge punto a punto. Veamos que la sucesión $f_k(p)$ converge para todo $p\in M$. Para esto separamos en los casos $p\in X$, $p\in M-X$.
 
-    Veamos que la sucesión $f_k(p)$ converge para todo $p\in M$. Separemos en los casos $p\in X$, $p\in M-X$.
-
-    Veamos el caso $p\in X$. Entonces $f_k(p)\in f_k(D_k)$ para todo $k\in\N$.
+    Veamos el caso $p\in X$. Se tiene $f_k(p)\in f_k(D_k)$ para todo $k\in\N$.
 
     Por construcción, las $f_k$ cumplen $f_1(D_1)\supset f_2(D_2)\supset f_3(D_3)\supset\dots$ y $\lim\limits_{k\to\infty}diam(D_k)=0$. Por lo tanto, la intersección $\bigcap\limits^\infty f_k(D_k)$ consiste de un único punto $x_0$, y se cumple que $\lim\limits_{k\to\infty}f_k(p)=x_0$.
+
+    Tomemos ahora $p\in M-X$, como $p\not\in\cap_{i=1}^\infty D_i$ a partir de cierto $K\in\N$ tenemos $p\not\in D_k$ para todo $k\geq K$. Por lo tanto, la sucesión $f_k(p)$ es constante a partir de $K$.
+
+    Con esto tenemos que las $f_k$ convergen puntualmente, llamamos $f$ al límite.
+
+    Sabemos que $f$ es continua por definición, y que $f^{-1}(x_0)=X$. Verifiquemos que $f$ es inyectiva en $M-X$ y sobreyectiva.
+
+    Para probar que $f$ es sobreyectiva, vamos a ver que alcanza todo elemento de $M$. Ya sabemos que $f(X)=\{x_0\}$, entonces basta verificar que un punto arbitrario $x\in M-\{x_0\}$ está en la imagen de $f$. Efectivamente, si $x\in M-\{x_0\}$ entonces $x\not\in \cap^\infty_{k=1} f_k(D_k)$, y por lo tanto a partir de un $K\in\N$ se tiene $x\not\in f_K(D_K)$, entonces $f_K^{-1}(x)\cap D_K=\varnothing$. Luego la sucesión $f_k(x)$ es constante a partir de $K$, y se cumple que $f(f^{-1}_K(x))=f_K(f^{-1}_K(x))=x$, por lo tanto $x$ está en la imagen de $f$.
+
+    Ahora veamos que $f$ es inyectiva en $M-X$. Para eso tomamos dos puntos $x\neq y\in M-X$. Como no están en $X$, las sucesiones $f_k(x), f_k(y)$ son eventualmente constantes, y por lo tanto podemos encontrar un $K\in\N$ tal que $f(x) = f_K(x)$, $f(y) = f_K(y)$. Como $f_K$ es un homeo y $x\neq y$, entonces $f(x)\neq f(y)$.
 
 
 \end{dem}
