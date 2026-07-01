@@ -1,0 +1,32 @@
+\section{los big bucks}
+
+Si pinchamos una esfera por un disco de cualquier dimensión
+
+\begin{teo}
+    Dado un encaje $h:D^k\to \s^n$, la homología reducida es $\tilde{H}_i(\s^n - h(D^k))=0$ para todo $i\in\N$
+\end{teo}
+
+\comm{obviamente $k\leq n$ pero no se si decirlo, esto usa invariancia del dominio, no? q todo encaje va a cumplir $k\leq n$.}
+
+\begin{dem}
+    Hagamos inducción en $k\in\N$. 
+    
+    Si $k=0$, tenemos que $\s^n - h(D^0)$ es la esfera pinchada, homeomorfa a $\R^n$. Con esto tenemos el caso base.
+
+    Supongamos que se cumple para $k-1$, y probemos que entonces vale para $k$.
+
+    Podemos buscar dos abiertos $A$ y $B$ con homología conocida tales que $X := \s^n-h(D^k) = A\cap B$ y usar la $\textbf{sucesión de}$ $\textbf{Mayer-Vietoris}$:
+
+    $$\dots\rightarrow H_n(X)\rightarrow H_n(A)\oplus H_n(B)\rightarrow H_n(A\cup B)\rightarrow H_{n-1}(X)\rightarrow\dots$$
+    
+    Viendo $D^k$ como $I^k$, podemos tomar el cubrimiento de $\s^n-h(I^k)$ dado por los dos abiertos $A:=\s^n - h(I^{k-1}\times[0,\frac{1}{2}])$ y $B:=\s^n - h(I^{k-1}\times[\frac{1}{2},1])$.
+
+    En este caso $A\cup B = \s^n-h(I^{k-1}\times\{\frac{1}{2}\})\simeq \s^n-\tilde{h}(D^{k-1})$. Con $\tilde{h}:D^{k-1}\to\s^n$ el encaje dado por precomponer $h$ con el homeomorfismo $I^{k-1}\times\{\frac{1}{2}\}\simeq D^{k-1}$. Por la hipótesis de inducción tenemos entonces que $\tilde{H}_n(A\cup B)=0$ para todo $n\in\N$.
+    
+ 
+
+    % Un cubrimiento de $\s^n-h(I^k)$ está dado por $\s^n-A\cap\s^n-B$, entonces por 
+
+    % $\s^n -h(I^k)= \s^n -h(A\cup B) = \s^n-h(A) \cap \s^n-h(B)$
+    
+\end{dem}
