@@ -197,6 +197,32 @@ INPUT C:\Users\micaela.berezan\AppData\Roaming\MiKTeX\tex\latex\kvsetkeys\kvsetk
 INPUT C:\Users\micaela.berezan\AppData\Roaming\MiKTeX\tex\latex\kvsetkeys\kvsetkeys.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\etoolbox\etoolbox.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\etoolbox\etoolbox.sty
+INPUT C:\Users\micaela.berezan\AppData\Roaming\MiKTeX\tex\latex\quiver\quiver.sty
+INPUT C:\Users\micaela.berezan\AppData\Roaming\MiKTeX\tex\latex\quiver\quiver.sty
+INPUT C:\Users\micaela.berezan\AppData\Roaming\MiKTeX\tex\latex\tikz-cd\tikz-cd.sty
+INPUT C:\Users\micaela.berezan\AppData\Roaming\MiKTeX\tex\latex\tikz-cd\tikz-cd.sty
+INPUT C:\Users\micaela.berezan\AppData\Roaming\MiKTeX\tex\latex\tikz-cd\tikzlibrarycd.code.tex
+INPUT C:\Users\micaela.berezan\AppData\Roaming\MiKTeX\tex\latex\tikz-cd\tikzlibrarycd.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarymatrix.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarymatrix.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryquotes.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryquotes.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\libraries\pgflibraryarrows.meta.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\libraries\pgflibraryarrows.meta.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\libraries\pgflibraryarrows.meta.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarycalc.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarycalc.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarydecorations.pathmorphing.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarydecorations.pathmorphing.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarydecorations.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarydecorations.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\modules\pgfmoduledecorations.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\libraries\decorations\pgflibrarydecorations.pathmorphing.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\libraries\decorations\pgflibrarydecorations.pathmorphing.code.tex
+INPUT C:\Users\micaela.berezan\AppData\Roaming\MiKTeX\tex\latex\spath3\tikzlibraryspath3.code.tex
+INPUT C:\Users\micaela.berezan\AppData\Roaming\MiKTeX\tex\latex\spath3\tikzlibraryspath3.code.tex
+INPUT C:\Users\micaela.berezan\AppData\Roaming\MiKTeX\tex\latex\spath3\spath3.sty
+INPUT C:\Users\micaela.berezan\AppData\Roaming\MiKTeX\tex\latex\spath3\spath3.sty
 INPUT .\monografia.aux
 INPUT .\monografia.aux
 INPUT monografia.aux
@@ -286,8 +312,6 @@ INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmcsc10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmcsc10.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
