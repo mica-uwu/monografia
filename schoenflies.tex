@@ -163,3 +163,23 @@ Con esto tenemos un resultado para variedades topológicas:
     Por lo tanto $h(M)=N$ y entonces $h:M\to N$ es un homeo.
 
 \end{dem}
+
+Podemos usar la invariancia del dominio para probar lo siguiente:
+
+\begin{lema}
+    Sea $M$ una $n$-variedad conexa con $n<1$, $P\subset M$ un conjunto finito, entonces $M-P$ es conexo.
+\end{lema}
+
+\comm{esta prueba es de las notas de Nikil Sahoo}
+
+\begin{dem}
+    Primero comenzamos observando que como nuestros espacios son Hausdorff, entonces los singleton $\{p\}$ son conjuntos cerrados. Por esta razón, los complementos de finitos puntos son subconjuntos abiertos de $M$, y por lo tanto son $n$-variedades.
+
+    Por lo tanto, es suficiente probar el lema para $P=\{p\}$ un singleton. Veamos eso.
+
+    Supongamos por absurdo que $M-\{p\}$ no es conexo, es decir, tenemos $U, V$ dos abiertos de $M-\{p\}$ tales que $M-\{p\}=U\sqcup V$. Estos también van a ser abiertos de $M$.
+
+    \duda{por que son abiertos de M necesariamente?}
+
+    Tomamos un entorno $U_p$ de $p$ en $M$ homeomorfo a $\D^n$, entonces $U_p - \{p\}$ es conexo, y por lo tanto está contenido en $U$ o en $V$. Supongamos que está en $U$, en ese caso $U_p-\{p\}\subset U$, y $U_p\cup U = U\cup\{p\}$, como ambos $U_p$ y $U$ son abiertos de $M$. Entonces $U\cup \{p\}$ es abierto en $M$ y obtenemos una descomposición de $M$ como dos abiertos disjuntos $(U\cup\{p\})\sqcup V$. Esto es absurdo ya que habíamos asumido $M$ conexa.
+\end{dem}

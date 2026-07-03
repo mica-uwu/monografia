@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1783020714.96326 "c:/Users/micaela.berezan/Desktop/cositas/monografia/monografia.tex" "monografia.pdf" "monografia" 1783020716.47228 0
+["pdflatex"] 1783102574.48902 "c:/Users/micaela.berezan/Desktop/cositas/monografia/monografia.tex" "monografia.pdf" "monografia" 1783102575.94618 0
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1233951848 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex9.tfm" 1234365220 996 a18840b13b499c08ac2de96a99eda4bc ""
@@ -33,7 +33,9 @@
   "C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1247596666 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1247596666 32080 340ef9bf63678554ee606688e7b5339d ""
   "C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb" 1247596667 32001 6aeea3afe875097b1eb0da29acd61e28 ""
+  "C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1247596667 30251 6afa5cb1d0204815a708a080681d4674 ""
   "C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1247596667 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
+  "C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb" 1247596666 37166 8ab3487cbe3ab49ebce74c29ea2418db ""
   "C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1247596666 35469 dcf3a5f2fc1862f5952e3ee5eb1d98c4 ""
   "C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1247596667 35752 024fb6c41858982481f6968b5fc26508 ""
   "C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1247596667 32722 d7379af29a190c3f453aba36302ff5a9 ""
@@ -169,18 +171,15 @@
   "C:/Users/micaela.berezan/AppData/Roaming/MiKTeX/tex/latex/tikz-cd/tikz-cd.sty" 1620478817 823 2375f30bf77af9357d3b4834b054bf52 ""
   "C:/Users/micaela.berezan/AppData/Roaming/MiKTeX/tex/latex/tikz-cd/tikzlibrarycd.code.tex" 1620478817 23059 b4b98da760150611227e2533f15fe352 ""
   "C:/Users/micaela.berezan/AppData/Roaming/MiKTeX/tex/latex/todonotes/todonotes.sty" 1704622898 21404 916e19cbd009b6d289c8194b313d3895 ""
-  "apendice.aux" 1783020716 948 ca15f05decb0bd3079c3417c6cc26540 "pdflatex"
-  "apendice.tex" 1782935527 1628 494ee65a2b844628390651894ac49cd0 ""
-  "c:/Users/micaela.berezan/Desktop/cositas/monografia/monografia.tex" 1783018066 1978 048c6404b2c6b14c1f55f15a41639f37 ""
+  "c:/Users/micaela.berezan/Desktop/cositas/monografia/monografia.tex" 1783097365 1980 29bac6d7cfa3c805463f5be54d639948 ""
   "cmat-monografia.cls" 1781790200 3051 2d4c3bd389d707f779416f56c6240530 ""
-  "homologia/mayer vietoris.aux" 1783020716 1005 b8746e6bb60101639552fe86b7525eba "pdflatex"
-  "homologia/mayer vietoris.tex" 1783020712 2998 418088507eb9b6eacbffbaeb6c770926 ""
-  "monografia.aux" 1783020716 373 de464b9d50a4800bba00d24de23ce4ba "pdflatex"
-  "monografia.tex" 1783018066 1978 048c6404b2c6b14c1f55f15a41639f37 ""
+  "monografia.aux" 1783102575 596 677be3f759ce64811c6eebced9a36696 "pdflatex"
+  "monografia.tex" 1783097365 1980 29bac6d7cfa3c805463f5be54d639948 ""
+  "schoenflies.aux" 1783102575 1774 f78b471e2f6d8337f5b33afd23293865 "pdflatex"
+  "schoenflies.tex" 1783102573 10667 67aff5f8d77182965b02c9290140a454 ""
   (generated)
-  "apendice.aux"
-  "homologia/mayer vietoris.aux"
   "monografia.aux"
   "monografia.log"
   "monografia.pdf"
+  "schoenflies.aux"
   (rewritten before read)
