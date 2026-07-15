@@ -226,9 +226,18 @@ INPUT C:\Users\micaela.berezan\AppData\Roaming\MiKTeX\tex\latex\spath3\spath3.st
 INPUT .\monografia.aux
 INPUT .\monografia.aux
 INPUT monografia.aux
-INPUT .\schoenflies.aux
-INPUT .\schoenflies.aux
-INPUT schoenflies.aux
+INPUT .\homologia\homologia simplicial.aux
+INPUT .\homologia\homologia simplicial.aux
+INPUT homologia\homologia simplicial.aux
+INPUT .\homologia\homologia singular.aux
+INPUT .\homologia\homologia singular.aux
+INPUT homologia\homologia singular.aux
+INPUT .\homologia\mayer vietoris.aux
+INPUT .\homologia\mayer vietoris.aux
+INPUT homologia\mayer vietoris.aux
+INPUT .\homologia\apendice.aux
+INPUT .\homologia\apendice.aux
+INPUT homologia\apendice.aux
 OUTPUT monografia.aux
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr9.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
@@ -269,15 +278,14 @@ INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmcsc10.tfm
 OUTPUT monografia.pdf
 INPUT C:\Users\micaela.berezan\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
-INPUT .\schoenflies.tex
-INPUT .\schoenflies.tex
-OUTPUT schoenflies.aux
-INPUT .\schoenflies.tex
-INPUT .\schoenflies.tex
-INPUT schoenflies.tex
+INPUT .\homologia\homologia simplicial.tex
+INPUT .\homologia\homologia simplicial.tex
+OUTPUT homologia\homologia simplicial.aux
+INPUT .\homologia\homologia simplicial.tex
+INPUT .\homologia\homologia simplicial.tex
+INPUT homologia\homologia simplicial.tex
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmti10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi8.tfm
@@ -289,12 +297,116 @@ INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT .\img mono\simplices.png
+INPUT .\img mono\simplices.png
+INPUT .\img mono\simplices.png
+INPUT .\img mono\simplices.png
+INPUT .\img mono\simplices.png
+INPUT .\img mono\simplices.png
+INPUT .\img mono\simplices.png
+INPUT .\img mono\simplices estandar.png
+INPUT .\img mono\simplices estandar.png
+INPUT .\img mono\simplices estandar.png
+INPUT .\img mono\simplices estandar.png
+INPUT .\img mono\simplices estandar.png
+INPUT .\img mono\simplices estandar.png
+INPUT .\img mono\simplices estandar.png
+INPUT .\img mono\cociente.png
+INPUT .\img mono\cociente.png
+INPUT .\img mono\cociente.png
+INPUT .\img mono\cociente.png
+INPUT .\img mono\cociente.png
+INPUT .\img mono\cociente.png
+INPUT .\img mono\cociente.png
+INPUT .\img mono\cociente2.png
+INPUT .\img mono\cociente2.png
+INPUT .\img mono\cociente2.png
+INPUT .\img mono\cociente2.png
+INPUT .\img mono\cociente2.png
+INPUT .\img mono\cociente2.png
+INPUT .\img mono\cociente2.png
+INPUT .\img mono\norient2.png
+INPUT .\img mono\norient2.png
+INPUT .\img mono\norient2.png
+INPUT .\img mono\norient2.png
+INPUT .\img mono\norient2.png
+INPUT .\img mono\norient2.png
+INPUT .\img mono\norient2.png
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmcsc10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam7.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
+INPUT .\img mono\norient4.png
+INPUT .\img mono\norient4.png
+INPUT .\img mono\norient4.png
+INPUT .\img mono\norient4.png
+INPUT .\img mono\norient4.png
+INPUT .\img mono\norient4.png
+INPUT .\img mono\norient4.png
+INPUT .\img mono\borient2.png
+INPUT .\img mono\borient2.png
+INPUT .\img mono\borient2.png
+INPUT .\img mono\borient2.png
+INPUT .\img mono\borient2.png
+INPUT .\img mono\borient2.png
+INPUT .\img mono\borient2.png
+INPUT .\img mono\borient4.png
+INPUT .\img mono\borient4.png
+INPUT .\img mono\borient4.png
+INPUT .\img mono\borient4.png
+INPUT .\img mono\borient4.png
+INPUT .\img mono\borient4.png
+INPUT .\img mono\borient4.png
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmti10.tfm
+INPUT .\img mono\s1.png
+INPUT .\img mono\s1.png
+INPUT .\img mono\s1.png
+INPUT .\img mono\s1.png
+INPUT .\img mono\s1.png
+INPUT .\img mono\s1.png
+INPUT .\img mono\s1.png
+INPUT .\img mono\toro.png
+INPUT .\img mono\toro.png
+INPUT .\img mono\toro.png
+INPUT .\img mono\toro.png
+INPUT .\img mono\toro.png
+INPUT .\img mono\toro.png
+INPUT .\img mono\toro.png
+INPUT .\homologia\homologia singular.tex
+INPUT .\homologia\homologia singular.tex
+OUTPUT homologia\homologia singular.aux
+INPUT .\homologia\homologia singular.tex
+INPUT .\homologia\homologia singular.tex
+INPUT homologia\homologia singular.tex
+INPUT .\homologia\mayer vietoris.tex
+INPUT .\homologia\mayer vietoris.tex
+OUTPUT homologia\mayer vietoris.aux
+INPUT .\homologia\mayer vietoris.tex
+INPUT .\homologia\mayer vietoris.tex
+INPUT homologia\mayer vietoris.tex
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbx8.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbx6.tfm
+INPUT .\homologia\apendice.tex
+INPUT .\homologia\apendice.tex
+OUTPUT homologia\apendice.aux
+INPUT .\homologia\apendice.tex
+INPUT .\homologia\apendice.tex
+INPUT homologia\apendice.tex
 INPUT monografia.aux
-INPUT .\schoenflies.aux
-INPUT .\schoenflies.aux
-INPUT schoenflies.aux
+INPUT .\homologia\homologia simplicial.aux
+INPUT .\homologia\homologia simplicial.aux
+INPUT homologia\homologia simplicial.aux
+INPUT .\homologia\homologia singular.aux
+INPUT .\homologia\homologia singular.aux
+INPUT homologia\homologia singular.aux
+INPUT .\homologia\mayer vietoris.aux
+INPUT .\homologia\mayer vietoris.aux
+INPUT homologia\mayer vietoris.aux
+INPUT .\homologia\apendice.aux
+INPUT .\homologia\apendice.aux
+INPUT homologia\apendice.aux
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
@@ -315,6 +427,10 @@ INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr17.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr17.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr6.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr6.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr7.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr7.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
@@ -323,5 +439,7 @@ INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmti10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmti10.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\symbols\msam10.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\symbols\msam10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm10.pfb
