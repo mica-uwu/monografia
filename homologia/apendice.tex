@@ -15,7 +15,7 @@ Si pinchamos una esfera por un disco de cualquier dimensión, obtenemos una bola
 
     Supongamos que se cumple para $k-1$, y probemos que entonces vale para $k$.
 
-    Podemos buscar dos abiertos $A$ y $B$ con homología conocida tales que $X := \s^n-h(D^k) = A\cap B$ y usar la $\textbf{sucesión de}$ $\textbf{Mayer-Vietoris}$:
+    Podemos buscar dos abiertos $A$ y $B$ convenientes tales que $X := \s^n-h(D^k) = A\cap B$ y usar la $\textbf{sucesión de}$ $\textbf{Mayer-Vietoris}$:
     
     $$\dots\rightarrow H_i(X)\rightarrow H_i(A)\oplus H_i(B)\rightarrow H_i(A\cup B)\rightarrow H_{i-1}(X)\rightarrow\dots$$
     
@@ -55,9 +55,25 @@ Si pinchamos una esfera por un disco de cualquier dimensión, obtenemos una bola
 
     El absurdo surgió de tomar un elemento en una clase no trivial de $H_i(\s^n-h(D))$, por lo tanto concluimos que $H_i(\s^n-h(D))=0$.
 
-    \begin{teo}{sexo}
-    Dado un encaje $h:S^k\to \s^n$, la homología reducida es $\tilde{H}_i(\s^n - h(D^k))=0$ para todo $i\in\N$
+    \begin{teo}
+    Dado un encaje $h:\s^k\to \s^n$ con $k<n$, para todo $i\in\N$ se cumple que la homología reducida $\tilde{H}_i(\s^n - h(\s^k))$ es $\Z$ si $i=n-k-1$ y $0$ en cualquier otro caso.
     \end{teo}
+
+    \begin{dem}
+
+    Para probar esto vamos a apoyarnos en la parte anterior. La idea es hacer la prueba por inducción en $k$ y usar la sucesión de Mayer-Vietoris con un cubrimiento por abiertos de la forma $\s^n - h(D^k)$. 
+
+    Trivialmente tenemos el caso $k=0$. Como $\s^n - h(\s^0)$ es la esfera con dos pinchaduras, homeomorfa a $\s^{n-1}\times\R$, se cumple que $H_i(\s^n - h(\s^0))=0$ en todo caso salvo cuando $i=0$, y ahí vale $H_0(\s^n - h(\s^0))=\Z\oplus\Z$, y por lo tanto la homología reducida es $\tilde{H_0}(\s^n - h(\s^0))=\Z$.
+
+    Asumamos ahora que vale para $k-1$. Sean $D^k_+$, $D^k_-$ dos discos cerrados de dimensión $k$ tales que $D^k_+\cap D^k_- \simeq\s^{k-1}$. Por la parte anterior sabemos que si definimos $A:=\s^k-h(D^k_-)$, $B:=\s^k-h(D^k_-)$, entonces se cumple que $\tilde{H_i}(A)=\tilde{H_i}(B)=0$ para todo $i\in\N$.
+
+    Viendo la sucesión de Mayer-Vietoris para $\s^n- h(\s^k)$ cubierto por $A$ y $B$, el término $H_i(A)\oplus H_i(B)$ se anula para todo $i\in\N$, entonces obtenemos las siguientes sucesiones exactas:
+
+    $$0\rightarrow H_i(\s^n- h(\s^k))\rightarrow H_{i-1}(A\cap B)\rightarrow 0$$
+
+
+
+    \end{dem}
 
 
     

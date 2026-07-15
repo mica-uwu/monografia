@@ -238,6 +238,9 @@ INPUT homologia\mayer vietoris.aux
 INPUT .\homologia\apendice.aux
 INPUT .\homologia\apendice.aux
 INPUT homologia\apendice.aux
+INPUT .\schoenflies.aux
+INPUT .\schoenflies.aux
+INPUT schoenflies.aux
 OUTPUT monografia.aux
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr9.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
@@ -394,6 +397,12 @@ OUTPUT homologia\apendice.aux
 INPUT .\homologia\apendice.tex
 INPUT .\homologia\apendice.tex
 INPUT homologia\apendice.tex
+INPUT .\schoenflies.tex
+INPUT .\schoenflies.tex
+OUTPUT schoenflies.aux
+INPUT .\schoenflies.tex
+INPUT .\schoenflies.tex
+INPUT schoenflies.tex
 INPUT monografia.aux
 INPUT .\homologia\homologia simplicial.aux
 INPUT .\homologia\homologia simplicial.aux
@@ -407,6 +416,9 @@ INPUT homologia\mayer vietoris.aux
 INPUT .\homologia\apendice.aux
 INPUT .\homologia\apendice.aux
 INPUT homologia\apendice.aux
+INPUT .\schoenflies.aux
+INPUT .\schoenflies.aux
+INPUT schoenflies.aux
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
