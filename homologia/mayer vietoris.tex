@@ -8,6 +8,25 @@ La inclusión $\im(\alpha_{n+1})\subset\Ker(\alpha_{n})$ nos dice que $\alpha_{n
 
 La otra inclusión, $\im(\alpha_{n+1})\supset\Ker(\alpha_{n})$, nos dice que los grupos de homología asociados a este complejo de cadenas son triviales.
 
+En general, podemos interpretar la sucesión de grupos de homología asociados a un complejo de cadenas como un indicador de qué tan cerca está el complejo de ser una sucesión exacta.
+
+\end{obs}
+
+La existencia de la sucesión de Mayer-Vietoris para espacios topológicos va a surgir del siguiente hecho algebraico:
+
+\begin{lema}{Lema de la serpiente}
+
+	Sea $$0\rightarrow A\xrightarrow{f} B\xrightarrow{g} C\rightarrow 0$$ una sucesión exacta corta entre complejos de cadena. Entonces, para cada $n\in\Z$ existe un homomorfismo de grupos $$\delta_* :H_{n+1}(C)\rightarrow H_n(A)$$ tal que la siguiente sucesión es exacta:
+
+	\begin{figure}[h!]
+    	\centering
+    	\includegraphics[width=0.5\linewidth]{img mono/mayer vietoris/serpiente.png}
+    	\caption{tengo q aprender a hacer esto en tikz}
+    	\label{serpiente}
+	\end{figure}
+
+\end{lema}
+
 Dentro de un espacio topológico consideramos dos subespacios $A$ y $B$, y sea $X=\mathring{A}\cup\mathring{B}$. Definimos $C_n(A+B)$ el complejo de cadenas dado por la suma formal de las cadenas en $A$ y $B$. El mapa borde $\partial:C_{n}(X)\to C_{n-1}(X)$ manda elementos de $C_n(A+B)$ en elementos de $C_{n-1}(A+B)$, entonces los $C_n(A+B)$ forman un complejo de cadenas.
 
 \[\begin{tikzcd}
@@ -45,6 +64,7 @@ Además de eso, dado $x\in C_n(A\cap B)$ tal que $\psi(x)=0$, se tiene $(x,-x)=(
 
 Lo último que basta verificar es $\im(\phi)=C_n(A+B)$. Efectivamente, dado $x\in C_n(A+B)$, $x$ es una suma formal de $n$-cadenas en $A$ y $B$
 
+\comm{en algún lugar de acá mencionar eso de que la sucesión de grupos de homología es una forma de expresar qué tan cerca de ser exacta está la sucesión de grupos abelianos}
 
 % \begin{lema}
     
@@ -55,5 +75,3 @@ Lo último que basta verificar es $\im(\phi)=C_n(A+B)$. Efectivamente, dado $x\i
 % \end{lema}
 
 
-
-\end{obs} 
