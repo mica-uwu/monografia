@@ -67,21 +67,15 @@ Si pinchamos una esfera por un disco de cualquier dimensión, obtenemos una bola
 
     Asumamos ahora que vale para $k-1$. Sean $D^k_+$, $D^k_-$ dos discos cerrados de dimensión $k$ tales que $D^k_+\cap D^k_- \simeq\s^{k-1}$. Por la parte anterior sabemos que si definimos $A:=\s^k-h(D^k_-)$, $B:=\s^k-h(D^k_-)$, entonces se cumple que $\tilde{H_i}(A)=\tilde{H_i}(B)=0$ para todo $i\in\N$. 
     
-    Viendo la sucesión de Mayer-Vietoris para $A$ y $B$, el término $H_i(A)\oplus H_i(B)$ se anula para todo $i\in\N$, entonces obtenemos las siguientes sucesiones exactas:
+    Viendo la sucesión de Mayer-Vietoris para $A$, $B$ y $A\cup B$, el término $H_i(A)\oplus H_i(B)$ se anula para todo $i\in\N$, entonces obtenemos las siguientes sucesiones exactas:
 
-    $$0\rightarrow H_i(A\cap B)\xrightarrow{\varphi_i} H_{i-1}(A\cup B)\rightarrow 0$$
+    $$0\rightarrow H_{i+1}(A\cup B)\xrightarrow{\varphi_i} H_{i}(A\cap B)\rightarrow 0$$
 
     De igual forma que en la prueba anterior, los morfismos $\varphi_i$ van a ser isomorfismos para todo $i\in\N$.
 
-    Los conjuntos $A$ y $B$ cumplen que $A\cap B=\s^n - h(\s^k)$ y $A\cup B=\s^n-h(\s^{k-1})$. Por lo tanto, obtuvimos que $H_i(\s^n - h(\s^k))\simeq H_{i-1}(\s^n-h(\s^{k-1}))$ para todo $i\in\N$.
-
-    Por la hipótesis de inducción, sabemos que $H_{i-1}(\s^n-h(\s^{k-1}))$ es $\Z$ si $i-1 = n- (k-1) -1$ y $0$ en cualquier otro caso. O sea, es $\Z$ si $i=n-k+1$
+    Los conjuntos $A$ y $B$ cumplen que $A\cap B=\s^n - h(\s^k)$ y $A\cup B=\s^n-h(\s^{k-1})$. Entonces tenemos $$H_{i+1}(\s^n - h(\s^{k-1}))\simeq H_{i}(\s^n-h(\s^{k}))$$
     
-    Por lo tanto, trasladando esto a $H_i(\s^n - h(\s^k))$ tenemos que es $\Z$ si.
-    
-    Despejando, tenemos que $H_i(\s^n - h(\s^k))$ es $\Z$ si $i=n-k+1$ y $0$ en cualquier otro caso.
-
-
+    Por la hipótesis de inducción, sabemos que $H_{i+1}(\s^n-h(\s^{k-1}))$ es $\Z$ si $i + 1 = n- (k-1) -1$ y $0$ en cualquier otro caso. Con esto tenemos el resultado buscado para $H_{i}(\s^n-h(\s^{k}))$.
 
     \end{dem}
 
