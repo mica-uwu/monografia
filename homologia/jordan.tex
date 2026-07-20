@@ -54,10 +54,17 @@ Si pinchamos una esfera por un disco de cualquier dimensión, obtenemos una bola
     Entonces, lo que obtuvimos al final es que $y$ es un elemento de $C_{i+1}(\s^n - h(I^{k-1}\times I_M))$ tal que $x=\partial_{i+1} y$. Esto es absurdo, ya que nos habíamos asegurado que $x$ fuera un representante de una clase de homología no trivial de $\s^n - h(I^{k-1}\times I_m)$.
 
     El absurdo surgió de tomar un elemento en una clase no trivial de $H_i(\s^n-h(D))$, por lo tanto concluimos que $H_i(\s^n-h(D))=0$.
+\end{dem}
 
-    \begin{teo}
+    \begin{teo}{Separación de Jordan-Brouwer}
     Dado un encaje $h:\s^k\to \s^n$ con $k<n$, para todo $i\in\N$ se cumple que la homología reducida $\tilde{H}_i(\s^n - h(\s^k))$ es $\Z$ si $i=n-k-1$ y $0$ en cualquier otro caso.
     \end{teo}
+
+    \begin{obs}
+    En el caso de codimensión 1, este teorema nos dice que $\tilde{H_i}(\s^n-h(\s^{n-1}))$ es $\Z$ si $i=0$ y $0$ en cualquier otro caso. Esto significa que $H_0(\s^n-h(\s^{n-1}))=\Z\oplus\Z$, es decir, que $\s^n-h(\s^{n-1})$ tiene dos componentes conexas por caminos, que como son abiertas, son conexas. Además, como el resto de los grupos de homología son triviales, estas componentes son bolas homológicas. 
+    
+    Sin embargo, como veremos más adelante, algunas de estas componentes pueden no ser bolas homotópicas, es decir, pueden tener $\pi_1$ no trivial, y en estos casos la componente no va a ser una variedad topológica.
+    \end{obs}
 
     \begin{dem}
 
@@ -75,7 +82,7 @@ Si pinchamos una esfera por un disco de cualquier dimensión, obtenemos una bola
 
     Los conjuntos $A$ y $B$ cumplen que $A\cap B=\s^n - h(\s^k)$ y $A\cup B=\s^n-h(\s^{k-1})$. Entonces tenemos $$H_{i+1}(\s^n - h(\s^{k-1}))\simeq H_{i}(\s^n-h(\s^{k}))$$
     
-    Por la hipótesis de inducción, sabemos que $H_{i+1}(\s^n-h(\s^{k-1}))$ es $\Z$ si $i + 1 = n- (k-1) -1$ y $0$ en cualquier otro caso. Con esto tenemos el resultado buscado para $H_{i}(\s^n-h(\s^{k}))$.
+    Por la hipótesis de inducción, sabemos que $\tilde{H_{i+1}}(\s^n-h(\s^{k-1}))$ es $\Z$ si $i + 1 = n- (k-1) -1$ y $0$ en cualquier otro caso. Con esto tenemos el resultado buscado para $\tilde{H_{i}}(\s^n-h(\s^{k}))$.
 
     \end{dem}
 
@@ -87,4 +94,3 @@ Si pinchamos una esfera por un disco de cualquier dimensión, obtenemos una bola
 
     % $\s^n -h(I^k)= \s^n -h(A\cup B) = \s^n-h(A) \cap \s^n-h(B)$
     
-\end{dem}
