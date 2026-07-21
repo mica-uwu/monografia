@@ -391,6 +391,11 @@ OUTPUT alexander.aux
 INPUT ./alexander.tex
 INPUT ./alexander.tex
 INPUT alexander.tex
+INPUT ./img mono/alexander/1.png
+INPUT ./img mono/alexander/1.png
+INPUT ./img mono/alexander/1.png
+INPUT ./img mono/alexander/1.png
+INPUT ./img mono/alexander/1.png
 INPUT ./schoenflies.tex
 INPUT ./schoenflies.tex
 OUTPUT schoenflies.aux

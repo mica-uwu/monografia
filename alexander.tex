@@ -6,20 +6,41 @@
 
 \comm{Al final de los ejemplos hablar de que tomar suspensión me da ejemplos de dim superior. Esto está en DV después de Alexander.}
 
+En esta sección vamos a dar un ejemplo de una bola encajada en $\R^3$ tal que el encaje no se extiende a un homeomorfismo de todo $\R^3$. 
 
+Podemos construir la imagen como una intersección numerable de cerrados encajados $\{X_n\}$. Para el resto de la construcción, va a ser conveniente definir los siguientes conjuntos auxiliares: 
 
-TLDR: Arranco con un toro sólido $B_1$, sustituyo una pillbox por sus dos respectivos toros enlazados $T_1$ y $T_2$, a eso lo llamo $B_2$. 
+Sea $T$ un toro sólido estándar en $\R^3$ dado por un encaje $\varphi :\s^1\times \D^2\rightarrow \R^3$ y sea $[t_1,t_2]\subset \s^1$ un intervalo cerrado. Llamamos cilindro al conjunto $C:=\varphi([t_1,t_2]\times \D^2)$, y decimos que las tapas del cilindro son los dos discos $\tau_1 := \varphi(\{t_1\}\times\D^2)$, $\tau_2 := \varphi(\{t_2\}\times\D^2)$.
+
+Dado un cilindro $C$, consideramos dos toros sólidos disjuntos y enlazados $T_1$, $T_2$ contenidos en $C$ tales que $T_1\cap \partial C=\tau_1$, $T_2\cap \partial C=\tau_2$ como en la imagen $\ref{alex1}$. 
+
+\comm{los toros tienen número de enlace 1, ver si defino número de enlace o cómo digo eso. todos los enlaces que voy a usar siempre van a ser simples, o sea van a tener número de enlace 1. seguro esta construcción se puede hacer con número de enlace arbitrario y tiene pinta que quedan no equivalentes}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\linewidth]{img mono/alexander/1.png}
+    \caption{Un cilindro conteniendo $T_1$ y $T_2$}
+    \label{alex1}
+\end{figure}
+
+Ahora si, vamos a definir nuestra sucesión de cerrados encajados: 
+
+Empezamos por $X_0$ un toro sólido estándar en $\R^3$. Identificamos en su interior un cilindro $C_0$ con dos toros enlazados $T_1$ y $T_2$, definimos $X_1:=(X_0-C)\cup T_1\cup T_2$.
+
+Para definir $X_2$, vamos a modificar sólamente los toros $T_1$ y $T_2$, y lo haremos de la misma forma en la que modificamos el toro $X_0$ en el paso anterior. Lo que hacemos es considerar dos cilindros $C_1\subset T_1$ y $C_2\subset T_2$, esta vez teniendo en cuenta que $\tau_1\cap C_1=\varnothing$ y $\tau_2\cap C_2=\varnothing$, es decir, que no corten a las tapas del cilindro anterior. Definimos $X_2$ como $X_1-(C_1\cup C_2)$ unido con los $4$ subtoros contenidos en $C_1$ y $C_2$.
+
+Seguimos iterando este proceso, 
             
-Repito este proceso con $T_1$ y $T_2$, y al resultado lo llamo $B_3$. Observamos que $B_n$ van quedando encajadas. Seguimos haciendo esto procurando hacer que
-tachado: los diámetros internos de los $T_i$ tiendan a 0 los diámetros de las pillboxes tiendan a $0$ y llamamos $B=\bigcap\limits_{n=1}^\infty B_n$, esta es la bola de Alexander. 
+Repito este proceso con $T_1$ y $T_2$, y al resultado lo llamo $X_3$. Observamos que $X_n$ van quedando encajadas. Seguimos haciendo esto procurando hacer que
+tachado: los diámetros internos de los $T_i$ tiendan a 0 los diámetros de las pillboxes tiendan a $0$ y llamamos $B=\bigcap\limits_{n=1}^\infty X_n$, esta es la bola de Alexander. 
 
 Llamamos $S=\partial B$ la esfera de Alexander. 
 
-Veamos que $\pi_1(B^c)\neq\{1\}$: Tomamos $J$ una curva cerrada que es no trivial en el complemento de $B_1$ (toro). Supongamos $J$ es trivial en $B^c$ y consideramos su homotopía $H$ a un punto. 
+Veamos que $\pi_1(B^c)\neq\{1\}$: Tomamos $J$ una curva cerrada que es no trivial en el complemento de $X_1$ (toro). Supongamos $J$ es trivial en $B^c$ y consideramos su homotopía $H$ a un punto. 
             
-$Im(H)$ es un compacto tal que $Im(H)\subset B^c=\left(\bigcap\limits_{n=1}^\infty B_n\right)^c=\bigcup\limits_{n=1}^\infty B_n^c$. Observamos que $\{B_n^c\}$ es una familia de abiertos encajados, y por lo tanto $Im(H)$ está contenida en una cantidad finita de ellos. 
+$Im(H)$ es un compacto tal que $Im(H)\subset B^c=\left(\bigcap\limits_{n=1}^\infty X_n\right)^c=\bigcup\limits_{n=1}^\infty X_n^c$. Observamos que $\{X_n^c\}$ es una familia de abiertos encajados, y por lo tanto $Im(H)$ está contenida en una cantidad finita de ellos. 
 
-Esto implica que existe un $N\in\N$ tal que $Im(H)\subset B_N^c$, es decir, $J$ es contractible en $B_N^c$. Por inducción podemos ver que esto es absurdo. 
+Esto implica que existe un $N\in\N$ tal que $Im(H)\subset X_N^c$, es decir, $J$ es contractible en $X_N^c$. Por inducción podemos ver que esto es absurdo. 
 
 Ahora veamos que $B$ es una 3-célula: Pensemos $B$ como unión de cosas en vez de intersección. 
 
@@ -31,9 +52,9 @@ De esta manera podemos definir $B$ como $\overline{\bigcup\limits_{n=1}^\infty C
             
 \duda{convencerme de por qué preciso clausurar--> $B$ es intersección arbitraria de cerrados entonces es cerrado, los $C_n$ son abiertos entonces su unión va a ser abierta. Como $B$ no es $\varnothing$ ni $\R^3$ no puede ser un clopen, entonces no son iguales. Falta convencerme pq clausurar funciona.} 
 
-Llamemos $P_n^i$ a la i-ésima pillbox del n-ésimo paso de la construcción. Es decir, $P_n^i\subset B_n \fall i\in\{1,\dots,2^{n-1}\}$ y $B_n=B_{n+1}\cup\bigcup\limits_{i=1}^{2^{n-1}}P_n^i$. 
+Llamemos $P_n^i$ a la i-ésima pillbox del n-ésimo paso de la construcción. Es decir, $P_n^i\subset X_n \fall i\in\{1,\dots,2^{n-1}\}$ y $X_n=X_{n+1}\cup\bigcup\limits_{i=1}^{2^{n-1}}P_n^i$. 
             
-Sea $x\in B-\bigcup\limits_{n=1}^\infty C_n \Rightarrow x\in \bigcap\limits_{n=1}^\infty B_n-\bigcup\limits_{n=1}^\infty C_n$ 
+Sea $x\in B-\bigcup\limits_{n=1}^\infty C_n \Rightarrow x\in \bigcap\limits_{n=1}^\infty X_n-\bigcup\limits_{n=1}^\infty C_n$ 
 
 $x\not\in\bigcup\limits_{n=1}^\infty C_n \Rightarrow x\not\in C_n\fall n\in\N$ 
 
