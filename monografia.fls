@@ -223,27 +223,9 @@ INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflib
 INPUT ./monografia.aux
 INPUT ./monografia.aux
 INPUT monografia.aux
-INPUT ./homologia/homologia simplicial.aux
-INPUT ./homologia/homologia simplicial.aux
-INPUT homologia/homologia simplicial.aux
-INPUT ./homologia/homologia singular.aux
-INPUT ./homologia/homologia singular.aux
-INPUT homologia/homologia singular.aux
-INPUT ./homologia/mayer vietoris.aux
-INPUT ./homologia/mayer vietoris.aux
-INPUT homologia/mayer vietoris.aux
-INPUT ./homologia/jordan.aux
-INPUT ./homologia/jordan.aux
-INPUT homologia/jordan.aux
 INPUT ./alexander.aux
 INPUT ./alexander.aux
 INPUT alexander.aux
-INPUT ./schoenflies.aux
-INPUT ./schoenflies.aux
-INPUT schoenflies.aux
-INPUT ./hooked rug.aux
-INPUT ./hooked rug.aux
-INPUT hooked rug.aux
 OUTPUT monografia.aux
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
@@ -284,13 +266,12 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm
 OUTPUT monografia.pdf
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
-INPUT ./homologia/homologia simplicial.tex
-INPUT ./homologia/homologia simplicial.tex
-OUTPUT homologia/homologia simplicial.aux
-INPUT ./homologia/homologia simplicial.tex
-INPUT ./homologia/homologia simplicial.tex
-INPUT homologia/homologia simplicial.tex
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT ./alexander.tex
+INPUT ./alexander.tex
+OUTPUT alexander.aux
+INPUT ./alexander.tex
+INPUT ./alexander.tex
+INPUT alexander.tex
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
@@ -303,158 +284,17 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT ./img mono/simplices.png
-INPUT ./img mono/simplices.png
-INPUT ./img mono/simplices.png
-INPUT ./img mono/simplices.png
-INPUT ./img mono/simplices.png
-INPUT ./img mono/simplices estandar.png
-INPUT ./img mono/simplices estandar.png
-INPUT ./img mono/simplices estandar.png
-INPUT ./img mono/simplices estandar.png
-INPUT ./img mono/simplices estandar.png
-INPUT ./img mono/cociente.png
-INPUT ./img mono/cociente.png
-INPUT ./img mono/cociente.png
-INPUT ./img mono/cociente.png
-INPUT ./img mono/cociente.png
-INPUT ./img mono/cociente2.png
-INPUT ./img mono/cociente2.png
-INPUT ./img mono/cociente2.png
-INPUT ./img mono/cociente2.png
-INPUT ./img mono/cociente2.png
-INPUT ./img mono/norient2.png
-INPUT ./img mono/norient2.png
-INPUT ./img mono/norient2.png
-INPUT ./img mono/norient2.png
-INPUT ./img mono/norient2.png
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
-INPUT ./img mono/norient4.png
-INPUT ./img mono/norient4.png
-INPUT ./img mono/norient4.png
-INPUT ./img mono/norient4.png
-INPUT ./img mono/norient4.png
-INPUT ./img mono/borient2.png
-INPUT ./img mono/borient2.png
-INPUT ./img mono/borient2.png
-INPUT ./img mono/borient2.png
-INPUT ./img mono/borient2.png
-INPUT ./img mono/borient4.png
-INPUT ./img mono/borient4.png
-INPUT ./img mono/borient4.png
-INPUT ./img mono/borient4.png
-INPUT ./img mono/borient4.png
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
-INPUT ./img mono/s1.png
-INPUT ./img mono/s1.png
-INPUT ./img mono/s1.png
-INPUT ./img mono/s1.png
-INPUT ./img mono/s1.png
-INPUT ./img mono/toro.png
-INPUT ./img mono/toro.png
-INPUT ./img mono/toro.png
-INPUT ./img mono/toro.png
-INPUT ./img mono/toro.png
-INPUT ./homologia/homologia singular.tex
-INPUT ./homologia/homologia singular.tex
-OUTPUT homologia/homologia singular.aux
-INPUT ./homologia/homologia singular.tex
-INPUT ./homologia/homologia singular.tex
-INPUT homologia/homologia singular.tex
-INPUT ./homologia/mayer vietoris.tex
-INPUT ./homologia/mayer vietoris.tex
-OUTPUT homologia/mayer vietoris.aux
-INPUT ./homologia/mayer vietoris.tex
-INPUT ./homologia/mayer vietoris.tex
-INPUT homologia/mayer vietoris.tex
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm
-INPUT ./img mono/mayer vietoris/serpiente.png
-INPUT ./img mono/mayer vietoris/serpiente.png
-INPUT ./img mono/mayer vietoris/serpiente.png
-INPUT ./img mono/mayer vietoris/serpiente.png
-INPUT ./img mono/mayer vietoris/serpiente.png
-INPUT ./homologia/jordan.tex
-INPUT ./homologia/jordan.tex
-OUTPUT homologia/jordan.aux
-INPUT ./homologia/jordan.tex
-INPUT ./homologia/jordan.tex
-INPUT homologia/jordan.tex
-INPUT ./alexander.tex
-INPUT ./alexander.tex
-OUTPUT alexander.aux
-INPUT ./alexander.tex
-INPUT ./alexander.tex
-INPUT alexander.tex
 INPUT ./img mono/alexander/1.png
 INPUT ./img mono/alexander/1.png
 INPUT ./img mono/alexander/1.png
 INPUT ./img mono/alexander/1.png
 INPUT ./img mono/alexander/1.png
-INPUT ./schoenflies.tex
-INPUT ./schoenflies.tex
-OUTPUT schoenflies.aux
-INPUT ./schoenflies.tex
-INPUT ./schoenflies.tex
-INPUT schoenflies.tex
-INPUT ./hooked rug.tex
-INPUT ./hooked rug.tex
-OUTPUT hooked rug.aux
-INPUT ./hooked rug.tex
-INPUT ./hooked rug.tex
-INPUT hooked rug.tex
-INPUT ./img mono/hooked rug/1.png
-INPUT ./img mono/hooked rug/1.png
-INPUT ./img mono/hooked rug/1.png
-INPUT ./img mono/hooked rug/1.png
-INPUT ./img mono/hooked rug/1.png
-INPUT ./img mono/hooked rug/2.png
-INPUT ./img mono/hooked rug/2.png
-INPUT ./img mono/hooked rug/2.png
-INPUT ./img mono/hooked rug/2.png
-INPUT ./img mono/hooked rug/2.png
-INPUT ./img mono/hooked rug/esfera.png
-INPUT ./img mono/hooked rug/esfera.png
-INPUT ./img mono/hooked rug/esfera.png
-INPUT ./img mono/hooked rug/esfera.png
-INPUT ./img mono/hooked rug/esfera.png
-INPUT ./img mono/hooked rug/3.png
-INPUT ./img mono/hooked rug/3.png
-INPUT ./img mono/hooked rug/3.png
-INPUT ./img mono/hooked rug/3.png
-INPUT ./img mono/hooked rug/3.png
-INPUT ./img mono/hooked rug/4.png
-INPUT ./img mono/hooked rug/4.png
-INPUT ./img mono/hooked rug/4.png
-INPUT ./img mono/hooked rug/4.png
-INPUT ./img mono/hooked rug/4.png
 INPUT monografia.aux
-INPUT ./homologia/homologia simplicial.aux
-INPUT ./homologia/homologia simplicial.aux
-INPUT homologia/homologia simplicial.aux
-INPUT ./homologia/homologia singular.aux
-INPUT ./homologia/homologia singular.aux
-INPUT homologia/homologia singular.aux
-INPUT ./homologia/mayer vietoris.aux
-INPUT ./homologia/mayer vietoris.aux
-INPUT homologia/mayer vietoris.aux
-INPUT ./homologia/jordan.aux
-INPUT ./homologia/jordan.aux
-INPUT homologia/jordan.aux
 INPUT ./alexander.aux
 INPUT ./alexander.aux
 INPUT alexander.aux
-INPUT ./schoenflies.aux
-INPUT ./schoenflies.aux
-INPUT schoenflies.aux
-INPUT ./hooked rug.aux
-INPUT ./hooked rug.aux
-INPUT hooked rug.aux
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
@@ -466,11 +306,8 @@ INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb

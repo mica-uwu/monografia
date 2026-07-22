@@ -1,4 +1,4 @@
-\section{alexander}
+\section{Un ejemplo de Alexander}
 
 \comm{Davenma y Venema}
 
@@ -10,9 +10,9 @@ En esta sección vamos a dar un ejemplo de una bola encajada en $\R^3$ tal que e
 
 Podemos construir la imagen como una intersección numerable de cerrados encajados $\{X_n\}$. Para el resto de la construcción, va a ser conveniente definir los siguientes conjuntos auxiliares: 
 
-Sea $T$ un toro sólido estándar en $\R^3$ dado por un encaje $\varphi :\s^1\times \D^2\rightarrow \R^3$ y sea $[t_1,t_2]\subset \s^1$ un intervalo cerrado. Llamamos cilindro al conjunto $C:=\varphi([t_1,t_2]\times \D^2)$, y decimos que las tapas del cilindro son los dos discos $\tau_1 := \varphi(\{t_1\}\times\D^2)$, $\tau_2 := \varphi(\{t_2\}\times\D^2)$.
+Sea $T$ un toro sólido estándar en $\R^3$ dado por un encaje $\varphi :\s^1\times \D^2\rightarrow \R^3$ y sea $[t_1,t_2]\subset \s^1$ un intervalo cerrado. Llamamos $\textbf{cilindro contenido en T}$ al conjunto $C:=\varphi([t_1,t_2]\times \D^2)$, y decimos que los dos discos $\varphi(\{t_1\}\times\D^2)$, $\varphi(\{t_2\}\times\D^2)$ son las \textbf{tapas del cilindro}.
 
-Dado un cilindro $C$, consideramos dos toros sólidos disjuntos y enlazados $T_1$, $T_2$ contenidos en $C$ tales que $T_1\cap \partial C=\tau_1$, $T_2\cap \partial C=\tau_2$ como en la imagen $\ref{alex1}$. 
+Dado un cilindro $C$, lo que nos va a interesar en general es considerar dos toros sólidos $T'$ y $T''$ que estén contenidos en $C$, enlazados entre ellos (con un enlace simple) y con $T'\cap \partial C=\tau_1$, $T''\cap \partial C=\tau_2$ como en la imagen $\ref{alex1}$. Llamaremos $\textbf{toros enlazados en C}$ a dos toros que cumplen lo anterior.
 
 \comm{los toros tienen número de enlace 1, ver si defino número de enlace o cómo digo eso. todos los enlaces que voy a usar siempre van a ser simples, o sea van a tener número de enlace 1. seguro esta construcción se puede hacer con número de enlace arbitrario y tiene pinta que quedan no equivalentes}
 
@@ -25,22 +25,30 @@ Dado un cilindro $C$, consideramos dos toros sólidos disjuntos y enlazados $T_1
 
 Ahora si, vamos a definir nuestra sucesión de cerrados encajados: 
 
-Empezamos por $X_0$ un toro sólido estándar en $\R^3$. Identificamos en su interior un cilindro $C_0$ con dos toros enlazados $T_1$ y $T_2$, definimos $X_1:=(X_0-C)\cup T_1\cup T_2$.
+Empezamos por $X_0$ un toro sólido estándar en $\R^3$, con diámetro menor a $1$. Consideramos un cilindro $C$ contenido en $X_0$ con diámetro menor a $\frac{1}{2}$, y llamamos $T_0$ y $T_1$ a dos toros enlazados en $C$. Definimos $X_1:=(X_0-C)\cup T_0\cup T_1$.
 
-Para definir $X_2$, vamos a modificar sólamente los toros $T_1$ y $T_2$, y lo haremos de la misma forma en la que modificamos el toro $X_0$ en el paso anterior. Lo que hacemos es considerar dos cilindros $C_1\subset T_1$ y $C_2\subset T_2$, esta vez teniendo en cuenta que $\tau_1\cap C_1=\varnothing$ y $\tau_2\cap C_2=\varnothing$, es decir, que no corten a las tapas del cilindro anterior. Definimos $X_2$ como $X_1-(C_1\cup C_2)$ unido con los $4$ subtoros contenidos en $C_1$ y $C_2$.
+Para definir $X_2$, vamos a modificar sólamente los toros $T_0$ y $T_1$, y lo haremos de la misma forma en la que modificamos el toro $X_0$ en el paso anterior. Lo que hacemos es considerar dos cilindros $C_0\subset T_0$ y $C_1\subset T_1$, esta vez teniendo en cuenta que estos cilindros no intersecten a las tapas del cilindro anterior $C$, y que además tengan diámetros menores a $\frac{1}{4}$. Dentro de cada uno de estos cilindros consideramos dos toros enlazados, $T_{00}, T_{01}\subset C_0$ y $T_{10}, T_{11}\subset C_1$. Definimos $X_2$ como $$X_2:=\big[X_1-(C_0\cup C_1)\big]\cup\bigg(\bigcup\limits_{i,j\in\{0,1\}} T_{ij}\bigg)$$
 
-Seguimos iterando este proceso, 
+El resto de la sucesión lo definimos inductivamente. Asumamos que en el paso $n$ se eliminaron los $2^{n-1}$ cilindros $\{\tilde{C_\alpha} : \alpha\in \{0,1\}^{n-1}\}$ de diámetro menor a $2^{-(n-1)}$ y se reemplazaron por los $2^n$ toros sólidos $\{T_\beta : \beta\in \{0,1\}^{n}\}$. 
+
+Lo primero que hacemos para definir $X_{n+1}$ es considerar un cilindro $C_\beta$ contenido en cada $T_\beta$. Procuramos que este $C_\beta$ tenga diámetro menor a $2^{-n}$ y que no intersecte las tapas del cilindro $\tilde{C_\alpha}$ en el que $T_\beta$ estaba contenido.
+
+Ahora para cada $\beta\in\{0,1\}^n$ consideramos $T_{\beta 0}$ y $T_{\beta 1}$ dos toros enlazados en $C_\beta$. Identificamos $\beta 0$ y $\beta 1$ con los elementos de $\{0,1\}^{n+1}$ que coinciden con $\beta$ en los primeros $n$ lugares y son $0$ o $1$ en el último, respectivamente.
+
+Definimos entonces $X_{n+1}$ como $$X_{n+1}:=\bigg[X_n-\bigg(\bigcup\limits_{\beta\in\{0,1\}^n} C_\beta \bigg)\bigg]\cup\bigg( \bigcup\limits_{\gamma\in\{0,1\}^{n+1}}T_\gamma\bigg)$$
+
+Llamamos a $B=\bigcap\limits_{n=1}^\infty X_n$ la \textbf{bola de Alexander}.
+
+\duda{acá hay un detalle que no dije que es que los subtoros enlazados hay que tomarlos con cuidado para que después pueda considerar un cilindro contenido en cada uno con el diámetro acotado como quiero. si tomara los subtoros super gordos no me sirve aa}
+
+% Llamamos $S=\partial B$ la esfera de Alexander. 
+
+Veamos que $\pi_1(B^c)$ es no trivial: Tomamos $J$ una curva cerrada que sea no trivial en el complemento del toro $X_0$. Supongamos $J$ es trivial en $B^c$ y consideramos su homotopía $H$ a un punto. 
             
-Repito este proceso con $T_1$ y $T_2$, y al resultado lo llamo $X_3$. Observamos que $X_n$ van quedando encajadas. Seguimos haciendo esto procurando hacer que
-tachado: los diámetros internos de los $T_i$ tiendan a 0 los diámetros de las pillboxes tiendan a $0$ y llamamos $B=\bigcap\limits_{n=1}^\infty X_n$, esta es la bola de Alexander. 
+El conjunto $\im(H)$ es un compacto contenido en $B^c$. Observar que $B^c$ cumple $$B^c=\left(\bigcap\limits_{n=1}^\infty X_n\right)^c=\bigcup\limits_{n=1}^\infty X_n^c$$ 
+Como $\{X_n^c\}$ cubre $\im(H)$, entonces existe un subcubrimiento finito $\{X_1^c,\dots, X_N^c\}$ para algún $N\in\N$. Observar que todos los $\{X_n\}$ son cerrados y cumplen $X_{n+1}\subset X_n$. Por lo tanto, la familia $\{X_n^c\}$ está compuesta por abiertos encajados. Por esta razón podemos reducir el subcubrimiento $\{X_1^c,\dots, X_N^c\}$ a uno compuesto únicamente por el elemento $X_N^c$. 
 
-Llamamos $S=\partial B$ la esfera de Alexander. 
-
-Veamos que $\pi_1(B^c)\neq\{1\}$: Tomamos $J$ una curva cerrada que es no trivial en el complemento de $X_1$ (toro). Supongamos $J$ es trivial en $B^c$ y consideramos su homotopía $H$ a un punto. 
-            
-$Im(H)$ es un compacto tal que $Im(H)\subset B^c=\left(\bigcap\limits_{n=1}^\infty X_n\right)^c=\bigcup\limits_{n=1}^\infty X_n^c$. Observamos que $\{X_n^c\}$ es una familia de abiertos encajados, y por lo tanto $Im(H)$ está contenida en una cantidad finita de ellos. 
-
-Esto implica que existe un $N\in\N$ tal que $Im(H)\subset X_N^c$, es decir, $J$ es contractible en $X_N^c$. Por inducción podemos ver que esto es absurdo. 
+Encontramos entonces un $N\in\N$ tal que $\im(H)\subset X_N^c$, es decir, $J$ es contractible en $X_N^c$. Por inducción podemos ver que esto es absurdo. 
 
 Ahora veamos que $B$ es una 3-célula: Pensemos $B$ como unión de cosas en vez de intersección. 
 
