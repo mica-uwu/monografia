@@ -10,9 +10,9 @@ Veamos esto en detalle:
 
 Sean $f, g$ dos mapas de $[0,1]$ en $X$. Notamos $f\simeq g$ si existe una homotopía de extremos fjos entre $f$ y $g$. Notamos $f\sim g$ si $f$ y $g$ son homólogos como $1$-símplices en $X$, es decir, si existe un $2$-símplice $\sum n_i\sigma_i$ en $C_2(X)$ tal que $\partial\sum n_i\sigma_i = f-g$.
 
-Primero que nada queremos definir una función $h:\pi_1(X,x_0)\to H_1(X)$ que potencialmente sea un homomorfismo de grupos. Dada una clase $[f]_{\pi_1}$ en $\pi_1(X,x_0)$, consideramos un representante de esa clase $f:[0,1]\to X$ y definimos $h([f]_{\pi_1}):=[f]_{H_1}$ como la clase de $f$ en el primer grupo de homología.
+Dados $x_0\in X, y_0\in\s^1$ definimos el espacio de lazos $\Omega(X,x_0)$ como las funciones continuas de $\s^1$ en $X$ que mandan $y_0$ a $x_0$. Si tomamos cociente por la relación de homotopía a extremos fijos obtenemos $\pi_1(X,x_0)$.
 
-Observemos algunas características de estas relaciones.
+Definimos la función $h\colon\Omega(X,x_0)\to C_1(X)$ que manda un lazo $f\in\Omega(X,x_0)$ en un $1$-símplice singular, precomponiendo con la proyección $\Delta^1\mapsto\s^1$. Observar que $\partial h(f)=0$. En lo que sigue vamos a probar que si $f\simeq g$ entonces $h(f)\sim h(g)$, y que $\tilde{h}$ manda el producto en $\pi_1(X,x_0)$ a la suma en $H_1(X)$. Por lo tanto $h$ baja al cociente como un morfismo $\tilde{h}:\pi_1(X,x_0)\to H_1(X,x_0)$.
 
 \begin{enumerate}[wide, labelwidth=!, labelindent=0pt]
     
@@ -21,11 +21,11 @@ Observemos algunas características de estas relaciones.
 
 Explícitamente, si $f(x)=x_0$ para todo $x\in [0,1]$, tenemos $\sigma:\Delta^2\to X$ tal que $\sigma(x)=x_0$ para todo $x\in\Delta^2$. En ese caso, si notamos $\Delta^2 = [v_0,v_1,v_2]$, tenemos $\partial\sigma = \sigma|_{[v_1,v_2]} - \sigma|_{[v_0,v_2]} + \sigma|_{[v_0,v_1]}$ pasando por el homeomorfismo que identifica cada par $[v_i,v_j]$ con $[0,1]$ y preserva la orientación que habíamos definido para los símplices, tenemos que $\partial\sigma = f - f + f = f$.
 
-\item Si $f\simeq g$, entonces $f\sim g$.
+\item\label{ab2} Si $f\simeq g$, entonces $f\sim g$.
 
 Para ver esto, consideramos $F:[0,1]^2 \to X$ la homotopía a extremos fijos que manda $f$ en $g$. Si llamamos $v_0,v_1,v_2,v_3$ a los vértices de $[0,1]^2$ con $v_0:=(0,0)\; , v_1:=(0,1)\; ,v_2:=(1,1)\; ,v_3:=(1,0)$, podemos subdividir $[0,1]^2$ en dos $2$-símplices $[v_0,v_2,v_3]$ y $[v_0,v_1,v_3]$ como muestra la imagen \ref{h11}.
 
-\begin{figure}[h!]
+\begin{figure}
     	\centering
     	\includegraphics[width=0.25\linewidth]{img mono/abelianizado/h11.png}
     	\caption{Subdividimos el dominio de la homotopía en dos $2$-símplices}
@@ -43,7 +43,9 @@ Por definición, $\sigma_1|_{[v_0,v_3]}$ y $\sigma_2|_{[v_0,v_3]}$ son la misma 
 
 Esto nos deja con $$\partial (\sigma_2 - \sigma_1) = \sigma_2|_{[v_2,v_3]} - \sigma_1|_{[v_0,v_1]} = g - f$$ que es exáctamente lo que buscábamos.
 
-\item Si tomamos la concatenación $f\cdot g$ de los caminos $f$ y $g$, se cumple que $f\cdot g \sim f+g$.
+\item\label{ab3} Recordamos que el producto en $\pi_1(X)$ de dos clases representadas por caminos $f$ y $g$ se define como la clase de homotopía de la concatenación de ambos caminos.
+
+Si tomamos la concatenación $f\cdot g$ de los caminos $f$ y $g$, se cumple que $f\cdot g \sim f+g$.
 
 Para probar esto consideramos un $2$-símplice $\Delta^2:=[v_0,v_1,v_2]$ y definimos $\sigma:\Delta^2\to X$ como ${(f\cdot g)}\circ p$, siendo $p$ la proyección ortogonal sobre la arista $[v_0,v_2]$ y $f\cdot g:[v_0,v_2]\to X$. En ese caso $$\partial\sigma = \sigma_{[v_1,v_2]}-\sigma_{[v_0,v_2]}+\sigma_{[v_0,v_1]}$$
 
@@ -56,14 +58,29 @@ Analicemos cada término.
 
 Por lo tanto obtuvimos que $\partial\sigma = g - (f\cdot g) + f$ y entonces $f\cdot g \sim f+g$. La imagen \ref{h12} ilustra esto.
 
-\begin{figure}[h!]
+\begin{figure}
     	\centering
     	\includegraphics[width=0.25\linewidth]{img mono/abelianizado/h12.png}
     	\caption{Definimos la imagen de $\sigma$}
     	\label{h12}
 \end{figure}
 
-Recordamos que el producto en $\pi_1(X)$ de dos clases representadas por caminos $f$ y $g$ se define como la clase de homotopía de la concatenación de ambos caminos.
+\item\label{ab4} Si notamos $\overline{f}$ al inverso para la concatenación, entonces con las observaciones anteriores tenemos $f+\overline{f}\sim f\cdot\overline{f}\sim 0$, y por lo tanto $\overline{f}\sim -f$. 
 
 \end{enumerate}
 
+Veamos ahora que si $X$ es conexo por caminos entonces $\tilde{h}\colon\pi_1(X)\to H_1(X)$ es sobreyectiva.
+
+Sea $\sum n_i\sigma_i\in C_1(X)$ un representante de alguna clase de $H_1(X)$. Reetiquetando los $\sigma_i$ podemos asumir que todos los $n_i$ son $1$ o $-1$ (cambiamos $n_i\sigma_i$ por $\sigma_{i_1},\dots,\sigma_{i_{n_i}}$ con $\sigma_{i_j}=\sigma_i \fall i\in\{1,\dots,n_i\}$). Además, por (\ref{ab4}) podemos tomar los $n_i$ siempre como $1$.
+
+Como $\partial(\sum n_i\sigma_i)=0$, dado $\sigma_i$ con $\partial\sigma_i=0$ tiene que existir algún $j$ tal que la concatencación $\sigma_i\cdot\sigma_j$ esté bien definida. Iterando el razonamiento y reetiquetando cada vez que tomamos una concatenación, obtenemos una suma $\sum\sigma_i$ compuesta únicamente por lazos. 
+
+Como $X$ es conexo por caminos, podemos tomar un camino $\gamma_i$ de $x_0$ a algún punto en la imagen de $\sigma_i$. Por (\ref{ab3}) y (\ref{ab4}) tenemos que $\gamma_i\cdot\sigma_i\cdot\overline{\gamma_i}\sim\sigma_i$, y por lo tanto podemos asumir que todos los lazos $\sigma_i$ tienen punto base $x_0$.
+
+Finalmente, por \ref{ab3} podemos combinar todos los lazos en un único $\sigma\colon\Delta^1\to X$, cuya composición con la proyección $\Delta^1\mapsto\s^1$ es su preimagen por $h$. Con esto obtuvimos que $\tilde{h}\colon\pi_1(X)\to H_1(X)$ es sobreyectivo.
+
+Como $H_1(X)$ es abeliano, entonces el conmutador de $pi_1(X)$ se anula por el morfismo. Veamos que el núcleo de $\tilde{h}$ es exactamente el conmutador de $pi_1(X)$. 
+
+Sea $[f]\in\pi_1(X)$ tal que $\tilde{h}([f])=0$, entonces $f$ vista como una $1$-cadena es homóloga a $0$, es decir, existe una $2$-cadena $\sum n_i\sigma_i$ tal que $\partial\left(\sum n_i\sigma_i\right)=f$.
+
+\comm{tengo que terminar de escribir esto}
