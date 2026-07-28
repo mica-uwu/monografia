@@ -1,0 +1,42 @@
+-Introducción a la homología simplicial y singular
+
+En esta parte van sólamente definiciones, ejemplos y alguna propiedad que se verifica rápido. Es todo lo que se necesita para definir los grupos de homología simplicial y singular.
+
+Referencia: Hatcher
+
+-Sucesión de Mayer Vietoris y homología de esferas
+
+Esto no lo había puesto porque lo agrupaba con el punto siguiente. La idea es que la sucesión de MV se usa tanto para calcular la homología de las esferas como para probar Jordan-Brouwer después.
+
+La existencia de la sucesión de MV se deduce de un resultado de álgebra que es el lema de la serpiente. Este lema pensaba citarlo sólamente, porque es una prueba de persecución del diagrama que se puede hacer de forma general para categorías abelianas. La prueba entera de esto está en el Hatcher, y también más en general en el Categories for the Working Mathemathician.
+
+Teniendo el lema de la serpiente, la sucesión de MV surge de tomar una sucesión específica entre complejos de cadena, probar que esta sucesión es exacta y aplicar el lema de la serpiente. Esto si lo iba a poner en detalle, y la referencia es el Hatcher, pág 149.
+
+-Teorema de separación de Jordan Brouwer, que caracteriza la homología de los complementos de encajes entre esferas de cualquier codimensión
+
+Esta prueba va entera, la referencia es el Hatcher, proposición 2B.1, pág. 169.
+
+-El abelianizado del grupo fundamental isomorfo al primer grupo de homología si el espacio es conexo por caminos.
+
+También está en el Hatcher, el teo 2A.1 que empieza en la pág. 166.
+
+-Teorema de Schoenflies generalizado: Dado un encaje h de (S^n x I) en S^{n+1}, la clausura de cada componente del complemento de h(S^n x I) es una (n+1)-bola.
+
+Referencia: El paper de Morton Brown, "A proof of the generalized Schoenflies theorem".
+
+-Para dimensión mayor a 3, el conjunto de puntos no localmente planos de un encaje de codimensión 1 entre esferas, de ser no trivial, es por lo menos un conjunto de Cantor. Además, este conjunto de cantor C debe cumplir que para C o f(C) ningún homeomorfismo de todo el espacio manda el conjunto en uno contenido en un arco poligonal.
+
+Referencia: El paper de Kirby, "On the Set of Non-Locally Flat Points of a Submanifold of Codimension One".
+
+Esto capaz no da para ponerlo en detalle, lo voy a dejar para lo último. Pero me parece re lindo para completar el panorama de cómo se ven los encajes topológicos.
+
+-Ejemplos de encajes de S^2 en S^3: Para todas voy a dar las definiciones de los encajes y probar que son esferas. Voy a hacer observaciones sobre qué regiones complementarias son variedades y sobre el conjunto de puntos no localmente planos de cada encaje. Van las referencias para cada uno.
+
+*Esfera de Alexander: La referencia es el Hatcher, ej. 2B.2, pág 170, y el libro de Daverman y Venema "Embeddings in manifolds", sección 2.1.
+
+*Esfera de Antoine: También está en el libro de Daverman y Venema, sección 2.1.
+
+*Alfombra de Bing: Está en detalle en el paper "A wild surface each of whose arcs is tame" y también en el libro de Daverman y Venema, sección 2.8.
+
+*Esfera de Fox-Artin: Está en detalle en el libro de Daverman y Venema, sección 2.8.
+

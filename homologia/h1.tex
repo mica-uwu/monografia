@@ -2,9 +2,9 @@
 
 Recordamos que el grupo fundamental de un espacio $X$ está dado por las clases de homotopía de los mapas $f:[0,1]\to X$ con $f(0)=f(1)=x_0$ para algún punto predefinido $x_0\in X$. Estos mapas también pueden ser interpretados como $1$-símplices singulares en $X$, que además van a ser ciclos ya que $\partial f = f(1)-f(0) =0$.
 
-Va a resultar que esta asociación de curvas cerradas a $1$-símplices singulares es un homomorfismo de grupos entre $\pi_1(X,x_0)$ y $H_1(X)$. 
+Va a resultar que esta asociación de curvas cerradas a $1$-símplices singulares es un morfismo de grupos entre $\pi_1(X,x_0)$ y $H_1(X)$. 
 
-Si el espacio $X$ es conexo por caminos, entonces $\pi_1(X,x_0)$ es independiente del punto base $x_0$ y lo notamos simplemente $\pi_1(X)$. En ese caso el homomorfismo anterior va a resultar sobreyectivo, y su núcleo va a ser el conmutador de $\pi_1(X)$. Por lo tanto, cuando $X$ es conexo por caminos, obtenemos un isomorfismo entre $H_1(X)$ y el abelianizado del $\pi_1(X)$, que notamos $\pi_1(X)_{ab}$. 
+Si el espacio $X$ es conexo por caminos, entonces $\pi_1(X,x_0)$ es independiente del punto base $x_0$ y lo notamos simplemente $\pi_1(X)$. En ese caso el morfismo anterior va a resultar sobreyectivo, y su núcleo va a ser el conmutador de $\pi_1(X)$. Por lo tanto, cuando $X$ es conexo por caminos, obtenemos un isomorfismo entre $H_1(X)$ y el abelianizado del $\pi_1(X)$, que notamos $\pi_1(X)_{ab}$. 
 
 Veamos esto en detalle:
 
@@ -12,7 +12,11 @@ Sean $f, g$ dos mapas de $[0,1]$ en $X$. Notamos $f\simeq g$ si existe una homot
 
 Dados $x_0\in X, y_0\in\s^1$ definimos el espacio de lazos $\Omega(X,x_0)$ como las funciones continuas de $\s^1$ en $X$ que mandan $y_0$ a $x_0$. Si tomamos cociente por la relación de homotopía a extremos fijos obtenemos $\pi_1(X,x_0)$.
 
-Definimos la función $h\colon\Omega(X,x_0)\to C_1(X)$ que manda un lazo $f\in\Omega(X,x_0)$ en un $1$-símplice singular, precomponiendo con la proyección $\Delta^1\mapsto\s^1$. Observar que $\partial h(f)=0$. En lo que sigue vamos a probar que si $f\simeq g$ entonces $h(f)\sim h(g)$, y que $\tilde{h}$ manda el producto en $\pi_1(X,x_0)$ a la suma en $H_1(X)$. Por lo tanto $h$ baja al cociente como un morfismo $\tilde{h}:\pi_1(X,x_0)\to H_1(X,x_0)$.
+Definimos la función $h\colon\Omega(X,x_0)\to C_1(X)$ que manda un lazo $f\in\Omega(X,x_0)$ en un $1$-símplice singular, precomponiendo con la proyección $\Delta^1\mapsto\s^1$. 
+
+Observar que $\partial h(f)=0$, entonces la imagen de $h$ es un ciclo. En lo que sigue vamos a probar que si $f\simeq g$ entonces $h(f)\sim h(g)$, y que $\tilde{h}$ manda el producto en $\pi_1(X,x_0)$ a la suma en $H_1(X)$. Por lo tanto $h$ baja al cociente como un morfismo $\tilde{h}:\pi_1(X,x_0)\to H_1(X,x_0)$.
+
+Después vamos a probar que el núcleo de $\tilde{h}$ es exactamente el conmutador de $pi_1(X)$, y por lo tanto $\tilde{h}$ es un isomorfismo entre $H_1$ y $\pi_1^{ab}$.
 
 \begin{enumerate}[wide, labelwidth=!, labelindent=0pt]
     
@@ -79,8 +83,9 @@ Como $X$ es conexo por caminos, podemos tomar un camino $\gamma_i$ de $x_0$ a al
 
 Finalmente, por \ref{ab3} podemos combinar todos los lazos en un único $\sigma\colon\Delta^1\to X$, cuya composición con la proyección $\Delta^1\mapsto\s^1$ es su preimagen por $h$. Con esto obtuvimos que $\tilde{h}\colon\pi_1(X)\to H_1(X)$ es sobreyectivo.
 
-Como $H_1(X)$ es abeliano, entonces el conmutador de $pi_1(X)$ se anula por el morfismo. Veamos que el núcleo de $\tilde{h}$ es exactamente el conmutador de $pi_1(X)$. 
+Como $H_1(X)$ es abeliano, entonces el conmutador de $\pi_1(X)$ se anula por el morfismo. Veamos que eso es lo único que se anula, es decir, que el núcleo de $\tilde{h}$ es exactamente el conmutador de $pi_1(X)$. 
 
-Sea $[f]\in\pi_1(X)$ tal que $\tilde{h}([f])=0$, entonces $f$ vista como una $1$-cadena es homóloga a $0$, es decir, existe una $2$-cadena $\sum n_i\sigma_i$ tal que $\partial\left(\sum n_i\sigma_i\right)=f$.
+Sea $[f]\in\pi_1(X)$ tal que $\tilde{h}([f])=0$, entonces $f$ vista como una $1$-cadena es homóloga a $0$, es decir, existe una $2$-cadena $\sum n_i\sigma_i$ tal que $\partial\left(\sum n_i\sigma_i\right)=f$. Igual que antes podemos tomar los $n_i=\pm 1$.
+
 
 \comm{tengo que terminar de escribir esto}
