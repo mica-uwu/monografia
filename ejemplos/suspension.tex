@@ -1,0 +1,35 @@
+\section{Suspensión de ejemplos}
+
+Dado un espacio $X$, llamamos \textbf{cono de X} y notamos $C(X)$ al espacio cociente obtenido a partir de $X\times[0,1]$ al colapsar $X\times\{1\}$ a un punto. Llamamos \textbf{base del cono} al conjunto $X\times\{0\}$.
+
+Llamamos \textbf{suspensión de X} y notamos $\Sigma(X)$ al cociente obtenido a partir de $X\times [0,1]$ al colapsar $X\times\{0\}$, $X\times\{1\}$ a puntos distintos. Equivalentemente, podemos pensarlo como el pegado de dos conos por la base.
+
+Dada una función $f:X\to Y$, $\Sigma f$ es la \textbf{suspensión de f}, suspensión de $X$ e $Y$ me induce una función $\Sigma f:\Sigma(X)\to\Sigma(Y)$, que es el cociente de $f\times\id:X\times[0,1]\to Y\times[0,1]$ obtenido colapsando $(X,\{0\}),(X,\{1\}),(Y,\{0\}),(Y,\{1\})$ a puntos distintos.
+
+Veamos que si el complemento de la imagen de un encaje $h:\s^n\to\s^{n+1}$ tiene $\pi_1$ no trivial, entonces la suspensión de $\Sigma h$ cumple lo mismo.
+
+\begin{obs}
+La suspensión de una esfera $\s^n$ es $\Sigma(\s^n)\simeq\s^{n+1}$. Viendo la suspensión como dos conos pegados por la base, esto es directo de observar que $C(\s^n)\simeq \D^{n+1}$.
+\end{obs}
+
+\comm{digo algo más?}
+
+Entonces para un encaje $h:\s^n\to\s^{n+1}$, la suspensión es nuevamente un encaje $\Sigma h:\s^{n+1}\to\s^{n+2}$. 
+
+Calculemos $\pi_1\left(\s^{n+2}-\im(\Sigma h)\right)$
+
+Consideremos el conjunto $\s^{n+2}-\im(\Sigma h)\simeq \left(\s^{n+1}\times [0,1]/\sim\right) - h(\s^n)\times [0,1]/\sim$
+
+Dado $t\in [0,1]$, $(h,\id)(\s^n,t)$ $(h,\id)(\s^n,t)$ es un encaje de $\s^n$, y  complemento no trivial en $ (\s^{n+1},t)$.
+
+Recordamos el teorema de Van Kampen, en este caso vamos a obviar las hipótesis sobre descomposiciones conformadas por más de dos abiertos:
+
+\begin{teo}
+Dado $X=A\cup B$ unión de abiertos con $A$, $B$, $A\cap B$ conexos por caminos, tenemos el isomorfismo $\pi_1(X)\simeq \pi_1(A)\ast\pi_1(B)/[i_{AB},i_{BA}] $
+\end{teo}
+
+\comm{digo que van kampen es un pushout?}
+\comm{usar MV para ver que la suspensión me hace un shift en los grupos de homología}
+%\comm{corolario 4.24 Hatcher}
+
+
