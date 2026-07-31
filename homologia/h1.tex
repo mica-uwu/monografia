@@ -1,6 +1,6 @@
 \section{Relación entre $\pi_1(X)$ y $H_1(X)$}
 
-Recordamos que el grupo fundamental $\pi_1(X,x_0)$ de un espacio $X$ con punto base $x_0\in X$ está dado por las clases de homotopía de los mapas $\gamma:[0,1]\to X$ con $\gamma(0)=gamma(1)=x_0$. Estos mapas también pueden ser interpretados como $1$-símplices singulares en $X$, es decir funciones continuas $\sigma_\gamma:\Delta_1\to X$, que además van a ser ciclos ya que $\partial \sigma_\gamma = \sigma_\gamma(1)-\sigma_\gamma(0) =0$.
+Recordamos que el grupo fundamental $\pi_1(X,x_0)$ de un espacio $X$ con punto base $x_0\in X$ está dado por las clases de homotopía de los mapas $\gamma:[0,1]\to X$ con $\gamma(0)=\gamma(1)=x_0$. Estos mapas también pueden ser interpretados como $1$-símplices singulares en $X$, es decir funciones continuas $\sigma_\gamma:\Delta_1\to X$, que además van a ser ciclos ya que $\partial \sigma_\gamma = \sigma_\gamma(1)-\sigma_\gamma(0) =0$.
 
 Va a resultar que esta asociación de curvas cerradas a $1$-símplices singulares es un morfismo de grupos entre $\pi_1(X,x_0)$ y $H_1(X)$. 
 
@@ -16,11 +16,12 @@ Definimos la función $h\colon\Omega(X,x_0)\to C_1(X)$ que manda un lazo $f\in\O
 
 Observar que $\partial h(f)=0$, entonces la imagen de $h$ es un ciclo. En lo que sigue vamos a probar que si $f\simeq g$ entonces $h(f)\sim h(g)$, y que $\tilde{h}$ manda el producto en $\pi_1(X,x_0)$ a la suma en $H_1(X)$. Por lo tanto $h$ baja al cociente como un morfismo $\tilde{h}:\pi_1(X,x_0)\to H_1(X,x_0)$.
 
-Después vamos a probar que el núcleo de $\tilde{h}$ es exactamente el conmutador de $pi_1(X)$, y por lo tanto $\tilde{h}$ es un isomorfismo entre $H_1$ y $\pi_1^{ab}$.
+Después vamos a probar que el núcleo de $\tilde{h}$ es exactamente el conmutador de $\pi_1(X)$, y por lo tanto $\tilde{h}$ es un isomorfismo entre $H_1$ y $\pi_1^{ab}$.
 
-\begin{enumerate}[wide, labelwidth=!, labelindent=0pt]
+Veamos todo lo necesario para asegurar que $\tilde{h}:\pi_1(X,x_0)\to H_1(X)$ es un morfismo de grupos:
+
+\begin{enumerate}[wide, labelwidth=0pt, labelindent=0pt]
     
-
 \item\label{ab1} Si $f$ es la función constante, entonces $f\sim 0$. Esto se debe a que el mapa constante $\sigma:\Delta^2\to X$ es un $2$-símplice singular cuyo borde coincide con $f$. 
 
 Explícitamente, si $f(x)=x_0$ para todo $x\in [0,1]$, tenemos $\sigma:\Delta^2\to X$ tal que $\sigma(x)=x_0$ para todo $x\in\Delta^2$. En ese caso, si notamos $\Delta^2 = [v_0,v_1,v_2]$, tenemos $\partial\sigma = \sigma|_{[v_1,v_2]} - \sigma|_{[v_0,v_2]} + \sigma|_{[v_0,v_1]}$ pasando por el homeomorfismo que identifica cada par $[v_i,v_j]$ con $[0,1]$ y preserva la orientación que habíamos definido para los símplices, tenemos que $\partial\sigma = f - f + f = f$.
@@ -83,13 +84,29 @@ Como $X$ es conexo por caminos, podemos tomar un camino $\gamma_i$ de $x_0$ a al
 
 Finalmente, por \ref{ab3} podemos combinar todos los lazos en un único $\sigma\colon\Delta^1\to X$, cuya composición con la proyección $\Delta^1\mapsto\s^1$ es su preimagen por $h$. Con esto obtuvimos que $\tilde{h}\colon\pi_1(X)\to H_1(X)$ es sobreyectivo.
 
-Como $H_1(X)$ es abeliano, entonces el conmutador de $\pi_1(X)$ se anula por el morfismo. Veamos que eso es lo único que se anula, es decir, que el núcleo de $\tilde{h}$ es exactamente el conmutador de $pi_1(X)$. 
+Con esto tenemos que $\tilde{h}:\pi_1(X,x_0)\to H_1(X)$ es un morfismo de grupos sobreyectivo. Además, como $H_1(X)$ es abeliano, entonces el conmutador de $\pi_1(X)$ se anula al pasar por el morfismo. Esto nos dice que $\tilde{h}$ baja nuevamente al cociente como un morfismo sobreyectivo $\tilde{\tilde{h}}:\pi_1^{ab}(X,x_0)\to H_1(X)$
 
-Sea $[f]\in\pi_1(X)$ tal que $\tilde{h}([f])=0$, entonces $f$ vista como una $1$-cadena es homóloga a $0$, es decir, existe una $2$-cadena $\sum n_i\sigma_i$ tal que $\partial\left(\sum n_i\sigma_i\right)=f$. Igual que antes podemos tomar los $n_i= 1$.
 
-Si llamamos $\tau_{i0}-\tau_{i1}-\tau_{i2} =\partial \sigma_i$, entonces 
+lo que resta probar es que $\Ker(\tilde{h})$ es el conmutador de $\pi_1(X)$.
 
-$$f=\partial\left(\sum\sigma_i \right)=\sum(\tau_{i0}-\tau_{i1}-\tau_{i2})$$
+Como $H_1(X)$ es abeliano, entonces ya está dado que el conmutador de $\pi_1(X)$ se anula por el morfismo. Esto nos dice que $\tilde{h}:\pi_1(X,x_0)\to H_1(X)$ baja al abelianizado de $\pi_1(X)$ Veamos que eso es lo único que se anula, es decir, que el núcleo $\Ker(\tilde{h})$ es exactamente el conmutador de $\pi_1(X)$. 
+
+Construyamos una inversa para $\tilde{h}$. Para eso, primero construimos un candidato $\phi: C_1(X)\to \Omega(X,x_0)$ que baje al cociente como un morfismo $\tilde{\phi}: H_1(X)\to\pi_1(X,x_0)$.
+
+Definamos $\phi:C_1(X)\to \Omega(X,x_0)$. Lo que hay que hacer es identificar $1$-cadenas con curvas cerradas con base $x_0$. Vamos a definirlo para los $1$-símplices singulares $\sigma:\Delta^1\to X$. Como $C_1(X)$ es el grupo abeliano libre generado por los $\sigma:\Delta^1\to X$, entonces definirla para cada uno de estos $1$-símplices es suficiente para extenderlo a un morfismo en todo $C_1(X)$.
+
+Para esto definimios unos caminos que nos van a resultar convenientes. Dado $x\in X$, definimos $\gamma_x:[0,1]\to X$ como un camino tal que $\gamma_x(0)=x_0$ y $\gamma_x(1)=x$.
+
+Sea $\sigma:\Delta^1\to X$, identificamos $\Delta^1$ con $[0,1]$ mediante un homeomorfismo. Precomponiendo con este homeo podemos pensar $\sigma$ como un camino $\sigma:[0,1]\to X$.
+
+Si llamamos $\sigma(0)=y_0$, $\sigma(1)=y_1$, definimos $\phi(\sigma)$ como la concatenación $\gamma_{y_0}\cdot\sigma\cdot (\gamma_{y_1})^{-1}:[0,1]\to X$. Observamos que $\phi(\sigma)(0)=\phi(\sigma)(1)=x_0$, y por lo tanto podemos pensar $\gamma_{y_0}\cdot\sigma\cdot \overline{\gamma_{y_1}}:[0,1]\to X$ como una función de $\s^1$ en $X$, que manda $y_0\in \s^1$ a $x_0\in X$. Con esto concluimos que tenemos un morfismo $\phi:C_1(X)\to \Omega(X,x_0)$
+
+\begin{figure}
+    	\centering
+    	\includegraphics[width=0.75\linewidth]{img mono/abelianizado/h13.png}
+    	\caption{Así definimos la inversa}
+    	\label{h13}
+\end{figure}
 
 
 \comm{tengo que terminar de escribir esto}
