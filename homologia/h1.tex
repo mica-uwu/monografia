@@ -1,6 +1,6 @@
 \section{Relación entre $\pi_1(X)$ y $H_1(X)$}
 
-Recordamos que el grupo fundamental de un espacio $X$ está dado por las clases de homotopía de los mapas $f:[0,1]\to X$ con $f(0)=f(1)=x_0$ para algún punto predefinido $x_0\in X$. Estos mapas también pueden ser interpretados como $1$-símplices singulares en $X$, que además van a ser ciclos ya que $\partial f = f(1)-f(0) =0$.
+Recordamos que el grupo fundamental $\pi_1(X,x_0)$ de un espacio $X$ con punto base $x_0\in X$ está dado por las clases de homotopía de los mapas $\gamma:[0,1]\to X$ con $\gamma(0)=gamma(1)=x_0$. Estos mapas también pueden ser interpretados como $1$-símplices singulares en $X$, es decir funciones continuas $\sigma_\gamma:\Delta_1\to X$, que además van a ser ciclos ya que $\partial \sigma_\gamma = \sigma_\gamma(1)-\sigma_\gamma(0) =0$.
 
 Va a resultar que esta asociación de curvas cerradas a $1$-símplices singulares es un morfismo de grupos entre $\pi_1(X,x_0)$ y $H_1(X)$. 
 
@@ -85,7 +85,11 @@ Finalmente, por \ref{ab3} podemos combinar todos los lazos en un único $\sigma\
 
 Como $H_1(X)$ es abeliano, entonces el conmutador de $\pi_1(X)$ se anula por el morfismo. Veamos que eso es lo único que se anula, es decir, que el núcleo de $\tilde{h}$ es exactamente el conmutador de $pi_1(X)$. 
 
-Sea $[f]\in\pi_1(X)$ tal que $\tilde{h}([f])=0$, entonces $f$ vista como una $1$-cadena es homóloga a $0$, es decir, existe una $2$-cadena $\sum n_i\sigma_i$ tal que $\partial\left(\sum n_i\sigma_i\right)=f$. Igual que antes podemos tomar los $n_i=\pm 1$.
+Sea $[f]\in\pi_1(X)$ tal que $\tilde{h}([f])=0$, entonces $f$ vista como una $1$-cadena es homóloga a $0$, es decir, existe una $2$-cadena $\sum n_i\sigma_i$ tal que $\partial\left(\sum n_i\sigma_i\right)=f$. Igual que antes podemos tomar los $n_i= 1$.
+
+Si llamamos $\tau_{i0}-\tau_{i1}-\tau_{i2} =\partial \sigma_i$, entonces 
+
+$$f=\partial\left(\sum\sigma_i \right)=\sum(\tau_{i0}-\tau_{i1}-\tau_{i2})$$
 
 
 \comm{tengo que terminar de escribir esto}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.5)  29 JUL 2026 03:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.5)  30 JUL 2026 23:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -482,7 +482,7 @@ Package: enumitem 2025/02/06 v3.11 Customized lists
 \enitdp@description=\count341
 )
 \c@df=\count342
- (monografia.aux (homologia/homologia simplicial.aux) (homologia/homologia singular.aux) (homologia/mayer vietoris.aux) (homologia/jordan.aux) (homologia/h1.aux) (ejemplos/suspension.aux) (ejemplos/alexander.aux) (schoenflies/schoenflies.aux))
+ (monografia.aux (homologia/h1.aux))
 \openout1 = `monografia.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
@@ -570,142 +570,6 @@ Package caption Info: End \AtBeginDocument code.
 
 
 ]
-\openout2 = `"homologia/homologia simplicial.aux"'.
-
- (homologia/homologia simplicial.tex
-Cap\'itulo 1
-[1
-
-
-
-]
-<img mono/simplices.png, id=26, 3657.665pt x 1268.74pt>
-File: img mono/simplices.png Graphic file (type png)
-<use img mono/simplices.png>
-Package pdftex.def Info: img mono/simplices.png  used on input line 37.
-(pdftex.def)             Requested size: 209.12775pt x 72.53963pt.
-<img mono/simplices estandar.png, id=27, 3501.08pt x 1336.995pt>
-File: img mono/simplices estandar.png Graphic file (type png)
-<use img mono/simplices estandar.png>
-Package pdftex.def Info: img mono/simplices estandar.png  used on input line 54.
-(pdftex.def)             Requested size: 209.12775pt x 79.84901pt.
- [2 <./img mono/simplices.png> <./img mono/simplices estandar.png>] [3]
-<img mono/cociente.png, id=36, 3625.545pt x 1951.29pt>
-File: img mono/cociente.png Graphic file (type png)
-<use img mono/cociente.png>
-Package pdftex.def Info: img mono/cociente.png  used on input line 93.
-(pdftex.def)             Requested size: 167.29964pt x 90.03732pt.
-<img mono/cociente2.png, id=37, 3625.545pt x 1951.29pt>
-File: img mono/cociente2.png Graphic file (type png)
-<use img mono/cociente2.png>
-Package pdftex.def Info: img mono/cociente2.png  used on input line 96.
-(pdftex.def)             Requested size: 167.29964pt x 90.03732pt.
-<img mono/norient2.png, id=39, 1472.50125pt x 1641.13126pt>
-File: img mono/norient2.png Graphic file (type png)
-<use img mono/norient2.png>
-Package pdftex.def Info: img mono/norient2.png  used on input line 121.
-(pdftex.def)             Requested size: 83.64981pt x 93.20488pt.
-<img mono/norient4.png, id=40, 1472.50125pt x 1641.13126pt>
-File: img mono/norient4.png Graphic file (type png)
-<use img mono/norient4.png>
-Package pdftex.def Info: img mono/norient4.png  used on input line 126.
-(pdftex.def)             Requested size: 83.64981pt x 93.20488pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 127--127
-[]\OT1/cmr/m/sc/10 (b) |$\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 v[]; v[]; v[]\OT1/cmr/m/n/10 ]$,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 127--127
-\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 v[]; v[]; v[]\OT1/cmr/m/n/10 ]$,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 127--127
-\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 v[]; v[]; v[]\OT1/cmr/m/n/10 ]$ y
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<img mono/borient2.png, id=41, 1472.50125pt x 1641.13126pt>
-File: img mono/borient2.png Graphic file (type png)
-<use img mono/borient2.png>
-Package pdftex.def Info: img mono/borient2.png  used on input line 138.
-(pdftex.def)             Requested size: 83.64981pt x 93.20488pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 139--139
-[]\OT1/cmr/m/sc/10 (a) |$\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 v[]; v[]\OT1/cmr/m/n/10 ]$,
- []
-
-<img mono/borient4.png, id=42, 1472.50125pt x 1641.13126pt>
-File: img mono/borient4.png Graphic file (type png)
-<use img mono/borient4.png>
-Package pdftex.def Info: img mono/borient4.png  used on input line 143.
-(pdftex.def)             Requested size: 83.64981pt x 93.20488pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 144--144
-[]\OT1/cmr/m/sc/10 (b) |$\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 v[]; v[]; v[]\OT1/cmr/m/n/10 ]$,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 144--144
-\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 v[]; v[]; v[]\OT1/cmr/m/n/10 ]$,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 144--144
-\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 v[]; v[]; v[]\OT1/cmr/m/n/10 ]$ y
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Overfull \hbox (14.16719pt too wide) in paragraph at lines 156--156
-\OT1/cmr/m/n/10.95 Para esto, fi-jamos su valor en los gen-er-adores de $^^A[](\OML/cmm/m/it/10.95 X\OT1/cmr/m/n/10.95 )$, es de-cir, las fun-ciones $[]$.
- []
-
-[4 <./img mono/cociente.png> <./img mono/cociente2.png>] [5 <./img mono/norient2.png> <./img mono/norient4.png> <./img mono/borient2.png> <./img mono/borient4.png>] [6]
-<img mono/s1.png, id=58, 2613.765pt x 2328.7pt>
-File: img mono/s1.png Graphic file (type png)
-<use img mono/s1.png>
-Package pdftex.def Info: img mono/s1.png  used on input line 222.
-(pdftex.def)             Requested size: 125.47792pt x 111.78699pt.
- [7 <./img mono/s1.png>]
-<img mono/toro.png, id=63, 2673.99pt x 2276.505pt>
-File: img mono/toro.png Graphic file (type png)
-<use img mono/toro.png>
-Package pdftex.def Info: img mono/toro.png  used on input line 250.
-(pdftex.def)             Requested size: 125.47792pt x 106.81511pt.
- [8 <./img mono/toro.png>] [9]) [10]
-\openout2 = `"homologia/homologia singular.aux"'.
-
- (homologia/homologia singular.tex [11
-
-
-
-]) [12]
-\openout2 = `"homologia/mayer vietoris.aux"'.
-
- (homologia/mayer vietoris.tex
-<img mono/mayer vietoris/serpiente.png, id=80, 417.05812pt x 164.11313pt>
-File: img mono/mayer vietoris/serpiente.png Graphic file (type png)
-<use img mono/mayer vietoris/serpiente.png>
-Package pdftex.def Info: img mono/mayer vietoris/serpiente.png  used on input line 23.
-(pdftex.def)             Requested size: 313.69162pt x 123.44513pt.
- [13
-
-
-
- <./img mono/mayer vietoris/serpiente.png>]) [14]
-\openout2 = `homologia/jordan.aux'.
-
- (homologia/jordan.tex [15
-
-
-
-] [16]) [17]
 \openout2 = `homologia/h1.aux'.
 
  (homologia/h1.tex
@@ -713,79 +577,37 @@ Package pdftex.def Info: img mono/mayer vietoris/serpiente.png  used on input li
 Package enumitem Warning: Negative labelwidth. This does not make much
 (enumitem)                sense, on input line 21.
 
-<img mono/abelianizado/h11.png, id=99, 133.49875pt x 123.46124pt>
+<img mono/abelianizado/h11.png, id=15, 133.49875pt x 123.46124pt>
 File: img mono/abelianizado/h11.png Graphic file (type png)
 <use img mono/abelianizado/h11.png>
 Package pdftex.def Info: img mono/abelianizado/h11.png  used on input line 34.
 (pdftex.def)             Requested size: 104.56387pt x 96.70627pt.
-[18
-
-
+[1
 
 ]
-<img mono/abelianizado/h12.png, id=103, 217.81375pt x 183.68625pt>
+<img mono/abelianizado/h12.png, id=29, 217.81375pt x 183.68625pt>
 File: img mono/abelianizado/h12.png Graphic file (type png)
 <use img mono/abelianizado/h12.png>
 Package pdftex.def Info: img mono/abelianizado/h12.png  used on input line 67.
 (pdftex.def)             Requested size: 104.56387pt x 88.1796pt.
- [19 <./img mono/abelianizado/h11.png>]) [20 <./img mono/abelianizado/h12.png>]
-\openout2 = `ejemplos/suspension.aux'.
-
- (ejemplos/suspension.tex) [21
-
-
-
-]
-\openout2 = `ejemplos/alexander.aux'.
-
- (ejemplos/alexander.tex
-<img mono/alexander/1.png, id=115, 341.275pt x 364.36125pt>
-File: img mono/alexander/1.png Graphic file (type png)
-<use img mono/alexander/1.png>
-Package pdftex.def Info: img mono/alexander/1.png  used on input line 21.
-(pdftex.def)             Requested size: 209.12775pt x 223.27745pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[22
-
-
-
-] [23 <./img mono/alexander/1.png>] [24]) [25]
-\openout2 = `schoenflies/schoenflies.aux'.
-
- (schoenflies/schoenflies.tex [26
-
-
-
-
-
-]
-Cap\'itulo 2
-[27] [28] [29]
-Overfull \hbox (1.70137pt too wide) in paragraph at lines 176--177
-[][]\OT1/cmr/m/sc/10.95 Demostraci[]on. []\OT1/cmr/m/n/10.95 Primero comen-zamos ob-ser-vando que como nue-stros es-pa-cios son Haus-
- []
-
-[30]) [31] (monografia.aux (homologia/homologia simplicial.aux) (homologia/homologia singular.aux) (homologia/mayer vietoris.aux) (homologia/jordan.aux) (homologia/h1.aux) (ejemplos/suspension.aux) (ejemplos/alexander.aux) (schoenflies/schoenflies.aux))
+ [2 <./img mono/abelianizado/h11.png>]) [3 <./img mono/abelianizado/h12.png>] (monografia.aux (homologia/h1.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-06>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 21539 strings out of 467871
- 453336 string characters out of 5430401
- 914817 words of memory out of 5000000
- 49834 multiletter control sequences out of 15000+600000
- 640239 words of font info for 87 fonts, out of 8000000 for 9000
+ 20998 strings out of 467871
+ 437631 string characters out of 5430401
+ 908245 words of memory out of 5000000
+ 49350 multiletter control sequences out of 15000+600000
+ 637269 words of font info for 76 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 117i,17n,121p,827b,1033s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\cumpc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmbx10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmex10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmmi10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmmi6.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmmi8.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr12.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr17.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr6.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr7.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr8.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmsy6.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmsy8.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmti10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/symbols/msam10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on monografia.pdf (33 pages, 44855756 bytes).
+ 117i,8n,121p,545b,918s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmbx10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmex10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmmi10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmmi6.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmmi8.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr12.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr17.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr6.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr8.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmsy8.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on monografia.pdf (5 pages, 191440 bytes).
 PDF statistics:
- 232 PDF objects out of 1000 (max. 8388607)
+ 101 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 83 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 23 words of extra memory for PDF output out of 10000 (max. 10000000)
 
