@@ -1,34 +1,38 @@
 \section{Relación entre $\pi_1(X)$ y $H_1(X)$}
 
-Recordamos que el grupo fundamental $\pi_1(X,x_0)$ de un espacio $X$ con punto base $x_0\in X$ está dado por las clases de homotopía de los mapas $\gamma:[0,1]\to X$ con $\gamma(0)=\gamma(1)=x_0$. Estos mapas también pueden ser interpretados como $1$-símplices singulares en $X$, es decir funciones continuas $\sigma_\gamma:\Delta_1\to X$, que además van a ser ciclos ya que $\partial \sigma_\gamma = \sigma_\gamma(1)-\sigma_\gamma(0) =0$.
+Recordamos que el grupo fundamental $\pi_1(X,x_0)$ de un espacio $X$ con punto base $x_0\in X$ está dado por las clases de homotopía a extremos fijos de los mapas $\gamma:[0,1]\to X$ con $\gamma(0)=\gamma(1)=x_0$. Estos mapas también pueden ser interpretados como $1$-símplices singulares en $X$, es decir funciones continuas $\sigma_\gamma:\Delta_1\to X$, que además van a ser ciclos ya que $\partial \sigma_\gamma = \sigma_\gamma(1)-\sigma_\gamma(0) =0$.
 
 Va a resultar que esta asociación de curvas cerradas a $1$-símplices singulares es un morfismo de grupos entre $\pi_1(X,x_0)$ y $H_1(X)$. 
 
-Si el espacio $X$ es conexo por caminos, entonces $\pi_1(X,x_0)$ es independiente del punto base $x_0$ y lo notamos simplemente $\pi_1(X)$. En ese caso el morfismo anterior va a resultar sobreyectivo, y su núcleo va a ser el conmutador de $\pi_1(X)$. Por lo tanto, cuando $X$ es conexo por caminos, obtenemos un isomorfismo entre $H_1(X)$ y el abelianizado del $\pi_1(X)$, que notamos $\pi_1(X)_{ab}$. 
+Si el espacio $X$ es conexo por caminos, entonces $\pi_1(X,x_0)$ es independiente del punto base $x_0$ y lo notamos simplemente $\pi_1(X)$. En ese caso el morfismo va a ser sobreyectivo, y su núcleo va a ser el conmutador de $\pi_1(X)$. Por lo tanto, cuando $X$ es conexo por caminos, obtenemos un isomorfismo entre $H_1(X)$ y el abelianizado del $\pi_1(X)$, que notamos $\pi_1(X)_{ab}$. 
 
 Veamos esto en detalle:
 
-Sean $f, g$ dos mapas de $[0,1]$ en $X$. Notamos $f\simeq g$ si existe una homotopía de extremos fjos entre $f$ y $g$. Notamos $f\sim g$ si $f$ y $g$ son homólogos como $1$-símplices en $X$, es decir, si existe un $2$-símplice $\sum n_i\sigma_i$ en $C_2(X)$ tal que $\partial\sum n_i\sigma_i = f-g$.
+Dado un elemento $\gamma:\s^1\to X$ en $\Omega(X,x_0)$, notamos a su clase en $\pi_1(X,x_0)$ como $\llbracket\gamma\rrbracket$, y notamos la relación de homotopía a extremos fijos con $\simeq$. Para un $1$-símplice singular $\sigma:\Delta^1\to X$ en $C_1(X)$, notamos su clase de homología como $[\,\gamma\,]$, y notamos la relación de ser homólogos con $\sim$.
 
-Dados $x_0\in X, y_0\in\s^1$ definimos el espacio de lazos $\Omega(X,x_0)$ como las funciones continuas de $\s^1$ en $X$ que mandan $y_0$ a $x_0$. Si tomamos cociente por la relación de homotopía a extremos fijos obtenemos $\pi_1(X,x_0)$.
+% Sean $\gamma_1, \gamma_2$ dos mapas de $[0,1]$ en $X$. Notamos $\gamma_1\simeq \gamma_2$ si existe una homotopía de extremos fjos entre $\gamma_1$ y $\gamma_2$. Notamos $\gamma_1\sim \gamma_2$ si $\gamma_1$ y $\gamma_2$ son homólogos como $1$-símplices en $X$, es decir, si existe un $2$-símplice $\sum n_i\sigma_i$ en $C_2(X)$ tal que $\partial\sum n_i\sigma_i = \gamma_1-\gamma_2$.
 
-Definimos la función $h\colon\Omega(X,x_0)\to C_1(X)$ que manda un lazo $f\in\Omega(X,x_0)$ en un $1$-símplice singular, precomponiendo con la proyección $\Delta^1\mapsto\s^1$. 
+Dados $x_0\in X,\, y_0\in\s^1$ definimos el espacio de lazos $\Omega(X,x_0)$ como las funciones continuas de $\s^1$ en $X$ que mandan $y_0$ a $x_0$. Si tomamos cociente por la relación de homotopía a extremos fijos obtenemos $\pi_1(X,x_0)$.
 
-Observar que $\partial h(f)=0$, entonces la imagen de $h$ es un ciclo. En lo que sigue vamos a probar que si $f\simeq g$ entonces $h(f)\sim h(g)$, y que $\tilde{h}$ manda el producto en $\pi_1(X,x_0)$ a la suma en $H_1(X)$. Por lo tanto $h$ baja al cociente como un morfismo $\tilde{h}:\pi_1(X,x_0)\to H_1(X,x_0)$.
+Definimos la función $h\colon\Omega(X,x_0)\to C_1(X)$ que manda un lazo $\gamma\in\Omega(X,x_0)$ en un $1$-símplice singular, precomponiendo el lazo con la proyección $\Delta^1\mapsto\s^1$. 
 
-Después vamos a probar que el núcleo de $\tilde{h}$ es exactamente el conmutador de $\pi_1(X)$, y por lo tanto $\tilde{h}$ es un isomorfismo entre $H_1$ y $\pi_1^{ab}$.
+Observar que $\partial h(\gamma)=0$, entonces la imagen $h(\gamma)$ siempre es un ciclo. En lo que sigue vamos a probar que si $\gamma_1\simeq \gamma_2$ entonces $h(\gamma_1)\sim h(\gamma_2)$, y que $h$ manda el producto de $\pi_1(X,x_0)$ a la suma en $H_1(X)$. Con eso vamos a tener que $h:\Omega(X,x_0)\to\Ker(\partial_1)\subset C_1(X)$ baja al cociente como un morfismo $\tilde{h}:\pi_1(X,x_0)\to H_1(X,x_0)$.
+
+% Después vamos a probar que el núcleo de $\tilde{h}$ es exactamente el conmutador de $\pi_1(X)$, y por lo tanto $\tilde{h}$ es un isomorfismo entre $H_1$ y $\pi_1^{ab}$.
 
 Veamos todo lo necesario para asegurar que $\tilde{h}:\pi_1(X,x_0)\to H_1(X)$ es un morfismo de grupos:
 
 \begin{enumerate}[wide, labelwidth=0pt, labelindent=0pt]
     
-\item\label{ab1} Si $f$ es la función constante, entonces $f\sim 0$. Esto se debe a que el mapa constante $\sigma:\Delta^2\to X$ es un $2$-símplice singular cuyo borde coincide con $f$. 
+\item\label{ab1} Si $\gamma:\s^1\to X$ es la función constante, entonces $h(\gamma)\sim 0$. Esto se debe a que el mapa constante $\sigma:\Delta^2\to X$ es un $2$-símplice singular cuyo borde coincide con $h(\gamma)$.
 
-Explícitamente, si $f(x)=x_0$ para todo $x\in [0,1]$, tenemos $\sigma:\Delta^2\to X$ tal que $\sigma(x)=x_0$ para todo $x\in\Delta^2$. En ese caso, si notamos $\Delta^2 = [v_0,v_1,v_2]$, tenemos $\partial\sigma = \sigma|_{[v_1,v_2]} - \sigma|_{[v_0,v_2]} + \sigma|_{[v_0,v_1]}$ pasando por el homeomorfismo que identifica cada par $[v_i,v_j]$ con $[0,1]$ y preserva la orientación que habíamos definido para los símplices, tenemos que $\partial\sigma = f - f + f = f$.
+Explícitamente, si $\gamma(t)=x_0$ para todo $t\in\s^1$, entonces $h(\gamma)\Delta^2\to X$ también es constante $x_0$. Tomamos $\sigma:\Delta^2\to X$ tal que $\sigma(x)=x_0$ para todo $x\in\Delta^2$. En ese caso, si notamos $\Delta^2 = [v_0,v_1,v_2]$, tenemos $\partial\sigma = \sigma|_{[v_1,v_2]} - \sigma|_{[v_0,v_2]} + \sigma|_{[v_0,v_1]}$ pasando por el homeomorfismo que identifica cada par $[v_i,v_j]$ con $\Delta_1$, tenemos que $\partial\sigma = h(\gamma) - h(\gamma) + h(\gamma) = h(\gamma)$.
 
-\item\label{ab2} Si $f\simeq g$, entonces $f\sim g$.
+\item\label{ab2} Dadas $\gamma_1,\,\gamma_2:\s^1\to X$ tales que $\gamma_1\simeq \gamma_2$, entonces $h(\gamma_1)\sim h(\gamma_2)$.
 
-Para ver esto, consideramos $F:[0,1]^2 \to X$ la homotopía a extremos fijos que manda $f$ en $g$. Si llamamos $v_0,v_1,v_2,v_3$ a los vértices de $[0,1]^2$ con $v_0:=(0,0)\; , v_1:=(0,1)\; ,v_2:=(1,1)\; ,v_3:=(1,0)$, podemos subdividir $[0,1]^2$ en dos $2$-símplices $[v_0,v_2,v_3]$ y $[v_0,v_1,v_3]$ como muestra la imagen \ref{h11}.
+Para ver esto, consideramos $H:\s^1\times [0,1] \to X$ la homotopía a extremos fijos que manda $\gamma_1$ en $\gamma_2$. Si precomponemos con la proyección $\Delta^1\mapsto\s^1$ obtenemos una homotopía $F:\Delta^1\times [0,1] \to X$ entre $h(\gamma_1)$ y $h(\gamma_2)$. Ahora, para hacer más fáciles las cuentas identificamos $\Delta^1$ con $[0,1]$ y vemos la homotopía como $F:[0,1]^2 \to X$.
+
+Llamamos $v_0:=(0,0)\; , v_1:=(0,1)\; ,v_2:=(1,1)\; ,v_3:=(1,0)$ a los vértices de $[0,1]^2$, podemos subdividirlo en dos $2$-símplices $[v_0,v_2,v_3]$ y $[v_0,v_1,v_3]$ como muestra la imagen \ref{h11}.
 
 \begin{figure}
     	\centering
@@ -37,63 +41,71 @@ Para ver esto, consideramos $F:[0,1]^2 \to X$ la homotopía a extremos fijos que
     	\label{h11}
 \end{figure}
 
-Al restringir $f$ a cada uno de estos $2$-símplices obtenemos $2$-símplices singulares, que llamamos $\sigma_1 := F|_{[v_0,v_1,v_3]}$ y $\sigma_2 := F|_{[v_0,v_2,v_3]}$.
+Al restringir $F$ a cada uno de estos $2$-símplices obtenemos $2$-símplices singulares, que llamamos $\sigma_1 := F|_{[v_0,v_1,v_3]}$ y $\sigma_2 := F|_{[v_0,v_2,v_3]}$.
 
 Estos $\sigma_1$ y $\sigma_2$ cumplen 
 $$\partial (\sigma_2 - \sigma_1) = \sigma_2|_{[v_2,v_3]} - \sigma_1|_{[v_1,v_3]} -\sigma_2|_{[v_0,v_3]} + \sigma_1|_{[v_0,v_3]} + \sigma_2|_{[v_0,v_2]} - \sigma_1|_{[v_0,v_1]} $$
 
-Como la homotopía es a extremos fijos, $\sigma_1|_{[v_1,v_3]}$ y $\sigma_2|_{[v_0,v_2]}$ son constantes, y entonces por la parte (\ref{ab1}) son homólogos a $0$.
+Como la homotopía es a extremos fijos, por la parte (\ref{ab1}) los $\sigma_1|_{[v_1,v_3]}$ y $\sigma_2|_{[v_0,v_2]}$ son homólogos a $0$.
 
 Por definición, $\sigma_1|_{[v_0,v_3]}$ y $\sigma_2|_{[v_0,v_3]}$ son la misma función, y por lo tanto su diferencia se cancela en la suma de arriba.
 
-Esto nos deja con $$\partial (\sigma_2 - \sigma_1) = \sigma_2|_{[v_2,v_3]} - \sigma_1|_{[v_0,v_1]} = g - f$$ que es exáctamente lo que buscábamos.
+Esto nos deja con $$\partial (\sigma_2 - \sigma_1) = \sigma_2|_{[v_2,v_3]} - \sigma_1|_{[v_0,v_1]} = h(\gamma_2) - h(\gamma_1)$$ que es exactamente lo que buscábamos.
 
-\item\label{ab3} Recordamos que el producto en $\pi_1(X)$ de dos clases representadas por caminos $f$ y $g$ se define como la clase de homotopía de la concatenación de ambos caminos.
+\item\label{ab3} Si tomamos la concatenación $\gamma_1\cdot\gamma_2$ de dos caminos $\gamma_1,\,\gamma_2:\s^1\to X$, se cumple que $h(\gamma_1\cdot\gamma_2)\sim h(\gamma_1) + h(\gamma_2)$.
 
-Si tomamos la concatenación $f\cdot g$ de los caminos $f$ y $g$, se cumple que $f\cdot g \sim f+g$.
+% Recordamos que el producto en $\pi_1(X)$ de dos clases representadas por caminos $\gamma_1$ y $\gamma_2$ se define como la clase de homotopía de la concatenación de ambos caminos, que notamos $\gamma_1\cdot\gamma_2$.
 
-Para probar esto consideramos un $2$-símplice $\Delta^2:=[v_0,v_1,v_2]$ y definimos $\sigma:\Delta^2\to X$ como ${(f\cdot g)}\circ p$, siendo $p$ la proyección ortogonal sobre la arista $[v_0,v_2]$ y $f\cdot g:[v_0,v_2]\to X$. En ese caso $$\partial\sigma = \sigma_{[v_1,v_2]}-\sigma_{[v_0,v_2]}+\sigma_{[v_0,v_1]}$$
+
+
+Para probar esto consideramos un $2$-símplice $\Delta^2:=[v_0,v_1,v_2]$ y definimos $\sigma:\Delta^2\to X$ como ${h(\gamma_1\cdot\gamma_2)}\circ p$, siendo $p$ la proyección ortogonal sobre la arista $[v_0,v_2]$ y $h(\gamma_1\cdot\gamma_2):[v_0,v_2]\to X$. En ese caso $$\partial\sigma = \sigma_{[v_1,v_2]}-\sigma_{[v_0,v_2]}+\sigma_{[v_0,v_1]}$$
 
 Analicemos cada término. 
 \begin{align*}
-\sigma|_{[v_0,v_1]}&=(f\cdot g)|_{p([v_0,v_1])} = (f\cdot g)|_{[v_0, (v_2-v_0)/2]} = f \\
-\sigma|_{[v_1,v_2]}&=(f\cdot g)|_{p([v_1,v_2])} = (f\cdot g)|_{[(v_2-v_0)/2,v_2]} = g \\
-\sigma|_{[v_0,v_2]}&=f\cdot g
+\sigma|_{[v_0,v_1]}&=h(\gamma_1\cdot \gamma_2)|_{p([v_0,v_1])} = h(\gamma_1\cdot \gamma_2)|_{[v_0, (v_2-v_0)/2]} = h(\gamma_1) \\
+\sigma|_{[v_1,v_2]}&=h(\gamma_1\cdot \gamma_2)|_{p([v_1,v_2])} = h(\gamma_1\cdot \gamma_2)|_{[(v_2-v_0)/2,v_2]} = h(\gamma_2) \\
+\sigma|_{[v_0,v_2]}&=h(\gamma_1\cdot \gamma_2)
 \end{align*}
 
-Por lo tanto obtuvimos que $\partial\sigma = g - (f\cdot g) + f$ y entonces $f\cdot g \sim f+g$. La imagen \ref{h12} ilustra esto.
+\comm{la ultima igualdad de los dos primeros renglones no me convence. la concatenación no la defini bien pero es hacerlo con $2t$ en $\s^1$. entonces $h$ de eso va de $\Delta^1\to X$ con $2t$. ee nada creo q me estoyu confundiendo nomas tengo sueño}
+
+Por lo tanto obtuvimos que $\partial\sigma = h(\gamma_2) - h(\gamma_1\cdot \gamma_2) + h(\gamma_1)$ y entonces $h(\gamma_1\cdot \gamma_2) \sim h(\gamma_1)+h(\gamma_2)$. La imagen \ref{h12} ilustra esto.
 
 \begin{figure}
     	\centering
     	\includegraphics[width=0.25\linewidth]{img mono/abelianizado/h12.png}
-    	\caption{Definimos la imagen de $\sigma$}
+    	\caption{Definimos la imagen de $\sigma$. cambiar f y g por $h(\gamma_i)$}
     	\label{h12}
 \end{figure}
 
-\item\label{ab4} Si notamos $\overline{f}$ al inverso para la concatenación, entonces con las observaciones anteriores tenemos $f+\overline{f}\sim f\cdot\overline{f}\sim 0$, y por lo tanto $\overline{f}\sim -f$. 
+\item\label{ab4} Si notamos $\overline{\gamma}$ al inverso para la concatenación, entonces con las observaciones anteriores tenemos $h(\gamma)+h(\overline{\gamma})\sim h(\gamma\cdot\overline{\gamma})\sim 0$, y por lo tanto $h(\overline{\gamma})\sim -h(\gamma)$. 
 
 \end{enumerate}
 
-Veamos ahora que si $X$ es conexo por caminos entonces $\tilde{h}\colon\pi_1(X)\to H_1(X)$ es sobreyectiva.
+Por el punto $\ref{ab2}$ tenemos que $h:\Omega(X,x_0)\to \Ker(\partial_1)$ baja al cociente como una función $\tilde{h}\pi_1(X,x_0)\mapsto H_1(X)$, que por el punto $\ref{ab3}$ va a ser un morfismo de grupos. Usando que $H_1(X)$ es abeliano y el punto $\ref{ab4}$ tenemos que el conmutador de $\pi_1(X,x_0)$ se anula por $\tilde{h}$. Es decir, $\tilde{h}$ baja al cociente como un morfismo $\tilde{h}_{ab}\colon\pi_1(X,x_0)_{ab}\to H_1(X)$
 
-Sea $\sum n_i\sigma_i\in C_1(X)$ un representante de alguna clase de $H_1(X)$. Reetiquetando los $\sigma_i$ podemos asumir que todos los $n_i$ son $1$ o $-1$ (cambiamos $n_i\sigma_i$ por $\sigma_{i_1},\dots,\sigma_{i_{n_i}}$ con $\sigma_{i_j}=\sigma_i \fall i\in\{1,\dots,n_i\}$). Además, por (\ref{ab4}) podemos tomar los $n_i$ siempre como $1$.
+% Veamos ahora que si $X$ es conexo por caminos entonces $\tilde{h}_{ab}\colon\pi_1(X)_{ab}\to H_1(X)$ es sobreyectiva.
 
-Como $\partial(\sum n_i\sigma_i)=0$, dado $\sigma_i$ con $\partial\sigma_i=0$ tiene que existir algún $j$ tal que la concatencación $\sigma_i\cdot\sigma_j$ esté bien definida. Iterando el razonamiento y reetiquetando cada vez que tomamos una concatenación, obtenemos una suma $\sum\sigma_i$ compuesta únicamente por lazos. 
+% Sea $\sum n_i\sigma_i\in C_1(X)$ un representante de alguna clase de $H_1(X)$. Reetiquetando los $\sigma_i$ podemos asumir que todos los $n_i$ son $1$ o $-1$ (cambiamos $n_i\sigma_i$ por $\sigma_{i_1},\dots,\sigma_{i_{n_i}}$ con $\sigma_{i_j}=\sigma_i \fall i\in\{1,\dots,n_i\}$). Además, por (\ref{ab4}) podemos tomar los $n_i$ siempre como $1$.
 
-Como $X$ es conexo por caminos, podemos tomar un camino $\gamma_i$ de $x_0$ a algún punto en la imagen de $\sigma_i$. Por (\ref{ab3}) y (\ref{ab4}) tenemos que $\gamma_i\cdot\sigma_i\cdot\overline{\gamma_i}\sim\sigma_i$, y por lo tanto podemos asumir que todos los lazos $\sigma_i$ tienen punto base $x_0$.
+% Como $\partial(\sum n_i\sigma_i)=0$, dado $\sigma_i$ con $\partial\sigma_i=0$ tiene que existir algún $j$ tal que la concatencación $\sigma_i\cdot\sigma_j$ esté bien definida. Iterando el razonamiento y reetiquetando cada vez que tomamos una concatenación, obtenemos una suma $\sum\sigma_i$ compuesta únicamente por lazos. 
 
-Finalmente, por \ref{ab3} podemos combinar todos los lazos en un único $\sigma\colon\Delta^1\to X$, cuya composición con la proyección $\Delta^1\mapsto\s^1$ es su preimagen por $h$. Con esto obtuvimos que $\tilde{h}\colon\pi_1(X)\to H_1(X)$ es sobreyectivo.
+% Como $X$ es conexo por caminos, podemos tomar un camino $\gamma_i$ de $x_0$ a algún punto en la imagen de $\sigma_i$. Por (\ref{ab3}) y (\ref{ab4}) tenemos que $\gamma_i\cdot\sigma_i\cdot\overline{\gamma_i}\sim\sigma_i$, y por lo tanto podemos asumir que todos los lazos $\sigma_i$ tienen punto base $x_0$.
 
-Con esto tenemos que $\tilde{h}:\pi_1(X,x_0)\to H_1(X)$ es un morfismo de grupos sobreyectivo. Además, como $H_1(X)$ es abeliano, entonces el conmutador de $\pi_1(X)$ se anula al pasar por el morfismo. Esto nos dice que $\tilde{h}$ baja nuevamente al cociente como un morfismo sobreyectivo $\tilde{\tilde{h}}:\pi_1^{ab}(X,x_0)\to H_1(X)$
+% Finalmente, por \ref{ab3} podemos combinar todos los lazos en un único $\sigma\colon\Delta^1\to X$, cuya composición con la proyección $\Delta^1\mapsto\s^1$ es su preimagen por $h$. Con esto obtuvimos que $\tilde{h}\colon\pi_1(X)\to H_1(X)$ es sobreyectivo.
+
+% Con esto tenemos que $\tilde{h}:\pi_1(X,x_0)\to H_1(X)$ es un morfismo de grupos sobreyectivo. Además, como $H_1(X)$ es abeliano, entonces el conmutador de $\pi_1(X)$ se anula al pasar por el morfismo. Esto nos dice que $\tilde{h}$ baja nuevamente al cociente como un morfismo sobreyectivo $\tilde{\tilde{h}}:\pi_1^{ab}(X,x_0)\to H_1(X)$
 
 
-lo que resta probar es que $\Ker(\tilde{h})$ es el conmutador de $\pi_1(X)$.
+% lo que resta probar es que $\Ker(\tilde{h})$ es el conmutador de $\pi_1(X)$.
 
-Como $H_1(X)$ es abeliano, entonces ya está dado que el conmutador de $\pi_1(X)$ se anula por el morfismo. Esto nos dice que $\tilde{h}:\pi_1(X,x_0)\to H_1(X)$ baja al abelianizado de $\pi_1(X)$ Veamos que eso es lo único que se anula, es decir, que el núcleo $\Ker(\tilde{h})$ es exactamente el conmutador de $\pi_1(X)$. 
+% Como $H_1(X)$ es abeliano, entonces ya está dado que el conmutador de $\pi_1(X)$ se anula por el morfismo. Esto nos dice que $\tilde{h}:\pi_1(X,x_0)\to H_1(X)$ baja al abelianizado de $\pi_1(X)$ Veamos que eso es lo único que se anula, es decir, que el núcleo $\Ker(\tilde{h})$ es exactamente el conmutador de $\pi_1(X)$. 
 
-Construyamos una inversa para $\tilde{h}$. Para eso, primero construimos un candidato $\phi: C_1(X)\to \Omega(X,x_0)$ que baje al cociente como un morfismo $\tilde{\phi}: H_1(X)\to\pi_1(X,x_0)$.
+Supongamos ahora que $X$ es conexo por caminos y construyamos una inversa para $\tilde{h}_{ab}$. Para eso, primero construimos un candidato $\phi: C_1(X)\to \Omega(X,x_0)$ que baje al cociente como un morfismo $\tilde{\phi}: H_1(X)\to\pi_1(X,x_0)_{ab}$.
 
-Definamos $\phi:C_1(X)\to \Omega(X,x_0)$. Lo que hay que hacer es identificar $1$-cadenas con curvas cerradas con base $x_0$. Vamos a definirlo para los $1$-símplices singulares $\sigma:\Delta^1\to X$. Como $C_1(X)$ es el grupo abeliano libre generado por los $\sigma:\Delta^1\to X$, entonces definirla para cada uno de estos $1$-símplices es suficiente para extenderlo a un morfismo en todo $C_1(X)$.
+Definamos $\phi:\Ker(\partial_1)\to \Omega(X,x_0)$. Lo que hay que hacer es identificar $1$-cadenas con curvas cerradas con base $x_0$. Vamos a definirlo para los $1$-símplices singulares $\sigma:\Delta^1\to X$. Como $Ker(\partial_1) < C_1(X)$ es un subgrupo del grupo abeliano libre generado por los $\sigma:\Delta^1\to X$, nos basta definirlo para cada uno de estos $1$-símplices para extenderlo a un morfismo en todo $\Ker(\partial_1)$.
+
+\comm{emm chequear esto}
 
 Para esto definimios unos caminos que nos van a resultar convenientes. Dado $x\in X$, definimos $\gamma_x:[0,1]\to X$ como un camino tal que $\gamma_x(0)=x_0$ y $\gamma_x(1)=x$.
 
