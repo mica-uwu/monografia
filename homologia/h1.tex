@@ -67,7 +67,7 @@ Analicemos cada término.
 \sigma|_{[v_0,v_2]}&=h(\gamma_1 * \gamma_2)
 \end{align*}
 
-\comm{la ultima igualdad de los dos primeros renglones no me convence. la concatenación no la defini bien pero es hacerlo con $2t$ en $\s^1$. entonces $h$ de eso va de $\Delta^1\to X$ con $2t$. ee nada creo q me estoyu confundiendo nomas tengo sueño}
+%\comm{la ultima igualdad de los dos primeros renglones no me convence. la concatenación no la defini bien pero es hacerlo con $2t$ en $\s^1$. entonces $h$ de eso va de $\Delta^1\to X$ con $2t$. ee nada creo q me estoyu confundiendo nomas tengo sueño}
 
 Por lo tanto obtuvimos que $\partial\sigma = h(\gamma_2) - h(\gamma_1 * \gamma_2) + h(\gamma_1)$ y entonces $h(\gamma_1 * \gamma_2) \sim h(\gamma_1)+h(\gamma_2)$. La imagen \ref{h12} ilustra esto.
 
@@ -107,11 +107,11 @@ Primero vamos a definir $\phi:C_1(X)\to\pi_1(X,x_0)_{ab}$ en general y después 
 
 Lo que hay que hacer es identificar $1$-cadenas con clases de curvas cerradas con base $x_0$. Para esto definimos unos caminos que nos van a resultar convenientes. Dado $x\in X$, definimos $\gamma_x:[0,1]\to X$ como un camino tal que $\gamma_x(0)=x_0$ y $\gamma_x(1)=x$.
 
-Sea $\sigma:\Delta^1\to X$, identificamos $\Delta^1$ con $[0,1]$ mediante un homeomorfismo. Precomponiendo con este homeo podemos pensar $\sigma$ como un camino $\gamma_\sigma:[0,1]\to X$.
+Sea $\sigma:\Delta^1\to X$, identificamos $\Delta^1$ con $[0,1]$ mediante un homeomorfismo. Precomponiendo con este homeo podemos pensar $\sigma$ como un camino $\sigma_\gamma:[0,1]\to X$.
 
-Si llamamos $\gamma_\sigma(0)=y_0$, $\gamma_\sigma(1)=y_1$, consideramos la concatenación $$\gamma_{y_0} *\gamma_\sigma * \overline{\gamma_{y_1}}:[0,1]\to X$$ Observamos que esta concatenación vale $x_0$ en $t=0$ y $t=1$, y por lo tanto podemos pensarla como una función de $\s^1$ en $X$, que manda $x_1\in \s^1$ a $x_0\in X$. 
+Si llamamos $\sigma_\gamma(0)=y_0$, $\sigma_\gamma(1)=y_1$, consideramos la concatenación $$\gamma_{y_0} *\sigma_\gamma * \overline{\gamma_{y_1}}:[0,1]\to X$$ Observamos que esta concatenación vale $x_0$ en $t=0$ y $t=1$, y por lo tanto podemos pensarla como una función de $\s^1$ en $X$, que manda $x_1\in \s^1$ a $x_0\in X$. 
 
-En ese caso, definimos la imagen por $\phi$ como la clase en el abelianizado:$$\phi(\sigma):=\left(\llbracket\gamma_{y_0} *\gamma_\sigma * \overline{\gamma_{y_1}}\rrbracket\right)_{ab}\in\pi_1(X)_{ab}$$
+En ese caso, definimos la imagen por $\phi$ como la clase en el abelianizado:$$\phi(\sigma):=\left(\llbracket\gamma_{y_0} *\sigma_\gamma * \overline{\gamma_{y_1}}\rrbracket\right)_{ab}\in\pi_1(X)_{ab}$$
 Con esto podemos extender la definición a un morfismo de todo $C_1(X)$, que restringimos para obtener $\phi:\Ker(\partial_1)\to \pi_1(X,x_0)_{ab}$.
 
 \begin{figure}
@@ -121,11 +121,11 @@ Con esto podemos extender la definición a un morfismo de todo $C_1(X)$, que res
     	\label{h13}
 \end{figure}
 
-Veamos que $\phi$ baja al cociente. Queremos ver que si $x\sim y$ para $x,\, y\in\Ker(\partial_1)$ entonces $\phi(x)=\phi(y)$. Como $\phi$ es morfismo, esto se reduce a verificar que $\phi(x-y)= 0$ para todo $x-y\sim 0$, es decir, que $\phi(\im(\partial_2))=\left(\llbracket\gamma_{x_0}\rrbracket\right)_{ab}$.
+Veamos que $\phi$ baja al cociente. Queremos ver que si $x\sim y$ para $x,\, y\in\Ker(\partial_1)$ entonces $\phi(x)=\phi(y)$. Como $\phi$ es morfismo, esto se reduce a verificar que $\phi(x-y)= 0$ para todo $x-y\sim 0$, es decir, verificar que $\phi(\im(\partial_2))=\left(\llbracket\gamma_{x_0}\rrbracket\right)_{ab}$ para el mapa borde $\partial_2\colon C_2(X)\to C_1(X)$.
 
 Consideremos entonces un $2$-símplice singular $\sigma:\Delta^2\to X$ y veamos que su borde es trivial en $\pi_1(X,x_0)_{ab}$ al pasar por $\phi$.
 
-Notamos $\Delta^2=[v_0,v_1,v_2]$. Para alivianar la notación llamamos $\sigma_0:=\sigma|_{[v_1,v_2]}$, $\sigma_1:=\sigma|_{[v_0,v_2]}$ y $\sigma_2:=\sigma|_{[v_0,v_1]}$. También llamamos $y_i:=\sigma(v_i)$ a la imagen de los vértices, con $i\in\{0,1,2\}$.
+Notamos $\Delta^2=[v_0,v_1,v_2]$. Para alivianar la notación llamamos $\sigma_0:=\sigma|_{[v_1,v_2]}$, $\sigma_1:=\sigma|_{[v_0,v_2]}$ y $\sigma_2:=\sigma|_{[v_0,v_1]}$, y . También llamamos $y_i:=\sigma(v_i)$ a la imagen de los vértices, con $i\in\{0,1,2\}$.
 
 Entonces \begin{align*}
 	\phi(\partial_2(\sigma))&=\phi(\sigma_0 - \sigma_1 + \sigma_2)\\
@@ -144,8 +144,33 @@ La clase de homotopía de la concatenación $\sigma_0*\overline{\sigma_1}*\sigma
 Ahora lo que falta es comprobar que $\tilde{\phi}$ y $\tilde{h}_{ab}$ son inversas.
 
 Dado un lazo $\gamma:\s^1\to X$ en $\Omega(X,x_0)$, aplicar $\tilde{h}_{ab}\big(\left(\llbracket\gamma\rrbracket\right)_{ab}\big)=[\gamma]$ me da su clase en $H_1(X)$ visto como $1$-símplice singular. Si aplicamos $\tilde{\phi}([\gamma])$ obtenemos \begin{align*}
-\left(\left\llbracket\gamma_{x_0}*\gamma*\overline{\gamma_{x_0}}\right\rrbracket\right)_{ab}\\&=\left(\llbracket\gamma\rrbracket\right)_{ab}\end{align*}
+\left(\left\llbracket\gamma_{x_0}*\gamma*\overline{\gamma_{x_0}}\right\rrbracket\right)_{ab}
+&=\left(\left\llbracket\gamma_{x_0}\right\rrbracket\left\llbracket\gamma\right\rrbracket\left\llbracket\overline{\gamma_{x_0}}\right\rrbracket\right)_{ab}\\
+&=\left(\llbracket\gamma\rrbracket\right)_{ab}\end{align*}
 
-ya que los extremos del camino son $x_0$ y por lo tanto los caminos con los que concatenamos en la definición de $\tilde{\phi}$ son constantes.
+ya que los extremos del camino son $x_0$ y por lo tanto los caminos con los que concatenamos en la definición de $\tilde{\phi}$ son constantes. Con esto tenemos que $\tilde{\phi}\circ\tilde{h}_{ab}= \text{Id}$.
 
-\comm{tengo que terminar de escribir esto}
+Veamos ahora que $\tilde{h}_{ab}\circ\tilde{\phi}=\text{Id}$. Sea $\sigma:\Delta^1\to X$, entonces su imagen por $\phi$ es $\phi(\sigma)=\left(\llbracket\gamma_{y_0} *\sigma * \overline{\gamma_{y_1}}\rrbracket\right)_{ab}\in\pi_1(X)_{ab}$, siendo $\sigma:[0,1]\to X$ el símplice visto como una curva, con extremos $\sigma(0)=y_0$, $\sigma(1)=y_1$.
+
+Si aplicamos $\tilde{h}_{ab}\big(\left(\llbracket\gamma_{y_0} *\sigma * \overline{\gamma_{y_1}}\rrbracket\right)_{ab}\big)$ obtenemos la clase de homología de la curva $\gamma_{y_0} *\sigma * \overline{\gamma_{y_1}}:[0,1]\to X$ vista como $1$-símplice singular, es decir
+
+\begin{align*}
+	\tilde{h}_{ab}\big(\left(\llbracket\gamma_{y_0} *\sigma * \overline{\gamma_{y_1}}\rrbracket\right)_{ab}\big)
+	&=[\gamma_{y_0} *\sigma * \overline{\gamma_{y_1}}]\\
+	&=[\gamma_{y_0}]+[\sigma]-[\gamma_{y_1}]
+\end{align*}
+
+Para simplificar las cuentas vale la pena observar que la asignación $x\mapsto \gamma_x$ está definida para los $0$-símplices singulares, es decir para una base de $C_0(X)$. Podemos entonces extenderla a un morfismo de $C_0(X)$ en $C_1(X)$ $$\gamma_{-}:C_0(X)\to C_1(X)\text{ dado por }\sigma=\sum n_i x_i\mapsto \gamma_\sigma := \sum n_i\gamma_{x_i}$$
+
+% Con esto estamos sobrecargando la notación $\gamma_{-}$, que puede representar tanto el morfismo $\gamma_{-}:C_0(X)\to C_1(X)$ como el mapa $\gamma_{-}:X^{\Delta^1}\to X^{[0,1]}$ dado por precomponer con el homemorfismo que manda $[0,1]$ en $\Delta^1$, que nos permite obtener un camino $\gamma_\sigma$ a partir de un $1$-símplice singular.
+
+Usando esto, podemos extender la cuenta anterior a una $1$-cadena singular $\sigma\in C_1(X)$, y obtenemos $$\tilde{h}_{ab}\circ\phi(\sigma) = [\sigma] - [\gamma_{\partial\sigma}]$$
+
+% Con esta observación podemos extender la cuenta a una $1$-cadena singular $\sum n_i\sigma_i\in C_1(X)$, y afirmar que su imagen por $\tilde{h}_{ab}\circ\phi$ es $$\tilde{h}_{ab}\circ\phi\left(\sum n_i\sigma_i\right)=\sum n_i(\tilde{h}_{ab}\circ\phi)(\sigma_i)=\sum n_i \left([\sigma_i]-[\gamma_{\partial\sigma_i}]\right)$$
+
+Ahora, si esta $1$-cadena singular $\sigma$ es un ciclo, entonces $[\partial\sigma]=0$, y por lo tanto $\tilde{h}_{ab}\circ\phi(\sigma) = [\sigma]$. Bajando al cociente y aplicando $\tilde{\phi}$, esto nos dice que entonces $\tilde{h}_{ab}\circ\tilde{\phi}([\sigma])=[\sigma]$.
+
+Concluimos que $\tilde{h}_{ab}:\pi_1(X)_{ab}\to H_1(X)$ es un isomorfismo cuando $X$ es conexo por caminos, y que su inversa es $\tilde{\phi}$.
+
+
+%\comm{tengo que terminar de escribir esto}
