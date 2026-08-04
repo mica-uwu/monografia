@@ -227,6 +227,9 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/stmaryrd/stmaryrd.sty
 INPUT ./monografia.aux
 INPUT ./monografia.aux
 INPUT monografia.aux
+INPUT ./homologia/homologia simplicial.aux
+INPUT ./homologia/homologia simplicial.aux
+INPUT homologia/homologia simplicial.aux
 INPUT ./homologia/homologia singular.aux
 INPUT ./homologia/homologia singular.aux
 INPUT homologia/homologia singular.aux
@@ -288,12 +291,13 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm
 OUTPUT monografia.pdf
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
-INPUT ./homologia/homologia singular.tex
-INPUT ./homologia/homologia singular.tex
-OUTPUT homologia/homologia singular.aux
-INPUT ./homologia/homologia singular.tex
-INPUT ./homologia/homologia singular.tex
-INPUT homologia/homologia singular.tex
+INPUT ./homologia/homologia simplicial.tex
+INPUT ./homologia/homologia simplicial.tex
+OUTPUT homologia/homologia simplicial.aux
+INPUT ./homologia/homologia simplicial.tex
+INPUT ./homologia/homologia simplicial.tex
+INPUT homologia/homologia simplicial.tex
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
@@ -308,7 +312,71 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/stmaryrd/stmary10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/stmaryrd/stmary8.tfm
+INPUT ./img mono/simplices.png
+INPUT ./img mono/simplices.png
+INPUT ./img mono/simplices.png
+INPUT ./img mono/simplices.png
+INPUT ./img mono/simplices.png
+INPUT ./img mono/simplices estandar.png
+INPUT ./img mono/simplices estandar.png
+INPUT ./img mono/simplices estandar.png
+INPUT ./img mono/simplices estandar.png
+INPUT ./img mono/simplices estandar.png
+INPUT ./img mono/cociente.png
+INPUT ./img mono/cociente.png
+INPUT ./img mono/cociente.png
+INPUT ./img mono/cociente.png
+INPUT ./img mono/cociente.png
+INPUT ./img mono/cociente2.png
+INPUT ./img mono/cociente2.png
+INPUT ./img mono/cociente2.png
+INPUT ./img mono/cociente2.png
+INPUT ./img mono/cociente2.png
+INPUT ./img mono/norient2.png
+INPUT ./img mono/norient2.png
+INPUT ./img mono/norient2.png
+INPUT ./img mono/norient2.png
+INPUT ./img mono/norient2.png
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/stmaryrd/stmary10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/stmaryrd/stmary7.tfm
+INPUT ./img mono/norient4.png
+INPUT ./img mono/norient4.png
+INPUT ./img mono/norient4.png
+INPUT ./img mono/norient4.png
+INPUT ./img mono/norient4.png
+INPUT ./img mono/borient2.png
+INPUT ./img mono/borient2.png
+INPUT ./img mono/borient2.png
+INPUT ./img mono/borient2.png
+INPUT ./img mono/borient2.png
+INPUT ./img mono/borient4.png
+INPUT ./img mono/borient4.png
+INPUT ./img mono/borient4.png
+INPUT ./img mono/borient4.png
+INPUT ./img mono/borient4.png
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
+INPUT ./img mono/s1.png
+INPUT ./img mono/s1.png
+INPUT ./img mono/s1.png
+INPUT ./img mono/s1.png
+INPUT ./img mono/s1.png
+INPUT ./img mono/toro.png
+INPUT ./img mono/toro.png
+INPUT ./img mono/toro.png
+INPUT ./img mono/toro.png
+INPUT ./img mono/toro.png
+INPUT ./homologia/homologia singular.tex
+INPUT ./homologia/homologia singular.tex
+OUTPUT homologia/homologia singular.aux
+INPUT ./homologia/homologia singular.tex
+INPUT ./homologia/homologia singular.tex
+INPUT homologia/homologia singular.tex
 INPUT ./homologia/mayer vietoris.tex
 INPUT ./homologia/mayer vietoris.tex
 OUTPUT homologia/mayer vietoris.aux
@@ -358,6 +426,9 @@ INPUT ./ejemplos/suspension.tex
 INPUT ./ejemplos/suspension.tex
 INPUT ejemplos/suspension.tex
 INPUT monografia.aux
+INPUT ./homologia/homologia simplicial.aux
+INPUT ./homologia/homologia simplicial.aux
+INPUT homologia/homologia simplicial.aux
 INPUT ./homologia/homologia singular.aux
 INPUT ./homologia/homologia singular.aux
 INPUT homologia/homologia singular.aux
@@ -384,6 +455,7 @@ INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
