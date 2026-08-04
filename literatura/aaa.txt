@@ -1,0 +1,15 @@
+Invitación al tribunal de mi defensa
+
+Buenas! Lo del asunto. Estoy volviendo al ruedo y estaba pensando defender en diciembre, me gustaría que formes parte del tribunal. Decime qué te parece.
+
+Todavía me quedan cosas por escribir y por entender, pero la idea es ponerme las pilas y meterle para terminarla este semestre.
+
+Ya te he dicho sobre qué trata pero te cuento de nuevo. Es sobre encajes topológicos de codimensión 1, en particular me voy a enfocar en encajes entre esferas. Voy a probar el teorema de separación de Jordan-Brouwer, el teorema de Hurewicz para n=1, el teorema de Schoenflies generalizado y ver ejemplos de encajes. 
+
+También estaba viendo de agregar la prueba de un teorema que dice que para encajes S^n -> S^{n+1} con n>3, los puntos no localmente planos, si existen, son por lo menos un conjunto de Cantor (que además va a estar encajado como un collar de Antoine). No sé si me dará el tiempo para agregar esto, va a quedar para lo último. Igual voy a poner el resultado porque me pareció copado y puedo ver un ejemplo de S^2 -> S^3 donde "no se cumple".
+
+Espero tu respuesta, sin ningún tipo de compromiso, obvio. 
+
+Gracias :)
+
+Mica
