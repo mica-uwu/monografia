@@ -32,7 +32,7 @@ Explícitamente, si $\gamma(t)=x_0$ para todo $t\in\s^1$, entonces $h(\gamma)\co
 
 Para ver esto, consideramos $H:\s^1\times [0,1] \to X$ la homotopía a extremos fijos que manda $\gamma_1$ en $\gamma_2$. Si precomponemos con la proyección $\Delta^1\mapsto\s^1$ en la primera coordenada y la identidad en la segunda, obtenemos una homotopía $F:\Delta^1\times [0,1] \to X$ entre $h(\gamma_1)$ y $h(\gamma_2)$. Ahora, para hacer más fáciles las cuentas identificamos $\Delta^1$ con $[0,1]$ y vemos la homotopía como $F:[0,1]^2 \to X$.
 
-Llamamos $v_0:=(0,0)\; , v_1:=(0,1)\; ,v_2:=(1,1)\; ,v_3:=(1,0)$ a los vértices de $[0,1]^2$, podemos subdividirlo en dos $2$-símplices $[v_0,v_2,v_3]$ y $[v_0,v_1,v_3]$ como muestra la imagen \ref{h11}.
+Llamamos $v_0:=(0,0)\; , v_1:=(1,0)\; ,v_2:=(0,1)\; ,v_3:=(1,1)$ a los vértices de $[0,1]^2$, podemos subdividirlo en dos $2$-símplices $[v_0,v_2,v_3]$ y $[v_0,v_1,v_3]$ como muestra la imagen \ref{h11}.
 
 \begin{figure}
     	\centering
@@ -129,7 +129,7 @@ Notamos $\Delta^2=[v_0,v_1,v_2]$. Para alivianar la notación llamamos $\sigma_0
 
 Entonces \begin{align*}
 	\phi(\partial_2(\sigma))&=\phi(\sigma_0 - \sigma_1 + \sigma_2)\\
-	&=\phi(\sigma_0)\phi(-\sigma_1)\phi(\sigma_2)\\
+	&=\phi(\sigma_0)\overline{\phi(\sigma_1)}\phi(\sigma_2)\\
 	&=\left(\left\llbracket\gamma_{y_1} * \sigma_0 *\overline{\gamma_{y_2}}\right\rrbracket\right)_{ab} \left(\left\llbracket \overline{\gamma_{y_0}*\sigma_1*\overline{\gamma_{y_2}}}\right\rrbracket\right)_{ab}\left(\left\llbracket\gamma_{y_0}*\sigma_2*\overline{\gamma_{y_1}}\right\rrbracket\right)_{ab}\\
 	&=\left(\left\llbracket\gamma_{y_1} * \sigma_0 *\overline{\gamma_{y_2}}\right\rrbracket \left\llbracket \overline{\gamma_{y_0}*\sigma_1*\overline{\gamma_{y_2}}}\right\rrbracket\left\llbracket\gamma_{y_0}*\sigma_2*\overline{\gamma_{y_1}}\right\rrbracket\right)_{ab}\\
 	&=\left(\left\llbracket \gamma_{y_1} * \sigma_0 *\overline{\gamma_{y_2}} * \gamma_{y_2}*\overline{\sigma_1}*\overline{\gamma_{y_0}}*\gamma_{y_0}*\sigma_2*\overline{\gamma_{y_1}}\right\rrbracket\right)_{ab}\\
