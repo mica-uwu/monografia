@@ -245,6 +245,15 @@ INPUT homologia/h1.aux
 INPUT ./ejemplos/suspension.aux
 INPUT ./ejemplos/suspension.aux
 INPUT ejemplos/suspension.aux
+INPUT ./ejemplos/alexander.aux
+INPUT ./ejemplos/alexander.aux
+INPUT ejemplos/alexander.aux
+INPUT ./schoenflies/schoenflies.aux
+INPUT ./schoenflies/schoenflies.aux
+INPUT schoenflies/schoenflies.aux
+INPUT ./ejemplos/hooked rug.aux
+INPUT ./ejemplos/hooked rug.aux
+INPUT ejemplos/hooked rug.aux
 OUTPUT monografia.aux
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
@@ -425,6 +434,54 @@ OUTPUT ejemplos/suspension.aux
 INPUT ./ejemplos/suspension.tex
 INPUT ./ejemplos/suspension.tex
 INPUT ejemplos/suspension.tex
+INPUT ./ejemplos/alexander.tex
+INPUT ./ejemplos/alexander.tex
+OUTPUT ejemplos/alexander.aux
+INPUT ./ejemplos/alexander.tex
+INPUT ./ejemplos/alexander.tex
+INPUT ejemplos/alexander.tex
+INPUT ./img mono/alexander/1.png
+INPUT ./img mono/alexander/1.png
+INPUT ./img mono/alexander/1.png
+INPUT ./img mono/alexander/1.png
+INPUT ./img mono/alexander/1.png
+INPUT ./schoenflies/schoenflies.tex
+INPUT ./schoenflies/schoenflies.tex
+OUTPUT schoenflies/schoenflies.aux
+INPUT ./schoenflies/schoenflies.tex
+INPUT ./schoenflies/schoenflies.tex
+INPUT schoenflies/schoenflies.tex
+INPUT ./ejemplos/hooked rug.tex
+INPUT ./ejemplos/hooked rug.tex
+OUTPUT ejemplos/hooked rug.aux
+INPUT ./ejemplos/hooked rug.tex
+INPUT ./ejemplos/hooked rug.tex
+INPUT ejemplos/hooked rug.tex
+INPUT ./img mono/hooked rug/1.png
+INPUT ./img mono/hooked rug/1.png
+INPUT ./img mono/hooked rug/1.png
+INPUT ./img mono/hooked rug/1.png
+INPUT ./img mono/hooked rug/1.png
+INPUT ./img mono/hooked rug/2.png
+INPUT ./img mono/hooked rug/2.png
+INPUT ./img mono/hooked rug/2.png
+INPUT ./img mono/hooked rug/2.png
+INPUT ./img mono/hooked rug/2.png
+INPUT ./img mono/hooked rug/esfera.png
+INPUT ./img mono/hooked rug/esfera.png
+INPUT ./img mono/hooked rug/esfera.png
+INPUT ./img mono/hooked rug/esfera.png
+INPUT ./img mono/hooked rug/esfera.png
+INPUT ./img mono/hooked rug/3.png
+INPUT ./img mono/hooked rug/3.png
+INPUT ./img mono/hooked rug/3.png
+INPUT ./img mono/hooked rug/3.png
+INPUT ./img mono/hooked rug/3.png
+INPUT ./img mono/hooked rug/4.png
+INPUT ./img mono/hooked rug/4.png
+INPUT ./img mono/hooked rug/4.png
+INPUT ./img mono/hooked rug/4.png
+INPUT ./img mono/hooked rug/4.png
 INPUT monografia.aux
 INPUT ./homologia/homologia simplicial.aux
 INPUT ./homologia/homologia simplicial.aux
@@ -444,6 +501,15 @@ INPUT homologia/h1.aux
 INPUT ./ejemplos/suspension.aux
 INPUT ./ejemplos/suspension.aux
 INPUT ejemplos/suspension.aux
+INPUT ./ejemplos/alexander.aux
+INPUT ./ejemplos/alexander.aux
+INPUT ejemplos/alexander.aux
+INPUT ./schoenflies/schoenflies.aux
+INPUT ./schoenflies/schoenflies.aux
+INPUT schoenflies/schoenflies.aux
+INPUT ./ejemplos/hooked rug.aux
+INPUT ./ejemplos/hooked rug.aux
+INPUT ejemplos/hooked rug.aux
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
@@ -458,6 +524,7 @@ INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb

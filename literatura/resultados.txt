@@ -40,3 +40,10 @@ Esto capaz no da para ponerlo en detalle, lo voy a dejar para lo último. Pero m
 
 *Esfera de Fox-Artin: Está en detalle en el libro de Daverman y Venema, sección 2.8.
 
+Con esos tres resultados queda una imagen más completa de cómo se ven los encajes entre esferas: 
+
+Por JB: Siempre separan el espacio en dos bolas homológicas.
+Por Schoenflies: Si el encaje es localmente plano en todos lados, entonces las componentes son bolas homotópicas.
+Por Kirby: Con n>3, si hay puntos no localmente planos, entonces son por lo menos un Cantor.
+
+Esto ya no va para la mono pero a partir de ahí para clasificar los encajes no localmente planos se empezaron a desarrollar otras herramientas porque estaba clarísimo que la homología singular no era el criterio con el que había que mirar. Ahí se desarrolló la (co)homología de Čech, que no entiendo nada bien pero la idea supuestamente es que se define agarrando un cubrimiento por abiertos del espacio y refinandolo, y con la cohomología de los refinamientos se arma una sucesión que converge a algo y eso es la cohomología de Čech del espacio. Con esto se desarrolla un montón de teoría, que se llama "shape theory", y supuestamente sirve para distinguir mejor los espacios con "problemas" locales. Después se fueron desarrollando más herramientas que no me metí a mirar mucho, pero una que me pareció interesante y muy reciente (2020's) es mirar el pi_1 como un grupo topológico, con una topología heredada del espacio de caminos. Esto lo desarrolló un loco que se llama Jeremy Brazas, que también tiene un blog muy lindo sobre "wild topology" (wildtopology.com) y sacó un montón de papers en estos años trabajando con esas cosas.

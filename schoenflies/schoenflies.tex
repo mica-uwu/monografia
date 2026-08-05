@@ -1,6 +1,14 @@
 \chapter{Schoenflies}
 
-\comm{Agregar: Toda variedad compacta con borde tiene entorno collar.}
+\comm{Agregar: Toda variedad compacta con borde tiene entorno collar.
+
+Las clausuras de las componentes del complemento cuando no son variedades se llaman crumpled cubes, y bing prueba que un crumpled $n$-cube siempre es un retracto de $R^n$, esto implica q son contractibles.
+
+Puede pasar q las dos componentes sean crumpled cubes, x ejemplo agarras la esfera de alexander y le pones cuernos para el otro lado tb. también hay una prueba de q agarrar la esfera y hacerle el doubling queda $S^3$}
+
+La idea de la prueba es empezar asumiendo que una de las componentes es una variedad $A$, y en ese caso encontrar un entorno de collar para $A$. Teniendo ese entorno uno se considera un disco $D_1$ qu eesté contenido en $\partial A\times [0,1]\subset A$. Tomamos $D_2=S^n-D_1$ y se cumple que $D_2\simeq \D^n$. La idea después es probar que el homeo $D_2\simeq \D^n$ se extiende a un homeo $A\simeq \D^n$, esta es la parte que lleva más trabajo, la meat and potato de la prueba.
+
+\iffalse
 
 \begin{teo}
     Sea $f:Q\to \s^n$ una función continua entre una $n$-célula $Q$ y $\s^n$ tal que el conjunto $X=\{x\in\s^n :\# f^{-1}(x)> 1\}$ es finito y $f^{-1}(X)$ está contenido en el interior de $Q$ y es finito.
@@ -36,11 +44,13 @@
 
 \end{dem}
 
-\comm{ahora una prueba como la gente aver}
+\fi
 
-Idea de la prueba: Dado un encaje $\phi:\s^{n-1}\to\s^n$, consideramos $D$ la clausura de una componente de $\s^n - \phi(\s^{n-1})$. Queremos probar que $D\simeq \D^n$.
+%\comm{ahora una prueba como la gente aver}
 
-Asumimos que $D$ es una variedad con borde.\duda{pq vale asumir esto ñññ} Por lo tanto el borde tiene un entorno homeomorfo a $\s^{n-1}\times [0,1]$ en $D$. \comm{agregar esta prueba} Llamamos $\hat{\phi}:\s^{n-1}\times [0,1]\to\s^n$ al encaje, que es una extensión de $\phi$.
+Idea de la prueba: Dado un encaje $\phi:\s^{n-1}\to\s^n$, consideramos $D$ la clausura de una componente de $\s^n - \phi(\s^{n-1})$. Queremos probar que si $D$ es una variedad, entonces $D\simeq \D^n$.
+
+Si $D$ es una variedad con borde, el borde tiene un entorno homeomorfo a $\s^{n-1}\times [0,1]$ en $D$. Llamamos $\hat{\phi}:\s^{n-1}\times [0,1]\to\s^n$ al encaje, que es una extensión de $\phi$.
 
 Sean $X, Y$ las dos componentes de $\s^n-\hat{\phi}(\s^{n-1}\times [0,1])$ tal que $X\subset D$. Vamos a ver que existe un mapa sobreyectivo $f:\s^n\to\s^n$ tal que manda $X$, $Y$ en dos puntos distintos $x$, $y$, y es inyectiva en $\s^n-X\cup Y$. Una vez tenemos eso, restringiendo $f$ a $D$ tenemos como imagen un disco $\D\subset\s^n$.
 
@@ -57,7 +67,7 @@ La clave para esto es probar que bajo estas hipótesis $D$ cumple $D\simeq D/X$.
 \end{df}
 
 \begin{obs}
-    Como los $D_i$ son cerrados, $X$ necesariamente es cerrado.
+    Los $D_i$ son compactos, como la variedad es Hausdorff, entonces son cerrados. Por lo tanto $X$ necesariamente es cerrado.
 \end{obs}
 
 \begin{df}
@@ -73,7 +83,7 @@ Lo interesante de los conjuntos celulares es que al colapsarlos obtenemos una va
 \end{lema}
 
 \begin{dem}
-    Tenemos $X=\bigcap\limits^{\infty} D_i$, con $D_i$ discos encajados como en la definición. Construyamos un mapa sobreyectivo $f:M\to M$ tal que $f|_{M-X}$ es inyectiva y $f(X)=x_0$ para algún $x_0\in M$. Este mapa va a ser el límite de una sucesión de homeos que construimos inductivamente, empezando por $f_1:= Id$.
+    Tenemos $X=\bigcap\limits^{\infty} D_i$, con $D_i$ discos encajados como en la definición. Construyamos un mapa sobreyectivo $f:M\to M$ tal que $f|_{M-X}$ es inyectiva y $f(X)=x_0$ para algún $x_0\in M$. Este mapa va a ser el límite de una sucesión de homeos que construimos inductivamente, empezando por $f_1:= \text{Id}$.
 
     Para definir $f_{k+1}$, vamos a asumir que ya tenemos definido un homeo $f_k$. Lo modificamos de la siguiente manera:
 
@@ -83,8 +93,10 @@ Lo interesante de los conjuntos celulares es que al colapsarlos obtenemos una va
         \item $\hat{g}_{k+1}|_{\partial(f_k(D_k))}\equiv Id$
         \item $\diam\big(\hat{g}_{k+1}(f_k(D_{k+1}))\big)<\frac{1}{k+1}$
     \end{itemize}
+
+    \comm{para el primer punto, entiendo que se está usando que el mapping class group de $\D^n$ es trivial, para poder "isotopar" $f_k|_{\partial D_k}$ a $\text{Id}$.}
     
-    Una vez tenemos eso, lo extendemos a un homeo $g_{k+1}:M\to M$ como $g_{k+1}\equiv Id$ afuera de $f_k(D_k)$. Definimos $f_{k+1}:= g_{k+1}\circ f_k$.
+    Una vez tenemos eso, lo extendemos a un homeo $g_{k+1}:M\to M$ como $g_{k+1}\equiv \text{Id}$ afuera de $f_k(D_k)$. Definimos $f_{k+1}:= g_{k+1}\circ f_k$.
     
 %    Por ser un homeo, $f_k$ va a cumplir:
 
@@ -95,11 +107,15 @@ Lo interesante de los conjuntos celulares es que al colapsarlos obtenemos una va
 
     Ahora hay que verificar que la familia de funciones $\{f_k\}$ converge punto a punto. Veamos que la sucesión $f_k(p)$ converge para todo $p\in M$. Para esto separamos en los casos $p\in X$, $p\in M-X$.
 
-    Veamos el caso $p\in X$. Se tiene $f_k(p)\in f_k(D_k)$ para todo $k\in\N$.
+    Veamos el caso $p\in X$. Se tiene $f_k(p)\in f_k(D_k)$ para todo $k\in\N$. Por construcción, las $f_k$ cumplen 
+    
+    \begin{itemize}
+    \item $f_1(D_1)\supset f_2(D_2)\supset f_3(D_3)\supset\dots$
+    \item $\lim\limits_{k\to\infty}\text{diam}(D_k)=0$
+    \end{itemize}
+    Por lo tanto, la intersección $\bigcap\limits^\infty f_k(D_k)$ consiste de un único punto $x_0$, y se cumple que $\lim\limits_{k\to\infty}f_k(p)=x_0$.
 
-    Por construcción, las $f_k$ cumplen $f_1(D_1)\supset f_2(D_2)\supset f_3(D_3)\supset\dots$ y $\lim\limits_{k\to\infty}diam(D_k)=0$. Por lo tanto, la intersección $\bigcap\limits^\infty f_k(D_k)$ consiste de un único punto $x_0$, y se cumple que $\lim\limits_{k\to\infty}f_k(p)=x_0$.
-
-    Tomemos ahora $p\in M-X$, como $p\not\in\cap_{i=1}^\infty D_i$ a partir de cierto $K\in\N$ tenemos $p\not\in D_k$ para todo $k\geq K$. Por lo tanto, la sucesión $f_k(p)$ es constante a partir de $K$.
+    Tomemos ahora $p\in M-X$. Como los $D_k$ están encajados y $p\not\in\cap_{k=1}^\infty D_k$, existe un $K\in\N$ tal que $p\not\in D_k$ para todo $k\geq K$. Por lo tanto, la sucesión $f_k(p)$ es constante a partir de $K$.
 
     Con esto tenemos que las $f_k$ convergen puntualmente, llamamos $f$ al límite.
 
@@ -109,8 +125,41 @@ Lo interesante de los conjuntos celulares es que al colapsarlos obtenemos una va
 
     Ahora veamos que $f$ es inyectiva en $M-X$. Para eso tomamos dos puntos $x\neq y\in M-X$. Como no están en $X$, las sucesiones $f_k(x), f_k(y)$ son eventualmente constantes, y por lo tanto podemos encontrar un $K\in\N$ tal que $f(x) = f_K(x)$, $f(y) = f_K(y)$. Como $f_K$ es un homeo y $x\neq y$, entonces $f(x)\neq f(y)$.
 
-
+    Con esto tenemos que $f:M\to M$ baja al cociente como una biyección continua, que además va a ser un homeo porque va de un espacio compacto a uno Hausdorff. $\square$
 \end{dem}
+
+Inductivamente obtenemos el mismo resultado para un espacio con finitos conjuntos celulares disjuntos dos a dos.
+
+\begin{cor}
+Sea $M$ una $n$-variedad compacta con borde, sean $X_1,\dots,X_n$ subconjuntos celulares de $\mathring{M}$ disjuntos dos a dos. Entonces el espacio $M'$ obtenido al colapsar los $X_i$ es homeomorfo a $M$.
+\end{cor}
+
+\begin{dem}
+    Lo único que nos falta observar para usar inductivamente el lema anterior es que dados dos conjuntos celulares disjuntos $X_1$ y $X_2$, el conjunto $X_2$ sigue siendo celular en $M/\sim$ al colapsar $X_1$.
+
+    En efecto, esto se cumple por definición. El complemento de un punto en $M/\sim$ es abierto, por lo tanto nos podemos tomar un entorno abierto del conjunto $X_2$. 
+    
+    \comm{terminar de escribir esto, creo q tengo q usar algun tipo de regularidad para decir que tengo el entorno abierto del conjunto. con eso ya sale que es celular en el colapsado.}
+\end{dem}
+
+Para poder usar esta propiedad tan útil sobre los conjuntos celulares, va a ser necesario un criterio que nos permita identificarlos.
+
+\begin{lema}
+    Sean $X_1,\dots, X_m\subset\mathring{\D}^n$ cerrados disjuntos. Sea $M/_{\sim}$ el espacio obtenido al colapsar $X_1,\dots, X_m$ y sea $\pi:M\to M/_{\sim}$ la proyección.
+\end{lema}
+
+\begin{lema}
+    Sea $f:\D^n\to \s^n$ continua, sea $M\subset \D^n$ tal que $f$ es inyectiva en $\D^n - M$ y $M=f^{-1}(x_0)$ para algún $x_0\in\s^n$. Entonces, $M$ es un conjunto celular en $\D^n$
+\end{lema}
+
+\begin{lema}
+    Sea $S\subset \s^n$ una $(n-1)$-esfera encajada en $\s^n$, sea $D$ una de las componentes conexas de $\s^n-S$. Sea $f:\overline{D}\to R\simeq \D^n$ continua, tal que es inyectiva en $\overline{D}-M$, siendo $M$ un conjunto celular. Entonces, $\overline{D}\simeq\D^n$.
+\end{lema}
+
+\comm{cuando digo "colapsar $X_1,\dots,X_m$", se Asobreentiende que es colapsarlos a puntos distintos, no?}
+
+
+\iffalse
 
 \begin{teo}
     Invariancia del dominio:
@@ -164,6 +213,12 @@ Con esto tenemos un resultado para variedades topológicas:
 
 \end{dem}
 
+\begin{figure}
+    	\centering
+    	\includegraphics[width=0.75\linewidth]{img mono/schoenflies/inv dominio.png}
+    	\caption{agregar esto}
+\end{figure}
+
 Podemos usar la invariancia del dominio para probar lo siguiente:
 
 \begin{lema}
@@ -185,3 +240,5 @@ Podemos usar la invariancia del dominio para probar lo siguiente:
 \end{dem}
 
 \comm{leer https://mathoverflow.net/questions/29737/understand-cech-cohomology}
+
+\fi
