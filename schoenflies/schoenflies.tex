@@ -8,6 +8,12 @@ Puede pasar q las dos componentes sean crumpled cubes, x ejemplo agarras la esfe
 
 La idea de la prueba es empezar asumiendo que una de las componentes es una variedad $A$, y en ese caso encontrar un entorno de collar para $A$. Teniendo ese entorno uno se considera un disco $D_1$ qu eesté contenido en $\partial A\times [0,1]\subset A$. Tomamos $D_2=S^n-D_1$ y se cumple que $D_2\simeq \D^n$. La idea después es probar que el homeo $D_2\simeq \D^n$ se extiende a un homeo $A\simeq \D^n$, esta es la parte que lleva más trabajo, la meat and potato de la prueba.
 
+\begin{figure}
+    	\centering
+    	\includegraphics[width=0.5\linewidth]{img mono/schoenflies/equiv.png}
+    	\caption{M. Brown, Locally ﬂat imbeddings of topological manifolds}
+\end{figure}
+
 \iffalse
 
 \begin{teo}
@@ -137,9 +143,9 @@ Sea $M$ una $n$-variedad compacta con borde, sean $X_1,\dots,X_n$ subconjuntos c
 \begin{dem}
     Lo único que nos falta observar para usar inductivamente el lema anterior es que dados dos conjuntos celulares disjuntos $X_1$ y $X_2$, el conjunto $X_2$ sigue siendo celular en $M/\sim$ al colapsar $X_1$.
 
-    En efecto, esto se cumple por definición. El complemento de un punto en $M/\sim$ es abierto, por lo tanto nos podemos tomar un entorno abierto del conjunto $X_2$. 
+    En efecto, esto se cumple. Como $M$ es un espacio métrico, dados dos cerrados disjuntos tengo entornos disjuntos. Dados dos abiertos disjuntos de $X_1$ y $X_2$, estos van a seguir siendo abiertos en $M/_{\sim}$ al pasar por la proyección, entonces $\pi(X_2)\subset M/_{\sim}$ es celular.
     
-    \comm{terminar de escribir esto, creo q tengo q usar algun tipo de regularidad para decir que tengo el entorno abierto del conjunto. con eso ya sale que es celular en el colapsado.}
+    \comm{terminar de escribir esto, hacer la cadena de implicaciones para concluir que $M$ es metrizable y así poder usar que tengo los entornos disjuntos.}
 \end{dem}
 
 Para poder usar esta propiedad tan útil sobre los conjuntos celulares, va a ser necesario un criterio que nos permita identificarlos.
@@ -151,32 +157,65 @@ Para poder usar esta propiedad tan útil sobre los conjuntos celulares, va a ser
 \begin{lema}
     Sea $f:\D^n\to \s^n$ continua, sea $M\subset \D^n$ tal que $f$ es inyectiva en $\D^n - M$ y $M=f^{-1}(x_0)$ para algún $x_0\in\s^n$. Entonces, $M$ es un conjunto celular en $\D^n$
 \end{lema}
+\begin{dem}
+    Por Jordan-Brouwer tenemos que $h(\partial\D^n)$ separa $\s^n$ en dos regiones. Por otro de los lemas anteriores (ordenar bien) tenemos que $h(\D^n)=h(\partial\D^n)\cup D$ siendo $D$ una de esas dos regiones.
+
+    Tomamos un abierto $U$ que contenga a $M$. Como $f$ es inyectiva en $\D^n-M$ y es continua, entonces $f|_{\D^n-M}$ es un homeo, y por lo tanto $f(U)$ es abierto.
+
+    Tomamos $h:\s^n\to\s^n$ un homeo que mande $\overline{D}$ en $f(U)$ y tal que $h=\text{Id}$ en un entorno $V$ de $x_0$. \comm{dice que el entorno tiene que ser chico, ver bien pq}
+
+    Definimos $g:\D^n\to\D^n$ como $$ g(x)=
+    \begin{cases}
+    x \quad &\text{si } x\in M\\ 
+    f^{-1}\circ h\circ f(x)\quad &\text{si } x\not\in M
+    \end{cases}$$
+
+    Como $h=\text{Id}$ en $f^{-1}(V)$ tenemos que $g$ es un homeo.
+
+    Concluimos que $M$ es celular porque $g^k(\D^n)\subset g^{k-1}(\D^n)$ van a ser discos que aproximan $f^{-1}(V)$.
+
+    \duda{me falta el paso de por qué aproximar $f^{-1}(V)$ es suficiente. creo que más bien la idea es que puedo ir definiendo $g_k$ con los entornos $V$ cada vez más chicos y ahí eee. claro creo q ya entendi. el entorno $U$ del principio es arbitrario y me consegui un disco adentro. }
+\end{dem}
+
+\comm{insertar bien la referencia}
+
+\begin{figure}
+    	\centering
+    	\includegraphics[width=0.75\linewidth]{img mono/schoenflies/sch.jpeg}
+    	\caption{Dibujito}
+\end{figure}
 
 \begin{lema}
-    Sea $S\subset \s^n$ una $(n-1)$-esfera encajada en $\s^n$, sea $D$ una de las componentes conexas de $\s^n-S$. Sea $f:\overline{D}\to R\simeq \D^n$ continua, tal que es inyectiva en $\overline{D}-M$, siendo $M$ un conjunto celular. Entonces, $\overline{D}\simeq\D^n$.
+    Sea $S\subset \s^n$ una $(n-1)$-esfera encajada en $\s^n$, sea $D$ una de las componentes conexas de $\s^n-S$. Sea $f:\overline{D}\to R\simeq \D^n$ continua, tal que es inyectiva en $\overline{D}-M$, siendo $M$ un conjunto celular. Entonces, $\overline{D}\simeq\D^n$
 \end{lema}
 
-\comm{cuando digo "colapsar $X_1,\dots,X_m$", se Asobreentiende que es colapsarlos a puntos distintos, no?}
+\begin{lema}
+    Sea $h\colon\s^{n-1}\times I\to\s^n$ un encaje. Entonces, la clausura de cada componente de $h\left(\s^{n-1}\times \{\frac{1}{2}\}\right)^c$ es una $n$-bola.
+\end{lema}
+\begin{dem}
 
+    Llamamos $A$ a la componente de $h\left(\s^{n-1}\times \{\frac{1}{2}\}\right)^c$ que contiene a $h\left(\s^{n-1}\times \{0\}\right)$ y $B$ a la que contiene a $h\left(\s^{n-1}\times \{1\}\right)$.
 
-\iffalse
+    Consideramos una función continua de $\s^n$ en sí misma que mande $A$ y $B$ a los polos norte y sur, tal que $h\left(\s^{n-1}\times \{\frac{1}{2}\}\right)$ es el ecuador, y tal que la función sea inyectiva en todos lados menos $A$ y $B$.
 
-\begin{teo}
-    Invariancia del dominio:
+    Llamamos $D_A$ y $D_B$ a las componentes de $h\left(\s^{n-1}\times \{\frac{1}{2}\}\right)^c$ que contienen $A$ y $B$ respectivamente.
 
+    Por lema anterior, $A$ y $B$ son conjuntos celulares en $D_A$ y $D_B$, y entonces por lema anterior, $\overline{D_A}$ y $\overline{D_B}$ son $n$-bolas.
+
+\end{dem}
+
+\begin{teo}{Invariancia del dominio:}
     $U$ abierto de $\R^n$, $h:U\to\R^n$ continua e inyectiva, entonces $h(U)$ es abierto de $\R^n$.
 \end{teo}
 
 
 \begin{dem}
 
-    Vemos $S^n$ como la compactificación de $R^n$, queremos probar que $h(U)$ es abierto en $S^n$.
+    Vemos $S^n$ como la compactificación de $R^n$, queremos probar que $h(U)$ es abierto en $S^n$. Consideramos un punto $x\in U$, entonces $x$ es centro de un disco $D$ de dimensión $n$ contenido en $U$.
 
-    Sea $x\in U$, entonces $x$ es centro de un disco $D$ de dimensión $n$ contenido en $U$.
+    Probemos que $h(D-\partial D)$ es un abierto de $\S^n$:
 
-    Probemos que $h(D-\partial D)$ es un abierto de $\S^n$.
-
-    $h$ continua e inyectiva, entonces $h|_{\partial D}$, $h|_{D}$ son encajes.
+    Como $h$ es continua e inyectiva, entonces $h|_{\partial D}$, $h|_{D}$ son encajes.
 
     Por el teorema de la sección anterior \comm{insertar bien la referencia} tenemos que $\tilde{H}_0(\s^n - h(\partial D))=\Z$, es decir, $H_0(\s^n - h(\partial D))=\Z\oplus\Z$. O sea, $\s^n - h(\partial D)$ está conformado por dos componentes conexas por caminos que son disjuntas entre sí. 
     
@@ -218,6 +257,8 @@ Con esto tenemos un resultado para variedades topológicas:
     	\includegraphics[width=0.75\linewidth]{img mono/schoenflies/inv dominio.png}
     	\caption{agregar esto}
 \end{figure}
+
+\iffalse
 
 Podemos usar la invariancia del dominio para probar lo siguiente:
 
