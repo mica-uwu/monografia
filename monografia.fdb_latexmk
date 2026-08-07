@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1786079070.12033 "o:/monografia/monografia.tex" "monografia.pdf" "monografia" 1786079072.08793 0
+["pdflatex"] 1786082552.88367 "o:/monografia/monografia.tex" "monografia.pdf" "monografia" 1786082554.66007 0
   "C:/Users/cumpc/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1785541568 81086 6fddea6b023469843de28035c851ec71 ""
   "C:/Users/cumpc/AppData/Local/MiKTeX/fonts/tfm/public/stmaryrd/stmary10.tfm" 1785541574 848 f478e0761563bbc369eca609a1741348 ""
   "C:/Users/cumpc/AppData/Local/MiKTeX/fonts/tfm/public/stmaryrd/stmary5.tfm" 1785541573 848 e1bc58a31b9ed9c3729ffea165acfaac ""
@@ -179,12 +179,12 @@
   "O:/programas/miktex/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "O:/programas/miktex/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "cmat-monografia.cls" 1781243100 3051 2d4c3bd389d707f779416f56c6240530 ""
-  "homologia/h1.aux" 1786079071 1744 d6440a883a5cb7a76241d94c679d5820 "pdflatex"
-  "homologia/h1.tex" 1786077004 18498 aa584cad98d6279d2ec7542853615b84 ""
+  "homologia/h1.aux" 1786082554 1744 d6440a883a5cb7a76241d94c679d5820 "pdflatex"
+  "homologia/h1.tex" 1786082552 18535 1a32ce11758996ab5a02ec2b1c4c5c8c ""
   "img mono/abelianizado/h11.png" 1785543338 12826 9054f83f40ce8547c531dd028d7e52fd ""
   "img mono/abelianizado/h12.png" 1785241807 7294 b7394d0d5c6e7f012c40070d3337b63f ""
   "img mono/abelianizado/h13.png" 1785538895 20882 7e94a943b0970d4f10e0d8b2c7904c68 ""
-  "monografia.aux" 1786079071 244 d77d5a7e1f000d8e7e9289adff00794b "pdflatex"
+  "monografia.aux" 1786082554 244 7db88ed9425111b4be2cac265f8edaed "pdflatex"
   "monografia.tex" 1786079069 2235 d6af5cea92197af22804b47768b29cbe ""
   "o:/monografia/monografia.tex" 1786079069 2235 d6af5cea92197af22804b47768b29cbe ""
   (generated)
