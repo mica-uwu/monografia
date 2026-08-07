@@ -105,7 +105,7 @@ Supongamos ahora que $X$ es conexo por caminos y construyamos una inversa para $
 
 Primero vamos a definir $\phi:C_1(X)\to\pi_1(X,x_0)_{ab}$ en general y después lo vamos a restringir a $\Ker(\partial_1)$. Como $C_1(X)$ es un grupo abeliano libre generado por los $\sigma:\Delta^1\to X$, nos basta definirlo para cada uno de estos $1$-símplices singulares para después extenderlo a un morfismo en todo $C_1(X)$.
 
-Lo que hay que hacer es identificar $1$-cadenas con clases de curvas cerradas con base $x_0$. Para esto definimos unos caminos que nos van a resultar convenientes. Dado $x\in X$, definimos $\gamma_x:[0,1]\to X$ como un camino tal que $\gamma_x(0)=x_0$ y $\gamma_x(1)=x$.
+Lo que hay que hacer es identificar $1$-símplices singulares con curvas cerradas con base $x_0$, y después tomar cociente. Para esto definimos unos caminos que nos van a resultar convenientes. Dado $x\in X$, definimos $\gamma_x:[0,1]\to X$ como un camino tal que $\gamma_x(0)=x_0$ y $\gamma_x(1)=x$.
 
 Sea $\sigma:\Delta^1\to X$, identificamos $\Delta^1$ con $[0,1]$ mediante un homeomorfismo. Precomponiendo con este homeo podemos pensar $\sigma$ como un camino $\sigma_\gamma:[0,1]\to X$.
 
@@ -134,12 +134,10 @@ Entonces \begin{align*}
 	&=\left(\left\llbracket\gamma_{y_1} * \sigma_0 *\overline{\gamma_{y_2}}\right\rrbracket \left\llbracket \overline{\gamma_{y_0}*\sigma_1*\overline{\gamma_{y_2}}}\right\rrbracket\left\llbracket\gamma_{y_0}*\sigma_2*\overline{\gamma_{y_1}}\right\rrbracket\right)_{ab}\\
 	&=\left(\left\llbracket \gamma_{y_1} * \sigma_0 *\overline{\gamma_{y_2}} * \gamma_{y_2}*\overline{\sigma_1}*\overline{\gamma_{y_0}}*\gamma_{y_0}*\sigma_2*\overline{\gamma_{y_1}}\right\rrbracket\right)_{ab}\\
 	&=\left(\left\llbracket\gamma_{y_1} * \sigma_0*\overline{\sigma_1}*\sigma_2*\overline{\gamma_{y_1}}\right\rrbracket\right)_{ab}\\
-	&=\left(\left\llbracket\gamma_{y_1}\right\rrbracket\left\llbracket\sigma_0*\overline{\sigma_1}*\sigma_2\right\rrbracket\left\llbracket\overline{\gamma_{y_1}}\right\rrbracket\right)_{ab}\\
-	&=\left(\left\llbracket\gamma_{y_1}\right\rrbracket\left\llbracket\overline{\gamma_{y_1}}\right\rrbracket\left\llbracket\sigma_0*\overline{\sigma_1}*\sigma_2\right\rrbracket\right)_{ab}\\
-	&=\left(\left\llbracket\sigma_0*\overline{\sigma_1}*\sigma_2\right\rrbracket\right)_{ab}
+	&=\left(\left\llbracket\gamma_{y_1}\right\rrbracket\left\llbracket\sigma_0*\overline{\sigma_1}*\sigma_2\right\rrbracket\left\llbracket\overline{\gamma_{y_1}}\right\rrbracket\right)_{ab}
 \end{align*}
 
-La clase de homotopía de la concatenación $\sigma_0*\overline{\sigma_1}*\sigma_2$ es trivial por provenir de un $2$-símplice singular. Obtuvimos entonces lo que buscábamos, y por lo tanto $\phi$ baja a un morfismo $\tilde{\phi}:H_1(X)\to\pi_1(X)_{ab}$.
+La clase de homotopía de la concatenación $\sigma_0*\overline{\sigma_1}*\sigma_2$ es trivial por provenir de un $2$-símplice singular, ya que en $\Delta^2$ podemos obtener una homotopía a extremos fijos entre $\sigma_0 *\overline{\sigma_1}$ y $\sigma_2$, que luego va a ser preservada por la función $\sigma$. Obtuvimos entonces lo que buscábamos, y por lo tanto $\phi$ baja a un morfismo $\tilde{\phi}:H_1(X)\to\pi_1(X)_{ab}$.
 
 \comm{acá decir que los simplices son homotopicos, pq la contractibilidad no neceseariamente se preserva}
 
