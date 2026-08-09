@@ -6,51 +6,70 @@ Las clausuras de las componentes del complemento cuando no son variedades se lla
 
 Puede pasar q las dos componentes sean crumpled cubes, x ejemplo agarras la esfera de alexander y le pones cuernos para el otro lado tb. también hay una prueba de q agarrar la esfera y hacerle el doubling queda $S^3$}
 
+\cite{mbsch}
+
 La idea de la prueba es empezar asumiendo que una de las componentes es una variedad $A$, y en ese caso encontrar un entorno de collar para $A$. Teniendo ese entorno uno se considera un disco $D_1$ qu eesté contenido en $\partial A\times [0,1]\subset A$. Tomamos $D_2=S^n-D_1$ y se cumple que $D_2\simeq \D^n$. La idea después es probar que el homeo $D_2\simeq \D^n$ se extiende a un homeo $A\simeq \D^n$, esta es la parte que lleva más trabajo, la meat and potato de la prueba.
 
-\begin{figure}
-    	\centering
-    	\includegraphics[width=0.5\linewidth]{img mono/schoenflies/equiv.png}
-    	\caption{M. Brown, Locally ﬂat imbeddings of topological manifolds}
-\end{figure}
-
-\iffalse
+% \begin{figure}
+%     	\centering
+%     	\includegraphics[width=0.5\linewidth]{img mono/schoenflies/equiv.png}
+%     	\caption{M. Brown, Locally ﬂat imbeddings of topological manifolds}
+% \end{figure}
 
 \begin{teo}
-    Sea $f:Q\to \s^n$ una función continua entre una $n$-célula $Q$ y $\s^n$ tal que el conjunto $X=\{x\in\s^n :\# f^{-1}(x)> 1\}$ es finito y $f^{-1}(X)$ está contenido en el interior de $Q$ y es finito.
+    Sea $f:D\to \s^n$ una función continua, siendo $D$ un disco $D\simeq \D^n$. Llamamos $X=\{x\in\s^n :\# f^{-1}(x)> 1\}$ a los puntos donde $f$ no es inyectiva. Suponemos que $X$ es finito y $f^{-1}(X)$ está contenido en el interior de $D$.
 
-    Entonces, si escribimos $\s^n - f(\mathring{Q})= D_1\sqcup D_2$, se tiene que $f(Q)=D_1\cup f(\partial Q)$ o $f(Q)=D_2\cup f(\partial Q)$
+    Entonces, si $\s^n - f(\partial D)= D_1\sqcup D_2$, se cumple una de las dos opciones:
+
+    \begin{itemize}
+        \item $f(D)=D_1\cup f(\partial D)$
+        \item $f(D)=D_2\cup f(\partial D)$
+    \end{itemize}
 \end{teo}
 
-\begin{dem}
+\begin{proof}
 
-    Llamamos $h=f|_{\mathring{Q}}$, $h$ es continua e inyectiva entre espacios métricos compactos, entonces es un homeo sobre su imagen. Como vimos antes en el teorema de separación de Jordan-Brouwer, $h(\mathring{Q})$ separa $\s^n$ en dos componentes conexas (y estas componentes son bolas homológicas).
+    Llamamos $h:=f|_{\partial D}$. Como $f^{-1}(X)\cap D=\varnothing$, $h$ es inyectiva. Con eso $h$ es continua e inyectiva entre espacios métricos compactos, entonces es un homeo sobre su imagen. Por el teorema de separación de Jordan-Brouwer, $h(\partial D)$ separa $\s^n$ en dos componentes conexas (y estas componentes son bolas homológicas, aunque no vamos a usar eso en este caso). Llamamos a estas componentes $D_1$ y $D_2$ como en el enunciado.
 
     En principio tenemos dos opciones:
 
     \begin{itemize}
-        \item $f(Q)\subset f(\partial Q)$
-        \item $f(\mathring{Q})$ intersecta $D_1\sqcup D_2$
+        \item $f(D)\subset f(\partial D)$
+        \item $f(\mathring{D})$ intersecta $D_1\sqcup D_2$
     \end{itemize}
     
-    Supongamos $f(Q)\subset f(\partial Q)$. En ese caso podríamos considerar la composición $h^{-1}\circ f$. Esta sería una función continua que fija $\partial Q$ y manda $Q$ en $\partial Q$, esto es absurdo. 
+    Supongamos $f(D)\subset f(\partial D)$. En ese caso podríamos considerar la composición $h^{-1}\circ f$. Esta sería una función continua que fija $\partial D$ y manda $D$ en $\partial D$, esto es absurdo. 
     
     \comm{escribir esto con más detalle?}
 
-    Obtuvimos entonces que $f(Q)$ intersecta por lo menos a una de las regiones $D_1$, $D_2$. Llamemos $D$ a una tal que $f(Q)\cap D\neq\varnothing$.
+    Obtuvimos entonces que $f(D)$ intersecta por lo menos a una de las regiones $D_1$, $D_2$. Sin pérdida de generalidad suponemos $f(D)\cap D_1=\varnothing$.
 
-    Como $f^{-1}(X)\cap\partial Q=\varnothing$, se cumple que $f$ es inyectiva en $\partial Q$. Además $f^{-1}(f(\partial Q))=\partial Q$. 
+    Sabemos que $\partial D$ no separa $D$, y $f(\partial D)$ si separa $\s^n$. Como $f^{-1}(X)\subset\mathring{D}$, entonces $f$ cumple $f(\mathring{D})\cap f(\partial D)=\varnothing$. Como $f$ es continua, manda componentes conexas en componentes conexas, y como $f(\partial D)$ separa $\s^n$ en dos componentes, entonces $f(\mathring{D})$ va a estar contenida en $D_1$.
 
-    $\partial{Q}$ no separa $Q$, $f(\partial{Q})$ separa $\s^n$, entonces $f(Q)\subset\overline{D}$. \comm{escribir mejor}
+    Por el teorema de separación de Jordan Brouwer además tenemos que $f(\partial D)=\partial D_1=\partial D_2$. Por lo tanto concluimos que $f(D)\subset \overline{D_1}$.
 
-    Si la inclusión es estricta, 
+    Probemos ahora la otra inclusión. Si nos restrinigmos a los puntos en $D-f^{-1}(X)$, $f$ es continua e inyectiva, entonces por el teorema de invariancia del dominio la imagen por $f$ del abierto $\mathring{D}-f^{-1}(X)$ es un abierto de $\s^n$. Como $f(\partial D)=\partial D_1$, los únicos posibles puntos de $\partial(f(D))$ en el interior de $D_1$ son exactamente los elementos de $X$, que son una cantidad finita.
 
+    Supongamos por absurdo que $\overline{D_1}\not\subset f(D)$. En ese caso, los puntos en $D_1$ se separan en tres tipos:
 
-    % $\int{Q}$ es conexo, entonces $f(\int{Q})$ es conexo. Además $f(\int{Q})\cap D\neq\varnothing$, entonces $f(\int{Q})\subset D$. Por lo tanto $f(Q)=D\cup f(\partial Q)$.%    
+    % \begin{itemize}
+    %     \item $x\in \overline{D_1}\cap f(\mathring{D})$
+    %     \item $x\in \overline{D_1}\cap f(\partial D)$
+    %     \item $x\in \overline{D_1} - f(D)$
+    % \end{itemize}
 
-\end{dem}
+    % Como $f(\partial D)=\partial D_1$ y $f^{-1}(X)\cap\partial D=\varnothing$, entonces en realidad vale
 
-\fi
+    \begin{itemize}
+        \item $x\in D_1\cap \mathring{f(D)}$
+        \item $x\in D_1\cap \partial f(D)$
+        \item $x\in D_1 - f(D)$
+    \end{itemize}
+
+    Como $D$ es compacto y $f$ es continua entonces $f(D)$ es un compacto en $\s^n$ y por lo tanto es cerrado. Entonces los conjuntos $D_1\cap \mathring{f(D)}$ y $D_1 - f(D)$ son abiertos disjuntos. Como $D_1$ es abierto y conexo, un subconjunto que lo separe en dos componentes conexas necesariamente debe tener una cantidad infinita de puntos. Esto es absurdo, ya que antes observamos que $D_1\cap \partial(f(D))$ tiene cardinal finito.
+
+    Con esto concluimos que $f(D)=\overline{D_1}$, probando el lema.
+\end{proof}
 
 %\comm{ahora una prueba como la gente aver}
 

@@ -36,6 +36,9 @@
 \usepackage{enumitem}
 \usepackage{tikz}
 \usepackage{stmaryrd}
+\usepackage[numbers]{natbib}
+\usepackage{hyperref}
+\usepackage[spanish]{babel}
 
 \theoremstyle{definition}
 \newtheorem{df}{Definición}[chapter]
@@ -91,13 +94,13 @@
 
 % \include{homologia/jordan}
 
-\include{homologia/h1}
+% \include{homologia/h1}
 
 % \include{ejemplos/suspension}
 
 % \include{ejemplos/alexander}
 
-% \include{schoenflies/schoenflies}
+\include{schoenflies/schoenflies}
 
 % \include{schoenflies/puntos problematicos}
 
@@ -108,6 +111,10 @@
 
 
 
-
+\backmatter
+\bibliographystyle{alpha}
+\bibliography{biblio}
 
 \end{document}
+
+% https://zbmath.org/0132.20002
