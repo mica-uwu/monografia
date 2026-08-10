@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.6.19)  8 AUG 2026 21:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.6.19)  9 AUG 2026 21:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/franco/mica/monografia/monografia.tex
+**/home/franco/mica/monografia/monografia
 (/home/franco/mica/monografia/monografia.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -587,48 +587,46 @@ Package: babel 2024/01/07 v24.1 The Babel package
 Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
 \es@quottoks=\toks45
 \es@quotdepth=\count330
-Package babel Info: Making " an active character on input line 570.
-Package babel Info: Making . an active character on input line 675.
-Package babel Info: Making < an active character on input line 722.
-Package babel Info: Making > an active character on input line 722.
 )) (/usr/share/texlive/texmf-dist/tex/generic/babel/locale/es/babel-spanish.tex
 Package babel Info: Importing font and identification data for spanish
 (babel)             from babel-es.ini. Reported on input line 11.
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarybabel.code.tex
+File: tikzlibrarybabel.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
 \c@df=\count331
  (./monografia.aux
-LaTeX Info: Redefining \. on input line 11.
-LaTeX Info: Redefining \% on input line 11.
- (./schoenflies/schoenflies.aux))
+LaTeX Info: Redefining \. on input line 8.
+LaTeX Info: Redefining \% on input line 8.
+ (./homologia/homologiasimplicial.aux) (./homologia/homologiasingular.aux) (./homologia/mayervietoris.aux) (./homologia/jordan.aux) (./homologia/h1.aux) (./ejemplos/suspension.aux) (./ejemplos/alexander.aux) (./schoenflies/schoenflies.aux) (./ejemplos/hookedrug.aux))
 \openout1 = `monografia.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 79.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 81.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 79.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 81.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+stmry on input line 79.
+LaTeX Font Info:    Trying to load font information for U+stmry on input line 81.
  (/usr/share/texlive/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -693,13 +691,13 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 79.
+Package hyperref Info: Link coloring OFF on input line 81.
  (./monografia.out) (./monografia.out)
 \@outlinefile=\write4
 \openout4 = `monografia.out'.
 
-LaTeX Info: Redefining \. on input line 79.
-LaTeX Info: Redefining \% on input line 79.
+LaTeX Info: Redefining \. on input line 81.
+LaTeX Info: Redefining \% on input line 81.
  [0
 
 
@@ -707,66 +705,330 @@ LaTeX Info: Redefining \% on input line 79.
 pdfTeX warning (ext4): destination with the same identifier (name{page.0}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.82 
+l.84 
       [0
 
 
 ]
-\openout2 = `schoenflies/schoenflies.aux'.
+\openout2 = `homologia/homologiasimplicial.aux'.
 
- (./schoenflies/schoenflies.tex
+ (./homologia/homologiasimplicial.tex
 Cap\'{\i }tulo 1
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 7.
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 4.
 [1
 
 
 
-] [2] [3] [4]
-<img mono/schoenflies/sch.jpeg, id=67, 4047.12pt x 3035.34pt>
+]
+<img mono/simplices.png, id=80, 3657.665pt x 1268.74pt>
+File: img mono/simplices.png Graphic file (type png)
+<use img mono/simplices.png>
+Package pdftex.def Info: img mono/simplices.png  used on input line 37.
+(pdftex.def)             Requested size: 209.12775pt x 72.53963pt.
+<img mono/simplices estandar.png, id=82, 3501.08pt x 1336.995pt>
+File: img mono/simplices estandar.png Graphic file (type png)
+<use img mono/simplices estandar.png>
+Package pdftex.def Info: img mono/simplices estandar.png  used on input line 54.
+(pdftex.def)             Requested size: 209.12775pt x 79.84901pt.
+ [2 <./img mono/simplices.png> <./img mono/simplices estandar.png>] [3]
+<img mono/cociente.png, id=104, 3625.545pt x 1951.29pt>
+File: img mono/cociente.png Graphic file (type png)
+<use img mono/cociente.png>
+Package pdftex.def Info: img mono/cociente.png  used on input line 93.
+(pdftex.def)             Requested size: 167.29964pt x 90.03732pt.
+<img mono/cociente2.png, id=105, 3625.545pt x 1951.29pt>
+File: img mono/cociente2.png Graphic file (type png)
+<use img mono/cociente2.png>
+Package pdftex.def Info: img mono/cociente2.png  used on input line 96.
+(pdftex.def)             Requested size: 167.29964pt x 90.03732pt.
+<img mono/norient2.png, id=108, 1472.50125pt x 1641.13126pt>
+File: img mono/norient2.png Graphic file (type png)
+<use img mono/norient2.png>
+Package pdftex.def Info: img mono/norient2.png  used on input line 121.
+(pdftex.def)             Requested size: 83.64981pt x 93.20488pt.
+<img mono/norient4.png, id=109, 1472.50125pt x 1641.13126pt>
+File: img mono/norient4.png Graphic file (type png)
+<use img mono/norient4.png>
+Package pdftex.def Info: img mono/norient4.png  used on input line 126.
+(pdftex.def)             Requested size: 83.64981pt x 93.20488pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--127
+[]\OT1/cmr/m/sc/10 (b) |$\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 v[]; v[]; v[]\OT1/cmr/m/n/10 ]$,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--127
+\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 v[]; v[]; v[]\OT1/cmr/m/n/10 ]$,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--127
+\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 v[]; v[]; v[]\OT1/cmr/m/n/10 ]$ y
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<img mono/borient2.png, id=111, 1472.50125pt x 1641.13126pt>
+File: img mono/borient2.png Graphic file (type png)
+<use img mono/borient2.png>
+Package pdftex.def Info: img mono/borient2.png  used on input line 138.
+(pdftex.def)             Requested size: 83.64981pt x 93.20488pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--139
+[]\OT1/cmr/m/sc/10 (a) |$\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 v[]; v[]\OT1/cmr/m/n/10 ]$,
+ []
+
+<img mono/borient4.png, id=112, 1472.50125pt x 1641.13126pt>
+File: img mono/borient4.png Graphic file (type png)
+<use img mono/borient4.png>
+Package pdftex.def Info: img mono/borient4.png  used on input line 143.
+(pdftex.def)             Requested size: 83.64981pt x 93.20488pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
+[]\OT1/cmr/m/sc/10 (b) |$\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 v[]; v[]; v[]\OT1/cmr/m/n/10 ]$,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
+\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 v[]; v[]; v[]\OT1/cmr/m/n/10 ]$,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
+\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 v[]; v[]; v[]\OT1/cmr/m/n/10 ]$ y
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (13.44086pt too wide) in paragraph at lines 156--156
+\OT1/cmr/m/n/10.95 Pa-ra es-to, fi-ja-mos su va-lor en los ge-ne-ra-do-res de $^^A[](\OML/cmm/m/it/10.95 X\OT1/cmr/m/n/10.95 )$, es de-cir, las fun-cio-nes $[]$.
+ []
+
+[4 <./img mono/cociente.png> <./img mono/cociente2.png>] [5 <./img mono/norient2.png> <./img mono/norient4.png> <./img mono/borient2.png> <./img mono/borient4.png>] [6]
+<img mono/s1.png, id=143, 2613.765pt x 2328.7pt>
+File: img mono/s1.png Graphic file (type png)
+<use img mono/s1.png>
+Package pdftex.def Info: img mono/s1.png  used on input line 222.
+(pdftex.def)             Requested size: 125.47792pt x 111.78699pt.
+ [7 <./img mono/s1.png>]
+<img mono/toro.png, id=153, 2673.99pt x 2276.505pt>
+File: img mono/toro.png Graphic file (type png)
+<use img mono/toro.png>
+Package pdftex.def Info: img mono/toro.png  used on input line 250.
+(pdftex.def)             Requested size: 125.47792pt x 106.81511pt.
+ [8 <./img mono/toro.png>] [9]) [10]
+\openout2 = `homologia/homologiasingular.aux'.
+
+ (./homologia/homologiasingular.tex [11
+
+
+
+]) [12]
+\openout2 = `homologia/mayervietoris.aux'.
+
+ (./homologia/mayervietoris.tex
+<img mono/mayer vietoris/serpiente.png, id=187, 417.05812pt x 164.11313pt>
+File: img mono/mayer vietoris/serpiente.png Graphic file (type png)
+<use img mono/mayer vietoris/serpiente.png>
+Package pdftex.def Info: img mono/mayer vietoris/serpiente.png  used on input line 23.
+(pdftex.def)             Requested size: 313.69162pt x 123.44513pt.
+ [13
+
+
+
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./img mono/mayer vietoris/serpiente.png>]) [14]
+\openout2 = `homologia/jordan.aux'.
+
+ (./homologia/jordan.tex [15
+
+
+
+] [16]) [17]
+\openout2 = `homologia/h1.aux'.
+
+ (./homologia/h1.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\pi' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[18
+
+
+
+]
+<img mono/abelianizado/h11.png, id=228, 261.97874pt x 237.13594pt>
+File: img mono/abelianizado/h11.png Graphic file (type png)
+<use img mono/abelianizado/h11.png>
+Package pdftex.def Info: img mono/abelianizado/h11.png  used on input line 39.
+(pdftex.def)             Requested size: 104.56387pt x 94.64644pt.
+<img mono/abelianizado/h12.png, id=231, 217.81375pt x 183.68625pt>
+File: img mono/abelianizado/h12.png Graphic file (type png)
+<use img mono/abelianizado/h12.png>
+Package pdftex.def Info: img mono/abelianizado/h12.png  used on input line 76.
+(pdftex.def)             Requested size: 104.56387pt x 88.1796pt.
+ [19 <./img mono/abelianizado/h11.png>]
+<img mono/abelianizado/h13.png, id=242, 346.29375pt x 129.48375pt>
+File: img mono/abelianizado/h13.png Graphic file (type png)
+<use img mono/abelianizado/h13.png>
+Package pdftex.def Info: img mono/abelianizado/h13.png  used on input line 119.
+(pdftex.def)             Requested size: 313.69162pt x 117.29692pt.
+ [20 <./img mono/abelianizado/h12.png>] [21 <./img mono/abelianizado/h13.png>]) [22]
+\openout2 = `ejemplos/suspension.aux'.
+
+ (./ejemplos/suspension.tex) [23
+
+
+
+]
+\openout2 = `ejemplos/alexander.aux'.
+
+ (./ejemplos/alexander.tex
+<img mono/alexander/1.png, id=270, 341.275pt x 364.36125pt>
+File: img mono/alexander/1.png Graphic file (type png)
+<use img mono/alexander/1.png>
+Package pdftex.def Info: img mono/alexander/1.png  used on input line 21.
+(pdftex.def)             Requested size: 209.12775pt x 223.27745pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[24
+
+
+
+] [25 <./img mono/alexander/1.png>] [26]) [27]
+\openout2 = `schoenflies/schoenflies.aux'.
+
+ (./schoenflies/schoenflies.tex [28
+
+
+
+
+
+]
+Cap\'{\i }tulo 2
+[29] [30] [31] [32]
+<img mono/schoenflies/sch.jpeg, id=336, 4047.12pt x 3035.34pt>
 File: img mono/schoenflies/sch.jpeg Graphic file (type jpg)
 <use img mono/schoenflies/sch.jpeg>
-Package pdftex.def Info: img mono/schoenflies/sch.jpeg  used on input line 203.
+Package pdftex.def Info: img mono/schoenflies/sch.jpeg  used on input line 210.
 (pdftex.def)             Requested size: 313.69162pt x 235.23642pt.
- [5] [6 <./img mono/schoenflies/sch.jpeg>]
-<img mono/schoenflies/inv dominio.png, id=87, 837.1275pt x 247.92625pt>
+ [33] [34 <./img mono/schoenflies/sch.jpeg>] [35]
+<img mono/schoenflies/inv dominio.png, id=360, 837.1275pt x 247.92625pt>
 File: img mono/schoenflies/inv dominio.png Graphic file (type png)
 <use img mono/schoenflies/inv dominio.png>
-Package pdftex.def Info: img mono/schoenflies/inv dominio.png  used on input line 276.
+Package pdftex.def Info: img mono/schoenflies/inv dominio.png  used on input line 309.
 (pdftex.def)             Requested size: 313.69162pt x 92.90024pt.
-) [7 <./img mono/schoenflies/inv dominio.png>] [8
+) [36 <./img mono/schoenflies/inv dominio.png>]
+\openout2 = `ejemplos/hookedrug.aux'.
+
+ (./ejemplos/hookedrug.tex
+Cap\'{\i }tulo 3
+<img mono/hooked rug/1.png, id=369, 401.24907pt x 159.59625pt>
+File: img mono/hooked rug/1.png Graphic file (type png)
+<use img mono/hooked rug/1.png>
+Package pdftex.def Info: img mono/hooked rug/1.png  used on input line 29.
+(pdftex.def)             Requested size: 209.12775pt x 83.18289pt.
+[37
 
 
 
 
-] (./monografia.bbl
+
+]
+<img mono/hooked rug/2.png, id=376, 289.08pt x 346.29375pt>
+File: img mono/hooked rug/2.png Graphic file (type png)
+<use img mono/hooked rug/2.png>
+Package pdftex.def Info: img mono/hooked rug/2.png  used on input line 54.
+(pdftex.def)             Requested size: 209.12775pt x 250.51492pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[38 <./img mono/hooked rug/1.png>] [39 <./img mono/hooked rug/2.png>]
+<img mono/hooked rug/esfera.png, id=395, 523.20468pt x 91.84312pt>
+File: img mono/hooked rug/esfera.png Graphic file (type png)
+<use img mono/hooked rug/esfera.png>
+Package pdftex.def Info: img mono/hooked rug/esfera.png  used on input line 91.
+(pdftex.def)             Requested size: 209.12775pt x 36.70996pt.
+ [40 <./img mono/hooked rug/esfera.png>]
+<img mono/hooked rug/3.png, id=405, 212.29312pt x 272.51813pt>
+File: img mono/hooked rug/3.png Graphic file (type png)
+<use img mono/hooked rug/3.png>
+Package pdftex.def Info: img mono/hooked rug/3.png  used on input line 119.
+(pdftex.def)             Requested size: 209.12775pt x 268.46727pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<img mono/hooked rug/4.png, id=406, 388.45125pt x 348.55219pt>
+File: img mono/hooked rug/4.png Graphic file (type png)
+<use img mono/hooked rug/4.png>
+Package pdftex.def Info: img mono/hooked rug/4.png  used on input line 131.
+(pdftex.def)             Requested size: 209.12775pt x 187.65161pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) [41] [42 <./img mono/hooked rug/3.png> <./img mono/hooked rug/4.png>] (./monografia.bbl
 Bibliograf\'{\i }a
-) [9
+) [43
+
+
+
+
 
 
 ] (./monografia.aux
-LaTeX Info: Redefining \. on input line 11.
-LaTeX Info: Redefining \% on input line 11.
- (./schoenflies/schoenflies.aux))
+LaTeX Info: Redefining \. on input line 8.
+LaTeX Info: Redefining \% on input line 8.
+ (./homologia/homologiasimplicial.aux) (./homologia/homologiasingular.aux) (./homologia/mayervietoris.aux) (./homologia/jordan.aux) (./homologia/h1.aux) (./ejemplos/suspension.aux) (./ejemplos/alexander.aux) (./schoenflies/schoenflies.aux) (./ejemplos/hookedrug.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `monografia.out' has not changed.
-(rerunfilecheck)             Checksum: A28751C622CE47E280FF243F2C7B74F1;275.
+(rerunfilecheck)             Checksum: B65EDFA445CB0FC77A90B3AD758828DE;2015.
  ) 
 Here is how much of TeX's memory you used:
- 27746 strings out of 474222
- 526982 string characters out of 5748733
- 1938975 words of memory out of 5000000
- 49322 multiletter control sequences out of 15000+600000
- 571362 words of font info for 87 fonts, out of 8000000 for 9000
+ 28430 strings out of 474222
+ 545148 string characters out of 5748733
+ 1941975 words of memory out of 5000000
+ 49804 multiletter control sequences out of 15000+600000
+ 573466 words of font info for 96 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 117i,9n,121p,681b,1010s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on monografia.pdf (11 pages, 3078767 bytes).
+ 117i,17n,121p,848b,1074s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/stmaryrd/stmary10.pfb>
+Output written on monografia.pdf (45 pages, 47999907 bytes).
 PDF statistics:
- 181 PDF objects out of 1000 (max. 8388607)
- 131 compressed objects within 2 object streams
- 36 named destinations out of 1000 (max. 500000)
- 39 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 559 PDF objects out of 1000 (max. 8388607)
+ 430 compressed objects within 5 object streams
+ 174 named destinations out of 1000 (max. 500000)
+ 211 words of extra memory for PDF output out of 10000 (max. 10000000)
 

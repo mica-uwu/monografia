@@ -1,12 +1,20 @@
 This is BibTeX, Version 0.99d (TeX Live 2023/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: monografia.aux
+A level-1 auxiliary file: homologia/homologiasimplicial.aux
+A level-1 auxiliary file: homologia/homologiasingular.aux
+A level-1 auxiliary file: homologia/mayervietoris.aux
+A level-1 auxiliary file: homologia/jordan.aux
+A level-1 auxiliary file: homologia/h1.aux
+A level-1 auxiliary file: ejemplos/suspension.aux
+A level-1 auxiliary file: ejemplos/alexander.aux
 A level-1 auxiliary file: schoenflies/schoenflies.aux
+A level-1 auxiliary file: ejemplos/hookedrug.aux
 The style file: alpha.bst
 Database file #1: biblio.bib
 You've used 1 entry,
             2543 wiz_defined-function locations,
-            566 strings with 4570 characters,
+            574 strings with 4764 characters,
 and the built_in function-call counts, 361 in all, are:
 = -- 36
 > -- 8

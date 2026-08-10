@@ -8,7 +8,7 @@ Puede pasar q las dos componentes sean crumpled cubes, x ejemplo agarras la esfe
 
 \cite{mbsch}
 
-La idea de la prueba es empezar asumiendo que una de las componentes es una variedad $A$, y en ese caso encontrar un entorno de collar para $A$. Teniendo ese entorno uno se considera un disco $D_1$ qu eesté contenido en $\partial A\times [0,1]\subset A$. Tomamos $D_2=S^n-D_1$ y se cumple que $D_2\simeq \D^n$. La idea después es probar que el homeo $D_2\simeq \D^n$ se extiende a un homeo $A\simeq \D^n$, esta es la parte que lleva más trabajo, la meat and potato de la prueba.
+% La idea de la prueba es empezar asumiendo que una de las componentes es una variedad $A$, y en ese caso encontrar un entorno de collar para $A$. Teniendo ese entorno uno se considera un disco $D_1$ qu eesté contenido en $\partial A\times [0,1]\subset A$. Tomamos $D_2=S^n-D_1$ y se cumple que $D_2\simeq \D^n$. La idea después es probar que el homeo $D_2\simeq \D^n$ se extiende a un homeo $A\simeq \D^n$, esta es la parte que lleva más trabajo, la meat and potato de la prueba.
 
 % \begin{figure}
 %     	\centering
@@ -16,7 +16,7 @@ La idea de la prueba es empezar asumiendo que una de las componentes es una vari
 %     	\caption{M. Brown, Locally ﬂat imbeddings of topological manifolds}
 % \end{figure}
 
-\begin{teo}
+\begin{lema}\label{lema1}
     Sea $f:D\to \s^n$ una función continua, siendo $D$ un disco $D\simeq \D^n$. Llamamos $X=\{x\in\s^n :\# f^{-1}(x)> 1\}$ a los puntos donde $f$ no es inyectiva. Suponemos que $X$ es finito y $f^{-1}(X)$ está contenido en el interior de $D$.
 
     Entonces, si $\s^n - f(\partial D)= D_1\sqcup D_2$, se cumple una de las dos opciones:
@@ -25,7 +25,7 @@ La idea de la prueba es empezar asumiendo que una de las componentes es una vari
         \item $f(D)=D_1\cup f(\partial D)$
         \item $f(D)=D_2\cup f(\partial D)$
     \end{itemize}
-\end{teo}
+\end{lema}
 
 \begin{proof}
 
@@ -73,13 +73,13 @@ La idea de la prueba es empezar asumiendo que una de las componentes es una vari
 
 %\comm{ahora una prueba como la gente aver}
 
-Idea de la prueba: Dado un encaje $\phi:\s^{n-1}\to\s^n$, consideramos $D$ la clausura de una componente de $\s^n - \phi(\s^{n-1})$. Queremos probar que si $D$ es una variedad, entonces $D\simeq \D^n$.
+% Idea de la prueba: Dado un encaje $\phi:\s^{n-1}\to\s^n$, consideramos $D$ la clausura de una componente de $\s^n - \phi(\s^{n-1})$. Queremos probar que si $D$ es una variedad, entonces $D\simeq \D^n$.
 
-Si $D$ es una variedad con borde, el borde tiene un entorno homeomorfo a $\s^{n-1}\times [0,1]$ en $D$. Llamamos $\hat{\phi}:\s^{n-1}\times [0,1]\to\s^n$ al encaje, que es una extensión de $\phi$.
+% Si $D$ es una variedad con borde, el borde tiene un entorno homeomorfo a $\s^{n-1}\times [0,1]$ en $D$. Llamamos $\hat{\phi}:\s^{n-1}\times [0,1]\to\s^n$ al encaje, que es una extensión de $\phi$.
 
-Sean $X, Y$ las dos componentes de $\s^n-\hat{\phi}(\s^{n-1}\times [0,1])$ tal que $X\subset D$. Vamos a ver que existe un mapa sobreyectivo $f:\s^n\to\s^n$ tal que manda $X$, $Y$ en dos puntos distintos $x$, $y$, y es inyectiva en $\s^n-X\cup Y$. Una vez tenemos eso, restringiendo $f$ a $D$ tenemos como imagen un disco $\D\subset\s^n$.
+% Sean $X, Y$ las dos componentes de $\s^n-\hat{\phi}(\s^{n-1}\times [0,1])$ tal que $X\subset D$. Vamos a ver que existe un mapa sobreyectivo $f:\s^n\to\s^n$ tal que manda $X$, $Y$ en dos puntos distintos $x$, $y$, y es inyectiva en $\s^n-X\cup Y$. Una vez tenemos eso, restringiendo $f$ a $D$ tenemos como imagen un disco $\D\subset\s^n$.
 
-La clave para esto es probar que bajo estas hipótesis $D$ cumple $D\simeq D/X$. Más específicamente, $D$ va a ser un $\textbf{conjunto celular}$.
+% La clave para esto es probar que bajo estas hipótesis $D$ cumple $D\simeq D/X$. Más específicamente, $D$ va a ser un $\textbf{conjunto celular}$.
 
 \begin{df}
     Un subconjunto $X$ de una $n$-variedad es $\textbf{celular}$ si para todo abierto $U$ que contiene a $X$ existe una familia de conjuntos $\{D_i,i\in\N\}$ tales que 
@@ -103,11 +103,11 @@ La clave para esto es probar que bajo estas hipótesis $D$ cumple $D\simeq D/X$.
 
 Lo interesante de los conjuntos celulares es que al colapsarlos obtenemos una variedad homeomorfa a la que teníamos originalmente.
 
-\begin{lema}
+\begin{lema}\label{colapsar}
     Sea $M$ una $n$-variedad compacta con borde, $X$ subconjunto celular de $\mathring{M}$. Entonces el espacio $M'$ obtenido de colapsar $X$ es homeomorfo a $M$.
 \end{lema}
 
-\begin{dem}
+\begin{proof}
     Tenemos $X=\bigcap\limits^{\infty} D_i$, con $D_i$ discos encajados como en la definición. Construyamos un mapa sobreyectivo $f:M\to M$ tal que $f|_{M-X}$ es inyectiva y $f(X)=x_0$ para algún $x_0\in M$. Este mapa va a ser el límite de una sucesión de homeos que construimos inductivamente, empezando por $f_1:= \text{Id}$.
 
     Para definir $f_{k+1}$, vamos a asumir que ya tenemos definido un homeo $f_k$. Lo modificamos de la siguiente manera:
@@ -150,33 +150,40 @@ Lo interesante de los conjuntos celulares es que al colapsarlos obtenemos una va
 
     Ahora veamos que $f$ es inyectiva en $M-X$. Para eso tomamos dos puntos $x\neq y\in M-X$. Como no están en $X$, las sucesiones $f_k(x), f_k(y)$ son eventualmente constantes, y por lo tanto podemos encontrar un $K\in\N$ tal que $f(x) = f_K(x)$, $f(y) = f_K(y)$. Como $f_K$ es un homeo y $x\neq y$, entonces $f(x)\neq f(y)$.
 
-    Con esto tenemos que $f:M\to M$ baja al cociente como una biyección continua, que además va a ser un homeo porque va de un espacio compacto a uno Hausdorff. $\square$
-\end{dem}
+    Con esto tenemos que $f:M\to M$ baja al cociente como una biyección continua, que además va a ser un homeo porque va de un espacio compacto a uno Hausdorff.
+\end{proof}
 
 Inductivamente obtenemos el mismo resultado para un espacio con finitos conjuntos celulares disjuntos dos a dos.
 
-\begin{cor}
-Sea $M$ una $n$-variedad compacta con borde, sean $X_1,\dots,X_n$ subconjuntos celulares de $\mathring{M}$ disjuntos dos a dos. Entonces el espacio $M'$ obtenido al colapsar los $X_i$ es homeomorfo a $M$.
+\begin{cor}\label{colapsar2}
+Sea $M$ una $n$-variedad compacta con borde, sean $X_1,\dots,X_n$ subconjuntos celulares de $\mathring{M}$ disjuntos dos a dos. Entonces el espacio $M'$ obtenido al colapsar $X_1,\dots,X_n$ es homeomorfo a $M$.
 \end{cor}
 
-\begin{dem}
+\begin{proof}
     Lo único que nos falta observar para usar inductivamente el lema anterior es que dados dos conjuntos celulares disjuntos $X_1$ y $X_2$, el conjunto $X_2$ sigue siendo celular en $M/\sim$ al colapsar $X_1$.
 
     En efecto, esto se cumple. Como $M$ es un espacio métrico, dados dos cerrados disjuntos tengo entornos disjuntos. Dados dos abiertos disjuntos de $X_1$ y $X_2$, estos van a seguir siendo abiertos en $M/_{\sim}$ al pasar por la proyección, entonces $\pi(X_2)\subset M/_{\sim}$ es celular.
     
-    \comm{terminar de escribir esto, hacer la cadena de implicaciones para concluir que $M$ es metrizable y así poder usar que tengo los entornos disjuntos.}
-\end{dem}
+    \comm{terminar de escribir esto, hacer la cadena de implicaciones para concluir que $M$ es metrizable y así poder usar que tengo los entornos disjuntos. o sea no es directo de ser $n$-variedad que tienen entornos que separan conjuntos pero si se puede probar, en particular $M$ admite una métrica y todo espacio metrico va a cumplir lo q buscamos.}
+\end{proof}
 
-Para poder usar esta propiedad tan útil sobre los conjuntos celulares, va a ser necesario un criterio que nos permita identificarlos.
+Para poder usar esta propiedad tan útil sobre los conjuntos celulares, va a ser necesario un criterio que nos permita identificarlos. Para eso vamos a dar una definición que nos permite distinguir los subconjuntos en los que una función es inyectiva.
 
-\begin{lema}
-    Sean $X_1,\dots, X_m\subset\mathring{\D}^n$ cerrados disjuntos. Sea $M/_{\sim}$ el espacio obtenido al colapsar $X_1,\dots, X_m$ y sea $\pi:M\to M/_{\sim}$ la proyección.
-\end{lema}
+\begin{df}
+Dada una función $f:X\to Y$, llamamos \textbf{conjunto preimagen no trivial} a los subconjuntos de $X$ que cumplen $Z=f^{-1}(y_0)$ para algún $y_0\in Y$ y tienen $\#Z > 1$.
+\end{df}
 
-\begin{lema}
+% \begin{lema}
+%     Sean $X_1,\dots, X_m\subset\mathring{\D}^n$ cerrados disjuntos. Sea $M/_{\sim}$ el espacio obtenido al colapsar $X_1,\dots, X_m$ y sea $\pi:M\to M/_{\sim}$ la proyección.
+% \end{lema}
+
+\begin{lema}\label{celulares}
     Sea $f:\D^n\to \s^n$ continua, sea $M\subset \D^n$ tal que $f$ es inyectiva en $\D^n - M$ y $M=f^{-1}(x_0)$ para algún $x_0\in\s^n$. Entonces, $M$ es un conjunto celular en $\D^n$
 \end{lema}
-\begin{dem}
+
+\comm{arreglar hipotesis pq no es suficiente pedir q f sea inyectiva afuera de M, porque igual puedo tener puntos que comparten imagen con los de M}
+
+\begin{proof}
     Por Jordan-Brouwer tenemos que $h(\partial\D^n)$ separa $\s^n$ en dos regiones. Por otro de los lemas anteriores (ordenar bien) tenemos que $h(\D^n)=h(\partial\D^n)\cup D$ siendo $D$ una de esas dos regiones.
 
     Tomamos un abierto $U$ que contenga a $M$. Como $f$ es inyectiva en $\D^n-M$ y es continua, entonces $f|_{\D^n-M}$ es un homeo, y por lo tanto $f(U)$ es abierto.
@@ -192,9 +199,9 @@ Para poder usar esta propiedad tan útil sobre los conjuntos celulares, va a ser
     Como $h=\text{Id}$ en $f^{-1}(V)$ tenemos que $g$ es un homeo.
 
     Concluimos que $M$ es celular porque $g^k(\D^n)\subset g^{k-1}(\D^n)$ van a ser discos que aproximan $f^{-1}(V)$.
+\end{proof}
 
-    \duda{me falta el paso de por qué aproximar $f^{-1}(V)$ es suficiente. creo que más bien la idea es que puedo ir definiendo $g_k$ con los entornos $V$ cada vez más chicos y ahí eee. claro creo q ya entendi. el entorno $U$ del principio es arbitrario y me consegui un disco adentro. }
-\end{dem}
+\duda{me falta el paso de por qué aproximar $f^{-1}(V)$ es suficiente. creo que más bien la idea es que puedo ir definiendo $g_k$ con los entornos $V$ cada vez más chicos y ahí eee. claro creo q ya entendi. el entorno $U$ del principio es arbitrario y me consegui un disco adentro. }
 
 \comm{insertar bien la referencia}
 
@@ -202,16 +209,42 @@ Para poder usar esta propiedad tan útil sobre los conjuntos celulares, va a ser
     	\centering
     	\includegraphics[width=0.75\linewidth]{img mono/schoenflies/sch.jpeg}
     	\caption{Dibujito}
+        \label{dibujo1}
 \end{figure}
 
-\begin{lema}
-    Sea $S\subset \s^n$ una $(n-1)$-esfera encajada en $\s^n$, sea $D$ una de las componentes conexas de $\s^n-S$. Sea $f:\overline{D}\to R\simeq \D^n$ continua, tal que es inyectiva en $\overline{D}-M$, siendo $M$ un conjunto celular. Entonces, $\overline{D}\simeq\D^n$
+\begin{lema}\label{2ctos}
+    Sea $f:\s^n\to\s^n$ una función continua con exactamente dos conjuntos preimagen no triviales $A$ y $B$. Entonces, $A$ y $B$ son conjuntos celulares en $\s^n$.
 \end{lema}
 
-\begin{lema}
+\begin{proof}
+    Consideramos $\Sigma$ una $(n-1)$-esfera en $\s^n-(A\cup B)$ encajada de manera que sus dos regiones complementarias sean homeomorfas a $n$-bolas. Podemos encontrar una $\Sigma$ de esta manera porque $A$ y $B$ son cerrados, entonces $\s^n - (A\cup B)$ es abierto y hereda la base de la topología de $\s^n$, que son bolas abiertas estándar.
+
+    % \duda{por qué puedo tomar $\Sigma$ encajada así? porque $A$ y $B$ son cerrados entonces en el complemento me puedo encontrar una esfera bien encajada adentro de un abierto pq las bolas estandar son base de la topología.}
+
+    Sean $X$, $Y$ las clausuras de las componentes conexas del complemento de $\Sigma$. Por el teorema de separación de Jordan Brouwer el borde de ambas componentes va a ser $\Sigma$. Tenemos dos opciones, puede ser que $A$ y $B$ estén en la misma componente conexa del complemento de $\Sigma$ o puede ser que estén separadas. 
+    
+    Supongamos que se cumple $A\subset\mathring{X}$ y $B\subset\mathring{Y}$. Entonces, por el lema anterior, considerando las funciones $f|_{X}:X\to\s^n$ y $f|_{Y}:Y\to\s^n$ obtendríamos que $A$ y $B$ son sus únicos conjuntos preimagen no triviales y por lo tanto son conjuntos celulares, concluyendo la prueba.
+
+    Consideramos ahora el caso en el que $A$ y $B$ están contenidos en la misma región complementaria de $\Sigma$, digamos que $A\cup B\subset\mathring{X}$. Sean $x_A,\, x_B$ puntos de $\s^n$ tales que $A=f^{-1}(x_A)$ y $B=f^{-1}(x_B)$. Por el primer lema tenemos que $f(X)=f(\Sigma)\cup D$, con $D$ una componente conexa del complemento de $f(\Sigma)$ que va a contener a $x_A$ y $x_B$.
+
+    Sea $U$ un abierto contenido en $D$ tal que $x_A\in D$, $x_B\not\in D$. Sea $h:\s^n\to\s^n$ un homeo que manda $f(X)$ en $U$ y que deja fijo un entorno $V$ de $x_A$. Definimos un homeo $g:\s^n\to\s^n$ dado por $$g(x)=
+    \begin{cases}
+    x \quad &\text{si } x\in A\\ 
+    f^{-1}\circ h\circ f(x)\quad &\text{si } x\in X-A
+    \end{cases}$$
+    Observar que $f^{-1}\circ h\circ f=\text{Id}$ en $f^{-1}(V)$ y por lo tanto $g$ está bien definido y es continuo. Además, el único conjunto preimagen no trivial de $g$ es $B$, entonces por el lema anterior tenemos que $B$ es celular. De la misma forma podemos obtener que $A$ es celular, y con eso probamos el lema.
+\end{proof}
+
+\comm{insertarbien las referencias}
+
+% \begin{lema}
+%     Sea $S\subset \s^n$ una $(n-1)$-esfera encajada en $\s^n$, sea $D$ una de las componentes conexas de $\s^n-S$. Sea $f:\overline{D}\to R\simeq \D^n$ continua, tal que es inyectiva en $\overline{D}-M$, siendo $M$ un conjunto celular. Entonces, $\overline{D}\simeq\D^n$
+% \end{lema}
+
+\begin{lema}\label{remate}
     Sea $h\colon\s^{n-1}\times I\to\s^n$ un encaje. Entonces, la clausura de cada componente de $h\left(\s^{n-1}\times \{\frac{1}{2}\}\right)^c$ es una $n$-bola.
 \end{lema}
-\begin{dem}
+\begin{proof}
 
     Llamamos $A$ a la componente de $h\left(\s^{n-1}\times \{\frac{1}{2}\}\right)^c$ que contiene a $h\left(\s^{n-1}\times \{0\}\right)$ y $B$ a la que contiene a $h\left(\s^{n-1}\times \{1\}\right)$.
 
@@ -221,14 +254,14 @@ Para poder usar esta propiedad tan útil sobre los conjuntos celulares, va a ser
 
     Por lema anterior, $A$ y $B$ son conjuntos celulares en $D_A$ y $D_B$, y entonces por lema anterior, $\overline{D_A}$ y $\overline{D_B}$ son $n$-bolas.
 
-\end{dem}
+\end{proof}
 
-\begin{teo}{Invariancia del dominio:}
+\begin{teo}\label{inv dominio}
     $U$ abierto de $\R^n$, $h:U\to\R^n$ continua e inyectiva, entonces $h(U)$ es abierto de $\R^n$.
 \end{teo}
 
 
-\begin{dem}
+\begin{proof}
 
     Vemos $S^n$ como la compactificación de $R^n$, queremos probar que $h(U)$ es abierto en $S^n$. Consideramos un punto $x\in U$, entonces $x$ es centro de un disco $D$ de dimensión $n$ contenido en $U$.
 
@@ -249,7 +282,7 @@ Para poder usar esta propiedad tan útil sobre los conjuntos celulares, va a ser
     Como $\s^n-h(\partial D) = \s^n-h(D) \sqcup h(D-\partial D) $ es abierto, entonces sus dos componentes conexas son abiertos de $\s^n-h(\partial D)$ conexos por caminos, y por lo tanto son abiertos de $\s^n$.
 
     Obtuvimos entonces que $h(D-\partial D)$ es abierto de $\s^n$.
-\end{dem}
+\end{proof}
 
 Con esto tenemos un resultado para variedades topológicas:
 
@@ -277,17 +310,15 @@ Con esto tenemos un resultado para variedades topológicas:
     	\caption{agregar esto}
 \end{figure}
 
-\iffalse
+% Podemos usar la invariancia del dominio para probar lo siguiente:
 
-Podemos usar la invariancia del dominio para probar lo siguiente:
-
-\begin{lema}
+\begin{lema}\label{puntos separan}
     Sea $M$ una $n$-variedad conexa con $n<1$, $P\subset M$ un conjunto finito, entonces $M-P$ es conexo.
 \end{lema}
 
-\comm{esta prueba es de las notas de Nikil Sahoo}
+% \comm{esta prueba es de las notas de Nikil Sahoo}
 
-\begin{dem}
+\begin{proof}
     Primero comenzamos observando que como nuestros espacios son Hausdorff, entonces los singleton $\{p\}$ son conjuntos cerrados. Por esta razón, los complementos de finitos puntos son subconjuntos abiertos de $M$, y por lo tanto son $n$-variedades.
 
     Por lo tanto, es suficiente probar el lema para $P=\{p\}$ un singleton. Veamos eso.
@@ -297,8 +328,6 @@ Podemos usar la invariancia del dominio para probar lo siguiente:
     \duda{por que son abiertos de M necesariamente?}
 
     Tomamos un entorno $U_p$ de $p$ en $M$ homeomorfo a $\D^n$, entonces $U_p - \{p\}$ es conexo, y por lo tanto está contenido en $U$ o en $V$. Supongamos que está en $U$, en ese caso $U_p-\{p\}\subset U$, y $U_p\cup U = U\cup\{p\}$, como ambos $U_p$ y $U$ son abiertos de $M$. Entonces $U\cup \{p\}$ es abierto en $M$ y obtenemos una descomposición de $M$ como dos abiertos disjuntos $(U\cup\{p\})\sqcup V$. Esto es absurdo ya que habíamos asumido $M$ conexa.
-\end{dem}
+\end{proof}
 
-\comm{leer https://mathoverflow.net/questions/29737/understand-cech-cohomology}
-
-\fi
+% \comm{leer https://mathoverflow.net/questions/29737/understand-cech-cohomology}

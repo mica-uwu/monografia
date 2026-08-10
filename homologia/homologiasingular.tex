@@ -1,0 +1,43 @@
+\section{Homología singular}
+
+El objetivo de este capítulo será definir los grupos de homología singular de un espacio topológico $X$. Esta definición es muy similar a la vista en el capítulo anterior, con la notoria diferencia de que en vez de considerar una estructura de $\Delta$-complejo para $X$, directamente tomamos el cociente en la familia de todas las funciones $\sigma:\Delta^n\to X$.
+
+\begin{df}
+    Un $n$-símplice singular es una función continua $\sigma:\Delta^n\to X$.
+\end{df}
+
+El nombre "singular" hace referencia a que $\sigma$ no tiene por qué ser inyectiva, por lo tanto no necesariamente es un encaje. Esto significa que la imagen de $\sigma$ puede tener singularidades, es decir, puntos de autointersección. \br
+
+\duda{acá solo dice que puede tener "sigularidades" pero no explica, yo lo interpreto así, como puntos de autointersección, pero capaz hay algo más que se me está pasando?}
+
+\begin{df}
+    Llamaremos complejo de $n$-cadenas singulares, que notaremos $C_n(X)$, al grupo abeliano libre que tiene como base a los elementos de la familia de funciones $\{\sigma:\Delta^n\to X \;\vert\; \sigma \text{ continua}\}$. \br
+
+    Es decir, los elementos de $C_n(X)$, a los que llamaremos $n$-cadenas singulares, serán sumas formales finitas $\sum_{i=1}^k n_i\sigma_i$, con $n_i\in\Z$, y $\sigma_i:\Delta^n\to X$.
+\end{df}
+
+Comparados con su equivalente $\Delta^n(X)$ del capítulo anterior, los complejos de $n$-cadenas singulares $C_n(X)$ tienen un cardinal mucho más grande, y en la mayoría de los casos serán  grupos no numerables. \br
+
+\begin{df}
+    Definimos un mapa borde $\partial_n:\Ch\to\ch$ dado por $$\partial_n(\sigma):= \sum\limits_{i=0}^{n}(-1)^i \sigma |_{[v_0,\dots,\hat{v_i},\dots,v_n]}$$ 
+    Donde estamos notando $\Delta^n$ como $[v_0,\dots,v_n]$ e identificando $[v_0,\dots,\hat{v_i},\dots,v_n]$ con $\Delta_{n-1}$ mediante el homeomorfismo canónico.
+\end{df}
+
+En algunos casos simplemente usaremos $\partial$ para notar este mapa.\br
+
+Exactamente de la misma forma que en el capítulo anterior, obtenemos que la composición $\partial_{n-1}\circ\partial_n :C_{n}(X)\to C_{n-2}(X)$ es cero. Por lo tanto tenemos $\im(\partial_{n-1})\subset\Ker(\partial_{n})$ y podemos definir los grupos de homología singular.\br
+
+\begin{df}
+Definimos el $n$-ésimo grupo de homología singular del complejo de cadenas como el cociente $$H_n(X):=\Ker(\partial_n)/\im(\partial_{n+1})$$\br
+
+De la misma forma que antes llamaremos ciclos a los elementos de $\Ker(\partial_n)$, bordes a los de $\im(\partial_{n+1})$ y los elementos de $H_n(X)$ serán nuestras clases de homología singular.\br 
+\end{df}
+
+Con esta definición, obtenemos trivialmente un resultado importante para la teoría.
+
+\begin{prop}
+Si $X$, $Y$ son homeomorfos, entonces $H(X)=H(Y)$
+\end{prop}
+\begin{proof}
+Sean $h:X\to Y$ homeomorfismo. Dada $sigma:\Delta^n\to X$ continua, consideramos su composición $h\circ\sigma$
+\end{proof}
