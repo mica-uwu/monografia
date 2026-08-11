@@ -1,6 +1,6 @@
 \section{Relación entre $\pi_1(X)$ y $H_1(X)$}
 
-Recordamos que el grupo fundamental $\pi_1(X,x_0)$ de un espacio $X$ con punto base $x_0\in X$ está dado por las clases de homotopía a extremos fijos de los mapas $\gamma:[0,1]\to X$ con $\gamma(0)=\gamma(1)=x_0$. Estos mapas también pueden ser interpretados como $1$-símplices singulares en $X$, es decir funciones continuas $\sigma_\gamma:\Delta_1\to X$, que además van a ser ciclos ya que $\partial \sigma_\gamma = \sigma_\gamma(1)-\sigma_\gamma(0) =0$.
+Recordamos que el grupo fundamental $\pi_1(X,x_0)$ de un espacio $X$ con punto base $x_0\in X$ está dado por las clases de homotopía a extremos fijos de los mapas $\gamma:[0,1]\to X$ con $\gamma(0)=\gamma(1)=x_0$. Estos mapas también pueden ser interpretados como $1$-símplices singulares en $X$, es decir funciones continuas $\sigma_\gamma:\Delta_1\to X$, que además van a ser ciclos ya que $\partial \sigma_\gamma$
 
 Va a resultar que esta asociación de curvas cerradas a $1$-símplices singulares es un morfismo de grupos entre $\pi_1(X,x_0)$ y $H_1(X)$. 
 
@@ -12,11 +12,13 @@ Dado un elemento $\gamma:\s^1\to X$ en $\Omega(X,x_0)$, notamos a su clase en $\
 
 % Sean $\gamma_1, \gamma_2$ dos mapas de $[0,1]$ en $X$. Notamos $\gamma_1\simeq \gamma_2$ si existe una homotopía de extremos fjos entre $\gamma_1$ y $\gamma_2$. Notamos $\gamma_1\sim \gamma_2$ si $\gamma_1$ y $\gamma_2$ son homólogos como $1$-símplices en $X$, es decir, si existe un $2$-símplice $\sum n_i\sigma_i$ en $C_2(X)$ tal que $\partial\sum n_i\sigma_i = \gamma_1-\gamma_2$.
 
-Dados $x_0\in X,\, x_1\in\s^1$ definimos el espacio de lazos $\Omega(X,x_0)$ como las funciones continuas de $\s^1$ en $X$ que mandan $x_1$ a $x_0$. Si tomamos cociente por la relación de homotopía a extremos fijos obtenemos $\pi_1(X,x_0)$.
+Dados $x_0\in X,\, x_1\in\s^1$ definimos el espacio de lazos $\Omega(X,x_0)$ como las funciones continuas de $\gamma\colon\s^1\to X$ que mandan $x_1$ a $x_0$. Si tomamos cociente por la relación de homotopía a extremos fijos obtenemos $\pi_1(X,x_0)$.
 
-Definimos la función $h\colon\Omega(X,x_0)\to C_1(X)$ que manda un lazo $\gamma\in\Omega(X,x_0)$ en un $1$-símplice singular, precomponiendo el lazo con la proyección $\Delta^1\mapsto\s^1$. 
+Definimos la función $h\colon\Omega(X,x_0)\to C_1(X)$ que manda un lazo $\gamma\in\Omega(X,x_0)$ en un $1$-símplice singular $\sigma_\gamma:\Delta^1\to X$, obtenido precomponiendo con la proyección $p\colon\Delta^1\to\s^1$ que manda los extremos de $\Delta^1$ a $x_1\in\s^1$ y es inyectiva en el resto. 
 
-Observar que $\partial h(\gamma)=0$, entonces la imagen $h(\gamma)$ siempre es un ciclo. En lo que sigue vamos a probar que si $\gamma_1\simeq \gamma_2$ entonces $h(\gamma_1)\sim h(\gamma_2)$, y que $h$ manda el producto de $\pi_1(X,x_0)$ a la suma en $H_1(X)$. Con eso vamos a tener que $h:\Omega(X,x_0)\to\Ker(\partial_1)\subset C_1(X)$ baja al cociente como un morfismo $\tilde{h}:\pi_1(X,x_0)\to H_1(X)$.
+Si notamos $\Delta^1=[v_0,v_1]$, observar que $\partial h(\gamma)=\sigma_\gamma|_{[\hat{v}_0,v_1]} - \sigma_\gamma|_{[v_0,\hat{v}_1]}=x_0 - x_0=0$, entonces la imagen de $h$ está incluida en $\Ker(\partial_1)$. Podemos entonces pensar $h$ como una función de $\Omega(X,x_0)$ en $\Ker(\partial_1)$, y componiendo con la proyección al cociente, tenemos una función de $\Omega(X,x_0)$ en $H_1(X)$.
+
+En lo que sigue vamos a probar que si $\gamma_1\simeq \gamma_2$ entonces $h(\gamma_1)\sim h(\gamma_2)$, y que $h$ manda el producto de $\pi_1(X,x_0)$ a la suma en $H_1(X)$. Con eso vamos a tener que $h:\Omega(X,x_0)\to\Ker(\partial_1)\subset C_1(X)$ baja al cociente como un morfismo $\tilde{h}:\pi_1(X,x_0)\to H_1(X)$.
 
 % Después vamos a probar que el núcleo de $\tilde{h}$ es exactamente el conmutador de $\pi_1(X)$, y por lo tanto $\tilde{h}$ es un isomorfismo entre $H_1$ y $\pi_1^{ab}$.
 
@@ -26,7 +28,7 @@ Observar que $\partial h(\gamma)=0$, entonces la imagen $h(\gamma)$ siempre es u
     
 \item\label{ab1} Si $\gamma:\s^1\to X$ es la función constante, entonces $h(\gamma)\sim 0$. Esto se debe a que el mapa constante $\sigma:\Delta^2\to X$ es un $2$-símplice singular cuyo borde coincide con $h(\gamma)$.
 
-Explícitamente, si $\gamma(t)=x_0$ para todo $t\in\s^1$, entonces $h(\gamma)\colon\Delta^1\to X$ también es constante $x_0$. Tomamos $\sigma:\Delta^2\to X$ tal que $\sigma(x)=x_0$ para todo $x\in\Delta^2$. En ese caso, si notamos $\Delta^2 = [v_0,v_1,v_2]$, tenemos $\partial\sigma = \sigma|_{[v_1,v_2]} - \sigma|_{[v_0,v_2]} + \sigma|_{[v_0,v_1]}$ pasando por el homeomorfismo que identifica cada par $[v_i,v_j]$ con $\Delta^1$, tenemos que $\partial\sigma = h(\gamma) - h(\gamma) + h(\gamma) = h(\gamma)$.
+Explícitamente, si $\gamma(t)=x_0$ para todo $t\in\s^1$, entonces $h(\gamma)=\sigma_\gamma\colon\Delta^1\to X$ también es constante $x_0$. Tomamos $\sigma:\Delta^2\to X$ tal que $\sigma(x)=x_0$ para todo $x\in\Delta^2$. En ese caso, si notamos $\Delta^2 = [v_0,v_1,v_2]$, tenemos $\partial\sigma = \sigma|_{[v_1,v_2]} - \sigma|_{[v_0,v_2]} + \sigma|_{[v_0,v_1]}$. Pasando por el homeomorfismo que identifica cada par $[v_i,v_j]$ con $\Delta^1$, tenemos que $\partial\sigma = \sigma_\gamma - \sigma_\gamma + \sigma_\gamma = \sigma_\gamma$.
 
 \item\label{ab2} Dadas $\gamma_1,\,\gamma_2:\s^1\to X$ tales que $\gamma_1\simeq \gamma_2$, entonces $h(\gamma_1)\sim h(\gamma_2)$.
 
@@ -107,11 +109,11 @@ Primero vamos a definir $\phi:C_1(X)\to\pi_1(X,x_0)_{ab}$ en general y después 
 
 Lo que hay que hacer es identificar $1$-símplices singulares con curvas cerradas con base $x_0$, y después tomar cociente. Para esto definimos unos caminos que nos van a resultar convenientes. Dado $x\in X$, definimos $\gamma_x:[0,1]\to X$ como un camino tal que $\gamma_x(0)=x_0$ y $\gamma_x(1)=x$.
 
-Sea $\sigma:\Delta^1\to X$, identificamos $\Delta^1$ con $[0,1]$ mediante un homeomorfismo. Precomponiendo con este homeo podemos pensar $\sigma$ como un camino $\sigma_\gamma:[0,1]\to X$.
+Sea $\sigma:\Delta^1\to X$, identificamos $\Delta^1$ con $[0,1]$ mediante un homeomorfismo. Precomponiendo con este homeo podemos pensar $\sigma$ como un camino $\gamma_\sigma:[0,1]\to X$.
 
-Si llamamos $\sigma_\gamma(0)=y_0$, $\sigma_\gamma(1)=y_1$, consideramos la concatenación $$\gamma_{y_0} *\sigma_\gamma * \overline{\gamma_{y_1}}:[0,1]\to X$$ Observamos que esta concatenación vale $x_0$ en $t=0$ y $t=1$, y por lo tanto podemos pensarla como una función de $\s^1$ en $X$, que manda $x_1\in \s^1$ a $x_0\in X$. 
+Si llamamos $\gamma_\sigma(0)=y_0$, $\gamma_\sigma(1)=y_1$, consideramos la concatenación $$\gamma_{y_0} *\gamma_\sigma * \overline{\gamma_{y_1}}:[0,1]\to X$$ Observamos que esta concatenación vale $x_0$ en $t=0$ y $t=1$, y por lo tanto podemos pensarla como una función de $\s^1$ en $X$, que manda $x_1\in \s^1$ a $x_0\in X$. 
 
-En ese caso, definimos la imagen por $\phi$ como la clase en el abelianizado:$$\phi(\sigma):=\left(\llbracket\gamma_{y_0} *\sigma_\gamma * \overline{\gamma_{y_1}}\rrbracket\right)_{ab}\in\pi_1(X)_{ab}$$
+En ese caso, definimos la imagen por $\phi$ como la clase en el abelianizado:$$\phi(\sigma):=\left(\llbracket\gamma_{y_0} *\gamma_\sigma * \overline{\gamma_{y_1}}\rrbracket\right)_{ab}\in\pi_1(X)_{ab}$$
 Con esto podemos extender la definición a un morfismo de todo $C_1(X)$, que restringimos para obtener $\phi:\Ker(\partial_1)\to \pi_1(X,x_0)_{ab}$.
 
 \begin{figure}
