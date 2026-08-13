@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex monografia"] 1786427343.65578 "monografia.aux" "monografia.bbl" "monografia" 1786429413.6541 0
+["bibtex monografia"] 1786598627.83776 "monografia.aux" "monografia.bbl" "monografia" 1786598631.096 0
   "./biblio.bib" 1786391353 679 7434d96fcd44fe64176691410f4d0667 ""
   "O:/programas/miktex/bibtex/bst/bibtex/alpha.bst" 1291864736 23907 a5f93555796fb564b924339521f10a7c ""
-  "homologia/h1.aux" 1786429412 2309 588e5a972acf94ec81d828d4bea2bf45 "pdflatex"
-  "monografia.aux" 1786429412 763 16e8d8e12356810b4789393d099fc50a "pdflatex"
+  "homologia/h1.aux" 1786598629 2402 e4225fb2cc1fc67586229450c7ad7ed5 "pdflatex"
+  "monografia.aux" 1786598629 806 7b0a5ee1b978354198ba48acd77637fa "pdflatex"
   (generated)
   "monografia.bbl"
   "monografia.blg"
   (rewritten before read)
-["pdflatex"] 1786429410.93253 "o:/monografia/monografia.tex" "monografia.pdf" "monografia" 1786429413.65543 0
+["pdflatex"] 1786598628.26291 "o:/monografia/monografia.tex" "monografia.pdf" "monografia" 1786598631.09733 0
   "C:/Users/cumpc/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1786391609 81086 6fddea6b023469843de28035c851ec71 ""
   "C:/Users/cumpc/AppData/Local/MiKTeX/fonts/tfm/public/stmaryrd/stmary10.tfm" 1785541574 848 f478e0761563bbc369eca609a1741348 ""
   "C:/Users/cumpc/AppData/Local/MiKTeX/fonts/tfm/public/stmaryrd/stmary5.tfm" 1785541573 848 e1bc58a31b9ed9c3729ffea165acfaac ""
@@ -217,14 +217,14 @@
   "O:/programas/miktex/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "O:/programas/miktex/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "cmat-monografia.cls" 1781243100 3051 2d4c3bd389d707f779416f56c6240530 ""
-  "homologia/h1.aux" 1786429412 2309 588e5a972acf94ec81d828d4bea2bf45 "pdflatex"
-  "homologia/h1.tex" 1786429410 18962 0174691a13a6752bacd01e742fceb44c ""
+  "homologia/h1.aux" 1786598629 2402 e4225fb2cc1fc67586229450c7ad7ed5 "pdflatex"
+  "homologia/h1.tex" 1786598623 19236 0982efb54c903d8f3194cef217977195 ""
   "img mono/abelianizado/h11.png" 1785543338 12826 9054f83f40ce8547c531dd028d7e52fd ""
   "img mono/abelianizado/h12.png" 1785241807 7294 b7394d0d5c6e7f012c40070d3337b63f ""
   "img mono/abelianizado/h13.png" 1785538895 20882 7e94a943b0970d4f10e0d8b2c7904c68 ""
-  "monografia.aux" 1786429412 763 16e8d8e12356810b4789393d099fc50a "pdflatex"
-  "monografia.bbl" 1786427343 52 0eba253fc001332e731e8aba3f23127b "bibtex monografia"
-  "monografia.out" 1786429412 332 eee7dd49b6c6c5a856e9bda6e408b31f "pdflatex"
+  "monografia.aux" 1786598629 806 7b0a5ee1b978354198ba48acd77637fa "pdflatex"
+  "monografia.bbl" 1786598628 52 0eba253fc001332e731e8aba3f23127b "bibtex monografia"
+  "monografia.out" 1786598629 332 1ceefe950a51d38d6084d3901c5100ff "pdflatex"
   "monografia.tex" 1786415565 2451 98493c4d358a32188faf5b010bb18e91 ""
   "o:/monografia/monografia.tex" 1786415565 2451 98493c4d358a32188faf5b010bb18e91 ""
   (generated)

@@ -32,9 +32,9 @@ Explícitamente, si $\gamma(t)=x_0$ para todo $t\in\s^1$, entonces $h(\gamma)=\s
 
 \item\label{ab2} Dadas $\gamma_1,\,\gamma_2:\s^1\to X$ tales que $\gamma_1\simeq \gamma_2$, entonces $h(\gamma_1)\sim h(\gamma_2)$.
 
-Para ver esto, consideramos $H:\s^1\times [0,1] \to X$ la homotopía a extremos fijos que manda $\gamma_1$ en $\gamma_2$. Si precomponemos con la proyección $\Delta^1\mapsto\s^1$ en la primera coordenada y la identidad en la segunda, obtenemos una homotopía $F:\Delta^1\times [0,1] \to X$ entre $h(\gamma_1)$ y $h(\gamma_2)$. Ahora, para hacer más fáciles las cuentas identificamos $\Delta^1$ con $[0,1]$ y vemos la homotopía como $F:[0,1]^2 \to X$.
+Para ver esto, consideramos $H:\s^1\times [0,1] \to X$ la homotopía a extremos fijos que manda $\gamma_1$ en $\gamma_2$. Si precomponemos con la proyección $\Delta^1\mapsto\s^1$ en la primera coordenada y la identidad en la segunda, obtenemos una homotopía $F:\Delta^1\times [0,1] \to X$ entre $h(\gamma_1)$ y $h(\gamma_2)$. Esta homotopía nos va a permitir construir una $2$-cadena singular que tiene como borde $h(\gamma_2)-h(\gamma_1)$.
 
-Llamamos $v_0:=(0,0)\; , v_1:=(1,0)\; ,v_2:=(0,1)\; ,v_3:=(1,1)$ a los vértices de $[0,1]^2$, podemos subdividirlo en dos $2$-símplices $[v_0,v_2,v_3]$ y $[v_0,v_1,v_3]$ como muestra la imagen \ref{h11}.
+Para hacer esto empezamos identificando $\Delta^1$ con $[0,1]$ y vemos la homotopía como $F:[0,1]^2 \to X$. Llamamos $v_0:=(0,0)\; , v_1:=(1,0)\; ,v_2:=(0,1)\; ,v_3:=(1,1)$ a los vértices de $[0,1]^2$, podemos subdividirlo en dos $2$-símplices $[v_0,v_2,v_3]$ y $[v_0,v_1,v_3]$ como muestra la imagen \ref{h11}.
 
 \begin{figure}
     	\centering
@@ -48,7 +48,7 @@ Al restringir $F$ a cada uno de estos $2$-símplices obtenemos $2$-símplices si
 Estos $\sigma_1$ y $\sigma_2$ cumplen 
 $$\partial (\sigma_2 - \sigma_1) = \sigma_2|_{[v_2,v_3]} - \sigma_1|_{[v_1,v_3]} -\sigma_2|_{[v_0,v_3]} + \sigma_1|_{[v_0,v_3]} + \sigma_2|_{[v_0,v_2]} - \sigma_1|_{[v_0,v_1]} $$
 
-Como la homotopía es a extremos fijos, por la parte (\ref{ab1}) los $\sigma_1|_{[v_1,v_3]}$ y $\sigma_2|_{[v_0,v_2]}$ son homólogos a $0$.
+Como la homotopía es a extremos fijos, los $\sigma_1|_{[v_1,v_3]}$ y $\sigma_2|_{[v_0,v_2]}$ son la imagen por $h$ de la función constante $x_0$, y entonces por la parte (\ref{ab1}) son homólogos a $0$.
 
 Por definición, $\sigma_1|_{[v_0,v_3]}$ y $\sigma_2|_{[v_0,v_3]}$ son la misma función, y por lo tanto su diferencia se cancela en la suma de arriba.
 
@@ -58,9 +58,7 @@ Esto nos deja con $$\partial (\sigma_2 - \sigma_1) = \sigma_2|_{[v_2,v_3]} - \si
 
 % Recordamos que el producto en $\pi_1(X)$ de dos clases representadas por caminos $\gamma_1$ y $\gamma_2$ se define como la clase de homotopía de la concatenación de ambos caminos, que notamos $\gamma_1 *\gamma_2$.
 
-
-
-Para probar esto consideramos un $2$-símplice $\Delta^2:=[v_0,v_1,v_2]$ y definimos $\sigma:\Delta^2\to X$ como ${h(\gamma_1 *\gamma_2)}\circ p$, siendo $p$ la proyección ortogonal sobre la arista $[v_0,v_2]$ y $h(\gamma_1 *\gamma_2):[v_0,v_2]\to X$. En ese caso $$\partial\sigma = \sigma_{[v_1,v_2]}-\sigma_{[v_0,v_2]}+\sigma_{[v_0,v_1]}$$
+Para probar esto consideramos $\Delta^2:=[v_0,v_1,v_2]$ y definimos un $2$-símplice singular $\sigma:\Delta^2\to X$ como $\sigma|_[v_0,v_2]:={h(\gamma_1 *\gamma_2)}$, y pidiendo que $\sigma$ sea constante en las rectas perpendiculares a la arista $[v_0,v_2]$. De esta manera, $\sigma|_[v_0,v_1]=h(\gamma_1)$ y $\sigma|_[v_1,v_2]=h(\gamma_1)$. En ese caso $$\partial\sigma = \sigma_{[v_1,v_2]}-\sigma_{[v_0,v_2]}+\sigma_{[v_0,v_1]}$$
 
 Analicemos cada término. 
 \begin{align*}
@@ -68,6 +66,8 @@ Analicemos cada término.
 \sigma|_{[v_1,v_2]}&=h(\gamma_1 * \gamma_2)|_{p([v_1,v_2])} = h(\gamma_1 * \gamma_2)|_{[(v_2-v_0)/2,v_2]} = h(\gamma_2) \\
 \sigma|_{[v_0,v_2]}&=h(\gamma_1 * \gamma_2)
 \end{align*}
+
+\comm{escribir bien}
 
 %\comm{la ultima igualdad de los dos primeros renglones no me convence. la concatenación no la defini bien pero es hacerlo con $2t$ en $\s^1$. entonces $h$ de eso va de $\Delta^1\to X$ con $2t$. ee nada creo q me estoyu confundiendo nomas tengo sueño}
 
