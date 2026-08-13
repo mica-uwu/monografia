@@ -58,20 +58,20 @@ Esto nos deja con $$\partial (\sigma_2 - \sigma_1) = \sigma_2|_{[v_2,v_3]} - \si
 
 % Recordamos que el producto en $\pi_1(X)$ de dos clases representadas por caminos $\gamma_1$ y $\gamma_2$ se define como la clase de homotopía de la concatenación de ambos caminos, que notamos $\gamma_1 *\gamma_2$.
 
-Para probar esto consideramos $\Delta^2:=[v_0,v_1,v_2]$ y definimos un $2$-símplice singular $\sigma:\Delta^2\to X$ como $\sigma|_[v_0,v_2]:={h(\gamma_1 *\gamma_2)}$, y pidiendo que $\sigma$ sea constante en las rectas perpendiculares a la arista $[v_0,v_2]$. De esta manera, $\sigma|_[v_0,v_1]=h(\gamma_1)$ y $\sigma|_[v_1,v_2]=h(\gamma_1)$. En ese caso $$\partial\sigma = \sigma_{[v_1,v_2]}-\sigma_{[v_0,v_2]}+\sigma_{[v_0,v_1]}$$
+Para probar esto consideramos $\Delta^2:=[v_0,v_1,v_2]$ y definimos un $2$-símplice singular $\sigma:\Delta^2\to X$ que va a tener como borde a $h(\gamma_1)+h(\gamma_2)-h(\gamma_1*\gamma_2)$. Primero definimos $\sigma$ en dos aristas, pidiendo que $\sigma|_{[v_0,v_1]}:={h(\gamma_1)}$, $\sigma|_{[v_1,v_2]}:={h(\gamma_2)}$. Luego definimos $\sigma$ en el resto de $\Delta^2$, pedimos que sea constante en las rectas perpendiculares a la arista $[v_0,v_2]$. De esta manera, $\sigma|_{[v_0,v_2]}$ es la concatenación de $h(\gamma_1)$ y $h(\gamma_2)$, que por definición es la misma función que $h(\gamma_1 * \gamma_2)$. Con eso tenemos que $$\partial\sigma = \sigma_{[v_1,v_2]}-\sigma_{[v_0,v_2]}+\sigma_{[v_0,v_1]}=h(\gamma_2)- h(\gamma_1 * \gamma_2) + h(\gamma_1)$$
 
-Analicemos cada término. 
-\begin{align*}
-\sigma|_{[v_0,v_1]}&=h(\gamma_1 * \gamma_2)|_{p([v_0,v_1])} = h(\gamma_1 * \gamma_2)|_{[v_0, (v_2-v_0)/2]} = h(\gamma_1) \\
-\sigma|_{[v_1,v_2]}&=h(\gamma_1 * \gamma_2)|_{p([v_1,v_2])} = h(\gamma_1 * \gamma_2)|_{[(v_2-v_0)/2,v_2]} = h(\gamma_2) \\
-\sigma|_{[v_0,v_2]}&=h(\gamma_1 * \gamma_2)
-\end{align*}
+% Analicemos cada término. 
+% \begin{align*}
+% \sigma|_{[v_0,v_1]}&=h(\gamma_1 * \gamma_2)|_{p([v_0,v_1])} = h(\gamma_1 * \gamma_2)|_{[v_0, (v_2-v_0)/2]} = h(\gamma_1) \\
+% \sigma|_{[v_1,v_2]}&=h(\gamma_1 * \gamma_2)|_{p([v_1,v_2])} = h(\gamma_1 * \gamma_2)|_{[(v_2-v_0)/2,v_2]} = h(\gamma_2) \\
+% \sigma|_{[v_0,v_2]}&=h(\gamma_1 * \gamma_2)
+% \end{align*}
 
-\comm{escribir bien}
+%\comm{escribir bien}
 
 %\comm{la ultima igualdad de los dos primeros renglones no me convence. la concatenación no la defini bien pero es hacerlo con $2t$ en $\s^1$. entonces $h$ de eso va de $\Delta^1\to X$ con $2t$. ee nada creo q me estoyu confundiendo nomas tengo sueño}
 
-Por lo tanto obtuvimos que $\partial\sigma = h(\gamma_2) - h(\gamma_1 * \gamma_2) + h(\gamma_1)$ y entonces $h(\gamma_1 * \gamma_2) \sim h(\gamma_1)+h(\gamma_2)$. La imagen \ref{h12} ilustra esto.
+Por lo tanto obtuvimos que $h(\gamma_1 * \gamma_2) \sim h(\gamma_1)+h(\gamma_2)$. La imagen \ref{h12} ilustra esto.
 
 \begin{figure}
     	\centering
