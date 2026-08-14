@@ -1,10 +1,10 @@
 \section{Relación entre $\pi_1(X)$ y $H_1(X)$}
 
-Recordamos que el grupo fundamental $\pi_1(X,x_0)$ de un espacio $X$ con punto base $x_0\in X$ está dado por las clases de homotopía a extremos fijos de los mapas $\gamma:[0,1]\to X$ con $\gamma(0)=\gamma(1)=x_0$. Estos mapas también pueden ser interpretados como $1$-símplices singulares en $X$, es decir funciones continuas $\sigma_\gamma:\Delta_1\to X$, que además van a ser ciclos ya que $\partial \sigma_\gamma$
+Recordamos que el grupo fundamental $\pi_1(X,x_0)$ de un espacio $X$ con punto base $x_0\in X$ está dado por las clases de homotopía a extremos fijos de los mapas $\gamma:[0,1]\to X$ con $\gamma(0)=\gamma(1)=x_0$. Estos mapas también pueden ser interpretados como $1$-símplices singulares en $X$, es decir funciones continuas $\sigma_\gamma:\Delta_1\to X$, que además van a ser ciclos ya que $\partial \sigma_\gamma=0$.
 
-Va a resultar que esta asociación de curvas cerradas a $1$-símplices singulares es un morfismo de grupos entre $\pi_1(X,x_0)$ y $H_1(X)$. 
+Va a resultar que esta asociación de curvas cerradas a $1$-símplices singulares es un morfismo de grupos entre $\pi_1(X,x_0)$ y $H_1(X)$. Este morfismo no es inyectivo y no necesariamente es sobreyectivo.
 
-Si el espacio $X$ es conexo por caminos, entonces $\pi_1(X,x_0)$ es independiente del punto base $x_0$ y lo notamos simplemente $\pi_1(X)$. En ese caso el morfismo va a ser sobreyectivo, y su núcleo va a ser el conmutador de $\pi_1(X)$. Por lo tanto, cuando $X$ es conexo por caminos, obtenemos un isomorfismo entre $H_1(X)$ y el abelianizado del $\pi_1(X)$, que notamos $\pi_1(X)_{ab}$. 
+Si el espacio $X$ es conexo por caminos, entonces $\pi_1(X,x_0)$ es independiente del punto base $x_0$ y lo notamos simplemente $\pi_1(X)$. En ese caso el morfismo va a ser sobreyectivo. y su núcleo va a ser el conmutador de $\pi_1(X)$. Por lo tanto, cuando $X$ es conexo por caminos, obtenemos un isomorfismo entre $H_1(X)$ y el abelianizado del $\pi_1(X)$, que notamos $\pi_1(X)_{ab}$. 
 
 Veamos esto en detalle:
 
@@ -16,7 +16,7 @@ Dados $x_0\in X,\, x_1\in\s^1$ definimos el espacio de lazos $\Omega(X,x_0)$ com
 
 Definimos la función $h\colon\Omega(X,x_0)\to C_1(X)$ que manda un lazo $\gamma\in\Omega(X,x_0)$ en un $1$-símplice singular $\sigma_\gamma:\Delta^1\to X$, obtenido precomponiendo con la proyección $p\colon\Delta^1\to\s^1$ que manda los extremos de $\Delta^1$ a $x_1\in\s^1$ y es inyectiva en el resto. 
 
-Si notamos $\Delta^1=[v_0,v_1]$, observar que $\partial h(\gamma)=\sigma_\gamma|_{[\hat{v}_0,v_1]} - \sigma_\gamma|_{[v_0,\hat{v}_1]}=x_0 - x_0=0$, entonces la imagen de $h$ está incluida en $\Ker(\partial_1)$. Podemos entonces pensar $h$ como una función de $\Omega(X,x_0)$ en $\Ker(\partial_1)$, y componiendo con la proyección al cociente, tenemos una función de $\Omega(X,x_0)$ en $H_1(X)$.
+Si notamos $\Delta^1=[v_0,v_1]$, observar que como $\gamma$ es un camino cerrado, $\partial h(\gamma)=\sigma_\gamma|_{[\hat{v}_0,v_1]} - \sigma_\gamma|_{[v_0,\hat{v}_1]}=x_0 - x_0=0$, entonces la imagen de $h$ está incluida en $\Ker(\partial_1)$. Podemos entonces pensar $h$ como una función de $\Omega(X,x_0)$ en $\Ker(\partial_1)$, y componiendo con la proyección al cociente, tenemos una función de $\Omega(X,x_0)$ en $H_1(X)$.
 
 En lo que sigue vamos a probar que si $\gamma_1\simeq \gamma_2$ entonces $h(\gamma_1)\sim h(\gamma_2)$, y que $h$ manda el producto de $\pi_1(X,x_0)$ a la suma en $H_1(X)$. Con eso vamos a tener que $h:\Omega(X,x_0)\to\Ker(\partial_1)\subset C_1(X)$ baja al cociente como un morfismo $\tilde{h}:\pi_1(X,x_0)\to H_1(X)$.
 
