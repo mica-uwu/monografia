@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex monografia"] 1786835700.09744 "monografia.aux" "monografia.bbl" "monografia" 1786838049.37529 0
+["bibtex monografia"] 1786835700.09744 "monografia.aux" "monografia.bbl" "monografia" 1786838330.09357 0
   "./biblio.bib" 1786391353 679 7434d96fcd44fe64176691410f4d0667 ""
   "O:/programas/miktex/bibtex/bst/bibtex/alpha.bst" 1291864736 23907 a5f93555796fb564b924339521f10a7c ""
-  "homologia/jordan.aux" 1786838048 1246 0dea1a1445c81bca59ed6355b81fd345 "pdflatex"
-  "monografia.aux" 1786838048 810 1d1b8e5e0fa2b54a9ff03d9f9a4db6a3 "pdflatex"
+  "homologia/jordan.aux" 1786838329 1246 0dea1a1445c81bca59ed6355b81fd345 "pdflatex"
+  "monografia.aux" 1786838329 810 1d1b8e5e0fa2b54a9ff03d9f9a4db6a3 "pdflatex"
   (generated)
   "monografia.bbl"
   "monografia.blg"
   (rewritten before read)
-["pdflatex"] 1786838046.46461 "o:/monografia/monografia.tex" "monografia.pdf" "monografia" 1786838049.37668 0
+["pdflatex"] 1786838327.42386 "o:/monografia/monografia.tex" "monografia.pdf" "monografia" 1786838330.09492 0
   "C:/Users/cumpc/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1786391609 81086 6fddea6b023469843de28035c851ec71 ""
   "C:/Users/cumpc/AppData/Local/MiKTeX/fonts/tfm/public/stmaryrd/stmary10.tfm" 1785541574 848 f478e0761563bbc369eca609a1741348 ""
   "C:/Users/cumpc/AppData/Local/MiKTeX/fonts/tfm/public/stmaryrd/stmary5.tfm" 1785541573 848 e1bc58a31b9ed9c3729ffea165acfaac ""
@@ -221,11 +221,11 @@
   "O:/programas/miktex/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "O:/programas/miktex/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "cmat-monografia.cls" 1781243100 3051 2d4c3bd389d707f779416f56c6240530 ""
-  "homologia/jordan.aux" 1786838048 1246 0dea1a1445c81bca59ed6355b81fd345 "pdflatex"
-  "homologia/jordan.tex" 1786838045 10803 02939267b48d29a6a80de1b7f2d043a7 ""
-  "monografia.aux" 1786838048 810 1d1b8e5e0fa2b54a9ff03d9f9a4db6a3 "pdflatex"
+  "homologia/jordan.aux" 1786838329 1246 0dea1a1445c81bca59ed6355b81fd345 "pdflatex"
+  "homologia/jordan.tex" 1786838326 10779 e31e3423d316351b6c4c317b2fa975b2 ""
+  "monografia.aux" 1786838329 810 1d1b8e5e0fa2b54a9ff03d9f9a4db6a3 "pdflatex"
   "monografia.bbl" 1786835700 52 0eba253fc001332e731e8aba3f23127b "bibtex monografia"
-  "monografia.out" 1786838048 261 b482e6e10ba338c52494b6189e37278c "pdflatex"
+  "monografia.out" 1786838329 261 b482e6e10ba338c52494b6189e37278c "pdflatex"
   "monografia.tex" 1786671500 2451 6ff8bff6a1890dde0f53b867c984a758 ""
   "o:/monografia/monografia.tex" 1786671500 2451 6ff8bff6a1890dde0f53b867c984a758 ""
   (generated)
