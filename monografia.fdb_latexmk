@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex monografia"] 1786671505.65252 "monografia.aux" "monografia.bbl" "monografia" 1786671509.09408 0
+["bibtex monografia"] 1786835700.09744 "monografia.aux" "monografia.bbl" "monografia" 1786838049.37529 0
   "./biblio.bib" 1786391353 679 7434d96fcd44fe64176691410f4d0667 ""
   "O:/programas/miktex/bibtex/bst/bibtex/alpha.bst" 1291864736 23907 a5f93555796fb564b924339521f10a7c ""
-  "homologia/jordan.aux" 1786671507 1250 da08ce5443951ce8a5bab6f7ce765574 "pdflatex"
-  "monografia.aux" 1786671507 811 6b14951ce6132b11146d8ca4c78aed27 "pdflatex"
+  "homologia/jordan.aux" 1786838048 1246 0dea1a1445c81bca59ed6355b81fd345 "pdflatex"
+  "monografia.aux" 1786838048 810 1d1b8e5e0fa2b54a9ff03d9f9a4db6a3 "pdflatex"
   (generated)
   "monografia.bbl"
   "monografia.blg"
   (rewritten before read)
-["pdflatex"] 1786671506.12188 "o:/monografia/monografia.tex" "monografia.pdf" "monografia" 1786671509.09582 0
+["pdflatex"] 1786838046.46461 "o:/monografia/monografia.tex" "monografia.pdf" "monografia" 1786838049.37668 0
   "C:/Users/cumpc/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1786391609 81086 6fddea6b023469843de28035c851ec71 ""
   "C:/Users/cumpc/AppData/Local/MiKTeX/fonts/tfm/public/stmaryrd/stmary10.tfm" 1785541574 848 f478e0761563bbc369eca609a1741348 ""
   "C:/Users/cumpc/AppData/Local/MiKTeX/fonts/tfm/public/stmaryrd/stmary5.tfm" 1785541573 848 e1bc58a31b9ed9c3729ffea165acfaac ""
@@ -47,6 +47,8 @@
   "O:/programas/miktex/fonts/tfm/public/cm/cmsy8.tfm" 1136765053 1120 8b7d695260f3cff42e636090a8002094 ""
   "O:/programas/miktex/fonts/tfm/public/cm/cmsy9.tfm" 1136765053 1116 25a7bf822c58caf309a702ef79f4afbb ""
   "O:/programas/miktex/fonts/tfm/public/cm/cmti10.tfm" 1136765053 1480 aa8e34af0eb6a2941b776984cf1dfdc4 ""
+  "O:/programas/miktex/fonts/tfm/public/cm/cmti7.tfm" 1136765053 1492 86331993fe614793f5e7e755835c31c5 ""
+  "O:/programas/miktex/fonts/tfm/public/cm/cmti8.tfm" 1136765053 1504 1747189e0441d1c18f3ea56fafc1c480 ""
   "O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1247596666 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1247596666 32080 340ef9bf63678554ee606688e7b5339d ""
   "O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmcsc10.pfb" 1247596667 32001 6aeea3afe875097b1eb0da29acd61e28 ""
@@ -61,6 +63,7 @@
   "O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247596667 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1247596667 32626 5abc8bb2f28aa647d4c70f8ea38cc0d3 ""
   "O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmti10.pfb" 1247596667 37944 359e864bd06cde3b1cf57bb20757fb06 ""
+  "O:/programas/miktex/fonts/type1/public/amsfonts/symbols/msam10.pfb" 1247596673 31764 459c573c03a4949a528c2cc7f557e217 ""
   "O:/programas/miktex/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1247596673 34694 870c211f62cb72718a00e353f14f254d ""
   "O:/programas/miktex/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "O:/programas/miktex/tex/generic/babel/babel.sty" 1762681668 146027 ef4163b2f3d9457f0205f6d7ce8e5cd4 ""
@@ -218,11 +221,11 @@
   "O:/programas/miktex/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "O:/programas/miktex/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "cmat-monografia.cls" 1781243100 3051 2d4c3bd389d707f779416f56c6240530 ""
-  "homologia/jordan.aux" 1786671507 1250 da08ce5443951ce8a5bab6f7ce765574 "pdflatex"
-  "homologia/jordan.tex" 1785984309 8488 b838c4249d43f67a29a5fc1e3d2b5375 ""
-  "monografia.aux" 1786671507 811 6b14951ce6132b11146d8ca4c78aed27 "pdflatex"
-  "monografia.bbl" 1786671505 52 0eba253fc001332e731e8aba3f23127b "bibtex monografia"
-  "monografia.out" 1786671507 261 b482e6e10ba338c52494b6189e37278c "pdflatex"
+  "homologia/jordan.aux" 1786838048 1246 0dea1a1445c81bca59ed6355b81fd345 "pdflatex"
+  "homologia/jordan.tex" 1786838045 10803 02939267b48d29a6a80de1b7f2d043a7 ""
+  "monografia.aux" 1786838048 810 1d1b8e5e0fa2b54a9ff03d9f9a4db6a3 "pdflatex"
+  "monografia.bbl" 1786835700 52 0eba253fc001332e731e8aba3f23127b "bibtex monografia"
+  "monografia.out" 1786838048 261 b482e6e10ba338c52494b6189e37278c "pdflatex"
   "monografia.tex" 1786671500 2451 6ff8bff6a1890dde0f53b867c984a758 ""
   "o:/monografia/monografia.tex" 1786671500 2451 6ff8bff6a1890dde0f53b867c984a758 ""
   (generated)

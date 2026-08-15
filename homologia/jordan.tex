@@ -1,14 +1,14 @@
 \section{Teorema de Jordan}
 
-Si pinchamos una esfera por un disco de cualquier dimensión, obtenemos una bola homológica.
+Si le sacamos un disco de cualquier dimensión a una esfera, obtenemos una bola homológica.
 
 \begin{teo}
-    Dado un encaje $h:D^k\to \s^n$, la homología reducida es $\tilde{H}_i(\s^n - h(D^k))=0$ para todo $i\in\N$
+    Dado un encaje $h:D^k\to \s^n$, la homología reducida de $\s^n - h(D^k)$ es $$\tilde{H}_i(\s^n - h(D^k))=0  \quad\fall i\in\N$$
 \end{teo}
 
-\comm{obviamente $k\leq n$ pero no se si decirlo, esto usa invariancia del dominio, no? q todo encaje va a cumplir $k\leq n$.}
+\comm{obviamente $k\leq n$, esto usa invariancia del dominio, q todo encaje va a cumplir $k\leq n$. agregar esto después}
 
-\begin{dem}
+\begin{proof}
     Hagamos inducción en $k\in\N$. 
     
     Si $k=0$, tenemos que $\s^n - h(D^0)$ es la esfera pinchada, es homeomorfa a $\R^n$, tomando un homeomorfismo que mande entornos reducidos del punto $h(D^0)$ en entornos del infinito. Con esto tenemos el caso base.
@@ -23,7 +23,7 @@ Si pinchamos una esfera por un disco de cualquier dimensión, obtenemos una bola
 
     \comm{dibujito aca}
 
-    En este caso $A\cup B = \s^n-h\left(I^{k-1}\times\{\frac{1}{2}\}\right)$. Esto lo podemos ver como $\s^n-\tilde{h}\left(D^{k-1}\right)$ con el encaje $\tilde{h}:D^{k-1}\to\s^n$ dado por precomponer $h$ con el homeomorfismo $I^{k-1}\times\{\frac{1}{2}\}\simeq D^{k-1}$. Aplicando la hipótesis de inducción obtenemos que $\tilde{H}_i(A\cup B)=0$ para todo $i\in\N$.
+    En este caso $A\cup B = \s^n-h\left(I^{k-1}\times\{\frac{1}{2}\}\right)$. Como $I^{k-1}\times\{\frac{1}{2}\}\simeq D^{k-1}$, podemos pensar Esto lo podemos ver como $\s^n-\tilde{h}\left(D^{k-1}\right)$ con el encaje $\tilde{h}:D^{k-1}\to\s^n$ dado por precomponer $h$ con el homeomorfismo $I^{k-1}\times\{\frac{1}{2}\}\simeq D^{k-1}$. Aplicando la hipótesis de inducción obtenemos que $\tilde{H}_i(A\cup B)=0$ para todo $i\in\N$.
 
     Sustituyendo en la sucesión de Mayer-Vietoris, para cada $i\in\N$ tenemos la sucesión exacta
 
@@ -54,19 +54,23 @@ Si pinchamos una esfera por un disco de cualquier dimensión, obtenemos una bola
     Entonces, lo que obtuvimos al final es que $y$ es un elemento de $C_{i+1}(\s^n - h(I^{k-1}\times I_M))$ tal que $x=\partial_{i+1} y$. Esto es absurdo, ya que nos habíamos asegurado que $x$ fuera un representante de una clase de homología no trivial de $\s^n - h(I^{k-1}\times I_m)$.
 
     El absurdo surgió de tomar un elemento en una clase no trivial de $H_i(\s^n-h(D))$, por lo tanto concluimos que $H_i(\s^n-h(D))=0$.
-\end{dem}
+\end{proof}
 
-    \begin{teo}{Separación de Jordan-Brouwer}
-    Dado un encaje $h:\s^k\to \s^n$ con $k<n$, para todo $i\in\N$ se cumple que la homología reducida $\tilde{H}_i(\s^n - h(\s^k))$ es $\Z$ si $i=n-k-1$ y $0$ en cualquier otro caso.
+    \begin{teo}
+    Dado un encaje $h:\s^k\to \s^n$ con $k<n$, para todo $i\in\N$ se cumple que la homología reducida de $\s^n - h(\s^k)$ es $$\tilde{H}_i(\s^n - h(\s^k))=
+    \begin{cases}
+    \Z\quad &\text{si }\,\, i=n-k-1\\
+    0\quad &\text{en cualquier otro caso}
+    \end{cases}$$
     \end{teo}
 
     \begin{obs}
-    En el caso de codimensión 1, este teorema nos dice que $\tilde{H_i}(\s^n-h(\s^{n-1}))$ es $\Z$ si $i=0$ y $0$ en cualquier otro caso. Esto significa que $H_0(\s^n-h(\s^{n-1}))=\Z\oplus\Z$, es decir, que $\s^n-h(\s^{n-1})$ tiene dos componentes conexas por caminos. Además, como el resto de los grupos de homología son triviales, estas componentes son bolas homológicas. 
+    En el caso de codimensión 1, este teorema nos dice que $\tilde{H_i}(\s^n-h(\s^{n-1}))$ es $\Z$ si $i=0$ y $0$ en cualquier otro caso. Esto significa que la homología no reducida es $H_0(\s^n-h(\s^{n-1}))=\Z\oplus\Z$, es decir, que $\s^n-h(\s^{n-1})$ tiene dos componentes conexas por caminos. Además, como el resto de los grupos de homología son triviales, estas componentes son bolas homológicas. 
     
     Sin embargo, como veremos más adelante, algunas de estas componentes pueden no ser bolas homotópicas, es decir, pueden tener $\pi_1$ no trivial, y en estos casos la componente no va a ser una variedad topológica.
     \end{obs}
 
-    \begin{dem}
+    \begin{proof}
 
     Para probar esto vamos a apoyarnos en la parte anterior. La idea es hacer la prueba por inducción en $k$ y usar la sucesión de Mayer-Vietoris con un cubrimiento por abiertos de la forma $\s^n - h(D^k)$. 
 
@@ -84,10 +88,30 @@ Si pinchamos una esfera por un disco de cualquier dimensión, obtenemos una bola
     
     Por la hipótesis de inducción, sabemos que $\tilde{H_{i+1}}(\s^n-h(\s^{k-1}))$ es $\Z$ si $i + 1 = n- (k-1) -1$ y $0$ en cualquier otro caso. Con esto tenemos el resultado buscado para $\tilde{H_{i}}(\s^n-h(\s^{k}))$.
 
-    \end{dem}
+    \end{proof}
 
+    En el caso de codimensión uno, además de separar el espacio en dos bolas homológicas, el borde de estas componentes va a ser exactamente la esfera encajada.
 
+    \begin{lema}
+    Dado un encaje $h:\s^{n-1}\to\s^n$, sean $A$ y $B$ a las componentes conexas de $\s^{n}-h(\s^{n-1})$. Entonces, se cumple que $\partial A = \partial B = h(\s^{n-1})$.
+    \end{lema}
+
+    \begin{proof}
+    Sabemos que $A$ y $B$ son abiertos disjuntos, y como $\s^n = h(\s^{n-1}) \cup A \cup B$, necesariamente el borde de $A$ y $B$ tiene que estar contenido en el cerrado $h(\s^{n-1})$. Veamos que todo punto en $h(\s^{n-1})$ es borde de $A$ y $B$. Sin pérdida de generalidad nos restringimos al caso de la componente $A$.
+
+    Supongamos por absurdo que existe un punto $x\in h(\s^{n-1})$ tal que $x\not\in\partial A$. En ese caso, existe un entorno abierto $U$ de $x$ tal que $U\cap A=\varnothing$. 
+
+    La intersección $W := U\cap h(\s^{n-1})$ es un abierto relativo de $h(\s^{n-1})$, y por lo tanto $h^{-1}(W)$ es un abierto de $\s^{n-1}$ que contiene a $h^{-1}(x)$. Como $\s^{n-1}$ es la esfera estándar, podemos tomar un disco abierto estándar $D$ centrado en $h^{-1}(x)$, contenido en $h^{-1}(W)$. Luego $h(D)\subset h(\s^{n-1})$ es un disco que contiene a $x$, y que tiene como complemento en $h(\s^{n-1})$ a un disco cerrado, al que llamamos $h(D')$.
+
+    Observamos que por construcción, $\partial A$ está contenido en $h(D')$, ya que $U\cap A=\varnothing$ y $h(D)\subset U$.
+
+    Por el primer lema que probamos en esta sección, sabemos que $\tilde{H}_0(\s^n - h(D'))=0$, es decir, $H_0(\s^n - h(D'))=\Z$, y por lo tanto $\s^n - h(D')$ tiene una única componente conexa por caminos. Como $\s^n$ es localmente conexa por caminos, y $\s^n - h(D')$ es abierto, entonces $\s^n - h(D')$ es conexo.
+
+    Sin embargo, podemos descomponer $\s^n - h(D') = A\sqcup B\sqcup h(D)$, y estos son tres abiertos disjuntos, lo cual nos da el absurdo.
     
+    Concluimos que no existe ningún $x\in\s^{n-1}-\partial A$, y por lo tanto, como ya teníamos la otra inclusión, obtenemos que $\s^{n-1}=\partial A$.
+    
+    \end{proof}
  
 
     % Un cubrimiento de $\s^n-h(I^k)$ está dado por $\s^n-A\cap\s^n-B$, entonces por 

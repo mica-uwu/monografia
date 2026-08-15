@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.5)  13 AUG 2026 22:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.5)  15 AUG 2026 20:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -744,17 +744,16 @@ l.84
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 9.
  [1
 
-] [2]) [3] [4
-
-
-
-
-] (monografia.bbl
+] [2] [3]) [4] (monografia.bbl
 Bibliograf\'{\i }a
 
 Package natbib Warning: Empty `thebibliography' environment on input line 3.
 
 ) [5
+
+
+
+
 
 
 ] (monografia.aux
@@ -769,17 +768,17 @@ Package rerunfilecheck Info: File `monografia.out' has not changed.
 (rerunfilecheck)             Checksum: B482E6E10BA338C52494B6189E37278C;261.
  ) 
 Here is how much of TeX's memory you used:
- 29221 strings out of 467871
- 565040 string characters out of 5430401
+ 29230 strings out of 467871
+ 565194 string characters out of 5430401
  1051798 words of memory out of 5000000
- 57432 multiletter control sequences out of 15000+600000
- 641014 words of font info for 91 fonts, out of 8000000 for 9000
+ 57438 multiletter control sequences out of 15000+600000
+ 641715 words of font info for 93 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 117i,12n,121p,646b,1017s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmbx10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmex10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmmi10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmmi6.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmmi8.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr12.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr17.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr8.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmsy8.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmti10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on monografia.pdf (7 pages, 199058 bytes).
+ 117i,12n,121p,613b,1004s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmbx10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmex10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmmi10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmmi6.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmmi8.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr12.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr17.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr8.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmsy8.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmti10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/symbols/msam10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on monografia.pdf (7 pages, 211378 bytes).
 PDF statistics:
- 131 PDF objects out of 1000 (max. 8388607)
- 14 named destinations out of 1000 (max. 500000)
+ 137 PDF objects out of 1000 (max. 8388607)
+ 15 named destinations out of 1000 (max. 500000)
  29 words of extra memory for PDF output out of 10000 (max. 10000000)
 

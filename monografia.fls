@@ -375,6 +375,8 @@ INPUT homologia\jordan.tex
 INPUT O:\programas\miktex\fonts\tfm\public\cm\cmbx10.tfm
 INPUT O:\programas\miktex\fonts\tfm\public\cm\cmbx8.tfm
 INPUT O:\programas\miktex\fonts\tfm\public\cm\cmbx6.tfm
+INPUT O:\programas\miktex\fonts\tfm\public\cm\cmti8.tfm
+INPUT O:\programas\miktex\fonts\tfm\public\cm\cmti7.tfm
 INPUT .\monografia.bbl
 INPUT .\monografia.bbl
 INPUT monografia.bbl
@@ -413,5 +415,7 @@ INPUT O:\programas\miktex\fonts\type1\public\amsfonts\cm\cmsy8.pfb
 INPUT O:\programas\miktex\fonts\type1\public\amsfonts\cm\cmsy8.pfb
 INPUT O:\programas\miktex\fonts\type1\public\amsfonts\cm\cmti10.pfb
 INPUT O:\programas\miktex\fonts\type1\public\amsfonts\cm\cmti10.pfb
+INPUT O:\programas\miktex\fonts\type1\public\amsfonts\symbols\msam10.pfb
+INPUT O:\programas\miktex\fonts\type1\public\amsfonts\symbols\msam10.pfb
 INPUT O:\programas\miktex\fonts\type1\public\amsfonts\symbols\msbm10.pfb
 INPUT O:\programas\miktex\fonts\type1\public\amsfonts\symbols\msbm10.pfb
