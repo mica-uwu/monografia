@@ -1,7 +1,6 @@
 \section{Sucesión de Mayer-Vietoris}
 
 Una familia de grupos abelianos $\{A_n:n\in \N\}$ y morfismos $\alpha_n: A_n\to A_{n-1}$ constituye una $\textbf{sucesión exacta}$ si para todo $n\in\N$ se cumple $\Ker(\alpha_{n})=\im(\alpha_{n+1})$.
-
 \begin{obs}
 
 La inclusión $\im(\alpha_{n+1})\subset\Ker(\alpha_{n})$ nos dice que $\alpha_{n+1}\circ\alpha_{n}\equiv 0$, es decir, los $\alpha_n$ forman un complejo de cadenas. 
@@ -9,25 +8,31 @@ La inclusión $\im(\alpha_{n+1})\subset\Ker(\alpha_{n})$ nos dice que $\alpha_{n
 La otra inclusión, $\im(\alpha_{n+1})\supset\Ker(\alpha_{n})$, nos dice que los grupos de homología asociados a este complejo de cadenas son triviales.
 
 En general, podemos interpretar la sucesión de grupos de homología asociados a un complejo de cadenas como un indicador de qué tan cerca está el complejo de ser una sucesión exacta.
-
 \end{obs}
+Llamaremos \textbf{sucesión exacta corta} a una sucesión exacta de la forma $$0\rightarrow A\xrightarrow{f} B\xrightarrow{g} C\rightarrow 0$$
+\begin{obs}
+	Una sucesión de esta forma es exacta si y solo si $f$ es inyectiva, $g$ es sobreyectiva y $\Ker(g)=\im(f)$. Por lo tanto, $g$ induce un isomorfismo entre $C$ y $B/\im(f)$.
+\end{obs}
+En general, una \textbf{sucesión exacta larga} es cualquier sucesión exacta con más términos que una sucesión exacta corta. En este capítulo, usaremos el término para referirnos específicamente a sucesiones exactas con una cantidad infinita numerable de elementos.
+
+El foco de este capítulo es describir la existencia de una sucesión exacta larga particular, conocida como la \textbf{sucesión de Mayer-Vietoris}.
 
 La existencia de la sucesión de Mayer-Vietoris para espacios topológicos va a surgir del siguiente hecho algebraico:
 
 \begin{lema}{Lema de la serpiente}
 
-	Sea $$0\rightarrow A\xrightarrow{f} B\xrightarrow{g} C\rightarrow 0$$ una sucesión exacta corta entre complejos de cadena. Entonces, para cada $n\in\Z$ existe un homomorfismo de grupos $$\delta_* :H_{n+1}(C)\rightarrow H_n(A)$$ tal que la siguiente sucesión es exacta:
+	Sean $A$, $B$ y $C$ espacios tal que para cada $n\in\N$ existen morfismos $f_n\colon C_n(A)\to C_n(B)$ y $g_n\colon C_n(B)\to C_n(C)$ para los que la sucesión $$0\rightarrow C_n(A)\xrightarrow{f_n} C_n(B)\xrightarrow{g_n} C_n(C)\rightarrow 0$$ es una sucesión exacta corta entre complejos de cadena. 
+	
+	Entonces, para cada $n\in\Z$ existe un morfismo $$\delta_* :H_{n+1}(C)\rightarrow H_n(A)$$ tal que la siguiente sucesión es exacta:
 
-	\begin{figure}[h!]
-    	\centering
-    	\includegraphics[width=0.75\linewidth]{img mono/mayer vietoris/serpiente.png}
-    	\caption{los conjuntos van sin el \textbullet, es que copié la imagen del diagrama de otro lado. tengo que hacerlo en tikz }
-    	\label{serpiente}
-	\end{figure}
-
+$$\begin{tikzcd}[arrow style=math font,cells={nodes={text height=2ex,text depth=0.75ex}}]
+       \cdots \arrow[overlay, r, "f_{n+1}^*"] & H_{n+1}(B) \arrow[overlay, r, "g_{n+1}^*"] \arrow[overlay, draw=none]{d}[name=Y, shape=coordinate]{} & H_{n+1}(C) \arrow[overlay, curarrow=Y]{dll}{} \\
+       H_{n}(A) \arrow[overlay, r, "f_n^*"] & H_{n}(B) \arrow[overlay, r, "g_n^*"] \arrow[overlay, draw=none]{d}[name=Z,shape=coordinate]{} & H_{n}(C) \arrow[overlay, curarrow=Z]{dll}{} \\
+       H_{n-1}(A) \arrow[overlay, r, "f_{n-1}^*"] & H_{n-1}(B) \arrow[overlay, r, "g_{n+1}^*"] & \cdots
+\end{tikzcd}$$
 \end{lema}
 
-Dentro de un espacio topológico consideramos dos subespacios $A$ y $B$, y sea $X=\mathring{A}\cup\mathring{B}$. Definimos $C_n(A+B)$ el complejo de cadenas dado por la suma formal de las cadenas en $A$ y $B$. El mapa borde $\partial:C_{n}(X)\to C_{n-1}(X)$ manda elementos de $C_n(A+B)$ en elementos de $C_{n-1}(A+B)$, entonces los $C_n(A+B)$ forman un complejo de cadenas.
+Dentro de un espacio topológico consideramos dos subespacios $A$ y $B$, y sea $X=\mathring{A}\cup\mathring{B}$. Definimos $C_n(A+B)$ el complejo de cadenas dado por la suma formal de elementos de $C_n(A)$ y $C_n(B)$. El mapa borde $\partial:C_{n}(X)\to C_{n-1}(X)$ manda elementos de $C_n(A+B)$ en elementos de $C_{n-1}(A+B)$, entonces los $C_n(A+B)$ forman un complejo de cadenas.
 
 \[\begin{tikzcd}
 	\dots & {C_n(A+B)} & {C_{n-1}(A+B)} & \dots \\
@@ -46,7 +51,7 @@ $\textbf{Afirmación:}$ Las inclusiones $C_n(A+B)\hookrightarrow C_n(X)$ inducen
 
 $$H_n(X)\simeq H_n(A+B)$$
 
-\comm{falta probar esto}
+\comm{me falta agregar esta prueba}
 
 Definiendo $\psi(x)=(x,-x)$, $\phi(x,y)=x+y$ consideramos el siguiente diagrama:
 

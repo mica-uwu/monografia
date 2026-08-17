@@ -1,12 +1,12 @@
 \section{Teorema de Jordan}
 
-Si le sacamos un disco de cualquier dimensión a una esfera, obtenemos una bola homológica.
+Primero, probemos que si le sacamos un disco de cualquier dimensión a una esfera, obtenemos una bola homológica.
 
 \begin{teo}
     Dado un encaje $h:D^k\to \s^n$, la homología reducida de $\s^n - h(D^k)$ es $$\tilde{H}_i(\s^n - h(D^k))=0  \quad\fall i\in\N$$
 \end{teo}
 
-\comm{obviamente $k\leq n$, esto usa invariancia del dominio, q todo encaje va a cumplir $k\leq n$. agregar esto después}
+\comm{obviamente $k\leq n$, esto usa invariancia del dominio, q todo encaje va a cumplir $k\leq n$. voy a agregar esto después como una observación}
 
 \begin{proof}
     Hagamos inducción en $k\in\N$. 
@@ -23,7 +23,7 @@ Si le sacamos un disco de cualquier dimensión a una esfera, obtenemos una bola 
 
     \comm{dibujito aca}
 
-    En este caso $A\cup B = \s^n-h\left(I^{k-1}\times\{\frac{1}{2}\}\right)$. Como $I^{k-1}\times\{\frac{1}{2}\}\simeq D^{k-1}$, podemos pensar Esto lo podemos ver como $\s^n-\tilde{h}\left(D^{k-1}\right)$ con el encaje $\tilde{h}:D^{k-1}\to\s^n$ dado por precomponer $h$ con el homeomorfismo $I^{k-1}\times\{\frac{1}{2}\}\simeq D^{k-1}$. Aplicando la hipótesis de inducción obtenemos que $\tilde{H}_i(A\cup B)=0$ para todo $i\in\N$.
+    En este caso $A\cup B = \s^n-h\left(I^{k-1}\times\{\frac{1}{2}\}\right)$. Como $I^{k-1}\times\{\frac{1}{2}\}\simeq D^{k-1}$, podemos aplicar la hipótesis de inducción y así obtener que $\tilde{H}_i(A\cup B)=0$ para todo $i\in\N$.
 
     Sustituyendo en la sucesión de Mayer-Vietoris, para cada $i\in\N$ tenemos la sucesión exacta
 
@@ -31,15 +31,13 @@ Si le sacamos un disco de cualquier dimensión a una esfera, obtenemos una bola 
 
     Que esta sucesión sea exacta implica que $\Ker(\Psi_i)=0$, $\im(\Psi_i) = H_i(A)\oplus H_i(B)$ y por lo tanto $\Psi_i$ es un isomorfismo.
 
-    Recordamos que los morfismos $\Psi_i$ de la sucesión de Mayer-Vietoris provienen de los morfismos entre los grupos $i$-cadenas singulares $\psi_i :C_i(X)\rightarrow C_i(A)\oplus C_i(B)$ definidos como $\psi_i(x)=(x,-x)$. 
-        
-    Por esta razón, a menos del signo, sabemos que las componentes de $\Psi_i$ están inducidas por las inclusiones $C_i(X)\hookrightarrow C_i(A)$, $C_i(X)\hookrightarrow C_i(B)$.
+    Recordamos que los morfismos $\Psi_i$ de la sucesión de Mayer-Vietoris provienen de los morfismos entre los grupos de $i$-cadenas singulares $\psi_i :C_i(X)\rightarrow C_i(A)\oplus C_i(B)$ definidos como $\psi_i(x)=(x,-x)$. Por esta razón, a menos del signo, sabemos que las componentes de $\Psi_i$ están inducidas por las inclusiones $C_i(X)\hookrightarrow C_i(A)$, $C_i(X)\hookrightarrow C_i(B)$.
 
     Ahora queremos calcular explicitamente $H_i(X)$. El resultado que buscamos es que sea trivial, hagamos un razonamiento por absurdo.
 
     Supongamos que existe $x$ un representante de una clase no trivial del $i$-ésimo grupo de homología de $X$. Es decir, $x$ es un elemento de $C_i(X)$ tal que no es borde de un elemento en $C_{i+1}(X)$, o sea, $x\not\in\im(\partial_{i+1})$. La clase de $x$, al pasar por el isomorfismo $\Psi_i$, cae en un elemento no trivial de $H_i(A)\oplus H_i(B)$. Como $\Psi_i$ está inducida por la inclusión a menos de signos, la afirmación anterior implica que el ciclo $x$ no es un borde en al menos uno de $C_i(A)$ o $C_i(B)$.
 
-    Sin pérdida de generalidad, asumamos que $x$ no es borde de ningún elemento de $C_i(A)$. Esto nos permite repetir el argumento tomando $X':=A=\s^n - h\left(I^{k-1}\times[0,\frac{1}{2}]\right)$, y eligiendo nuevos conjuntos $A':=\s^n - h\left(I^{k-1}\times[0,\frac{1}{4}]\right)$ y $B':=\s^n - h\left(I^{k-1}\times[\frac{1}{4},\frac{1}{2}]\right)$ dados por partir a la mitad el intervalo $[0,\frac{1}{2}]$ que definía al conjunto $A$. 
+    Sin pérdida de generalidad, asumamos que $x$ no es borde de ningún elemento de $C_i(A)$. Esto nos permite repetir el argumento tomando $X':=A=\s^n - h\left(I^{k-1}\times[0,\frac{1}{2}]\right)$, y eligiendo nuevos conjuntos $A':=\s^n - h\left(I^{k-1}\times[0,\frac{1}{4}]\right)$ y $B':=\s^n - h\left(I^{k-1}\times[\frac{1}{4},\frac{1}{2}]\right)$, obtenidos partiendo a la mitad el intervalo $[0,\frac{1}{2}]$ que definía al conjunto $A$. 
     
     Continuamos iterando sobre este argumento y obtenemos una sucesión de intervalos encajados $(I_m)_{m\in\N}$, tales que $I_0=[0,1]$, $I_j\subset I_{j-1}$, $\diam(I_m)\xrightarrow{m}0$.
 
@@ -55,6 +53,8 @@ Si le sacamos un disco de cualquier dimensión a una esfera, obtenemos una bola 
 
     El absurdo surgió de tomar un elemento en una clase no trivial de $H_i(\s^n-h(D))$, por lo tanto concluimos que $H_i(\s^n-h(D))=0$.
 \end{proof}
+
+Usando este resultado, podemos también caracterizar los grupos de homología del complemento de una esfera encajada en otra esfera de dimensión superior.
 
     \begin{teo}
     Dado un encaje $h:\s^k\to \s^n$ con $k<n$, para todo $i\in\N$ se cumple que la homología reducida de $\s^n - h(\s^k)$ es $$\tilde{H}_i(\s^n - h(\s^k))=

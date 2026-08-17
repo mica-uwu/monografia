@@ -35,12 +35,13 @@
 \usepackage{quiver}
 \usepackage{enumitem}
 \usepackage{tikz}
+\usepackage{tikz-cd}
 \usepackage{stmaryrd}
 \usepackage[numbers]{natbib}
 \usepackage{hyperref}
 \usepackage[spanish, shorthands=off]{babel}
 
-\usetikzlibrary{babel}
+\usetikzlibrary{babel, backgrounds}
 
 \theoremstyle{definition}
 \newtheorem{df}{Definición}[chapter]
@@ -59,6 +60,16 @@
 \providecommand{\comm}{\todo[inline, color=SpringGreen!40]}
 \providecommand{\duda}{\todo[inline, color=Apricot!40]}
 
+\tikzset{
+  curarrow/.style={
+  rounded corners=8pt,
+  execute at begin to={every node/.style={fill=red}},
+    to path={-- ([xshift=50pt]\tikztostart.center)
+    |- (#1) node[fill=white] {$\scriptstyle \partial_*$}
+    -| ([xshift=-50pt]\tikztotarget.center)
+    -- (\tikztotarget)}
+    }
+}
 
 
 \title{No se}
@@ -88,11 +99,11 @@
 
 % \include{summary}
 
-% \include{homologia/homologiasimplicial}
+\include{homologia/homologiasimplicial}
 
-% \include{homologia/homologiasingular}
+\include{homologia/homologiasingular}
 
-% \include{homologia/mayervietoris}
+\include{homologia/mayervietoris}
 
 \include{homologia/jordan}
 
