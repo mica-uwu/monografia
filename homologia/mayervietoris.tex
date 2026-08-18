@@ -13,30 +13,64 @@ Llamaremos \textbf{sucesión exacta corta} a una sucesión exacta de la forma $$
 \begin{obs}
 	Una sucesión de esta forma es exacta si y solo si $f$ es inyectiva, $g$ es sobreyectiva y $\Ker(g)=\im(f)$. Por lo tanto, $g$ induce un isomorfismo entre $C$ y $B/\im(f)$.
 \end{obs}
-En general, una \textbf{sucesión exacta larga} es cualquier sucesión exacta con más términos que una sucesión exacta corta. En este capítulo, usaremos el término para referirnos específicamente a sucesiones exactas con una cantidad infinita numerable de elementos.
+% En general, una \textbf{sucesión exacta larga} es cualquier sucesión exacta con más términos que una sucesión exacta corta. En este capítulo, usaremos el término para referirnos específicamente a sucesiones exactas con una cantidad infinita numerable de elementos.
 
-El foco de este capítulo es describir la existencia de una sucesión exacta larga particular, conocida como la \textbf{sucesión de Mayer-Vietoris}.
+Sean $A$, $B$ y $C$ espacios tales que para todo $n\in\N$ tenemos morfismos $f_n\colon C_n(A)\to C_n(B)$ y $g_n\colon C_n(B)\to C_n(C)$ que constituyen una sucesión exacta corta $$0\rightarrow C_n(A)\xrightarrow{f_n} C_n(B)\xrightarrow{g_n} C_n(C)\rightarrow 0$$ y que además conmutan con los morfismos borde $\partial_n$ como en el siguiente diagrama \[\begin{tikzcd}
+	& \vdots & \vdots & \vdots & \\
+	0 & {C_n(A)} & {C_{n}(B)} & {C_{n}(C)} & 0 \\
+	0 & {C_{n-1}(A)} & {C_{n-1}(B)} & {C_{n-1}(C)} & 0 \\
+	& \vdots & \vdots & \vdots
+	\arrow[from=1-2, to=2-2]
+	\arrow[from=1-3, to=2-3]
+	\arrow[from=1-4, to=2-4]
+	\arrow[from=2-1, to=2-2]
+	\arrow["{f_n}", from=2-2, to=2-3]
+	\arrow["{\scriptsize\partial_n}", from=2-2, to=3-2]
+	\arrow["{g_n}", from=2-3, to=2-4]
+	\arrow["{\scriptsize\partial_n}", from=2-3, to=3-3]
+	\arrow[from=2-4, to=2-5]
+	\arrow["{\scriptsize\partial_n}", from=2-4, to=3-4]
+	\arrow[from=3-1, to=3-2]
+	\arrow["{f_{n-1}}"', from=3-2, to=3-3]
+	\arrow[from=3-2, to=4-2]
+	\arrow["{g_{n-1}}"', from=3-3, to=3-4]
+	\arrow[from=3-3, to=4-3]
+	\arrow[from=3-4, to=3-5]
+	\arrow[from=3-4, to=4-4]
+\end{tikzcd}\]
 
-La existencia de la sucesión de Mayer-Vietoris para espacios topológicos va a surgir del siguiente hecho algebraico:
+Entonces, en ese caso decimos que tenemos una \textbf{sucesión exacta corta de complejos de cadena}, que podemos notar como $$0\rightarrow C_\bullet(A)\xrightarrow{f} C_\bullet(B)\xrightarrow{g} C_\bullet(C)\rightarrow 0$$
 
-\begin{lema}{Lema de la serpiente}
+El foco de este capítulo es describir la existencia de una sucesión exacta particular, conocida como la Sucesión de Mayer-Vietoris. La existencia de esta sucesión va a surgir del siguiente hecho algebraico:
 
-	Sean $A$, $B$ y $C$ espacios tal que para cada $n\in\N$ existen morfismos $f_n\colon C_n(A)\to C_n(B)$ y $g_n\colon C_n(B)\to C_n(C)$ para los que la sucesión $$0\rightarrow C_n(A)\xrightarrow{f_n} C_n(B)\xrightarrow{g_n} C_n(C)\rightarrow 0$$ es una sucesión exacta corta entre complejos de cadena. 
-	
-	Entonces, para cada $n\in\Z$ existe un morfismo $$\delta_* :H_{n+1}(C)\rightarrow H_n(A)$$ tal que la siguiente sucesión es exacta:
+\begin{lema}{\emph{Lema de la serpiente}:}
+	Sean $A$, $B$ y $C$ espacios que componen una sucesión exacta corta de complejos de cadena $$0\rightarrow C_\bullet(A)\xrightarrow{f} C_\bullet(B)\xrightarrow{g} C_\bullet(C)\rightarrow 0$$
+	Entonces, para cada $n\in\Z$ existe un morfismo $$\partial_n^* :H_{n+1}(C)\rightarrow H_n(A)$$ tal que la siguiente sucesión es exacta:
 
 $$\begin{tikzcd}[arrow style=math font,cells={nodes={text height=2ex,text depth=0.75ex}}]
-       \cdots \arrow[overlay, r, "f_{n+1}^*"] & H_{n+1}(B) \arrow[overlay, r, "g_{n+1}^*"] \arrow[overlay, draw=none]{d}[name=Y, shape=coordinate]{} & H_{n+1}(C) \arrow[overlay, curarrow=Y]{dll}{} \\
-       H_{n}(A) \arrow[overlay, r, "f_n^*"] & H_{n}(B) \arrow[overlay, r, "g_n^*"] \arrow[overlay, draw=none]{d}[name=Z,shape=coordinate]{} & H_{n}(C) \arrow[overlay, curarrow=Z]{dll}{} \\
+       \cdots \arrow[overlay, r, "f_{n+1}^*"] & H_{n+1}(B) \arrow[overlay, r, "g_{n+1}^*"] \arrow[overlay, draw=none]{d}[name=Y, shape=coordinate]{} & H_{n+1}(C) \arrow[overlay, curarrow={Y}{\partial_{n+1}^*}]{dll}{} \\
+       H_{n}(A) \arrow[overlay, r, "f_n^*"] & H_{n}(B) \arrow[overlay, r, "g_n^*"] \arrow[overlay, draw=none]{d}[name=Z,shape=coordinate]{} & H_{n}(C) \arrow[overlay, curarrow={Z}{\partial_{n}^*}]{dll}{} \\
        H_{n-1}(A) \arrow[overlay, r, "f_{n-1}^*"] & H_{n-1}(B) \arrow[overlay, r, "g_{n+1}^*"] & \cdots
 \end{tikzcd}$$
 \end{lema}
 
-Dentro de un espacio topológico consideramos dos subespacios $A$ y $B$, y sea $X=\mathring{A}\cup\mathring{B}$. Definimos $C_n(A+B)$ el complejo de cadenas dado por la suma formal de elementos de $C_n(A)$ y $C_n(B)$. El mapa borde $\partial:C_{n}(X)\to C_{n-1}(X)$ manda elementos de $C_n(A+B)$ en elementos de $C_{n-1}(A+B)$, entonces los $C_n(A+B)$ forman un complejo de cadenas.
+\begin{proof}
+	Acá tengo q citar el CWM o algún otro libro
+\end{proof}
+
+La sucesión de Mayer-Vietoris para dos abiertos $A$ y $B$ va a surgir de aplicar este lema a una sucesión exacta corta de complejos de cadena en particular. 
+
+Definimos $C_n(A+B)$ como el complejo de $n$-cadenas dado por el grupo abeliano libre cuya base son los elementos de $C_n(A)$ y $C_n(B)$. El mapa borde $\partial:C_{n}(X)\to C_{n-1}(X)$ manda elementos de $C_n(A+B)$ en elementos de $C_{n-1}(A+B)$, entonces los $C_n(A+B)$ forman un complejo de cadenas.
+
+\begin{lema}
+Las inclusiones $C_n(A+B)\hookrightarrow C_n(X)$ inducen isomorfismos en los grupos de homología. 
+
+$$H_n(X)\simeq H_n(A+B)$$
+\end{lema}
 
 \[\begin{tikzcd}
 	\dots & {C_n(A+B)} & {C_{n-1}(A+B)} & \dots \\
-	\dots & {C_n(X)} & {C_{n-1}(X)} & \dots
+	\dots & {C_n(A\cup B)} & {C_{n-1}(A\cup B)} & \dots
 	\arrow[from=1-1, to=1-2]
 	\arrow[from=1-2, to=1-3]
 	\arrow["i", hook, from=1-2, to=2-2]
@@ -47,27 +81,34 @@ Dentro de un espacio topológico consideramos dos subespacios $A$ y $B$, y sea $
 	\arrow[from=2-3, to=2-4]
 \end{tikzcd}\]
 
-$\textbf{Afirmación:}$ Las inclusiones $C_n(A+B)\hookrightarrow C_n(X)$ inducen isomorfismos en los grupos de homología. 
-
-$$H_n(X)\simeq H_n(A+B)$$
-
 \comm{me falta agregar esta prueba}
 
-Definiendo $\psi(x)=(x,-x)$, $\phi(x,y)=x+y$ consideramos el siguiente diagrama:
+\begin{lema}
+	Sean \begin{align*}
+		&\psi\colon C_n(A\cup B)\to C_n(A)\oplus C_n(B),\quad \psi(x)=(x,-x) \\
+		&\phi\colon C_n(A)\oplus C_n(B)\to C_n(A+B), \quad \phi(x,y)=x+y
+	\end{align*}
+	Entonces, la siguiente es una sucesión exacta corta:
+	$$0\rightarrow C_n(A\cap B)\xrightarrow{\psi}C_n(A)\oplus C_n(B)\xrightarrow{\phi}C_n(A+B)\rightarrow 0$$
+\end{lema}
 
-$$0\rightarrow C_n(A\cap B)\xrightarrow{\psi}C_n(A)\oplus C_n(B)\xrightarrow{\phi}C_n(A+B)\rightarrow 0$$
+% Definiendo $\psi(x)=(x,-x)$, $\phi(x,y)=x+y$ consideramos el siguiente diagrama:
 
-Esta va a resultar una sucesión exacta corta, vamos a verificarlo.
+% $$0\rightarrow C_n(A\cap B)\xrightarrow{\psi}C_n(A)\oplus C_n(B)\xrightarrow{\phi}C_n(A+B)\rightarrow 0$$
 
-Veamos primero que $\Ker(\phi)=\im(\psi)$: 
+% Esta va a resultar una sucesión exacta corta, vamos a verificarlo.
+\begin{proof}
+Veamos primero que $\Ker(\phi)=\im(\psi)$.
 
-Si se cumple $(x,y)\in\Ker(\phi)$ para dos elementos $x\in C_n(A)$, $y\in C_n(B)$, entonces se cumple $x+y=0$. Esto implica que $x=-y$ como cadenas en $X$, y por lo tanto $x, y\in C_n(A\cap B)$. Tenemos entonces $\psi(x)=(x,-x)=(x,y)\in C_n(A)\oplus C_n(B)$, es decir, $(x,y)\in\im(\psi)$. Con esto probamos $\Ker(\phi)\subset \im(\psi)$. La otra inclusión es más directa, dado $(x,-x)\in\im(\psi)$ se tiene $x\in C_n(A\cap B)$, entonces $\phi(x,-x)=x-x=0$
+$\im(\psi)\subset\Ker(\phi)$: Si se cumple $(x,y)\in\Ker(\phi)$ para dos elementos $x\in C_n(A)$, $y\in C_n(B)$, entonces se cumple $x+y=0$. Esto implica que $x=-y$ como cadenas en $X$, y por lo tanto $x, y\in C_n(A\cap B)$. Tenemos entonces $\psi(x)=(x,-x)=(x,y)\in C_n(A)\oplus C_n(B)$, es decir, $(x,y)\in\im(\psi)$. 
 
-% \duda{me parece medio chafi como esta definido el complejo de A+B}
+$\Ker(\phi)\subset\im(\psi)$: Esta inclusión es más directa, dado $(x,-x)\in\im(\psi)$ se tiene $x\in C_n(A\cap B)$, entonces $\phi(x,-x)=x-x=0$
 
 Además de eso, dado $x\in C_n(A\cap B)$ tal que $\psi(x)=0$, se tiene $(x,-x)=(0,0)$ en $C_n(A)\oplus C_n(B)$, por lo que necesariamente $x=0$ y por lo tanto $\Ker(\psi)=0$.
 
 Lo último que basta verificar es $\im(\phi)=C_n(A+B)$. Efectivamente, dado $x\in C_n(A+B)$, $x$ es una suma formal de $n$-cadenas en $A$ y $B$
+\end{proof}
+
 
 % \comm{en algún lugar de acá mencionar eso de que la sucesión de grupos de homología es una forma de expresar qué tan cerca de ser exacta está la sucesión de grupos abelianos}
 
@@ -79,4 +120,4 @@ Lo último que basta verificar es $\im(\phi)=C_n(A+B)$. Efectivamente, dado $x\i
 
 % \end{lema}
 
-
+% https://q.uiver.app/#q=WzAsMTYsWzAsMSwiMCJdLFsxLDEsIkNfbihBKSJdLFsyLDEsIkNfe259KEIpIl0sWzMsMSwiQ197bn0oQykiXSxbNCwxLCIwIl0sWzAsMiwiMCJdLFs0LDIsIjAiXSxbMSwyLCJDX3tuLTF9KEEpIl0sWzIsMiwiQ197bi0xfShCKSJdLFszLDIsIkNfe24tMX0oQykiXSxbMSwzLCJcXHZkb3RzIl0sWzIsMywiXFx2ZG90cyJdLFszLDMsIlxcdmRvdHMiXSxbMywwLCJcXHZkb3RzIl0sWzIsMCwiXFx2ZG90cyJdLFsxLDAsIlxcdmRvdHMiXSxbMCwxXSxbMSwyLCJmX24iXSxbMiwzLCJnX24iXSxbMyw0XSxbOSw2XSxbOCw5LCJnX3tuLTF9IiwyXSxbNyw4LCJmX3tuLTF9IiwyXSxbNSw3XSxbMSw3LCJcXHNjcmlwdHNpemVcXHBhcnRpYWxfbiJdLFsyLDgsIlxcc2NyaXB0c2l6ZVxccGFydGlhbF9uIl0sWzMsOSwiXFxzY3JpcHRzaXplXFxwYXJ0aWFsX24iXSxbNywxMF0sWzgsMTFdLFs5LDEyXSxbMTMsM10sWzE0LDJdLFsxNSwxXV0=

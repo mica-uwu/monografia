@@ -60,17 +60,36 @@
 \providecommand{\comm}{\todo[inline, color=SpringGreen!40]}
 \providecommand{\duda}{\todo[inline, color=Apricot!40]}
 
+% \tikzset{
+%   curarrow/.style={
+%   rounded corners=8pt,
+%   execute at begin to={every node/.style={fill=red}},
+%     to path={-- ([xshift=50pt]\tikztostart.center)
+%     |- (#1) node[fill=white] {$\scriptstyle \partial_n^*$}
+%     -| ([xshift=-50pt]\tikztotarget.center)
+%     -- (\tikztotarget)}
+%     }
+% }
 \tikzset{
-  curarrow/.style={
+curarrow/.style 2 args={
   rounded corners=8pt,
   execute at begin to={every node/.style={fill=red}},
-    to path={-- ([xshift=50pt]\tikztostart.center)
-    |- (#1) node[fill=white] {$\scriptstyle \partial_*$}
-    -| ([xshift=-50pt]\tikztotarget.center)
-    -- (\tikztotarget)}
-    }
+  to path={-- ([xshift=50pt]\tikztostart.center)
+           |- (#1) node[fill=white] {$\scriptstyle #2$}
+           -| ([xshift=-50pt]\tikztotarget.center)
+           -- (\tikztotarget)}
 }
-
+}
+% \tikzset{
+%   curarrow1/.style={
+%   rounded corners=8pt,
+%   execute at begin to={every node/.style={fill=red}},
+%     to path={-- ([xshift=50pt]\tikztostart.center)
+%     |- (#1) node[fill=white] {$\scriptstyle \partial_*$}
+%     -| ([xshift=-50pt]\tikztotarget.center)
+%     -- (\tikztotarget)}
+%     }
+% }
 
 \title{No se}
 
@@ -99,9 +118,9 @@
 
 % \include{summary}
 
-\include{homologia/homologiasimplicial}
+% \include{homologia/homologiasimplicial}
 
-\include{homologia/homologiasingular}
+% \include{homologia/homologiasingular}
 
 \include{homologia/mayervietoris}
 
