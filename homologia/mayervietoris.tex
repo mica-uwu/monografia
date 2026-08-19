@@ -45,7 +45,7 @@ El foco de este capítulo es describir la existencia de una sucesión exacta par
 
 \begin{lema}{\emph{Lema de la serpiente}:}
 	Sean $A$, $B$ y $C$ espacios que componen una sucesión exacta corta de complejos de cadena $$0\rightarrow C_\bullet(A)\xrightarrow{f} C_\bullet(B)\xrightarrow{g} C_\bullet(C)\rightarrow 0$$
-	Entonces, para cada $n\in\Z$ existe un morfismo $$\partial_n^* :H_{n+1}(C)\rightarrow H_n(A)$$ tal que la siguiente sucesión es exacta:
+	Entonces, para cada $n\in\Z$ existe un morfismo $$\partial_n^* :H_{n}(C)\rightarrow H_{n-1}(A)$$ tal que la siguiente sucesión es exacta:
 
 $$\begin{tikzcd}[arrow style=math font,cells={nodes={text height=2ex,text depth=0.75ex}}]
        \cdots \arrow[overlay, r, "f_{n+1}^*"] & H_{n+1}(B) \arrow[overlay, r, "g_{n+1}^*"] \arrow[overlay, draw=none]{d}[name=Y, shape=coordinate]{} & H_{n+1}(C) \arrow[overlay, curarrow={Y}{\partial_{n+1}^*}]{dll}{} \\
@@ -58,57 +58,111 @@ $$\begin{tikzcd}[arrow style=math font,cells={nodes={text height=2ex,text depth=
 	Acá tengo q citar el CWM o algún otro libro
 \end{proof}
 
-La sucesión de Mayer-Vietoris para dos abiertos $A$ y $B$ va a surgir de aplicar este lema a una sucesión exacta corta de complejos de cadena en particular. 
+% Dado un subconjunto $Y\subset X$, consideramos la inclusión $i\colon Y\hookrightarrow X$. 
 
-Definimos $C_n(A+B)$ como el complejo de $n$-cadenas dado por el grupo abeliano libre cuya base son los elementos de $C_n(A)$ y $C_n(B)$. El mapa borde $\partial:C_{n}(X)\to C_{n-1}(X)$ manda elementos de $C_n(A+B)$ en elementos de $C_{n-1}(A+B)$, entonces los $C_n(A+B)$ forman un complejo de cadenas.
+Vamos a obtener la sucesión de Mayer-Vietoris para un espacio cubierto por dos abiertos $A$ y $B$ aplicando este lema a una sucesión exacta corta de complejos de cadena en particular. Los complejos de $n$-cadenas serán los siguientes:
+
+\begin{itemize}
+	\item $C_n(A\cap B)$: No hay mucho que aclarar para este complejo, salvo observar que viendo $C_n(A\cap B)$ como subgrupo de $C_n(A\cup B)$, el morfismo $\partial^\cap_n\colon C_n(A\cap B)\to C_{n-1}(A\cap B)$ puede obtenerse restringiendo $\partial_n\colon C_n(A\cup B)\to C_{n-1}(A\cup B)$.
+	\item $C_n(A+B)$: Lo definimos como el complejo de $n$-cadenas generado por los símplices singulares que tienen imagen contenida en $A$ o $B$. De esta forma, podemos verlo como subgrupo de $C_n(A\cup B)$, y entonces podemos ver el mapa borde $\partial_n^+\colon C_{n}(A + B)\to C_{n-1}(A + B)$ como la restricción de $\partial_n\colon C_n(A\cup B)\to C_{n-1}(A\cup B)$.
+	\item $C_n(A)\oplus C_n(B)$: Definiendo el mapa borde como $\partial_n^\oplus\colon C_n(A)\oplus C_n(B)\to C_{n-1}(A)\oplus C_{n-1}(B)$ tal que $\partial_n^\oplus(a, b) = \left(\partial_n^A(a), \partial_n^B(b)\right)$ siendo $\partial_n^A\colon C_n(A)\to C_{n-1}(A)$ y $\partial_n^B\colon C_n(B)\to C_{n-1}(B)$ los respectivos mapas borde de $A$ y $B$, que pueden verse como restricción del mapa $\partial_n\colon C_n(A\cup B)\to C_{n-1}(A\cup B)$. Notaremos a este complejo $C_\bullet(A)\oplus C_\bullet(B)$.
+\end{itemize}
+
 
 \begin{lema}
-Las inclusiones $C_n(A+B)\hookrightarrow C_n(X)$ inducen isomorfismos en los grupos de homología. 
+Las inclusiones $C_n(A+B)\hookrightarrow C_n(A\cup B)$ inducen isomorfismos en los grupos de homología. 
 
-$$H_n(X)\simeq H_n(A+B)$$
+$$H_n(A\cup B)\simeq H_n(A+B)$$
 \end{lema}
+% \[\begin{tikzcd}
+% 	\dots & {C_n(A+B)} & {C_{n-1}(A+B)} & \dots \\
+% 	\dots & {C_n(A\cup B)} & {C_{n-1}(A\cup B)} & \dots
+% 	\arrow[from=1-1, to=1-2]
+% 	\arrow[from=1-2, to=1-3]
+% 	\arrow["i", hook, from=1-2, to=2-2]
+% 	\arrow[from=1-3, to=1-4]
+% 	\arrow["i", hook, from=1-3, to=2-3]
+% 	\arrow[from=2-1, to=2-2]
+% 	\arrow[from=2-2, to=2-3]
+% 	\arrow[from=2-3, to=2-4]
+% \end{tikzcd}\]
 
-\[\begin{tikzcd}
-	\dots & {C_n(A+B)} & {C_{n-1}(A+B)} & \dots \\
-	\dots & {C_n(A\cup B)} & {C_{n-1}(A\cup B)} & \dots
-	\arrow[from=1-1, to=1-2]
-	\arrow[from=1-2, to=1-3]
-	\arrow["i", hook, from=1-2, to=2-2]
-	\arrow[from=1-3, to=1-4]
-	\arrow["i", hook, from=1-3, to=2-3]
-	\arrow[from=2-1, to=2-2]
-	\arrow[from=2-2, to=2-3]
-	\arrow[from=2-3, to=2-4]
-\end{tikzcd}\]
-
-\comm{me falta agregar esta prueba}
+\comm{me falta agregar esta prueba, no sé si la voy a agregar, por lo menos no todavía, es una prueba muy costosa}
 
 \begin{lema}
 	Sean \begin{align*}
-		&\psi\colon C_n(A\cup B)\to C_n(A)\oplus C_n(B),\quad \psi(x)=(x,-x) \\
-		&\phi\colon C_n(A)\oplus C_n(B)\to C_n(A+B), \quad \phi(x,y)=x+y
+		&\psi_n\colon C_n(A\cap B)\to C_n(A)\oplus C_n(B),\quad \psi_n(x)=(x,-x) \\
+		&\phi_n\colon C_n(A)\oplus C_n(B)\to C_n(A+B), \quad \phi_n(x,y)=x+y
 	\end{align*}
-	Entonces, la siguiente es una sucesión exacta corta:
-	$$0\rightarrow C_n(A\cap B)\xrightarrow{\psi}C_n(A)\oplus C_n(B)\xrightarrow{\phi}C_n(A+B)\rightarrow 0$$
+	Entonces, la siguiente es una sucesión exacta corta de complejos de cadena:
+	$$0\rightarrow C_\bullet(A\cap B)\xrightarrow{\psi}C_\bullet(A)\oplus C_\bullet(B)\xrightarrow{\phi}C_\bullet(A+B)\rightarrow 0$$
 \end{lema}
 
-% Definiendo $\psi(x)=(x,-x)$, $\phi(x,y)=x+y$ consideramos el siguiente diagrama:
+% Definiendo $\psi_n(x)=(x,-x)$, $\phi_n(x,y)=x+y$ consideramos el siguiente diagrama:
 
-% $$0\rightarrow C_n(A\cap B)\xrightarrow{\psi}C_n(A)\oplus C_n(B)\xrightarrow{\phi}C_n(A+B)\rightarrow 0$$
+% $$0\rightarrow C_n(A\cap B)\xrightarrow{\psi_n}C_n(A)\oplus C_n(B)\xrightarrow{\phi_n}C_n(A+B)\rightarrow 0$$
 
 % Esta va a resultar una sucesión exacta corta, vamos a verificarlo.
 \begin{proof}
-Veamos primero que $\Ker(\phi)=\im(\psi)$.
 
-$\im(\psi)\subset\Ker(\phi)$: Si se cumple $(x,y)\in\Ker(\phi)$ para dos elementos $x\in C_n(A)$, $y\in C_n(B)$, entonces se cumple $x+y=0$. Esto implica que $x=-y$ como cadenas en $X$, y por lo tanto $x, y\in C_n(A\cap B)$. Tenemos entonces $\psi(x)=(x,-x)=(x,y)\in C_n(A)\oplus C_n(B)$, es decir, $(x,y)\in\im(\psi)$. 
+Los $\psi_n$, $\phi_n$ son morfismos para cada $n\in\N$. Lo que falta verificar es que las sucesiones son exactas para cada $n$ y que los morfismos conmutan con el mapa borde. Veamos primero que dado $n\in\N$, la siguente sucesión es exacta: $$0\rightarrow C_n(A\cap B)\xrightarrow{\psi_n}C_n(A)\oplus C_n(B)\xrightarrow{\phi_n}C_n(A+B)\rightarrow 0$$
 
-$\Ker(\phi)\subset\im(\psi)$: Esta inclusión es más directa, dado $(x,-x)\in\im(\psi)$ se tiene $x\in C_n(A\cap B)$, entonces $\phi(x,-x)=x-x=0$
+\begin{itemize}
 
-Además de eso, dado $x\in C_n(A\cap B)$ tal que $\psi(x)=0$, se tiene $(x,-x)=(0,0)$ en $C_n(A)\oplus C_n(B)$, por lo que necesariamente $x=0$ y por lo tanto $\Ker(\psi)=0$.
+\item $\Ker(\phi_n)\subset\im(\psi_n)$: Si se cumple $(x,y)\in\Ker(\phi_n)$ para dos elementos $x\in C_n(A)$, $y\in C_n(B)$, entonces se cumple $x+y=0$. Esto implica que $y=-x$ como cadenas en $A\cup B$, y por lo tanto $x, y\in C_n(A\cap B)$. Tenemos entonces $\psi_n(x)=(x,-x)=(x,y)\in C_n(A)\oplus C_n(B)$, es decir, $(x,y)\in\im(\psi_n)$. 
 
-Lo último que basta verificar es $\im(\phi)=C_n(A+B)$. Efectivamente, dado $x\in C_n(A+B)$, $x$ es una suma formal de $n$-cadenas en $A$ y $B$
+\item $\im(\psi_n)\subset\Ker(\phi_n)$: Esta inclusión es más directa, dado $(x,-x)\in\im(\psi_n)$ se tiene $x\in C_n(A\cap B)$, entonces $\phi_n(x,-x)=x-x=0$
+
+\item $\Ker(\psi_n)=0$: Dado $x\in C_n(A\cap B)$ tal que $\psi_n(x)=0$, se tiene $(x,-x)=(0,0)$ en $C_n(A)\oplus C_n(B)$, por lo que necesariamente $x=0$.
+
+\item $\im(\phi_n)=C_n(A+B)$: Dado $x\in C_n(A+B)$, $x$ es una suma formal de $n$-cadenas en $A$ y $B$. 
+\end{itemize}
+Con esto concluimos que la sucesión es exacta. Ahora resta verificar que los morfismos conmutan con el borde, es decir, que los siguientes diagramas conmutan:
+
+% https://q.uiver.app/#q=WzAsOCxbMCwwLCJcXHNjcmlwdHN0eWxlIENfbihBXFxjYXAgQikiXSxbMSwwLCJcXHNjcmlwdHN0eWxlIENfbihBKVxcb3BsdXMgQ19uKEIpIl0sWzEsMSwiXFxzY3JpcHRzdHlsZSBDX3tuLTF9KEEpXFxvcGx1cyBDX3tuLTF9KEIpIl0sWzAsMSwiXFxzY3JpcHRzdHlsZSBDX3tuLTF9KEFcXGNhcCBCKSJdLFsyLDAsIlxcc2NyaXB0c3R5bGUgQ19uKEEpXFxvcGx1cyBDX24oQikiXSxbMiwxLCJcXHNjcmlwdHN0eWxlIENfe24tMX0oQSlcXG9wbHVzIENfe24tMX0oQikiXSxbMywwLCJcXHNjcmlwdHN0eWxlIENfbihBK0IpIl0sWzMsMSwiXFxzY3JpcHRzdHlsZSBDX3tuLTF9KEErQikiXSxbMSwyLCJcXHNjcmlwdHN0eWxlIFxccGFydGlhbF9uXlxcb3BsdXMiXSxbMCwzLCJcXHNjcmlwdHN0eWxlIFxccGFydGlhbF9uXlxcY2FwIl0sWzAsMSwiXFxzY3JpcHRzdHlsZSBcXHBzaV9uIiwyXSxbMywyLCJcXHNjcmlwdHN0eWxlIFxccHNpX3tuLTF9Il0sWzQsNSwiXFxzY3JpcHRzdHlsZSBcXHBhcnRpYWxfbl5cXG9wbHVzIl0sWzQsNiwiXFxzY3JpcHRzdHlsZVxccGhpX24iLDJdLFs1LDcsIlxcc2NyaXB0c3R5bGUgXFxwaGlfe24tMX0iXSxbNiw3LCJcXHNjcmlwdHN0eWxlXFxwYXJ0aWFsX25eKyIsMl1d
+\[\begin{tikzcd}
+	{\scriptstyle C_n(A\cap B)} & {\scriptstyle C_n(A)\oplus C_n(B)} & {\scriptstyle C_n(A)\oplus C_n(B)} & {\scriptstyle C_n(A+B)} \\
+	{\scriptstyle C_{n-1}(A\cap B)} & {\scriptstyle C_{n-1}(A)\oplus C_{n-1}(B)} & {\scriptstyle C_{n-1}(A)\oplus C_{n-1}(B)} & {\scriptstyle C_{n-1}(A+B)}
+	\arrow["{\scriptstyle \psi_n}"', from=1-1, to=1-2]
+	\arrow["{\scriptstyle \partial_n^\cap}", from=1-1, to=2-1]
+	\arrow["{\scriptstyle \partial_n^\oplus}", from=1-2, to=2-2]
+	\arrow["{\scriptstyle\phi_n}"', from=1-3, to=1-4]
+	\arrow["{\scriptstyle \partial_n^\oplus}", from=1-3, to=2-3]
+	\arrow["{\scriptstyle\partial_n^+}"', from=1-4, to=2-4]
+	\arrow["{\scriptstyle \psi_{n-1}}", from=2-1, to=2-2]
+	\arrow["{\scriptstyle \phi_{n-1}}", from=2-3, to=2-4]
+\end{tikzcd}\]
+% \begin{align*}
+% \psi_{n-1}\circ\partial_n &=\psi_n\circ\partial_n \\
+% \phi_{n-1}\circ\partial_n &=\phi_n\circ\partial_n
+% \end{align*}
+
+Empezamos verificando la condición del diagrama de la izquierda. Sea $x\in C_n(A\cap B)$, entonces
+\begin{align*}
+	\partial_n^\oplus \circ\psi_n(x)&=\partial_n^\oplus (x,-x)=\left(\partial_n^A(x), \partial_n^B(-x)\right) = \left(\partial_n(x),\partial_n(-x)\right) = \left(\partial_n(x),-\partial_n(x)\right)\\
+	&= \psi_{n-1}\circ \partial_n(x) =\psi_{n-1}\circ\partial_n^\cap(x)
+\end{align*}
+
+Ahora verifiquemos la condición del segundo diagrama. Sea $(x,y)\in C_n(A)\oplus C_n(B)$, entonces
+\begin{align*}
+	\partial_n^+\circ\phi_n (x,y) &= \partial_n^+(x+y)=\partial_n(x+y)\\
+	&=\partial_n(x)+\partial_n(y) = \phi_{n-1}(\partial_n(x),\partial_n(y)) = \phi_{n-1}\circ\partial_n^\oplus (x,y)
+\end{align*}
+Con esto concluimos que tenemos una sucesión exacta corta de complejos de cadena.
 \end{proof}
 
+Combinando los tres lemas anteriores, a partir de la sucesión exacta corta de complejos de cadena 
+$$0\rightarrow C_\bullet(A\cap B)\xrightarrow{\psi}C_\bullet(A)\oplus C_\bullet(B)\xrightarrow{\phi}C_\bullet(A + B)\rightarrow 0$$ 
+
+logramos construir la siguiente sucesión exacta larga, a la que llamaremos \textbf{sucesión de Mayer-Vietoris} para los abiertos $A$ y $B$:
+
+$$\begin{tikzcd}[arrow style=math font,cells={nodes={text height=2ex,text depth=0.75ex}}]
+       \cdots \arrow[overlay, r, "\psi_{n+1}^*"] & H_{n+1}(A)\oplus H_{n+1}(B) \arrow[overlay, r, "\phi_{n+1}^*"] \arrow[overlay, draw=none]{d}[name=Y, shape=coordinate]{} & H_{n+1}(A\cup B) \arrow[overlay, curarrow={Y}{\partial_{n+1}^*}]{dll}{} \\
+       H_{n}(A\cap B) \arrow[overlay, r, "\psi_n^*"] & H_{n}(A)\oplus H_{n}(B) \arrow[overlay, r, "\phi_n^*"] \arrow[overlay, draw=none]{d}[name=Z,shape=coordinate]{} & H_{n}(A\cup B) \arrow[overlay, curarrow={Z}{\partial_{n}^*}]{dll}{} \\
+       H_{n-1}(A\cap B) \arrow[overlay, r, "\psi_{n-1}^*"] & H_{n-1}(A)\oplus H_{n-1}(B) \arrow[overlay, r, "\phi_{n+1}^*"] & \cdots
+\end{tikzcd}$$
+
+\comm{acá después también voy a agregar la relación con el teo de van kampen}
 
 % \comm{en algún lugar de acá mencionar eso de que la sucesión de grupos de homología es una forma de expresar qué tan cerca de ser exacta está la sucesión de grupos abelianos}
 

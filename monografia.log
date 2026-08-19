@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.5)  18 AUG 2026 04:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.5)  19 AUG 2026 01:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -629,7 +629,7 @@ LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 Package babel Info: 'spanish' activates 'spanish' shorthands.
 (babel)             Reported on input line 8.
- (homologia/mayervietoris.aux) (homologia/jordan.aux))
+ (homologia/mayervietoris.aux))
 \openout1 = `monografia.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 111.
@@ -807,53 +807,93 @@ Missing character: There is no = in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no d in font nullfont!
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 84.
-[2]) [3]
-\openout2 = `homologia/jordan.aux'.
-
- (homologia/jordan.tex [4
-
-
-
-]
-Underfull \vbox (badness 1221) has occurred while \output is active []
-
- [5] [6]) [7] [8
-
-
-
-
-] (monografia.bbl
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 90.
+[2] [3]
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+) [4] (monografia.bbl
 Bibliograf\'{\i }a
 
 Package natbib Warning: Empty `thebibliography' environment on input line 3.
 
-) [9
+) [5
+
+
+
+
 
 
 ] (monografia.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
- (homologia/mayervietoris.aux) (homologia/jordan.aux))
+ (homologia/mayervietoris.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-06>
  ***********
 Package rerunfilecheck Info: File `monografia.out' has not changed.
-(rerunfilecheck)             Checksum: 5D1005868AF31AF301273A18A7C877D5;463.
+(rerunfilecheck)             Checksum: 608C154E01A2EBC68CF279E2C05B0990;309.
  ) 
 Here is how much of TeX's memory you used:
- 29794 strings out of 467871
- 580335 string characters out of 5430401
- 1071292 words of memory out of 5000000
- 57981 multiletter control sequences out of 15000+600000
- 641715 words of font info for 93 fonts, out of 8000000 for 9000
+ 29818 strings out of 467871
+ 580910 string characters out of 5430401
+ 1066292 words of memory out of 5000000
+ 58024 multiletter control sequences out of 15000+600000
+ 641014 words of font info for 91 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 117i,15n,121p,718b,1267s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 117i,15n,121p,926b,1267s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmbx10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmex10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmmi10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmmi6.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmmi8.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr12.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr17.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr6.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr8.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmsy6.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmsy8.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmti10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/symbols/msam10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on monografia.pdf (11 pages, 250086 bytes).
+Output written on monografia.pdf (7 pages, 226622 bytes).
 PDF statistics:
- 175 PDF objects out of 1000 (max. 8388607)
- 26 named destinations out of 1000 (max. 500000)
- 37 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 148 PDF objects out of 1000 (max. 8388607)
+ 16 named destinations out of 1000 (max. 500000)
+ 29 words of extra memory for PDF output out of 10000 (max. 10000000)
 
