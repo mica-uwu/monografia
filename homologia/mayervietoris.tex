@@ -55,7 +55,7 @@ $$\begin{tikzcd}[arrow style=math font,cells={nodes={text height=2ex,text depth=
 \end{lema}
 
 \begin{proof}
-	Acá tengo q citar el CWM o algún otro libro
+	Citar libro
 \end{proof}
 
 % Dado un subconjunto $Y\subset X$, consideramos la inclusión $i\colon Y\hookrightarrow X$. 
@@ -63,9 +63,9 @@ $$\begin{tikzcd}[arrow style=math font,cells={nodes={text height=2ex,text depth=
 Vamos a obtener la sucesión de Mayer-Vietoris para un espacio cubierto por dos abiertos $A$ y $B$ aplicando este lema a una sucesión exacta corta de complejos de cadena en particular. Los complejos de $n$-cadenas serán los siguientes:
 
 \begin{itemize}
+	\item $C_n(A+B)$: Lo definimos como el grupo abeliano libre generado por los $n$-símplices singulares $\sigma\colon\Delta^n\to A\cup B$ tales que tienen su imagen contenida en $A$ o $B$. De esta forma, podemos verlo como subgrupo de $C_n(A\cup B)$, y entonces podemos ver el mapa borde $\partial_n^+\colon C_{n}(A + B)\to C_{n-1}(A + B)$ como la restricción de $\partial_n\colon C_n(A\cup B)\to C_{n-1}(A\cup B)$.
 	\item $C_n(A\cap B)$: No hay mucho que aclarar para este complejo, salvo observar que viendo $C_n(A\cap B)$ como subgrupo de $C_n(A\cup B)$, el morfismo $\partial^\cap_n\colon C_n(A\cap B)\to C_{n-1}(A\cap B)$ puede obtenerse restringiendo $\partial_n\colon C_n(A\cup B)\to C_{n-1}(A\cup B)$.
-	\item $C_n(A+B)$: Lo definimos como el complejo de $n$-cadenas generado por los símplices singulares que tienen imagen contenida en $A$ o $B$. De esta forma, podemos verlo como subgrupo de $C_n(A\cup B)$, y entonces podemos ver el mapa borde $\partial_n^+\colon C_{n}(A + B)\to C_{n-1}(A + B)$ como la restricción de $\partial_n\colon C_n(A\cup B)\to C_{n-1}(A\cup B)$.
-	\item $C_n(A)\oplus C_n(B)$: Definiendo el mapa borde como $\partial_n^\oplus\colon C_n(A)\oplus C_n(B)\to C_{n-1}(A)\oplus C_{n-1}(B)$ tal que $\partial_n^\oplus(a, b) = \left(\partial_n^A(a), \partial_n^B(b)\right)$ siendo $\partial_n^A\colon C_n(A)\to C_{n-1}(A)$ y $\partial_n^B\colon C_n(B)\to C_{n-1}(B)$ los respectivos mapas borde de $A$ y $B$, que pueden verse como restricción del mapa $\partial_n\colon C_n(A\cup B)\to C_{n-1}(A\cup B)$. Notaremos a este complejo $C_\bullet(A)\oplus C_\bullet(B)$.
+	\item $C_n(A)\oplus C_n(B)$: Definimos el mapa borde como $\partial_n^\oplus\colon C_n(A)\oplus C_n(B)\to C_{n-1}(A)\oplus C_{n-1}(B)$ tal que $\partial_n^\oplus(a, b) = \left(\partial_n^A(a), \partial_n^B(b)\right)$, siendo $\partial_n^A\colon C_n(A)\to C_{n-1}(A)$ y $\partial_n^B\colon C_n(B)\to C_{n-1}(B)$ los respectivos mapas borde de $A$ y $B$, que pueden verse como restricción del mapa $\partial_n\colon C_n(A\cup B)\to C_{n-1}(A\cup B)$. Notaremos a este complejo $C_\bullet(A)\oplus C_\bullet(B)$.
 \end{itemize}
 
 
@@ -87,7 +87,7 @@ $$H_n(A\cup B)\simeq H_n(A+B)$$
 % 	\arrow[from=2-3, to=2-4]
 % \end{tikzcd}\]
 
-\comm{me falta agregar esta prueba, no sé si la voy a agregar, por lo menos no todavía, es una prueba muy costosa}
+\comm{esta prueba creo que no la voy a agregar}
 
 \begin{lema}
 	Sean \begin{align*}
@@ -111,11 +111,14 @@ Los $\psi_n$, $\phi_n$ son morfismos para cada $n\in\N$. Lo que falta verificar 
 
 \item $\Ker(\phi_n)\subset\im(\psi_n)$: Si se cumple $(x,y)\in\Ker(\phi_n)$ para dos elementos $x\in C_n(A)$, $y\in C_n(B)$, entonces se cumple $x+y=0$. Esto implica que $y=-x$ como cadenas en $A\cup B$, y por lo tanto $x, y\in C_n(A\cap B)$. Tenemos entonces $\psi_n(x)=(x,-x)=(x,y)\in C_n(A)\oplus C_n(B)$, es decir, $(x,y)\in\im(\psi_n)$. 
 
-\item $\im(\psi_n)\subset\Ker(\phi_n)$: Esta inclusión es más directa, dado $(x,-x)\in\im(\psi_n)$ se tiene $x\in C_n(A\cap B)$, entonces $\phi_n(x,-x)=x-x=0$
+\item $\im(\psi_n)\subset\Ker(\phi_n)$: Dado $(x,-x)\in\im(\psi_n)$ se tiene $x\in C_n(A\cap B)$, entonces $\phi_n(x,-x)=x-x=0$
 
-\item $\Ker(\psi_n)=0$: Dado $x\in C_n(A\cap B)$ tal que $\psi_n(x)=0$, se tiene $(x,-x)=(0,0)$ en $C_n(A)\oplus C_n(B)$, por lo que necesariamente $x=0$.
+\item $\Ker(\psi_n)=0$: Dado $x\in C_n(A\cap B)$ tal que $\psi_n(x)=0$, se tiene $(x,-x)=(0,0)$ en $C_n(A)\oplus C_n(B)$, entonces $x=0$.
 
-\item $\im(\phi_n)=C_n(A+B)$: Dado $x\in C_n(A+B)$, $x$ es una suma formal de $n$-cadenas en $A$ y $B$. 
+\item $\im(\phi_n)=C_n(A+B)$: Dado $x\in C_n(A+B)$, $x$ es una suma formal de $n$-símplices singulares con imagen contenida en $A$ o $B$. Veamos que todos los generadores están contenidos en la imagen de $\phi_n$, y con eso obtenemos $\im(\phi_n)=C_n(A+B)$. Sea $\sigma_A:\Delta^n\to A\cup B$ un $n$-símplice singular con imagen contenida en $A$, entonces la suma formal compuesta por el único elemento $\sigma_A$ es imagen por $\phi_n$ del elemento $(i\circ\sigma_A ,0)\in C_n(A)\oplus C_n(B)$, con $i\colon A\hookrightarrow A\cap B$ la inclusión. Análogamente tenemos lo mismo para un símplice con imagen contenida en $B$.
+ 
+% \comm{observacion sobre def del neutro en el grupo libre}
+
 \end{itemize}
 Con esto concluimos que la sucesión es exacta. Ahora resta verificar que los morfismos conmutan con el borde, es decir, que los siguientes diagramas conmutan:
 
@@ -162,7 +165,89 @@ $$\begin{tikzcd}[arrow style=math font,cells={nodes={text height=2ex,text depth=
        H_{n-1}(A\cap B) \arrow[overlay, r, "\psi_{n-1}^*"] & H_{n-1}(A)\oplus H_{n-1}(B) \arrow[overlay, r, "\phi_{n+1}^*"] & \cdots
 \end{tikzcd}$$
 
-\comm{acá después también voy a agregar la relación con el teo de van kampen}
+% \comm{acá después también voy a agregar la relación con el teo de van kampen}
+
+También podemos obtener una sucesión de Mayer-Vietoris para homología reducida, tomando la versión aumentada de cada complejo de cadenas.
+
+Aumentar los complejos de cadenas es tomar los morfismos \begin{align*}
+&\varepsilon^\cap\colon C_{0}(A\cap B)\to\Z \\
+&\varepsilon^\oplus\colon C_{0}(A)\oplus C_{0}(B)\to\Z\oplus\Z\\
+&\varepsilon^+\colon C_{0}(A+B)\to\Z\end{align*}
+
+\comm{esto lo defino en la parte anterior, después tengo que poner bien la referencia}
+
+Consideramos los siguentes morfismos, que componen una sucesión exacta corta: 
+\begin{align*}
+&\psi_{-1}\colon\mathbb{Z}\to\mathbb{Z}\oplus\mathbb{Z},\quad \psi_{-1}(x)=(x,-x)\\
+&\phi_{-1}\colon\mathbb{Z}\oplus\mathbb{Z}\to\mathbb{Z},\quad\phi_{-1}(x,y)=x+y
+\end{align*}
+% % https://q.uiver.app/#q=WzAsMyxbMCwwLCJcXHNjcmlwdHNpemVcXG1hdGhiYntafSJdLFsxLDAsIlxcc2NyaXB0c2l6ZVxcbWF0aGJie1p9XFxvcGx1c1xcbWF0aGJie1p9Il0sWzIsMCwiXFxzY3JpcHRzaXplXFxtYXRoYmJ7Wn0iXSxbMCwxLCJcXHNjcmlwdHNpemVcXHBzaV97LTF9Il0sWzEsMiwiXFxzY3JpcHRzaXplXFxwaGlfey0xfSJdXQ==
+% \[\begin{tikzcd}
+% 	{\scriptsize\mathbb{Z}} & {\scriptsize\mathbb{Z}\oplus\mathbb{Z}} & {\scriptsize\mathbb{Z}}
+% 	\arrow["{\scriptsize\psi_{-1}}", from=1-1, to=1-2]
+% 	\arrow["{\scriptsize\phi_{-1}}", from=1-2, to=1-3]
+% \end{tikzcd}\] 
+
+Si los mapas $\varepsilon$ conmutan con los $\psi_{-1}$ y $\phi_{-1}$, entonces tenemos una sucesión exacta corta de complejos de cadena aumentados, y aplicando el lema de la serpiente obtenemos la sucesión de Mayer-Vietoris para homología reducida.
+
+\begin{lema}
+Calcular la homología de las esferas
+\end{lema}
+\begin{proof}
+Calculemos los grupos de homología de una esfera $\s^n$. La cubrimos por abiertos $A=\s^n - \{N\}$ y $B:=\s^n - \{S\}$, siendo $N$ y $S$ los puntos norte y sur de la esfera. Los $A$ y $B$ son discos abiertos y por lo tanto su homología reducida es $0$. También cumplen que su intersección retrae por deformación a $\s^{n-1}$.
+
+% \comm{mencionar en el cap 1 que retraer por def induce isomorfismos en los grupos de homologia}
+
+Consideramos la versión reducida de la sucesión de Mayer-Vietoris para $A$ y $B$, pasando por los respectivos isomorfismos en los grupos de homología:
+
+$$\begin{tikzcd}[arrow style=math font,cells={nodes={text height=2ex,text depth=0.75ex}}]
+       \cdots \arrow[overlay, r, ""] & 0 \arrow[overlay, r, ""] \arrow[overlay, draw=none]{d}[name=Y, shape=coordinate]{} & \overset{\sim}{H_{i+1}}(\s^n) \arrow[overlay, curarrow={Y}{\partial_{i+1}^*}]{dll}{} \\
+       \overset{\sim}{H_{i}}(\s^{n-1}) \arrow[overlay, r, ""] & 0 \arrow[overlay, r, ""] \arrow[overlay, draw=none]{d}[name=Z,shape=coordinate]{} & \overset{\sim}{H_{i}}(\s^n) \arrow[overlay, curarrow={Z}{\partial_{i}^*}]{dll}{} \\
+       \overset{\sim}{H_{i-1}}(\s^{n-1}) \arrow[overlay, r, ""] & 0 \arrow[overlay, r, ""] & \cdots
+\end{tikzcd}$$
+
+Como esta sucesión es exacta, obtenemos que los $\partial^*_i$ son isomorfismos y entonces $H_i(\s^n)\cong H_{i-1}(\s^{n-1})$ para todo $i\in\N$.
+
+Lo único que necesitamos es calcular la homología de alguna esfera en concreto, por ejemplo $\s^0$. Como $\s^0$ tiene dos componentes conexas y ambas son puntos, sabemos que su homología es 
+\begin{align*}H_i(\s^0)\cong
+\begin{cases}
+\Z\oplus\Z \quad&\text{si }\,i=0\\
+0 \quad &\text{en cualquier otro caso}
+\end{cases}
+\end{align*} que tomando homología reducida es lo mismo pero con $\overset{\sim}{H_0}(\s^0)\cong\Z$.
+
+Aplicando los isomorfismos para cada $i,\, n\in\N$ tenemos
+\begin{align*}\overset{\sim}{H_i}(\s^n)\cong
+\begin{cases}
+\Z\quad&\text{si }\,i=0,\, n\\
+0 \quad &\text{en cualquier otro caso}
+\end{cases}
+\end{align*}
+
+\end{proof}
+
+
+% % https://q.uiver.app/#q=WzAsMTMsWzAsMSwiMCJdLFsxLDEsIlxcc2NyaXB0c3R5bGUgQ197MH0oQVxcY2FwIEIpIl0sWzIsMSwiXFxzY3JpcHRzdHlsZSBDX3swfShBKVxcb3BsdXMgQ197MH0oQikiXSxbMywxLCJcXHNjcmlwdHN0eWxlIENfezB9KEErQikiXSxbNCwxLCIwIl0sWzAsMiwiMCJdLFs0LDIsIjAiXSxbMSwyLCJcXG1hdGhiYntafSJdLFsyLDIsIlxcc2NyaXB0c3R5bGUgXFxtYXRoYmJ7Wn1cXG9wbHVzXFxtYXRoYmJ7Wn0iXSxbMywyLCJcXG1hdGhiYntafSJdLFszLDAsIlxcdmRvdHMiXSxbMiwwLCJcXHZkb3RzIl0sWzEsMCwiXFx2ZG90cyJdLFswLDFdLFsxLDIsIlxcc2NyaXB0c2l6ZVxccHNpXzAiXSxbMiwzLCJcXHNjcmlwdHNpemVcXHBoaV8wIl0sWzMsNF0sWzksNl0sWzgsOSwiXFxzY3JpcHRzaXplXFxwaGlfey0xfSIsMl0sWzcsOCwiXFxzY3JpcHRzaXplXFxwc2lfey0xfSIsMl0sWzUsN10sWzEsNywiXFxzY3JpcHRzaXplXFxwYXJ0aWFsX24iXSxbMiw4LCJcXHNjcmlwdHNpemVcXHBhcnRpYWxfbiJdLFsxMCwzXSxbMTEsMl0sWzEyLDFdLFszLDksIlxcc2NyaXB0c2l6ZVxccGFydGlhbF9uIl1d
+% \[\begin{tikzcd}
+% 	& \vdots & \vdots & \vdots & \\
+% 	0 & {\scriptstyle C_{0}(A\cap B)} & {\scriptstyle C_{0}(A)\oplus C_{0}(B)} & {\scriptstyle C_{0}(A+B)} & 0 \\
+% 	0 & {\mathbb{Z}} & {\scriptstyle \mathbb{Z}\oplus\mathbb{Z}} & {\mathbb{Z}} & 0
+% 	\arrow[from=1-2, to=2-2]
+% 	\arrow[from=1-3, to=2-3]
+% 	\arrow[from=1-4, to=2-4]
+% 	\arrow[from=2-1, to=2-2]
+% 	\arrow["{\scriptsize\psi_0}", from=2-2, to=2-3]
+% 	\arrow["{\scriptsize\partial_n}", from=2-2, to=3-2]
+% 	\arrow["{\scriptsize\phi_0}", from=2-3, to=2-4]
+% 	\arrow["{\scriptsize\partial_n}", from=2-3, to=3-3]
+% 	\arrow[from=2-4, to=2-5]
+% 	\arrow["{\scriptsize\partial_n}", from=2-4, to=3-4]
+% 	\arrow[from=3-1, to=3-2]
+% 	\arrow["{\scriptsize\psi_{-1}}"', from=3-2, to=3-3]
+% 	\arrow["{\scriptsize\phi_{-1}}"', from=3-3, to=3-4]
+% 	\arrow[from=3-4, to=3-5]
+% \end{tikzcd}\]
+
 
 % \comm{en algún lugar de acá mencionar eso de que la sucesión de grupos de homología es una forma de expresar qué tan cerca de ser exacta está la sucesión de grupos abelianos}
 

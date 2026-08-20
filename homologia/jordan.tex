@@ -5,8 +5,10 @@ Primero, probemos que si le sacamos un disco de cualquier dimensión a una esfer
 \begin{teo}
     Dado un encaje $h:D^k\to \s^n$, la homología reducida de $\s^n - h(D^k)$ es $$\tilde{H}_i(\s^n - h(D^k))=0  \quad\fall i\in\N$$
 \end{teo}
-
-\comm{obviamente $k\leq n$, esto usa invariancia del dominio, que todo encaje va a cumplir $k\leq n$. lo voy a agregar después como una observación}
+% \comm{obviamente $k\leq n$, esto usa invariancia del dominio, que todo encaje va a cumplir $k\leq n$. lo voy a agregar después como una observación}
+\begin{obs}
+En general cuando consideramos un encaje $h:M^k\to M^n$ entre variedades topológicas, se cumple $k\leq n$. Más adelante veremos esto como una consecuencia del teorema de invariancia del dominio.
+\end{obs}
 
 \begin{proof}
     Hagamos inducción en $k\in\N$. 
@@ -15,13 +17,11 @@ Primero, probemos que si le sacamos un disco de cualquier dimensión a una esfer
 
     Supongamos que se cumple para $k-1$, y probemos que entonces vale para $k$.
 
-    Podemos buscar dos abiertos $A$ y $B$ convenientes tales que $X := \s^n-h(D^k) = A\cap B$ y usar la $\textbf{sucesión de}$ $\textbf{Mayer-Vietoris}$:
-    
-    $$\dots\rightarrow H_i(X)\rightarrow H_i(A)\oplus H_i(B)\rightarrow H_i(A\cup B)\rightarrow H_{i-1}(X)\rightarrow\dots$$
-    
+    Podemos buscar dos abiertos $A$ y $B$ convenientes tales que $X := \s^n-h(D^k) = A\cap B$ y usar la sucesión de Mayer-Vietoris.
+
     Viendo $D^k$ como $I^k$, podemos tomar el cubrimiento de $\s^n-h\left(I^k\right)$ dado por los dos abiertos $A:=\s^n - h\left(I^{k-1}\times[0,\frac{1}{2}]\right)$ y $B:=\s^n - h\left(I^{k-1}\times[\frac{1}{2},1]\right)$.
 
-    \comm{dibujito aca}
+    % \comm{dibujito aca}
 
     En este caso $A\cup B = \s^n-h\left(I^{k-1}\times\{\frac{1}{2}\}\right)$. Como $I^{k-1}\times\{\frac{1}{2}\}\simeq D^{k-1}$, podemos aplicar la hipótesis de inducción y así obtener que $\tilde{H}_i(A\cup B)=0$ para todo $i\in\N$.
 
@@ -31,6 +31,24 @@ Primero, probemos que si le sacamos un disco de cualquier dimensión a una esfer
 
     Que esta sucesión sea exacta implica que $\Ker(\Psi_i)=0$, $\im(\Psi_i) = H_i(A)\oplus H_i(B)$ y por lo tanto $\Psi_i$ es un isomorfismo.
 
+    \begin{figure}[h!]
+    \centering
+    \begin{subfigure}[]{0.2\linewidth}
+        \includegraphics[width=\linewidth]{img mono/jordan/A.png}
+    \end{subfigure}
+    \begin{subfigure}[]{0.2\linewidth}
+        \includegraphics[width=\linewidth]{img mono/jordan/B.png}
+    \end{subfigure}
+    \begin{subfigure}[]{0.2\linewidth}
+        \includegraphics[width=\linewidth]{img mono/jordan/A cap B.png}
+    \end{subfigure}
+    \begin{subfigure}[]{0.2\linewidth}
+        \includegraphics[width=\linewidth]{img mono/jordan/A cup B.png}
+    \end{subfigure}
+    \caption{Dibujo para $n=k=2$. En orden, los conjuntos en celeste son: $A$, $B$, $A\cap B$, $A\cup B$}
+    \label{cocientes}
+\end{figure}
+
     Recordamos que los morfismos $\Psi_i$ de la sucesión de Mayer-Vietoris provienen de los morfismos entre los grupos de $i$-cadenas singulares $\psi_i :C_i(X)\rightarrow C_i(A)\oplus C_i(B)$ definidos como $\psi_i(x)=(x,-x)$. Por esta razón, a menos del signo, sabemos que las componentes de $\Psi_i$ están inducidas por las inclusiones $C_i(X)\hookrightarrow C_i(A)$, $C_i(X)\hookrightarrow C_i(B)$.
 
     Ahora queremos calcular explicitamente $H_i(X)$. El resultado que buscamos es que sea trivial, hagamos un razonamiento por absurdo.
@@ -38,6 +56,21 @@ Primero, probemos que si le sacamos un disco de cualquier dimensión a una esfer
     Supongamos que existe $x$ un representante de una clase no trivial del $i$-ésimo grupo de homología de $X$. Es decir, $x$ es un elemento de $C_i(X)$ tal que no es borde de un elemento en $C_{i+1}(X)$, o sea, $x\not\in\im(\partial_{i+1})$. La clase de $x$, al pasar por el isomorfismo $\Psi_i$, cae en un elemento no trivial de $H_i(A)\oplus H_i(B)$. Como $\Psi_i$ está inducida por la inclusión a menos de signos, la afirmación anterior implica que el ciclo $x$ no es un borde en al menos uno de $C_i(A)$ o $C_i(B)$.
 
     Sin pérdida de generalidad, asumamos que $x$ no es borde de ningún elemento de $C_i(A)$. Esto nos permite repetir el argumento tomando $X':=A=\s^n - h\left(I^{k-1}\times[0,\frac{1}{2}]\right)$, y eligiendo nuevos conjuntos $A':=\s^n - h\left(I^{k-1}\times[0,\frac{1}{4}]\right)$ y $B':=\s^n - h\left(I^{k-1}\times[\frac{1}{4},\frac{1}{2}]\right)$, obtenidos partiendo a la mitad el intervalo $[0,\frac{1}{2}]$ que definía al conjunto $A$. 
+
+    \begin{figure}[h!]
+    \centering
+    \begin{subfigure}[]{0.2\linewidth}
+        \includegraphics[width=\linewidth]{img mono/jordan/A cap B.png}
+    \end{subfigure}
+    \begin{subfigure}[]{0.2\linewidth}
+        \includegraphics[width=\linewidth]{img mono/jordan/B.png}
+    \end{subfigure}
+    \begin{subfigure}[]{0.2\linewidth}
+        \includegraphics[width=\linewidth]{img mono/jordan/achicamos.png}
+    \end{subfigure}
+    \caption{Dibujo para $n=2$, $k=1$. Achicamos el conjunto $X$.}
+    \label{cocientes}
+\end{figure}
     
     Continuamos iterando sobre este argumento y obtenemos una sucesión de intervalos encajados $(I_m)_{m\in\N}$, tales que $I_0=[0,1]$, $I_j\subset I_{j-1}$, $\diam(I_m)\xrightarrow{m}0$.
 
@@ -76,7 +109,25 @@ Usando este resultado, podemos también caracterizar los grupos de homología de
 
     Trivialmente tenemos el caso $k=0$. Como $\s^n - h(\s^0)$ es la esfera con dos pinchaduras, homeomorfa a $\s^{n-1}\times\R$, se cumple que $H_i(\s^n - h(\s^0))=0$ en todo caso salvo cuando $i=0$, y ahí vale $H_0(\s^n - h(\s^0))=\Z\oplus\Z$, y por lo tanto la homología reducida es $\tilde{H_0}(\s^n - h(\s^0))=\Z$.
 
-    Asumamos ahora que vale para $k-1$. Sean $D^k_+$, $D^k_-$ dos discos cerrados de dimensión $k$ tales que $D^k_+\cap D^k_- \simeq\s^{k-1}$. Por la parte anterior sabemos que si definimos $A:=\s^k-h(D^k_-)$, $B:=\s^k-h(D^k_-)$, entonces se cumple que $\tilde{H_i}(A)=\tilde{H_i}(B)=0$ para todo $i\in\N$. 
+    Asumamos ahora que vale para $k-1$. Sean $D^k_+$, $D^k_-$ dos discos cerrados de dimensión $k$ tales que $D^k_+\cap D^k_- \simeq\s^{k-1}$. Por la parte anterior sabemos que si definimos $A:=\s^k-h(D^k_-)$, $B:=\s^k-h(D^k_+)$, entonces se cumple que $\tilde{H_i}(A)=\tilde{H_i}(B)=0$ para todo $i\in\N$. 
+
+        \begin{figure}[h!]
+    \centering
+    \begin{subfigure}[]{0.2\linewidth}
+        \includegraphics[width=\linewidth]{img mono/jordan/2/A.png}
+    \end{subfigure}
+    \begin{subfigure}[]{0.2\linewidth}
+        \includegraphics[width=\linewidth]{img mono/jordan/2/B.png}
+    \end{subfigure}
+    \begin{subfigure}[]{0.2\linewidth}
+        \includegraphics[width=\linewidth]{img mono/jordan/2/A cap B.png}
+    \end{subfigure}
+    \begin{subfigure}[]{0.2\linewidth}
+        \includegraphics[width=\linewidth]{img mono/jordan/2/A cup B.png}
+    \end{subfigure}
+    \caption{Dibujo para $n=2$, $k=1$. En orden, los conjuntos en celeste son: $A$, $B$, $A\cap B$, $A\cup B$}
+    \label{cocientes}
+\end{figure}
     
     Viendo la sucesión de Mayer-Vietoris para $A$, $B$ y $A\cup B$, el término $H_i(A)\oplus H_i(B)$ se anula para todo $i\in\N$, entonces obtenemos las siguientes sucesiones exactas:
 
@@ -109,7 +160,7 @@ Usando este resultado, podemos también caracterizar los grupos de homología de
 
     Sin embargo, podemos descomponer $\s^n - h(D')$ como $A\sqcup B\sqcup h(D)$, y estos son tres abiertos disjuntos, lo cual nos da el absurdo.
     
-    Concluimos que no existe ningún $x\in\s^{n-1}-\partial A$, y por lo tanto, como ya teníamos la otra inclusión, obtenemos que $\s^{n-1}=\partial A$.
+    Concluimos que no existe ningún $x\in h(\s^{n-1})-\partial A$, y por lo tanto, como ya teníamos la otra inclusión, obtenemos que $h(\s^{n-1})=\partial A$.
     
     \end{proof}
  

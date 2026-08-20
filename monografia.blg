@@ -3,6 +3,8 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: monografia.aux
 Reallocating 'name_of_file' (item size: 1) to 28 items.
 A level-1 auxiliary file: homologia/mayervietoris.aux
+Reallocating 'name_of_file' (item size: 1) to 21 items.
+A level-1 auxiliary file: homologia/jordan.aux
 Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: alpha.bst
 Reallocating 'name_of_file' (item size: 1) to 7 items.
@@ -10,7 +12,7 @@ I found no \citation commands---while reading file monografia.aux
 Database file #1: biblio.bib
 You've used 0 entries,
             2543 wiz_defined-function locations,
-            559 strings with 4472 characters,
+            560 strings with 4492 characters,
 and the built_in function-call counts, 24 in all, are:
 = -- 0
 > -- 0

@@ -293,6 +293,9 @@ INPUT monografia.aux
 INPUT .\homologia\mayervietoris.aux
 INPUT .\homologia\mayervietoris.aux
 INPUT homologia\mayervietoris.aux
+INPUT .\homologia\jordan.aux
+INPUT .\homologia\jordan.aux
+INPUT homologia\jordan.aux
 OUTPUT monografia.aux
 INPUT O:\programas\miktex\fonts\tfm\public\cm\cmr9.tfm
 INPUT O:\programas\miktex\fonts\tfm\public\cm\cmr6.tfm
@@ -377,6 +380,85 @@ INPUT homologia\mayervietoris.tex
 INPUT O:\programas\miktex\fonts\tfm\public\cm\cmbx10.tfm
 INPUT O:\programas\miktex\fonts\tfm\public\cm\cmbx8.tfm
 INPUT O:\programas\miktex\fonts\tfm\public\cm\cmbx6.tfm
+INPUT .\homologia\jordan.tex
+INPUT .\homologia\jordan.tex
+OUTPUT homologia\jordan.aux
+INPUT .\homologia\jordan.tex
+INPUT .\homologia\jordan.tex
+INPUT homologia\jordan.tex
+INPUT .\img mono\jordan\A.png
+INPUT .\img mono\jordan\A.png
+INPUT .\img mono\jordan\A.png
+INPUT .\img mono\jordan\A.png
+INPUT .\img mono\jordan\A.png
+INPUT .\img mono\jordan\A.png
+INPUT .\img mono\jordan\A.png
+INPUT .\img mono\jordan\B.png
+INPUT .\img mono\jordan\B.png
+INPUT .\img mono\jordan\B.png
+INPUT .\img mono\jordan\B.png
+INPUT .\img mono\jordan\B.png
+INPUT .\img mono\jordan\B.png
+INPUT .\img mono\jordan\B.png
+INPUT .\img mono\jordan\A cap B.png
+INPUT .\img mono\jordan\A cap B.png
+INPUT .\img mono\jordan\A cap B.png
+INPUT .\img mono\jordan\A cap B.png
+INPUT .\img mono\jordan\A cap B.png
+INPUT .\img mono\jordan\A cap B.png
+INPUT .\img mono\jordan\A cap B.png
+INPUT .\img mono\jordan\A cup B.png
+INPUT .\img mono\jordan\A cup B.png
+INPUT .\img mono\jordan\A cup B.png
+INPUT .\img mono\jordan\A cup B.png
+INPUT .\img mono\jordan\A cup B.png
+INPUT .\img mono\jordan\A cup B.png
+INPUT .\img mono\jordan\A cup B.png
+INPUT .\img mono\jordan\A cap B.png
+INPUT .\img mono\jordan\A cap B.png
+INPUT .\img mono\jordan\A cap B.png
+INPUT .\img mono\jordan\A cap B.png
+INPUT .\img mono\jordan\B.png
+INPUT .\img mono\jordan\B.png
+INPUT .\img mono\jordan\B.png
+INPUT .\img mono\jordan\B.png
+INPUT .\img mono\jordan\achicamos.png
+INPUT .\img mono\jordan\achicamos.png
+INPUT .\img mono\jordan\achicamos.png
+INPUT .\img mono\jordan\achicamos.png
+INPUT .\img mono\jordan\achicamos.png
+INPUT .\img mono\jordan\achicamos.png
+INPUT .\img mono\jordan\achicamos.png
+INPUT O:\programas\miktex\fonts\tfm\public\cm\cmti8.tfm
+INPUT O:\programas\miktex\fonts\tfm\public\cm\cmti7.tfm
+INPUT .\img mono\jordan\2\A.png
+INPUT .\img mono\jordan\2\A.png
+INPUT .\img mono\jordan\2\A.png
+INPUT .\img mono\jordan\2\A.png
+INPUT .\img mono\jordan\2\A.png
+INPUT .\img mono\jordan\2\A.png
+INPUT .\img mono\jordan\2\A.png
+INPUT .\img mono\jordan\2\B.png
+INPUT .\img mono\jordan\2\B.png
+INPUT .\img mono\jordan\2\B.png
+INPUT .\img mono\jordan\2\B.png
+INPUT .\img mono\jordan\2\B.png
+INPUT .\img mono\jordan\2\B.png
+INPUT .\img mono\jordan\2\B.png
+INPUT .\img mono\jordan\2\A cap B.png
+INPUT .\img mono\jordan\2\A cap B.png
+INPUT .\img mono\jordan\2\A cap B.png
+INPUT .\img mono\jordan\2\A cap B.png
+INPUT .\img mono\jordan\2\A cap B.png
+INPUT .\img mono\jordan\2\A cap B.png
+INPUT .\img mono\jordan\2\A cap B.png
+INPUT .\img mono\jordan\2\A cup B.png
+INPUT .\img mono\jordan\2\A cup B.png
+INPUT .\img mono\jordan\2\A cup B.png
+INPUT .\img mono\jordan\2\A cup B.png
+INPUT .\img mono\jordan\2\A cup B.png
+INPUT .\img mono\jordan\2\A cup B.png
+INPUT .\img mono\jordan\2\A cup B.png
 INPUT .\monografia.bbl
 INPUT .\monografia.bbl
 INPUT monografia.bbl
@@ -385,6 +467,9 @@ INPUT monografia.aux
 INPUT .\homologia\mayervietoris.aux
 INPUT .\homologia\mayervietoris.aux
 INPUT homologia\mayervietoris.aux
+INPUT .\homologia\jordan.aux
+INPUT .\homologia\jordan.aux
+INPUT homologia\jordan.aux
 INPUT .\monografia.out
 INPUT .\monografia.out
 INPUT O:\programas\miktex\fonts\type1\public\amsfonts\cm\cmbx10.pfb
