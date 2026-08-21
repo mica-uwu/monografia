@@ -3,13 +3,12 @@
 Una familia de grupos abelianos $\{A_n:n\in \N\}$ y morfismos $\alpha_n: A_n\to A_{n-1}$ constituye una $\textbf{sucesión exacta}$ si para todo $n\in\N$ se cumple $\Ker(\alpha_{n})=\im(\alpha_{n+1})$.
 \begin{obs}
 
-La inclusión $\im(\alpha_{n+1})\subset\Ker(\alpha_{n})$ nos dice que $\alpha_{n+1}\circ\alpha_{n}\equiv 0$, es decir, los $\alpha_n$ forman un complejo de cadenas. 
-
-La otra inclusión, $\im(\alpha_{n+1})\supset\Ker(\alpha_{n})$, nos dice que los grupos de homología asociados a este complejo de cadenas son triviales.
+La inclusión $\im(\alpha_{n+1})\subset\Ker(\alpha_{n})$ nos dice que $\alpha_{n+1}\circ\alpha_{n}\equiv 0$, es decir, los $\alpha_n$ forman un complejo de cadenas. La otra inclusión, $\im(\alpha_{n+1})\supset\Ker(\alpha_{n})$, nos dice que los grupos de homología asociados a este complejo de cadenas son triviales.
 
 En general, podemos interpretar la sucesión de grupos de homología asociados a un complejo de cadenas como un indicador de qué tan cerca está el complejo de ser una sucesión exacta.
 \end{obs}
 Llamaremos \textbf{sucesión exacta corta} a una sucesión exacta de la forma $$0\rightarrow A\xrightarrow{f} B\xrightarrow{g} C\rightarrow 0$$
+
 \begin{obs}
 	Una sucesión de esta forma es exacta si y solo si $f$ es inyectiva, $g$ es sobreyectiva y $\Ker(g)=\im(f)$. Por lo tanto, $g$ induce un isomorfismo entre $C$ y $B/\im(f)$.
 \end{obs}
@@ -39,7 +38,7 @@ Sean $A$, $B$ y $C$ espacios tales que para todo $n\in\N$ tenemos morfismos $f_n
 	\arrow[from=3-4, to=4-4]
 \end{tikzcd}\]
 
-Entonces, en ese caso decimos que tenemos una \textbf{sucesión exacta corta de complejos de cadena}, que podemos notar como $$0\rightarrow C_\bullet(A)\xrightarrow{f} C_\bullet(B)\xrightarrow{g} C_\bullet(C)\rightarrow 0$$
+Entonces, en ese caso decimos que tenemos una \textbf{sucesión exacta corta de complejos de cadena}, que notamos $$0\rightarrow C_\bullet(A)\xrightarrow{f} C_\bullet(B)\xrightarrow{g} C_\bullet(C)\rightarrow 0$$
 
 El foco de este capítulo es describir la existencia de una sucesión exacta particular, conocida como la Sucesión de Mayer-Vietoris. La existencia de esta sucesión va a surgir del siguiente hecho algebraico:
 
@@ -50,7 +49,7 @@ El foco de este capítulo es describir la existencia de una sucesión exacta par
 $$\begin{tikzcd}[arrow style=math font,cells={nodes={text height=2ex,text depth=0.75ex}}]
        \cdots \arrow[overlay, r, "f_{n+1}^*"] & H_{n+1}(B) \arrow[overlay, r, "g_{n+1}^*"] \arrow[overlay, draw=none]{d}[name=Y, shape=coordinate]{} & H_{n+1}(C) \arrow[overlay, curarrow={Y}{\partial_{n+1}^*}]{dll}{} \\
        H_{n}(A) \arrow[overlay, r, "f_n^*"] & H_{n}(B) \arrow[overlay, r, "g_n^*"] \arrow[overlay, draw=none]{d}[name=Z,shape=coordinate]{} & H_{n}(C) \arrow[overlay, curarrow={Z}{\partial_{n}^*}]{dll}{} \\
-       H_{n-1}(A) \arrow[overlay, r, "f_{n-1}^*"] & H_{n-1}(B) \arrow[overlay, r, "g_{n+1}^*"] & \cdots
+       H_{n-1}(A) \arrow[overlay, r, "f_{n-1}^*"] & H_{n-1}(B) \arrow[overlay, r, "g_{n-1}^*"] & \cdots
 \end{tikzcd}$$
 \end{lema}
 
@@ -70,9 +69,7 @@ Vamos a obtener la sucesión de Mayer-Vietoris para un espacio cubierto por dos 
 
 
 \begin{lema}
-Las inclusiones $C_n(A+B)\hookrightarrow C_n(A\cup B)$ inducen isomorfismos en los grupos de homología. 
-
-$$H_n(A\cup B)\simeq H_n(A+B)$$
+Las inclusiones $C_n(A+B)\hookrightarrow C_n(A\cup B)$ inducen isomorfismos en los grupos de homología. $$H_n(A\cup B)\simeq H_n(A+B)$$
 \end{lema}
 % \[\begin{tikzcd}
 % 	\dots & {C_n(A+B)} & {C_{n-1}(A+B)} & \dots \\
@@ -145,7 +142,6 @@ Empezamos verificando la condición del diagrama de la izquierda. Sea $x\in C_n(
 	\partial_n^\oplus \circ\psi_n(x)&=\partial_n^\oplus (x,-x)=\left(\partial_n^A(x), \partial_n^B(-x)\right) = \left(\partial_n(x),\partial_n(-x)\right) = \left(\partial_n(x),-\partial_n(x)\right)\\
 	&= \psi_{n-1}\circ \partial_n(x) =\psi_{n-1}\circ\partial_n^\cap(x)
 \end{align*}
-
 Ahora verifiquemos la condición del segundo diagrama. Sea $(x,y)\in C_n(A)\oplus C_n(B)$, entonces
 \begin{align*}
 	\partial_n^+\circ\phi_n (x,y) &= \partial_n^+(x+y)=\partial_n(x+y)\\
@@ -176,11 +172,12 @@ Aumentar los complejos de cadenas es tomar los morfismos \begin{align*}
 
 \comm{esto lo defino en la parte anterior, después tengo que poner bien la referencia}
 
-Consideramos los siguentes morfismos, que componen una sucesión exacta corta: 
+Consideramos los siguentes morfismos 
 \begin{align*}
 &\psi_{-1}\colon\mathbb{Z}\to\mathbb{Z}\oplus\mathbb{Z},\quad \psi_{-1}(x)=(x,-x)\\
 &\phi_{-1}\colon\mathbb{Z}\oplus\mathbb{Z}\to\mathbb{Z},\quad\phi_{-1}(x,y)=x+y
 \end{align*}
+Estos componen una sucesión exacta corta $$0\rightarrow\Z\xrightarrow{\psi_{-1}}\Z\oplus\Z\xrightarrow{\phi_{-1}}\Z\rightarrow 0$$
 % % https://q.uiver.app/#q=WzAsMyxbMCwwLCJcXHNjcmlwdHNpemVcXG1hdGhiYntafSJdLFsxLDAsIlxcc2NyaXB0c2l6ZVxcbWF0aGJie1p9XFxvcGx1c1xcbWF0aGJie1p9Il0sWzIsMCwiXFxzY3JpcHRzaXplXFxtYXRoYmJ7Wn0iXSxbMCwxLCJcXHNjcmlwdHNpemVcXHBzaV97LTF9Il0sWzEsMiwiXFxzY3JpcHRzaXplXFxwaGlfey0xfSJdXQ==
 % \[\begin{tikzcd}
 % 	{\scriptsize\mathbb{Z}} & {\scriptsize\mathbb{Z}\oplus\mathbb{Z}} & {\scriptsize\mathbb{Z}}
@@ -190,10 +187,9 @@ Consideramos los siguentes morfismos, que componen una sucesión exacta corta:
 
 Si los mapas $\varepsilon$ conmutan con los $\psi_{-1}$ y $\phi_{-1}$, entonces tenemos una sucesión exacta corta de complejos de cadena aumentados, y aplicando el lema de la serpiente obtenemos la sucesión de Mayer-Vietoris para homología reducida.
 
-\begin{lema}
+\begin{ex}
 Calcular la homología de las esferas
-\end{lema}
-\begin{proof}
+\end{ex}
 Calculemos los grupos de homología de una esfera $\s^n$. La cubrimos por abiertos $A=\s^n - \{N\}$ y $B:=\s^n - \{S\}$, siendo $N$ y $S$ los puntos norte y sur de la esfera. Los $A$ y $B$ son discos abiertos y por lo tanto su homología reducida es $0$. También cumplen que su intersección retrae por deformación a $\s^{n-1}$.
 
 % \comm{mencionar en el cap 1 que retraer por def induce isomorfismos en los grupos de homologia}
@@ -201,9 +197,9 @@ Calculemos los grupos de homología de una esfera $\s^n$. La cubrimos por abiert
 Consideramos la versión reducida de la sucesión de Mayer-Vietoris para $A$ y $B$, pasando por los respectivos isomorfismos en los grupos de homología:
 
 $$\begin{tikzcd}[arrow style=math font,cells={nodes={text height=2ex,text depth=0.75ex}}]
-       \cdots \arrow[overlay, r, ""] & 0 \arrow[overlay, r, ""] \arrow[overlay, draw=none]{d}[name=Y, shape=coordinate]{} & \overset{\sim}{H_{i+1}}(\s^n) \arrow[overlay, curarrow={Y}{\partial_{i+1}^*}]{dll}{} \\
-       \overset{\sim}{H_{i}}(\s^{n-1}) \arrow[overlay, r, ""] & 0 \arrow[overlay, r, ""] \arrow[overlay, draw=none]{d}[name=Z,shape=coordinate]{} & \overset{\sim}{H_{i}}(\s^n) \arrow[overlay, curarrow={Z}{\partial_{i}^*}]{dll}{} \\
-       \overset{\sim}{H_{i-1}}(\s^{n-1}) \arrow[overlay, r, ""] & 0 \arrow[overlay, r, ""] & \cdots
+       \cdots \arrow[overlay, r, ""] & 0 \arrow[overlay, r, ""] \arrow[overlay, draw=none]{d}[name=Y, shape=coordinate]{} & \tilde{H}_{i+1}(\s^n) \arrow[overlay, curarrow={Y}{\partial_{i+1}^*}]{dll}{} \\
+       \tilde{H_{i}}(\s^{n-1}) \arrow[overlay, r, ""] & 0 \arrow[overlay, r, ""] \arrow[overlay, draw=none]{d}[name=Z,shape=coordinate]{} & \tilde{H_{i}}(\s^n) \arrow[overlay, curarrow={Z}{\partial_{i}^*}]{dll}{} \\
+       \tilde{H}_{i-1}(\s^{n-1}) \arrow[overlay, r, ""] & 0 \arrow[overlay, r, ""] & \cdots
 \end{tikzcd}$$
 
 Como esta sucesión es exacta, obtenemos que los $\partial^*_i$ son isomorfismos y entonces $H_i(\s^n)\cong H_{i-1}(\s^{n-1})$ para todo $i\in\N$.
@@ -217,15 +213,12 @@ Lo único que necesitamos es calcular la homología de alguna esfera en concreto
 \end{align*} que tomando homología reducida es lo mismo pero con $\overset{\sim}{H_0}(\s^0)\cong\Z$.
 
 Aplicando los isomorfismos para cada $i,\, n\in\N$ tenemos
-\begin{align*}\overset{\sim}{H_i}(\s^n)\cong
+\begin{align*}\tilde{H}_i(\s^n)\cong
 \begin{cases}
 \Z\quad&\text{si }\,i=0,\, n\\
 0 \quad &\text{en cualquier otro caso}
 \end{cases}
 \end{align*}
-
-\end{proof}
-
 
 % % https://q.uiver.app/#q=WzAsMTMsWzAsMSwiMCJdLFsxLDEsIlxcc2NyaXB0c3R5bGUgQ197MH0oQVxcY2FwIEIpIl0sWzIsMSwiXFxzY3JpcHRzdHlsZSBDX3swfShBKVxcb3BsdXMgQ197MH0oQikiXSxbMywxLCJcXHNjcmlwdHN0eWxlIENfezB9KEErQikiXSxbNCwxLCIwIl0sWzAsMiwiMCJdLFs0LDIsIjAiXSxbMSwyLCJcXG1hdGhiYntafSJdLFsyLDIsIlxcc2NyaXB0c3R5bGUgXFxtYXRoYmJ7Wn1cXG9wbHVzXFxtYXRoYmJ7Wn0iXSxbMywyLCJcXG1hdGhiYntafSJdLFszLDAsIlxcdmRvdHMiXSxbMiwwLCJcXHZkb3RzIl0sWzEsMCwiXFx2ZG90cyJdLFswLDFdLFsxLDIsIlxcc2NyaXB0c2l6ZVxccHNpXzAiXSxbMiwzLCJcXHNjcmlwdHNpemVcXHBoaV8wIl0sWzMsNF0sWzksNl0sWzgsOSwiXFxzY3JpcHRzaXplXFxwaGlfey0xfSIsMl0sWzcsOCwiXFxzY3JpcHRzaXplXFxwc2lfey0xfSIsMl0sWzUsN10sWzEsNywiXFxzY3JpcHRzaXplXFxwYXJ0aWFsX24iXSxbMiw4LCJcXHNjcmlwdHNpemVcXHBhcnRpYWxfbiJdLFsxMCwzXSxbMTEsMl0sWzEyLDFdLFszLDksIlxcc2NyaXB0c2l6ZVxccGFydGlhbF9uIl1d
 % \[\begin{tikzcd}

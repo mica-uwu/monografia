@@ -1,15 +1,15 @@
 # Fdb version 4
-["bibtex monografia"] 1787232341.85571 "monografia.aux" "monografia.bbl" "monografia" 1787232380.43228 0
+["bibtex monografia"] 1787278584.93782 "monografia.aux" "monografia.bbl" "monografia" 1787278611.18884 0
   "./biblio.bib" 1786391353 679 7434d96fcd44fe64176691410f4d0667 ""
   "O:/programas/miktex/bibtex/bst/bibtex/alpha.bst" 1291864736 23907 a5f93555796fb564b924339521f10a7c ""
-  "homologia/jordan.aux" 1787232378 2012 c2cbb21ba6c1a8e397d49435b637704c "pdflatex"
-  "homologia/mayervietoris.aux" 1787232372 1256 950515a92faeda909e43cc88db9ed917 "pdflatex"
-  "monografia.aux" 1787232379 850 e2ea8ca85eef3abb5e728e0177d6ce76 "pdflatex"
+  "homologia/jordan.aux" 1787278609 2012 c2cbb21ba6c1a8e397d49435b637704c "pdflatex"
+  "homologia/mayervietoris.aux" 1787278603 1256 950515a92faeda909e43cc88db9ed917 "pdflatex"
+  "monografia.aux" 1787278609 850 022984b1421acddde2cd73ba2fb65c98 "pdflatex"
   (generated)
   "monografia.bbl"
   "monografia.blg"
   (rewritten before read)
-["pdflatex"] 1787232370.29533 "o:/monografia/monografia.tex" "monografia.pdf" "monografia" 1787232380.43416 0
+["pdflatex"] 1787278601.46045 "o:/monografia/monografia.tex" "monografia.pdf" "monografia" 1787278611.19164 0
   "C:/Users/cumpc/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1787077420 81086 6fddea6b023469843de28035c851ec71 ""
   "C:/Users/cumpc/AppData/Local/MiKTeX/fonts/tfm/public/stmaryrd/stmary10.tfm" 1785541574 848 f478e0761563bbc369eca609a1741348 ""
   "C:/Users/cumpc/AppData/Local/MiKTeX/fonts/tfm/public/stmaryrd/stmary5.tfm" 1785541573 848 e1bc58a31b9ed9c3729ffea165acfaac ""
@@ -225,10 +225,10 @@
   "O:/programas/miktex/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "O:/programas/miktex/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "cmat-monografia.cls" 1781243100 3051 2d4c3bd389d707f779416f56c6240530 ""
-  "homologia/jordan.aux" 1787232378 2012 c2cbb21ba6c1a8e397d49435b637704c "pdflatex"
-  "homologia/jordan.tex" 1787232369 12836 4466266a16a7844aa3069483745820a1 ""
-  "homologia/mayervietoris.aux" 1787232372 1256 950515a92faeda909e43cc88db9ed917 "pdflatex"
-  "homologia/mayervietoris.tex" 1787230751 19159 a9fb45bff9a5dc0ec11aa2b01232c503 ""
+  "homologia/jordan.aux" 1787278609 2012 c2cbb21ba6c1a8e397d49435b637704c "pdflatex"
+  "homologia/jordan.tex" 1787270632 13105 6910fa8ec67b5c009e8a360b93cf2a23 ""
+  "homologia/mayervietoris.aux" 1787278603 1256 950515a92faeda909e43cc88db9ed917 "pdflatex"
+  "homologia/mayervietoris.tex" 1787278600 19155 5986095992af74951b9b495736e28a3b ""
   "img mono/jordan/2/A cap B.png" 1787228135 186340 75f2135a7100e55ec5e3ffbfbfa0f47a ""
   "img mono/jordan/2/A cup B.png" 1787228250 189452 622132ba88d738f27d85f24c8eb0d91b ""
   "img mono/jordan/2/A.png" 1787227833 187017 5eb211653041aa284f1d1e378dba4182 ""
@@ -238,11 +238,11 @@
   "img mono/jordan/A.png" 1787220031 225014 07b80f1caf9d8922d3ba4038e4075f11 ""
   "img mono/jordan/B.png" 1787220945 145138 2b1b4ac60ff380dc05edaae35c129046 ""
   "img mono/jordan/achicamos.png" 1787230017 223239 4d0e78862b2cc48364d3effc37c5c069 ""
-  "monografia.aux" 1787232379 850 e2ea8ca85eef3abb5e728e0177d6ce76 "pdflatex"
-  "monografia.bbl" 1787232342 52 0eba253fc001332e731e8aba3f23127b "bibtex monografia"
-  "monografia.out" 1787232379 463 1ffc41dcd417e4812c0e7eafb3bba842 "pdflatex"
-  "monografia.tex" 1787223485 3440 a1cbfb228015e0e8de8aea70e6383bcf ""
-  "o:/monografia/monografia.tex" 1787223485 3440 a1cbfb228015e0e8de8aea70e6383bcf ""
+  "monografia.aux" 1787278609 850 022984b1421acddde2cd73ba2fb65c98 "pdflatex"
+  "monografia.bbl" 1787278585 52 0eba253fc001332e731e8aba3f23127b "bibtex monografia"
+  "monografia.out" 1787278609 463 1ffc41dcd417e4812c0e7eafb3bba842 "pdflatex"
+  "monografia.tex" 1787267460 3440 a1cbfb228015e0e8de8aea70e6383bcf ""
+  "o:/monografia/monografia.tex" 1787267460 3440 a1cbfb228015e0e8de8aea70e6383bcf ""
   (generated)
   "homologia/jordan.aux"
   "homologia/mayervietoris.aux"

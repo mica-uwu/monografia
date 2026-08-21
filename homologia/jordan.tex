@@ -3,7 +3,7 @@
 Primero, probemos que si le sacamos un disco de cualquier dimensión a una esfera, obtenemos una bola homológica.
 
 \begin{teo}
-    Dado un encaje $h:D^k\to \s^n$, la homología reducida de $\s^n - h(D^k)$ es $$\tilde{H}_i(\s^n - h(D^k))=0  \quad\fall i\in\N$$
+    Dado un encaje $h:\D^k\to \s^n$, la homología reducida de $\s^n - h(\D^k)$ es $$\tilde{H_i}(\s^n - h(\D^k))=0  \quad\fall i\in\N$$
 \end{teo}
 % \comm{obviamente $k\leq n$, esto usa invariancia del dominio, que todo encaje va a cumplir $k\leq n$. lo voy a agregar después como una observación}
 \begin{obs}
@@ -13,25 +13,21 @@ En general cuando consideramos un encaje $h:M^k\to M^n$ entre variedades topoló
 \begin{proof}
     Hagamos inducción en $k\in\N$. 
     
-    Si $k=0$, tenemos que $\s^n - h(D^0)$ es la esfera pinchada, es homeomorfa a $\R^n$, tomando un homeomorfismo que mande entornos reducidos del punto $h(D^0)$ en entornos del infinito. Con esto tenemos el caso base.
+    Empezamos observando que si $k=0$, tenemos que $\s^n - h(\D^0)$ es la esfera pinchada, tomando un homeomorfismo que mande entornos reducidos del punto $h(\D^0)$ en entornos del infinito tenemos que es homeomorfa a $\R^n$. Como $\R^n$ es contractible, se cumple $\tilde{H_i}(\s^n - h(\D^0))=0$ para todo $i\in\N$. Con esto tenemos el caso base.
 
-    Supongamos que se cumple para $k-1$, y probemos que entonces vale para $k$.
+    Supongamos que se cumple para $k-1$, y probemos que entonces vale para $k$. Vamos a definir dos abiertos $A$, $B$ y usar la sucesión de Mayer-Vietoris.
+    % tales que $X := \s^n-h(\D^k) = A\cap B$
 
-    Podemos buscar dos abiertos $A$ y $B$ convenientes tales que $X := \s^n-h(D^k) = A\cap B$ y usar la sucesión de Mayer-Vietoris.
-
-    Viendo $D^k$ como $I^k$, podemos tomar el cubrimiento de $\s^n-h\left(I^k\right)$ dado por los dos abiertos $A:=\s^n - h\left(I^{k-1}\times[0,\frac{1}{2}]\right)$ y $B:=\s^n - h\left(I^{k-1}\times[\frac{1}{2},1]\right)$.
+    Identificando $\D^k$ con $I^k$, tomamos el cubrimiento de $\s^n-h\left(I^k\right)$ dado por los dos abiertos $$A:=\s^n - h\left(I^{k-1}\times\bigg[0,\frac{1}{2}\bigg]\right),\qquad B:=\s^n - h\left(I^{k-1}\times\bigg[\frac{1}{2},1\bigg]\right)$$
 
     % \comm{dibujito aca}
 
-    En este caso $A\cup B = \s^n-h\left(I^{k-1}\times\{\frac{1}{2}\}\right)$. Como $I^{k-1}\times\{\frac{1}{2}\}\simeq D^{k-1}$, podemos aplicar la hipótesis de inducción y así obtener que $\tilde{H}_i(A\cup B)=0$ para todo $i\in\N$.
+    Los $A$ y $B$ cumplen:\begin{itemize}
+        \item $A\cap B = \s^n-h(\D^k)$
+        \item $A\cup B = \s^n-h\left(I^{k-1}\times\{\frac{1}{2}\}\right)$
+    \end{itemize}
 
-    Sustituyendo en la sucesión de Mayer-Vietoris, para cada $i\in\N$ tenemos la sucesión exacta
-
-    $$0\rightarrow H_i(X)\xrightarrow{\Psi_i} H_i(A)\oplus H_i(B)\rightarrow 0$$
-
-    Que esta sucesión sea exacta implica que $\Ker(\Psi_i)=0$, $\im(\Psi_i) = H_i(A)\oplus H_i(B)$ y por lo tanto $\Psi_i$ es un isomorfismo.
-
-    \begin{figure}[h!]
+        \begin{figure}[h!]
     \centering
     \begin{subfigure}[]{0.2\linewidth}
         \includegraphics[width=\linewidth]{img mono/jordan/A.png}
@@ -49,11 +45,17 @@ En general cuando consideramos un encaje $h:M^k\to M^n$ entre variedades topoló
     \label{cocientes}
 \end{figure}
 
-    Recordamos que los morfismos $\Psi_i$ de la sucesión de Mayer-Vietoris provienen de los morfismos entre los grupos de $i$-cadenas singulares $\psi_i :C_i(X)\rightarrow C_i(A)\oplus C_i(B)$ definidos como $\psi_i(x)=(x,-x)$. Por esta razón, a menos del signo, sabemos que las componentes de $\Psi_i$ están inducidas por las inclusiones $C_i(X)\hookrightarrow C_i(A)$, $C_i(X)\hookrightarrow C_i(B)$.
+    Identificando $I^{k-1}\times\{\frac{1}{2}\}\simeq \D^{k-1}$, podemos aplicar la hipótesis de inducción y así obtener que $\tilde{H_i}(A\cup B)=0$ para todo $i\in\N$.
 
-    Ahora queremos calcular explicitamente $H_i(X)$. El resultado que buscamos es que sea trivial, hagamos un razonamiento por absurdo.
+    Sustituyendo en la sucesión de Mayer-Vietoris, para cada $i\in\N$ tenemos la sucesión exacta $$0\rightarrow H_i(A\cap B)\xrightarrow{\psi_i^*} H_i(A)\oplus H_i(B)\rightarrow 0$$
 
-    Supongamos que existe $x$ un representante de una clase no trivial del $i$-ésimo grupo de homología de $X$. Es decir, $x$ es un elemento de $C_i(X)$ tal que no es borde de un elemento en $C_{i+1}(X)$, o sea, $x\not\in\im(\partial_{i+1})$. La clase de $x$, al pasar por el isomorfismo $\Psi_i$, cae en un elemento no trivial de $H_i(A)\oplus H_i(B)$. Como $\Psi_i$ está inducida por la inclusión a menos de signos, la afirmación anterior implica que el ciclo $x$ no es un borde en al menos uno de $C_i(A)$ o $C_i(B)$.
+    Que esta sucesión sea exacta implica que $\Ker(\psi_i^*)=0$, $\im(\psi_i^*) = H_i(A)\oplus H_i(B)$ y por lo tanto $\psi_i^*$ es un isomorfismo.
+
+    Recordamos que los morfismos $\psi_i^*$ de la sucesión de Mayer-Vietoris provienen de los morfismos entre los grupos de $i$-cadenas singulares $\psi_i :C_i(A\cap B)\rightarrow C_i(A)\oplus C_i(B)$ definidos como $\psi_i(x)=(x,-x)$. Por esta razón, a menos del signo, sabemos que las componentes de $\psi_i^*$ están inducidas por las inclusiones $C_i(A\cap B)\hookrightarrow C_i(A)$, $C_i(A\cap B)\hookrightarrow C_i(B)$.
+
+    Veamos que $H_i(A\cap B)=0$ para todo $i\in\N$:
+
+    Hagamos un razonamiento por absurdo. Supongamos que existe $x$ un representante de una clase no trivial del $i$-ésimo grupo de homología de $A\cap B$. Es decir, $x$ es un elemento de $C_i(A\cap B)$ tal que no es borde de un elemento en $C_{i+1}(A\cap B)$, o sea, $x\not\in\im(\partial_{i+1})$. La clase de $x$, al pasar por el isomorfismo $\psi_i^*$, cae en un elemento no trivial de $H_i(A)\oplus H_i(B)$. Como $\psi_i^*$ está inducida por la inclusión a menos de signos, la afirmación anterior implica que el ciclo $x$ no es un borde en al menos uno de $C_i(A)$ o $C_i(B)$.
 
     Sin pérdida de generalidad, asumamos que $x$ no es borde de ningún elemento de $C_i(A)$. Esto nos permite repetir el argumento tomando $X':=A=\s^n - h\left(I^{k-1}\times[0,\frac{1}{2}]\right)$, y eligiendo nuevos conjuntos $A':=\s^n - h\left(I^{k-1}\times[0,\frac{1}{4}]\right)$ y $B':=\s^n - h\left(I^{k-1}\times[\frac{1}{4},\frac{1}{2}]\right)$, obtenidos partiendo a la mitad el intervalo $[0,\frac{1}{2}]$ que definía al conjunto $A$. 
 
@@ -90,7 +92,7 @@ En general cuando consideramos un encaje $h:M^k\to M^n$ entre variedades topoló
 Usando este resultado, podemos también caracterizar los grupos de homología del complemento de una esfera encajada en otra esfera de dimensión superior.
 
     \begin{teo}
-    Dado un encaje $h:\s^k\to \s^n$ con $k<n$, para todo $i\in\N$ se cumple que la homología reducida de $\s^n - h(\s^k)$ es $$\tilde{H}_i(\s^n - h(\s^k))=
+    Dado un encaje $h:\s^k\to \s^n$ con $k<n$, para todo $i\in\N$ se cumple que la homología reducida de $\s^n - h(\s^k)$ es $$\tilde{H_i}(\s^n - h(\s^k))=
     \begin{cases}
     \Z\quad &\text{si }\,\, i=n-k-1\\
     0\quad &\text{en cualquier otro caso}
@@ -105,7 +107,7 @@ Usando este resultado, podemos también caracterizar los grupos de homología de
 
     \begin{proof}
 
-    Para probar esto vamos a apoyarnos en la parte anterior. La idea es hacer la prueba por inducción en $k$ y usar la sucesión de Mayer-Vietoris con un cubrimiento por abiertos de la forma $\s^n - h(D^k)$. 
+    Para probar esto vamos a apoyarnos en la parte anterior. La idea es hacer la prueba por inducción en $k$ y usar la sucesión de Mayer-Vietoris con un cubrimiento por abiertos de la forma $\s^n - h(\D^k)$. 
 
     Trivialmente tenemos el caso $k=0$. Como $\s^n - h(\s^0)$ es la esfera con dos pinchaduras, homeomorfa a $\s^{n-1}\times\R$, se cumple que $H_i(\s^n - h(\s^0))=0$ en todo caso salvo cuando $i=0$, y ahí vale $H_0(\s^n - h(\s^0))=\Z\oplus\Z$, y por lo tanto la homología reducida es $\tilde{H_0}(\s^n - h(\s^0))=\Z$.
 
@@ -156,7 +158,7 @@ Usando este resultado, podemos también caracterizar los grupos de homología de
 
     Observamos que por construcción, $\partial A$ está contenido en $h(D')$, ya que $U\cap A=\varnothing$ y $h(D)\subset U$.
 
-    Por el primer lema que probamos en esta sección, sabemos que $\tilde{H}_0(\s^n - h(D'))=0$, es decir, $H_0(\s^n - h(D'))=\Z$, y por lo tanto $\s^n - h(D')$ tiene una única componente conexa por caminos. Como $\s^n$ es localmente conexa por caminos, entonces $\s^n - h(D')$ es conexo.
+    Por el primer lema que probamos en esta sección, sabemos que $\tilde{H_0}(\s^n - h(D'))=0$, es decir, $H_0(\s^n - h(D'))=\Z$, y por lo tanto $\s^n - h(D')$ tiene una única componente conexa por caminos. Como $\s^n$ es localmente conexa por caminos, entonces $\s^n - h(D')$ es conexo.
 
     Sin embargo, podemos descomponer $\s^n - h(D')$ como $A\sqcup B\sqcup h(D)$, y estos son tres abiertos disjuntos, lo cual nos da el absurdo.
     

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.5)  20 AUG 2026 10:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.5)  20 AUG 2026 23:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -753,13 +753,13 @@ l.114
 
  (homologia/mayervietoris.tex
 
-LaTeX Font Warning: Command \SMALL invalid in math mode on input line 40.
+LaTeX Font Warning: Command \SMALL invalid in math mode on input line 39.
 
 
-LaTeX Font Warning: Command \SMALL invalid in math mode on input line 40.
+LaTeX Font Warning: Command \SMALL invalid in math mode on input line 39.
 
 
-LaTeX Font Warning: Command \SMALL invalid in math mode on input line 40.
+LaTeX Font Warning: Command \SMALL invalid in math mode on input line 39.
 
 [1
 
@@ -814,7 +814,7 @@ Missing character: There is no = in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no d in font nullfont!
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 90.
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 87.
 [2] [3]
 Missing character: There is no e in font nullfont!
 Missing character: There is no v in font nullfont!
@@ -918,7 +918,7 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no d in font nullfont!
 
-Overfull \hbox (1.10442pt too wide) in paragraph at lines 209--210
+Overfull \hbox (1.10442pt too wide) in paragraph at lines 205--206
 []\OT1/cmr/m/n/10.95 Como es-ta su-ce-si^^Son es exac-ta, ob-te-ne-mos que los $\OML/cmm/m/it/10.95 @[]$ \OT1/cmr/m/n/10.95 son iso-mor-fis-mos y en-ton-ces $\OML/cmm/m/it/10.95 H[]\OT1/cmr/m/n/10.95 (\U/msb/m/n/10.95 S[]\OT1/cmr/m/n/10.95 ) []
  []
 
@@ -929,22 +929,22 @@ Overfull \hbox (1.10442pt too wide) in paragraph at lines 209--210
 <img mono/jordan/A.png, id=73, 3545.245pt x 3369.58875pt>
 File: img mono/jordan/A.png Graphic file (type png)
 <use img mono/jordan/A.png>
-Package pdftex.def Info: img mono/jordan/A.png  used on input line 37.
+Package pdftex.def Info: img mono/jordan/A.png  used on input line 33.
 (pdftex.def)             Requested size: 83.64981pt x 79.4887pt.
 <img mono/jordan/B.png, id=74, 3545.245pt x 3369.58875pt>
 File: img mono/jordan/B.png Graphic file (type png)
 <use img mono/jordan/B.png>
-Package pdftex.def Info: img mono/jordan/B.png  used on input line 40.
+Package pdftex.def Info: img mono/jordan/B.png  used on input line 36.
 (pdftex.def)             Requested size: 83.64981pt x 79.4887pt.
 <img mono/jordan/A cap B.png, id=75, 3545.245pt x 3369.58875pt>
 File: img mono/jordan/A cap B.png Graphic file (type png)
 <use img mono/jordan/A cap B.png>
-Package pdftex.def Info: img mono/jordan/A cap B.png  used on input line 43.
+Package pdftex.def Info: img mono/jordan/A cap B.png  used on input line 39.
 (pdftex.def)             Requested size: 83.64981pt x 79.4887pt.
 <img mono/jordan/A cup B.png, id=76, 3545.245pt x 3369.58875pt>
 File: img mono/jordan/A cup B.png Graphic file (type png)
 <use img mono/jordan/A cup B.png>
-Package pdftex.def Info: img mono/jordan/A cup B.png  used on input line 46.
+Package pdftex.def Info: img mono/jordan/A cup B.png  used on input line 42.
 (pdftex.def)             Requested size: 83.64981pt x 79.4887pt.
  [6
 
@@ -953,37 +953,37 @@ Package pdftex.def Info: img mono/jordan/A cup B.png  used on input line 46.
  <./img mono/jordan/A.png> <./img mono/jordan/B.png> <./img mono/jordan/A cap B.png> <./img mono/jordan/A cup B.png>]
 File: img mono/jordan/A cap B.png Graphic file (type png)
 <use img mono/jordan/A cap B.png>
-Package pdftex.def Info: img mono/jordan/A cap B.png  used on input line 63.
+Package pdftex.def Info: img mono/jordan/A cap B.png  used on input line 65.
 (pdftex.def)             Requested size: 83.64981pt x 79.4887pt.
 File: img mono/jordan/B.png Graphic file (type png)
 <use img mono/jordan/B.png>
-Package pdftex.def Info: img mono/jordan/B.png  used on input line 66.
+Package pdftex.def Info: img mono/jordan/B.png  used on input line 68.
 (pdftex.def)             Requested size: 83.64981pt x 79.4887pt.
 <img mono/jordan/achicamos.png, id=84, 3545.245pt x 3369.58875pt>
 File: img mono/jordan/achicamos.png Graphic file (type png)
 <use img mono/jordan/achicamos.png>
-Package pdftex.def Info: img mono/jordan/achicamos.png  used on input line 69.
+Package pdftex.def Info: img mono/jordan/achicamos.png  used on input line 71.
 (pdftex.def)             Requested size: 83.64981pt x 79.4887pt.
  [7 <./img mono/jordan/achicamos.png>]
 <img mono/jordan/2/A.png, id=90, 3545.245pt x 3369.58875pt>
 File: img mono/jordan/2/A.png Graphic file (type png)
 <use img mono/jordan/2/A.png>
-Package pdftex.def Info: img mono/jordan/2/A.png  used on input line 117.
+Package pdftex.def Info: img mono/jordan/2/A.png  used on input line 119.
 (pdftex.def)             Requested size: 83.64981pt x 79.4887pt.
 <img mono/jordan/2/B.png, id=91, 3545.245pt x 3369.58875pt>
 File: img mono/jordan/2/B.png Graphic file (type png)
 <use img mono/jordan/2/B.png>
-Package pdftex.def Info: img mono/jordan/2/B.png  used on input line 120.
+Package pdftex.def Info: img mono/jordan/2/B.png  used on input line 122.
 (pdftex.def)             Requested size: 83.64981pt x 79.4887pt.
 <img mono/jordan/2/A cap B.png, id=92, 3545.245pt x 3369.58875pt>
 File: img mono/jordan/2/A cap B.png Graphic file (type png)
 <use img mono/jordan/2/A cap B.png>
-Package pdftex.def Info: img mono/jordan/2/A cap B.png  used on input line 123.
+Package pdftex.def Info: img mono/jordan/2/A cap B.png  used on input line 125.
 (pdftex.def)             Requested size: 83.64981pt x 79.4887pt.
 <img mono/jordan/2/A cup B.png, id=93, 3545.245pt x 3369.58875pt>
 File: img mono/jordan/2/A cup B.png Graphic file (type png)
 <use img mono/jordan/2/A cup B.png>
-Package pdftex.def Info: img mono/jordan/2/A cup B.png  used on input line 126.
+Package pdftex.def Info: img mono/jordan/2/A cup B.png  used on input line 128.
 (pdftex.def)             Requested size: 83.64981pt x 79.4887pt.
 
 
@@ -1017,15 +1017,15 @@ Package rerunfilecheck Info: File `monografia.out' has not changed.
 (rerunfilecheck)             Checksum: 1FFC41DCD417E4812C0E7EAFB3BBA842;463.
  ) 
 Here is how much of TeX's memory you used:
- 30038 strings out of 467871
- 586676 string characters out of 5430401
+ 30040 strings out of 467871
+ 586724 string characters out of 5430401
  1067293 words of memory out of 5000000
- 58219 multiletter control sequences out of 15000+600000
+ 58221 multiletter control sequences out of 15000+600000
  641715 words of font info for 93 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 117i,17n,121p,926b,1267s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 117i,16n,121p,926b,1267s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmbx10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmex10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmmi10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmmi6.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmmi8.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr12.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr17.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr6.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr8.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmsy6.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmsy8.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmti10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/symbols/msam10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on monografia.pdf (13 pages, 1728651 bytes).
+Output written on monografia.pdf (13 pages, 1729332 bytes).
 PDF statistics:
  198 PDF objects out of 1000 (max. 8388607)
  32 named destinations out of 1000 (max. 500000)
