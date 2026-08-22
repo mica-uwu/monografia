@@ -25,13 +25,17 @@ Dado un cilindro $C$, lo que nos va a interesar en general es considerar dos tor
 
 Ahora si, vamos a definir nuestra sucesión de cerrados encajados: 
 
-Empezamos por $X_0$ un toro sólido estándar en $\R^3$, con diámetro menor a $1$. Consideramos un cilindro $C$ contenido en $X_0$ con diámetro menor a $\frac{1}{2}$, y llamamos $T_0$ y $T_1$ a dos toros enlazados en $C$. Definimos $X_1:=(X_0-C)\cup T_0\cup T_1$.
+Empezamos por $X_0$ un toro sólido estándar en $\R^3$, con diámetro menor a $1$. Consideramos un cilindro $C$ contenido en $X_0$ con diámetro menor a $\frac{1}{2}$, y llamamos $T_0$ y $T_1$ a dos toros enlazados en $C$. Definimos \begin{align*}
+    B_0&:=X_0 - C \\
+    X_1&:=B_0\cup T_0\cup T_1
+\end{align*} Observar que $B_0$ es el toro sólido estándar sin un cilindro $C$, por lo tanto $B_0$ es homeomorfo a un disco $\D^3$.
 
-Para definir $X_2$, vamos a modificar sólamente los toros $T_0$ y $T_1$, y lo haremos de la misma forma en la que modificamos el toro $X_0$ en el paso anterior. Lo que hacemos es considerar dos cilindros $C_0\subset T_0$ y $C_1\subset T_1$, esta vez teniendo en cuenta que estos cilindros no intersecten a las tapas del cilindro anterior $C$, y que además tengan diámetros menores a $\frac{1}{4}$. Dentro de cada uno de estos cilindros consideramos dos toros enlazados, $T_{00}, T_{01}\subset C_0$ y $T_{10}, T_{11}\subset C_1$. Definimos $X_2$ como $$X_2:=\big[X_1-(C_0\cup C_1)\big]\cup\bigg(\bigcup\limits_{i,j\in\{0,1\}} T_{ij}\bigg)$$
+Para definir $X_2$, vamos a modificar sólamente los toros $T_0$ y $T_1$, y lo haremos de la misma forma en la que modificamos el toro $X_0$ en el paso anterior. Lo que hacemos es considerar $C_0\subset T_0$ y $C_1\subset T_1$ dos cilindros contenidos en $T_0$ y $T_1$ respectivamente. Esta vez procuramos que estos cilindros no intersecten a las tapas del cilindro anterior $C$, y que además tengan diámetros menores a $\frac{1}{4}$. Consideramos $T_{00}, T_{01}\subset C_0$ y $T_{10}, T_{11}\subset C_1$ toros enlazados en $C_0$ y $C_1$ respectivamente. Definimos \begin{align*} B_1&:= X_1-(C_0\cup C_1)\\
+    X_2&:=B_1\cup\bigg(\bigcup\limits_{i,j\in\{0,1\}} T_{ij}\bigg)\end{align*}
 
-El resto de la sucesión lo definimos inductivamente. Asumamos que en el paso $n$ se eliminaron los $2^{n-1}$ cilindros $\{\tilde{C_\alpha} : \alpha\in \{0,1\}^{n-1}\}$ de diámetro menor a $2^{-(n-1)}$ y se reemplazaron por los $2^n$ toros sólidos $\{T_\beta : \beta\in \{0,1\}^{n}\}$. 
+El resto de la sucesión lo definimos inductivamente. Asumamos que en el paso $n$ se eliminaron los $2^{n-1}$ cilindros $\{C_\alpha : \alpha\in \{0,1\}^{n-1}\}$ de diámetro menor a $2^{-(n-1)}$ y se reemplazaron por los $2^n$ toros sólidos $\{T_\beta : \beta\in \{0,1\}^{n}\}$. 
 
-Lo primero que hacemos para definir $X_{n+1}$ es considerar un cilindro $C_\beta$ contenido en cada $T_\beta$. Procuramos que este $C_\beta$ tenga diámetro menor a $2^{-n}$ y que no intersecte las tapas del cilindro $\tilde{C_\alpha}$ en el que $T_\beta$ estaba contenido.
+Lo primero que hacemos para definir $X_{n+1}$ es considerar un cilindro $C_\beta$ contenido en cada $T_\beta$. Procuramos que este $C_\beta$ tenga diámetro menor a $2^{-n}$ y que no intersecte las tapas del cilindro $C_\alpha$ en el que $T_\beta$ estaba contenido.
 
 Ahora para cada $\beta\in\{0,1\}^n$ consideramos $T_{\beta 0}$ y $T_{\beta 1}$ dos toros enlazados en $C_\beta$. Identificamos $\beta 0$ y $\beta 1$ con los elementos de $\{0,1\}^{n+1}$ que coinciden con $\beta$ en los primeros $n$ lugares y son $0$ o $1$ en el último, respectivamente.
 
@@ -41,20 +45,30 @@ Llamamos a $B=\bigcap\limits_{n=1}^\infty X_n$ la \textbf{bola de Alexander}.
 
 \duda{acá hay un detalle que no dije que es que los subtoros enlazados hay que tomarlos con cuidado para que después pueda considerar un cilindro contenido en cada uno con el diámetro acotado como quiero. si tomara los subtoros super gordos no me sirve aa}
 
+Todavía no probamos que efectivamente este espacio es una bola. Antes de hacer eso, vamos a definir el mismo conjunto como una unión encajada en vez de una intersección.
+
 % Llamamos $S=\partial B$ la esfera de Alexander. 
 
-Veamos que $\pi_1(B^c)$ es no trivial: Tomamos $J$ una curva cerrada que sea no trivial en el complemento del toro $X_0$. Supongamos $J$ es trivial en $B^c$ y consideramos su homotopía $H$ a un punto. 
+Veamos que $\pi_1(B^c)$ es no trivial: Recordamos la definición de $B$ como unión de conjuntos $X_n$.Tomamos $J$ una curva cerrada que sea no trivial en el complemento del toro $X_0$. Supongamos $J$ es trivial en $B^c$ y consideramos su homotopía $H$ a un punto. 
             
 El conjunto $\im(H)$ es un compacto contenido en $B^c$. Observar que $B^c$ cumple $$B^c=\left(\bigcap\limits_{n=1}^\infty X_n\right)^c=\bigcup\limits_{n=1}^\infty X_n^c$$ 
 Como $\{X_n^c\}$ cubre $\im(H)$, entonces existe un subcubrimiento finito $\{X_1^c,\dots, X_N^c\}$ para algún $N\in\N$. Observar que todos los $\{X_n\}$ son cerrados y cumplen $X_{n+1}\subset X_n$. Por lo tanto, la familia $\{X_n^c\}$ está compuesta por abiertos encajados. Por esta razón podemos reducir el subcubrimiento $\{X_1^c,\dots, X_N^c\}$ a uno compuesto únicamente por el elemento $X_N^c$. 
 
-Encontramos entonces un $N\in\N$ tal que $\im(H)\subset X_N^c$, es decir, $J$ es contractible en $X_N^c$. Por inducción podemos ver que esto es absurdo. 
+Encontramos entonces un $N\in\N$ tal que $\im(H)\subset X_N^c$, es decir, $J$ es contractible en $X_N^c$. Por inducción podemos ver que esto es absurdo. \comm{falta agregar esto}
 
-Ahora veamos que $B$ es una 3-célula: Pensemos $B$ como unión de cosas en vez de intersección. 
+Ahora veamos que $B$ es una bola: Pensemos $B$ como unión de cosas en vez de intersección, y veamos que estas consturcciones nos dan el mismo conjunto. 
 
-En la etapa $n$ de la construcción tenemos $2^{n-1}$ pillboxes, que cada una contiene 2 toros sólidos. Tenemos entonces $2^n$ toros sólidos en la etapa $n$, que son cada uno unión de una pillbox y una 3-célula complementaria. 
+Definimos inductivamente una familia $\{B_n\colon n\in\N\}$ de conjuntos encajados $B_{n}\subset B_{n+1}$. Empezamos por definir $$B_0:= X_0 - C$$ este conjunto es el toro sólido estándar $X_0$ sin el cilindro $C$, por lo tanto $B_0$ es homeomorfo a un disco $\D^3$.
 
-Definimos $D_n$ a la unión de las $2^{n-1}$ 3-células complementarias a las $2^{n-1}$ pillboxes en la etapa $n$ de la construcción. 
+Para definir $B_1$, consideramos $X_1$
+
+Ahora, asumiendo que tenemos $B_n$, definamos $B_{n+1}$.
+
+En el pasaje de la etapa $n$ a la etapa $n+1$ de la construcción, ubicamos en el conjunto $X_n$ un total de $2^{n}$ cilindros $C_\alpha$. Definimos el siguiente conjunto, al que llamamos \textbf{bola con n cuernos}: $$B_n :=X_n - \bigcup\limits_{\alpha\in\{0,1\}^{n}}C_\alpha$$ 
+
+Tenemos entonces $2^n$ toros sólidos en la etapa $n$, que son cada uno unión de una pillbox y una 3-célula complementaria. 
+
+Si llamamos $D_n$ a la unión de las $2^{n-1}$ 3-células complementarias a las $2^{n-1}$ pillboxes en la etapa $n$ de la construcción. 
 
 De esta manera podemos definir $B$ como $\overline{\bigcup\limits_{n=1}^\infty C_n}$, siendo $C_1=D_1$ y $C_n=C_{n-1}\cup D_n$ 
             
