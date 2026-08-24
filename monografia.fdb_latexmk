@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex monografia"] 1787446836.84616 "monografia.aux" "monografia.bbl" "monografia" 1787446859.09313 0
+["bibtex monografia"] 1787524448.98247 "monografia.aux" "monografia.bbl" "monografia" 1787524450.77219 0
   "./biblio.bib" 1786313589.75713 654 7434d96fcd44fe64176691410f4d0667 ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/alpha.bst" 1292289607 23907 a5f93555796fb564b924339521f10a7c ""
-  "monografia.aux" 1787446858.60115 694 8cffa6ce73ca91d89936fa266546f192 "pdflatex"
-  "schoenflies/puntosproblematicos.aux" 1787446858.59415 1345 da3c5e6bab7cfcc73d580f32795e2b3b "pdflatex"
+  "monografia.aux" 1787524450.31033 826 4f377b01397e9e722ccf9ed3d1c9ec80 "pdflatex"
+  "schoenflies/puntosproblematicos.aux" 1787524450.30533 2029 2da83c7c1d51aae4fd1e4c69b1e310b1 "pdflatex"
   (generated)
   "monografia.bbl"
   "monografia.blg"
   (rewritten before read)
-["pdflatex"] 1787446857.34652 "/home/franco/mica/monografia/monografia.tex" "monografia.pdf" "monografia" 1787446859.09345 0
+["pdflatex"] 1787524449.14438 "/home/franco/mica/monografia/monografia.tex" "monografia.pdf" "monografia" 1787524450.77277 0
   "/etc/texmf/web2c/texmf.cnf" 1750372886.16401 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/franco/mica/monografia/monografia.tex" 1787445477.7846 3289 d6100dbb3b71fc068d0509aadb3b7035 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -46,10 +46,12 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/stmaryrd/stmary6.tfm" 1302307949 848 068dd119e13b75777e62821af7d4f2a6 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/stmaryrd/stmary8.tfm" 1302307949 848 6125cdd3627e68d3db8013b98e587508 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/stmaryrd/stmary9.tfm" 1302307949 848 594c171945930dfc7cc52fb30457c803 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1248133631 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1248133631 32080 340ef9bf63678554ee606688e7b5339d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb" 1248133631 32001 6aeea3afe875097b1eb0da29acd61e28 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1248133631 30251 6afa5cb1d0204815a708a080681d4674 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb" 1248133631 37166 8ab3487cbe3ab49ebce74c29ea2418db ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1248133631 35469 70d41d2b9ea31d5d813066df7c99281c ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1248133631 32722 d7379af29a190c3f453aba36302ff5a9 ""
@@ -57,6 +59,7 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1248133631 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1248133631 32626 4f5c1b83753b1dd3a97d1b399a005b4b ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb" 1248133631 31764 459c573c03a4949a528c2cc7f557e217 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1248133631 34694 ad62b13721ee8eda1dcc8993c8bd7041 ""
   "/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1575674566 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
@@ -219,13 +222,15 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1750372914.21437 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1750373079 8213374 e7a10f1b94c6acd790344a7d3d751678 ""
   "cmat-monografia.cls" 1784052006.40902 2915 2d4c3bd389d707f779416f56c6240530 ""
+  "img mono/casi plano/1.png" 1787521515.41461 8446 26cf6d39e5056a5cbcfbdf1324d3bd8d ""
+  "img mono/casi plano/2.png" 1787522030.19137 7555 f15a7da9f61d388b35f04f2e273a2290 ""
   "img mono/kirby/J.png" 1787446566.97011 2082 ed9725e46ef096bb9b8cb73cf389a9b1 ""
-  "monografia.aux" 1787446858.60115 694 8cffa6ce73ca91d89936fa266546f192 "pdflatex"
-  "monografia.bbl" 1787446837.01441 49 0eba253fc001332e731e8aba3f23127b "bibtex monografia"
-  "monografia.out" 1787446858.60415 302 d7b839de36c1978a209f4bee2d415784 "pdflatex"
+  "monografia.aux" 1787524450.31033 826 4f377b01397e9e722ccf9ed3d1c9ec80 "pdflatex"
+  "monografia.bbl" 1787524449.13029 49 0eba253fc001332e731e8aba3f23127b "bibtex monografia"
+  "monografia.out" 1787524450.31333 302 e5c68d22e5281da42fa78447e9278900 "pdflatex"
   "monografia.tex" 1787445477.7846 3289 d6100dbb3b71fc068d0509aadb3b7035 ""
-  "schoenflies/puntosproblematicos.aux" 1787446858.59415 1345 da3c5e6bab7cfcc73d580f32795e2b3b "pdflatex"
-  "schoenflies/puntosproblematicos.tex" 1787446857.0241 700 bf2e2647de7cebd4ac8ef69b751bc15b ""
+  "schoenflies/puntosproblematicos.aux" 1787524450.30533 2029 2da83c7c1d51aae4fd1e4c69b1e310b1 "pdflatex"
+  "schoenflies/puntosproblematicos.tex" 1787524446.90921 3123 08ba4eb3d7879a037b1931d6e860cba5 ""
   (generated)
   "monografia.aux"
   "monografia.log"
