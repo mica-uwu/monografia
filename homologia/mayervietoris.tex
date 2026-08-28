@@ -163,22 +163,20 @@ $$\begin{tikzcd}[arrow style=math font,cells={nodes={text height=2ex,text depth=
 
 % \comm{acá después también voy a agregar la relación con el teo de van kampen}
 
-También podemos obtener una sucesión de Mayer-Vietoris para homología reducida, tomando la versión aumentada de cada complejo de cadenas.
-
-Aumentar los complejos de cadenas es tomar los morfismos \begin{align*}
+También podemos obtener una sucesión de Mayer-Vietoris para homología reducida, tomando la versión aumentada de cada complejo de cadenas. Aumentar los complejos de cadenas es tomar los morfismos \begin{align*}
 &\varepsilon^\cap\colon C_{0}(A\cap B)\to\Z \\
 &\varepsilon^\oplus\colon C_{0}(A)\oplus C_{0}(B)\to\Z\oplus\Z\\
 &\varepsilon^+\colon C_{0}(A+B)\to\Z\end{align*}
 
-\comm{esto lo defino en la parte anterior, después tengo que poner bien la referencia}
+\comm{esto lo defino en la parte anterior}
 
-Consideramos los siguentes morfismos 
-\begin{align*}
+% Vamos a tomar morfismos para continuar la sucesión exacta corta de complejos de cadena $0\rightarrow C_\bullet(A\cap B)\xrightarrow{\psi}C_\bullet(A)\oplus C_\bullet(B)\xrightarrow{\phi}C_\bullet(A+B)\rightarrow 0$ 
+Consideramos la sucesión exacta corta $$0\rightarrow\Z\xrightarrow{\psi_{-1}}\Z\oplus\Z\xrightarrow{\phi_{-1}}\Z\rightarrow 0$$
+Dada por los morfismos \begin{align*}
 &\psi_{-1}\colon\mathbb{Z}\to\mathbb{Z}\oplus\mathbb{Z},\quad \psi_{-1}(x)=(x,-x)\\
 &\phi_{-1}\colon\mathbb{Z}\oplus\mathbb{Z}\to\mathbb{Z},\quad\phi_{-1}(x,y)=x+y
-\end{align*}
-Estos componen una sucesión exacta corta $$0\rightarrow\Z\xrightarrow{\psi_{-1}}\Z\oplus\Z\xrightarrow{\phi_{-1}}\Z\rightarrow 0$$
-% % https://q.uiver.app/#q=WzAsMyxbMCwwLCJcXHNjcmlwdHNpemVcXG1hdGhiYntafSJdLFsxLDAsIlxcc2NyaXB0c2l6ZVxcbWF0aGJie1p9XFxvcGx1c1xcbWF0aGJie1p9Il0sWzIsMCwiXFxzY3JpcHRzaXplXFxtYXRoYmJ7Wn0iXSxbMCwxLCJcXHNjcmlwdHNpemVcXHBzaV97LTF9Il0sWzEsMiwiXFxzY3JpcHRzaXplXFxwaGlfey0xfSJdXQ==
+\end{align*} 
+% https://q.uiver.app/#q=WzAsMyxbMCwwLCJcXHNjcmlwdHNpemVcXG1hdGhiYntafSJdLFsxLDAsIlxcc2NyaXB0c2l6ZVxcbWF0aGJie1p9XFxvcGx1c1xcbWF0aGJie1p9Il0sWzIsMCwiXFxzY3JpcHRzaXplXFxtYXRoYmJ7Wn0iXSxbMCwxLCJcXHNjcmlwdHNpemVcXHBzaV97LTF9Il0sWzEsMiwiXFxzY3JpcHRzaXplXFxwaGlfey0xfSJdXQ==
 % \[\begin{tikzcd}
 % 	{\scriptsize\mathbb{Z}} & {\scriptsize\mathbb{Z}\oplus\mathbb{Z}} & {\scriptsize\mathbb{Z}}
 % 	\arrow["{\scriptsize\psi_{-1}}", from=1-1, to=1-2]
@@ -219,6 +217,8 @@ Aplicando los isomorfismos para cada $i,\, n\in\N$ tenemos
 0 \quad &\text{en cualquier otro caso}
 \end{cases}
 \end{align*}
+
+\comm{agregar tablita}
 
 % % https://q.uiver.app/#q=WzAsMTMsWzAsMSwiMCJdLFsxLDEsIlxcc2NyaXB0c3R5bGUgQ197MH0oQVxcY2FwIEIpIl0sWzIsMSwiXFxzY3JpcHRzdHlsZSBDX3swfShBKVxcb3BsdXMgQ197MH0oQikiXSxbMywxLCJcXHNjcmlwdHN0eWxlIENfezB9KEErQikiXSxbNCwxLCIwIl0sWzAsMiwiMCJdLFs0LDIsIjAiXSxbMSwyLCJcXG1hdGhiYntafSJdLFsyLDIsIlxcc2NyaXB0c3R5bGUgXFxtYXRoYmJ7Wn1cXG9wbHVzXFxtYXRoYmJ7Wn0iXSxbMywyLCJcXG1hdGhiYntafSJdLFszLDAsIlxcdmRvdHMiXSxbMiwwLCJcXHZkb3RzIl0sWzEsMCwiXFx2ZG90cyJdLFswLDFdLFsxLDIsIlxcc2NyaXB0c2l6ZVxccHNpXzAiXSxbMiwzLCJcXHNjcmlwdHNpemVcXHBoaV8wIl0sWzMsNF0sWzksNl0sWzgsOSwiXFxzY3JpcHRzaXplXFxwaGlfey0xfSIsMl0sWzcsOCwiXFxzY3JpcHRzaXplXFxwc2lfey0xfSIsMl0sWzUsN10sWzEsNywiXFxzY3JpcHRzaXplXFxwYXJ0aWFsX24iXSxbMiw4LCJcXHNjcmlwdHNpemVcXHBhcnRpYWxfbiJdLFsxMCwzXSxbMTEsMl0sWzEyLDFdLFszLDksIlxcc2NyaXB0c2l6ZVxccGFydGlhbF9uIl1d
 % \[\begin{tikzcd}
