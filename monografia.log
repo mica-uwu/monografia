@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.5)  28 AUG 2026 06:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.5)  29 AUG 2026 03:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -629,14 +629,7 @@ LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 Package babel Info: 'spanish' activates 'spanish' shorthands.
 (babel)             Reported on input line 8.
- (homologia/mayervietoris.aux) (homologia/jordan.aux
-
-LaTeX Warning: Label `cocientes' multiply defined.
-
-
-LaTeX Warning: Label `cocientes' multiply defined.
-
-) (schoenflies/puntosproblematicos.aux))
+ (schoenflies/schoenflies.aux) (schoenflies/puntosproblematicos.aux))
 \openout1 = `monografia.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 111.
@@ -749,279 +742,57 @@ l.114
 
 
 ]
-\openout2 = `homologia/mayervietoris.aux'.
+\openout2 = `schoenflies/schoenflies.aux'.
 
- (homologia/mayervietoris.tex
-
-LaTeX Font Warning: Command \SMALL invalid in math mode on input line 39.
-
-
-LaTeX Font Warning: Command \SMALL invalid in math mode on input line 39.
-
-
-LaTeX Font Warning: Command \SMALL invalid in math mode on input line 39.
-
+ (schoenflies/schoenflies.tex
+Cap\'{\i }tulo 1
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 7.
 [1
 
-]
-Missing character: There is no e in font nullfont!
-Missing character: There is no v in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no . in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no = in font nullfont!
-Missing character: There is no f in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no = in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no v in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no . in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no = in font nullfont!
-Missing character: There is no f in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no = in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no d in font nullfont!
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 87.
-[2] [3]
-Missing character: There is no e in font nullfont!
-Missing character: There is no v in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no . in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no = in font nullfont!
-Missing character: There is no f in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no = in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no v in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no . in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no = in font nullfont!
-Missing character: There is no f in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no = in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no d in font nullfont!
-[4]
-Missing character: There is no e in font nullfont!
-Missing character: There is no v in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no . in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no = in font nullfont!
-Missing character: There is no f in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no = in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no v in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no . in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no = in font nullfont!
-Missing character: There is no f in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no = in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no d in font nullfont!
-
-Overfull \hbox (1.10442pt too wide) in paragraph at lines 203--204
-[]\OT1/cmr/m/n/10.95 Como es-ta su-ce-si^^Son es exac-ta, ob-te-ne-mos que los $\OML/cmm/m/it/10.95 @[]$ \OT1/cmr/m/n/10.95 son iso-mor-fis-mos y en-ton-ces $\OML/cmm/m/it/10.95 H[]\OT1/cmr/m/n/10.95 (\U/msb/m/n/10.95 S[]\OT1/cmr/m/n/10.95 ) []
- []
-
-) [5]
-\openout2 = `homologia/jordan.aux'.
-
- (homologia/jordan.tex
-<img mono/jordan/A.png, id=78, 3545.245pt x 3369.58875pt>
-File: img mono/jordan/A.png Graphic file (type png)
-<use img mono/jordan/A.png>
-Package pdftex.def Info: img mono/jordan/A.png  used on input line 33.
-(pdftex.def)             Requested size: 83.64981pt x 79.4887pt.
-<img mono/jordan/B.png, id=79, 3545.245pt x 3369.58875pt>
-File: img mono/jordan/B.png Graphic file (type png)
-<use img mono/jordan/B.png>
-Package pdftex.def Info: img mono/jordan/B.png  used on input line 36.
-(pdftex.def)             Requested size: 83.64981pt x 79.4887pt.
-<img mono/jordan/A cap B.png, id=80, 3545.245pt x 3369.58875pt>
-File: img mono/jordan/A cap B.png Graphic file (type png)
-<use img mono/jordan/A cap B.png>
-Package pdftex.def Info: img mono/jordan/A cap B.png  used on input line 39.
-(pdftex.def)             Requested size: 83.64981pt x 79.4887pt.
-<img mono/jordan/A cup B.png, id=81, 3545.245pt x 3369.58875pt>
-File: img mono/jordan/A cup B.png Graphic file (type png)
-<use img mono/jordan/A cup B.png>
-Package pdftex.def Info: img mono/jordan/A cup B.png  used on input line 42.
-(pdftex.def)             Requested size: 83.64981pt x 79.4887pt.
- [6
 
 
-
- <./img mono/jordan/A.png> <./img mono/jordan/B.png> <./img mono/jordan/A cap B.png> <./img mono/jordan/A cup B.png>]
-File: img mono/jordan/A cap B.png Graphic file (type png)
-<use img mono/jordan/A cap B.png>
-Package pdftex.def Info: img mono/jordan/A cap B.png  used on input line 65.
-(pdftex.def)             Requested size: 83.64981pt x 79.4887pt.
-File: img mono/jordan/B.png Graphic file (type png)
-<use img mono/jordan/B.png>
-Package pdftex.def Info: img mono/jordan/B.png  used on input line 68.
-(pdftex.def)             Requested size: 83.64981pt x 79.4887pt.
-<img mono/jordan/achicamos.png, id=89, 3545.245pt x 3369.58875pt>
-File: img mono/jordan/achicamos.png Graphic file (type png)
-<use img mono/jordan/achicamos.png>
-Package pdftex.def Info: img mono/jordan/achicamos.png  used on input line 71.
-(pdftex.def)             Requested size: 83.64981pt x 79.4887pt.
- [7 <./img mono/jordan/achicamos.png>]
-<img mono/jordan/2/A.png, id=95, 3545.245pt x 3369.58875pt>
-File: img mono/jordan/2/A.png Graphic file (type png)
-<use img mono/jordan/2/A.png>
-Package pdftex.def Info: img mono/jordan/2/A.png  used on input line 119.
-(pdftex.def)             Requested size: 83.64981pt x 79.4887pt.
-<img mono/jordan/2/B.png, id=96, 3545.245pt x 3369.58875pt>
-File: img mono/jordan/2/B.png Graphic file (type png)
-<use img mono/jordan/2/B.png>
-Package pdftex.def Info: img mono/jordan/2/B.png  used on input line 122.
-(pdftex.def)             Requested size: 83.64981pt x 79.4887pt.
-<img mono/jordan/2/A cap B.png, id=97, 3545.245pt x 3369.58875pt>
-File: img mono/jordan/2/A cap B.png Graphic file (type png)
-<use img mono/jordan/2/A cap B.png>
-Package pdftex.def Info: img mono/jordan/2/A cap B.png  used on input line 125.
-(pdftex.def)             Requested size: 83.64981pt x 79.4887pt.
-<img mono/jordan/2/A cup B.png, id=98, 3545.245pt x 3369.58875pt>
-File: img mono/jordan/2/A cup B.png Graphic file (type png)
-<use img mono/jordan/2/A cup B.png>
-Package pdftex.def Info: img mono/jordan/2/A cup B.png  used on input line 128.
-(pdftex.def)             Requested size: 83.64981pt x 79.4887pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[8] [9 <./img mono/jordan/2/A.png> <./img mono/jordan/2/B.png> <./img mono/jordan/2/A cap B.png> <./img mono/jordan/2/A cup B.png>]) [10]
+] [2] [3] [4]
+<img mono/schoenflies/sch.jpeg, id=72, 4047.12pt x 3035.34pt>
+File: img mono/schoenflies/sch.jpeg Graphic file (type jpg)
+<use img mono/schoenflies/sch.jpeg>
+Package pdftex.def Info: img mono/schoenflies/sch.jpeg  used on input line 208.
+(pdftex.def)             Requested size: 313.69162pt x 235.23642pt.
+ [5 <./img mono/schoenflies/sch.jpeg>] [6] [7]
+<img mono/schoenflies/inv dominio.png, id=96, 837.1275pt x 247.92625pt>
+File: img mono/schoenflies/inv dominio.png Graphic file (type png)
+<use img mono/schoenflies/inv dominio.png>
+Package pdftex.def Info: img mono/schoenflies/inv dominio.png  used on input line 307.
+(pdftex.def)             Requested size: 313.69162pt x 92.90024pt.
+) [8 <./img mono/schoenflies/inv dominio.png>]
 \openout2 = `schoenflies/puntosproblematicos.aux'.
 
  (schoenflies/puntosproblematicos.tex
-Cap\'{\i }tulo 1
-[11
+Cap\'{\i }tulo 2
+[9
 
 
 
 
 
-] [12]
-<img mono/casi plano/1.png, id=129, 198.7425pt x 168.63pt>
+] [10]
+<img mono/casi plano/1.png, id=119, 198.7425pt x 168.63pt>
 File: img mono/casi plano/1.png Graphic file (type png)
 <use img mono/casi plano/1.png>
 Package pdftex.def Info: img mono/casi plano/1.png  used on input line 111.
 (pdftex.def)             Requested size: 146.39197pt x 124.21558pt.
-<img mono/casi plano/2.png, id=131, 204.765pt x 173.64874pt>
+<img mono/casi plano/2.png, id=120, 204.765pt x 173.64874pt>
 File: img mono/casi plano/2.png Graphic file (type png)
 <use img mono/casi plano/2.png>
 Package pdftex.def Info: img mono/casi plano/2.png  used on input line 118.
 (pdftex.def)             Requested size: 146.39197pt x 124.1526pt.
-<img mono/kirby/j.png, id=132, 463.7325pt x 375.4025pt>
+<img mono/kirby/j.png, id=121, 463.7325pt x 375.4025pt>
 File: img mono/kirby/j.png Graphic file (type png)
 <use img mono/kirby/j.png>
 Package pdftex.def Info: img mono/kirby/j.png  used on input line 134.
 (pdftex.def)             Requested size: 167.29964pt x 135.4312pt.
- [13 <./img mono/casi plano/1.png>]) [14 <./img mono/casi plano/2.png> <./img mono/kirby/j.png>] (monografia.bbl
+ [11 <./img mono/casi plano/1.png>]) [12 <./img mono/casi plano/2.png> <./img mono/kirby/j.png>] (monografia.bbl
 Bibliograf\'{\i }a
-
-Package natbib Warning: Empty `thebibliography' environment on input line 3.
-
-) [15
+) [13
 
 
 
@@ -1031,30 +802,26 @@ Package natbib Warning: Empty `thebibliography' environment on input line 3.
 ] (monografia.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
- (homologia/mayervietoris.aux) (homologia/jordan.aux) (schoenflies/puntosproblematicos.aux))
+ (schoenflies/schoenflies.aux) (schoenflies/puntosproblematicos.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-06>
  ***********
-
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `monografia.out' has not changed.
-(rerunfilecheck)             Checksum: 4AB68A15420A722A4673772F40DBEEF8;659.
+(rerunfilecheck)             Checksum: 38EBA98AEFE616CAC3172382CA3EC5B1;470.
  ) 
 Here is how much of TeX's memory you used:
- 30122 strings out of 467871
- 589052 string characters out of 5430401
- 1067788 words of memory out of 5000000
- 58279 multiletter control sequences out of 15000+600000
- 641715 words of font info for 93 fonts, out of 8000000 for 9000
+ 29467 strings out of 467871
+ 571741 string characters out of 5430401
+ 1053696 words of memory out of 5000000
+ 57629 multiletter control sequences out of 15000+600000
+ 641014 words of font info for 91 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 117i,16n,121p,926b,1267s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmbx10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmex10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmmi10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmmi6.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmmi8.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr12.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr17.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr6.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr8.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmsy6.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmsy8.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmti10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/symbols/msam10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on monografia.pdf (17 pages, 1762789 bytes).
+ 117i,9n,121p,666b,1005s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmbx10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmex10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmmi10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmmi6.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmmi8.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr12.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr17.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmr8.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmsy8.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/cm/cmti10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/symbols/msam10.pfb><O:/programas/miktex/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on monografia.pdf (15 pages, 3134522 bytes).
 PDF statistics:
- 242 PDF objects out of 1000 (max. 8388607)
- 47 named destinations out of 1000 (max. 500000)
- 105 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 225 PDF objects out of 1000 (max. 8388607)
+ 53 named destinations out of 1000 (max. 500000)
+ 62 words of extra memory for PDF output out of 10000 (max. 10000000)
 
