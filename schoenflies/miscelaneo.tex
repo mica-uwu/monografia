@@ -9,3 +9,72 @@ Sea $\alpha\subset\R^n$, con $n\geq 4$ un arco localmente poliedral salvo un con
 \comm{falta justificar pq el arco estaría compuesto x numerables segmentos}
 Extendiendo cada segmento de $\alpha$ obtenemos una familia de recta. Agregamos a esta familia una recta que pase por cada punto de $X$, llamamos $\{r_i\}$ a la familia. Cada par de estas rectas determina un plano $H_{ij}$ de dimensión
 \end{proof}
+
+\begin{teo}
+Teo 3.3.1 Cantrell: Sea $\Sigma$ una $(n-1)$-esfera en $\s^n$ con $n\geq 4$, $p\in\Sigma$ un punto tal que $\Sigma$ es localmente plana en todo punto de $\Sigma -\{p\}$. Entonces, $\Sigma$ es plana en $\s^n$.
+\end{teo}
+
+\begin{teo}
+Teo 3.3.2 Cantrell: Sea $\Sigma$ una $(n-1)$-esfera en $\s^n$ con $n\geq 4$, $p\in\Sigma$ un punto, $D\subset \s^n - \Sigma$ una de las componentes conexas del complemento. Entonces, si $\Sigma -\{p\}$ tiene entornos de collar locales en $\overline{D}$, se cumple que $\overline{D}$ es una $n$-bola. 
+\end{teo}
+
+\begin{proof}
+$\Sigma$ es un $(n-1)$-esfera, por lo tanto podemos considerar un homeo $h\colon\partial B(0,1)\to \Sigma$, al que además le pedimos que $h\left((0,\dots,0,1)\right)=p$.
+
+Como $\Sigma - \{p\}$ tiene entornos de collar locales en $\overline{D}$, el homeo $h$ puede extenderse a un encaje $g\colon\overline{C_1-B\left(0,1\right)}\to\overline{D}$, cuyo dominio es un entorno de collar de $B(0,1)$ pinchado en $h^{-1}(p)$ como en la imagen \ref{3}. \comm{escribir bien esto}
+
+\begin{figure}
+    	\centering
+    	\includegraphics[width=0.55\linewidth]{img mono/casi plano/3.png}
+    	\caption{Dibujito}
+        \label{3}
+\end{figure}
+
+Llamamos: \begin{itemize}
+\item $R_1$ la componente conexa de $\s^n - g(\partial C_\frac{1}{2})$ que está contenida en $D$
+\item $R_2$ la componente conexa de $\s^n - g(\partial C_1)$ que está contenida en $D$
+\end{itemize}\comm{dibujos}
+
+Observación: $\overline{\R_1}\cong \overline{D}$.
+
+Sea $h_*:\R^n\to\R^n$ un homeo que manda $\partial C_\frac{1}{2}$ en $\partial B(0,1)$ y tal que deja fijo $\partial C_1$. 
+
+Consideramos la función $$f(x)=\begin{cases}
+x,\quad x\in R_2\\
+gh_*g^{-1}(x),\quad x\in\overline{R_1-R_2}
+\end{cases}$$
+Entonces, $f$ es un homeo que manda $\overline{R_1}$ en $\overline{D}$.
+
+Por lo tanto, obtenemos lo siguiente: Si pegamos una copia de $\overline{R_1}$ a $\overline{C_\frac{1}{2}-B(0,1)}$ por $\partial C_\frac{1}{2}$ mediante $g^{-1}|_{g(\partial C_\frac{1}{2})}$, como $g$ es un homeo en $\overline{C_1-B(0,1)}$ y estamos "cambiando" un espacio por otro que es homeomorfo al original, entonces el nuevo espacio obtenido es homeo a $\overline{R_1}$, es decir, homeomorfo a $\overline{D}$. Vamos a usar esto para probar que $\overline{R_1}$ es una $n$-bola, y por lo tanto que $\overline{D}$ también lo es.\comm{dibujo}
+
+Sea $S$ una $(n-1)$-esfera encajada de forma plana en $\overline{C_\frac{1}{2}-B(0,1)}$ tal que $$S\cap \left(\partial C_\frac{1}{2}\cup\partial B(0,1)\right)=(0,\dots,0,1)$$ 
+
+Sea $K$ la componente conexa de $\s^n-g(S)$ que contiene a $R_1$. \comm{dibujo}
+
+Por el teorema 3.3.3, tenemos que $\overline{K}$ es una $n$-bola.\duda{por qué tiene entorno de collar en $p$? el teo 3.3.3 requiere esto. supongo que si porque la región $\overline{C_\frac{1}{2}-B(0,1)}$ eeee. justificar.mas q nada la pregunta sería por qué la puedo encajar de forma plana}
+
+Llamamos $\text{Int}(S)$ a la componente conexa de $\R^n - S$ que no intersecta a $g^{-1}(\Sigma)=\partial B(0,1)$. 
+
+Sea $P:=\overline{C_\frac{1}{2}-B(0,1)}-\text{Int}(S)$. Consideramos $P'$ el pegado de P con $\overline{D'}$ (la otra cc además de $D$) por $\partial B(0,1)$ mediante $g^{-1}|_\Sigma$. Luego consideramos $P''$ el pegado de $P'$ con $\overline{R_1}$ por $\partial C_\frac{1}{2}$ mediante $g^{-1}|_{\partial R_1}$.
+
+Entonces, $P''$ es una $(n-1)$-bola (la clausura del exterior de $S$)
+
+\end{proof}
+
+
+\begin{teo}
+Teo 3.3.3: Sea $\Sigma$ una $(n-1)$-esfera en $\s^n$ con $n\geq 4$, $p\in\Sigma$ un punto. Sean $D\subset \s^n - \Sigma$ una de las componentes conexas del complemento. Si $\Sigma$ es localmente plana en $\s^n$ y $\Sigma$ tiene entornos de collar locales en $\overline{D}$, entonces $\Sigma$ es plana en $\s^n$.
+\end{teo}
+
+Definimos $C_t:=\{(x_1,\dots,x_n)\in\R^n | x_1^2+x_2^2+\dots+x_{n-1}^2+(x_n + t)^2 \leq (1-t)^2 \}$
+\comm{imagen}
+
+\begin{lema}
+Lema 3.3.1: Sea $\Sigma$ una $(n-1)$-esfera en $\s^n$, $p\in\Sigma$ un punto, $D$ y $D'$ las componentes conexas de $\s^n - \Sigma$. Supongamos que $\Sigma-\{p\}$ es localmente plana en $\s^n$, $\Sigma$ tiene entornos de collar locales en $\overline{D}$, y existe un homeo $h\colon\partial B(0,1)\to\Sigma$ tal que $h\left((0,\dots,0,1)\right)=p$.
+
+Entonces, $h$ puede extenderse a un encaje $g\colon\overline{C_1-B\left(0,\frac{1}{4}\right)}\to\s^n$.
+\end{lema}
+
+\begin{proof}
+Sale por los entornos de collar.
+\end{proof}
