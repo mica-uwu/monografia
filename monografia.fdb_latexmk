@@ -1,15 +1,15 @@
 # Fdb version 4
-["bibtex monografia"] 1788145063.58389 "monografia.aux" "monografia.bbl" "monografia" 1788145567.48969 0
+["bibtex monografia"] 1788307806.62078 "monografia.aux" "monografia.bbl" "monografia" 1788307809.21578 0
   "./biblio.bib" 1786313589.75713 654 7434d96fcd44fe64176691410f4d0667 ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/alpha.bst" 1292289607 23907 a5f93555796fb564b924339521f10a7c ""
-  "monografia.aux" 1788145567.00993 1218 34712dce4775081c7a7abb1fda63ba4a "pdflatex"
-  "schoenflies/miscelaneo.aux" 1788145567.00392 2258 5bb6f3d201c372e5ab09a480753aa841 "pdflatex"
-  "schoenflies/puntosproblematicos.aux" 1788145566.2559 2029 a8831fec6f7edd65a539f2cafeda2991 "pdflatex"
+  "monografia.aux" 1788307808.75444 1353 fd534a886f0d0d80288436869bab4053 "pdflatex"
+  "schoenflies/miscelaneo.aux" 1788307808.74944 2570 bbe61630fe4ff71b1d01ec94e1409c44 "pdflatex"
+  "schoenflies/puntosproblematicos.aux" 1788307807.96941 2029 a8831fec6f7edd65a539f2cafeda2991 "pdflatex"
   (generated)
   "monografia.bbl"
   "monografia.blg"
   (rewritten before read)
-["pdflatex"] 1788145565.04517 "/home/franco/mica/monografia/monografia.tex" "monografia.pdf" "monografia" 1788145567.49041 0
+["pdflatex"] 1788307806.77727 "/home/franco/mica/monografia/monografia.tex" "monografia.pdf" "monografia" 1788307809.21619 0
   "/etc/texmf/web2c/texmf.cnf" 1750372886.16401 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/franco/mica/monografia/monografia.tex" 1788124977.82124 3323 2756740bb21a9cbdc8104382d9387d3a ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -229,13 +229,13 @@
   "img mono/casi plano/2.png" 1787522030.19137 7555 f15a7da9f61d388b35f04f2e273a2290 ""
   "img mono/casi plano/3.png" 1788124717.57196 548328 5af040056b3cf0650ed76011960ced71 ""
   "img mono/kirby/J.png" 1787446566.97011 2082 ed9725e46ef096bb9b8cb73cf389a9b1 ""
-  "monografia.aux" 1788145567.00993 1218 34712dce4775081c7a7abb1fda63ba4a "pdflatex"
-  "monografia.bbl" 1788145063.7329 49 0eba253fc001332e731e8aba3f23127b "bibtex monografia"
-  "monografia.out" 1788145567.01593 435 3a7f6b82a60f3beba01e7dadfcc450d1 "pdflatex"
+  "monografia.aux" 1788307808.75444 1353 fd534a886f0d0d80288436869bab4053 "pdflatex"
+  "monografia.bbl" 1788307806.76636 49 0eba253fc001332e731e8aba3f23127b "bibtex monografia"
+  "monografia.out" 1788307808.75744 435 4af30681fb5f210a5c6f34756b6347fd "pdflatex"
   "monografia.tex" 1788124977.82124 3323 2756740bb21a9cbdc8104382d9387d3a ""
-  "schoenflies/miscelaneo.aux" 1788145567.00392 2258 5bb6f3d201c372e5ab09a480753aa841 "pdflatex"
-  "schoenflies/miscelaneo.tex" 1788145564.69484 5015 03aca3d2941c281f50cbe6ae89b125da ""
-  "schoenflies/puntosproblematicos.aux" 1788145566.2559 2029 a8831fec6f7edd65a539f2cafeda2991 "pdflatex"
+  "schoenflies/miscelaneo.aux" 1788307808.74944 2570 bbe61630fe4ff71b1d01ec94e1409c44 "pdflatex"
+  "schoenflies/miscelaneo.tex" 1788307803.77423 7314 305b75ba8be0a049f3fc3d3dca5c5a00 ""
+  "schoenflies/puntosproblematicos.aux" 1788307807.96941 2029 a8831fec6f7edd65a539f2cafeda2991 "pdflatex"
   "schoenflies/puntosproblematicos.tex" 1788116092.33304 6391 5bf2ed0161cffc45e091e39953c32c25 ""
   (generated)
   "monografia.aux"

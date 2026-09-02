@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.6.19)  31 AUG 2026 00:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.6.19)  1 SEP 2026 21:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -756,17 +756,21 @@ Package pdftex.def Info: img mono/casi plano/3.png  used on input line 28.
 
 
 
-] [6 <./img mono/casi plano/3.png>]) [7] [8
+] [6 <./img mono/casi plano/3.png>]
+Overfull \hbox (9.3965pt too wide) in paragraph at lines 64--65
+[]\OT1/cmr/m/n/10.95 Los $\OML/cmm/m/it/10.95 a[]$ \OT1/cmr/m/n/10.95 con-ver-gen a $0$ mon^^Soto-na-men-te. (la pen^^Sulti-ma coor-de-na-da de-cre-ce mon^^Soto-
+ []
 
-
-
-
-] (./monografia.bbl
+[7]) [8] (./monografia.bbl
 Bibliograf\'{\i }a
 
 Package natbib Warning: Empty `thebibliography' environment on input line 3.
 
 ) [9
+
+
+
+
 
 
 ] (./monografia.aux
@@ -778,21 +782,21 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `monografia.out' has not changed.
-(rerunfilecheck)             Checksum: 3A7F6B82A60F3BEBA01E7DADFCC450D1;435.
+(rerunfilecheck)             Checksum: 4AF30681FB5F210A5C6F34756B6347FD;435.
  ) 
 Here is how much of TeX's memory you used:
- 27760 strings out of 474222
- 529691 string characters out of 5748733
- 1936975 words of memory out of 5000000
- 49324 multiletter control sequences out of 15000+600000
+ 27769 strings out of 474222
+ 529853 string characters out of 5748733
+ 1938975 words of memory out of 5000000
+ 49330 multiletter control sequences out of 15000+600000
  570741 words of font info for 85 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 117i,8n,121p,690b,1042s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 117i,8n,121p,690b,1043s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on monografia.pdf (11 pages, 543315 bytes).
+Output written on monografia.pdf (11 pages, 548687 bytes).
 PDF statistics:
- 201 PDF objects out of 1000 (max. 8388607)
- 144 compressed objects within 2 object streams
- 37 named destinations out of 1000 (max. 500000)
+ 204 PDF objects out of 1000 (max. 8388607)
+ 147 compressed objects within 2 object streams
+ 40 named destinations out of 1000 (max. 500000)
  57 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -55,9 +55,25 @@ Por el teorema 3.3.3, tenemos que $\overline{K}$ es una $n$-bola.\duda{por qué 
 
 Llamamos $\text{Int}(S)$ a la componente conexa de $\R^n - S$ que no intersecta a $g^{-1}(\Sigma)=\partial B(0,1)$. 
 
-Sea $P:=\overline{C_\frac{1}{2}-B(0,1)}-\text{Int}(S)$. Consideramos $P'$ el pegado de P con $\overline{D'}$ (la otra cc además de $D$) por $\partial B(0,1)$ mediante $g^{-1}|_\Sigma$. Luego consideramos $P''$ el pegado de $P'$ con $\overline{R_1}$ por $\partial C_\frac{1}{2}$ mediante $g^{-1}|_{\partial R_1}$.
+Sea $P:=\overline{C_\frac{1}{2}-B(0,1)}-\text{Int}(S)$. Consideramos $P'$ el pegado de P con $\overline{D'}$ (la otra cc además de $D$) por $\partial B(0,1)$ mediante $g^{-1}|_\Sigma$. Luego consideramos $P''$ el pegado de $P'$ con $\overline{R_1}$ por $\partial C_\frac{1}{2}$ mediante $g^{-1}|_{\partial R_1}$. Observamos que el espacio obtenido $P''$ es una $n$-bola. \comm{dibujo, poner el $P$ para mostrar que tiene dos agujeros.}
 
-Entonces, $P''$ es una $(n-1)$-bola (la clausura del exterior de $S$)
+% Entonces, $P''$ es una $n$-bola (la clausura del exterior de $S$)
+
+Dada una bola estándar en $\R^n$ centrada en $(0,\dots,0,1,0)$ y de radio $1$, notamos $F$ a los puntos $(x_1,\dots,x_n)$ de la bola que cumplen $x_n\geq 0$. Consideramos una sucesión $\{q_i\}_{i=0}^\infty$ contenida en la intersección de $\partial F$ con el plano dado por $x_i=0$ para todo $i\in\{1,\dots,n-2\}$. Definimos $\{q_i\}$ como una sucesión que cumpla lo siguiente:\begin{itemize}
+\item Si $q_i=(0,\dots,0,a_{(n-1)}^i, a_n^i)$, entonces $a_{(n-1)}^0 = 2$ y $a_{n}^0=0$ (empiezan en el punto (0,0,...,2,0))
+\item Los $a_{n-1}^i$ convergen a $0$ monótonamente. (la penúltima coordenada decrece monótonamente a $0$, como en la imagen)
+\item $a_n^i > 0$ si $i>0$. (van por la curva de arriba, la cáscara de la bola, no por el plano)
+\end{itemize}\comm{imagen}
+
+Usamos estos puntos para trazar planos y delimitar una partición del conjunto $F$. Consideramos el plano de dimensión $(n-2)$ dado por $x_{n-1}=x_n=0$. Dado $i\in\N$, consideramos la suma (directa) de la recta que pasa por $0$ y $q_i$ con este plano. Como el $(n-2)$-plano intersecta al otro plano que usamos para definir la sucesión de los $q_i$ sólamente en el $0$, entonces están en suma directa. Esto implica que el espacio obtenido al sumar el $(n-2)$-plano con la recta que pasa por $0$ y $q_i$ es un $(n-1)$-plano.
+
+Para hacer una analogía en dimensión $3$, nuestro $n-2$ plano simplemente sería la recta del eje $x$. Al sumar esta recta a un $q_i$, obtenemos un plano (de dimensión $2$) que pasa por $q_i$ y contiene la recta del eje $x$. La idea es considerar uno de estos planos pasando por cada $q_i$, y esto va a delimitar una partición (en este caso de la bola de centro $(0,1,0)$ y radio $1$) del conjunto $F$ en "gajos", que son el espacio entre medio de dos planos adyacentes. \comm{dibujo}
+
+Llamamos $D_i$ a las regiones en $F$ delimitadas entre los $(n-1)$-planos que pasan por $q_{i-1}$ y $q_i$. Como son regiones entre planos intersectadas con una (media) $n$-bola, entonces son $n$-bolas.
+
+Consideramos $D_i'$ una $n$-bola (y similar a $D_i$ en forma, o sea nada muy loco xd), tal que $D_i'$ está contenida en $D_i$ salvo por el punto $(0,\dots,0)$. 
+
+Observamos que 
 
 \end{proof}
 
