@@ -21,6 +21,9 @@ Teo 3.3.2 Cantrell: Sea $\Sigma$ una $(n-1)$-esfera en $\s^n$ con $n\geq 4$, $p\
 \begin{proof}
 $\Sigma$ es un $(n-1)$-esfera, por lo tanto podemos considerar un homeo $h\colon\partial B(0,1)\to \Sigma$, al que además le pedimos que $h\left((0,\dots,0,1)\right)=p$.
 
+Definimos $C_t:=\{(x_1,\dots,x_n)\in\R^n \,|\, x_1^2+x_2^2+\dots+x_{n-1}^2+(x_n + t)^2 \leq (1-t)^2 \}$
+\comm{imagen}
+
 Como $\Sigma - \{p\}$ tiene entornos de collar locales en $\overline{D}$, el homeo $h$ puede extenderse a un encaje $g\colon\overline{C_1-B\left(0,1\right)}\to\overline{D}$, cuyo dominio es un entorno de collar de $B(0,1)$ pinchado en $h^{-1}(p)$ como en la imagen \ref{3}. \comm{escribir bien esto}
 
 \begin{figure}
@@ -67,13 +70,45 @@ Dada una bola estándar en $\R^n$ centrada en $(0,\dots,0,1,0)$ y de radio $1$, 
 
 Usamos estos puntos para trazar planos y delimitar una partición del conjunto $F$. Consideramos el plano de dimensión $(n-2)$ dado por $x_{n-1}=x_n=0$. Dado $i\in\N$, consideramos la suma (directa) de la recta que pasa por $0$ y $q_i$ con este plano. Como el $(n-2)$-plano intersecta al otro plano que usamos para definir la sucesión de los $q_i$ sólamente en el $0$, entonces están en suma directa. Esto implica que el espacio obtenido al sumar el $(n-2)$-plano con la recta que pasa por $0$ y $q_i$ es un $(n-1)$-plano.
 
-Para hacer una analogía en dimensión $3$, nuestro $n-2$ plano simplemente sería la recta del eje $x$. Al sumar esta recta a un $q_i$, obtenemos un plano (de dimensión $2$) que pasa por $q_i$ y contiene la recta del eje $x$. La idea es considerar uno de estos planos pasando por cada $q_i$, y esto va a delimitar una partición (en este caso de la bola de centro $(0,1,0)$ y radio $1$) del conjunto $F$ en "gajos", que son el espacio entre medio de dos planos adyacentes. \comm{dibujo}
+Para hacer una analogía en dimensión $3$, nuestro $n-2$ plano simplemente sería la recta del eje $x$. Al sumar esta recta a un $q_i$, obtenemos un plano (de dimensión $2$) que pasa por $q_i$ y contiene la recta del eje $x$. La idea es considerar uno de estos planos pasando por cada $q_i$, y esto va a delimitar una partición (en este caso de la bola de centro $(0,1,0)$ y radio $1$) del conjunto $F$ en "gajos", que son el espacio entremedio de dos planos adyacentes. \comm{dibujo}
 
 Llamamos $D_i$ a las regiones en $F$ delimitadas entre los $(n-1)$-planos que pasan por $q_{i-1}$ y $q_i$. Como son regiones entre planos intersectadas con una (media) $n$-bola, entonces son $n$-bolas.
 
 Consideramos $D_i'$ una $n$-bola (y similar a $D_i$ en forma, o sea nada muy loco xd), tal que $D_i'$ está contenida en $D_i$ salvo por el punto $(0,\dots,0)$. 
 
-Observamos que 
+Observamos que al unir dos copias consecutivas $(D_i - \mathring{D_i'})$ y $(D_{i+1} - \mathring{D}_{i+1}')$ obtenemos un espacio homeomorfo a $P$. En referencia a esto llamamos \begin{align*}
+& P_i:=(D_{2i-1} - \mathring{D}_{2i-1}') \cup (D_{2i} - \mathring{D}_{2i}') \quad \text{si } i\text{ es par } \\
+& P_i':=(D_{2i} - \mathring{D}_{2i}') \cup (D_{2i+1} - \mathring{D}_{2i+1}') \quad \text{si } i\text{ es impar }
+\end{align*}\comm{dibujo}
+
+Observar que los $P_i$ y $P_i'$ comparten $D_{2i}-\mathring{D_{2i}'}$, y los $P_i'$ y $P_{i+1}$ comparten $D_{2i+1}-\mathring{D_{2i+1}'}$.
+
+Llamamos $\omega_i$ a $\partial D_i'$. Definimos homeomorfismos $$\phi_i\colon P_i\to P_i',\quad \psi_i\colon P_i'\to P_{i+1}$$
+tales que \begin{align*}
+	& \phi_i(\omega_{2i-1})=\omega_{2i+1},\quad\phi_i|_{\omega_{2i}}=\text{Id}\\
+	& \psi_i(\omega_{2i})=\omega_{2i+2},\quad\psi_i|_{\omega_{2i+1}}=\text{Id}
+\end{align*}
+para poder cumplir estas condiciones, es necesario pedir $n\geq 3$. (en ese caso podemos "fluir" alrededor de la esfera $\omega_k$ que quedaría fija)
+
+Identificamos la terna $(P_1,\omega_1,\omega_2)$ con $(P,\partial C_{\frac{1}{2}},\partial B_1)$. Luego identificamos $\omega_1$ con $\partial R_1$ y $\omega_2$ con $\partial D'=\Sigma$, mediante $g$. De igual manera que antes, obtenemos una $n$-bola a la que llamaremos $\tilde{P_1}$.
+
+De forma similar vamos a definir pegados para el resto de los $P_i$ y $P_i'$, componiendo el homeo $g$ con los $\phi_i$ y $\phi_i$. Lo que hacemos es pegar el borde de $R_1$ y $D'$ a $\omega_{2i+1}$ y $\omega_{2i+2}$ respectivamente, mediante los homeomorfismos\begin{align*}
+	& \phi_i\circ\dots\circ\phi_2\circ\phi_1\circ g^{-1}\colon\partial R_1\to\omega_{2i+1}\\
+	& \psi_i\circ\dots\circ\phi_2\circ\phi_1\circ g^{-1}\colon\partial D'\to\omega_{2i+2}
+\end{align*}
+De igual forma los conjuntos obtenidos son $n$-bolas, y los notamos $\tilde{P}_i$ y $\tilde{P}_i'$.
+
+Como $\phi_1$ es la identidad en $\omega_2$, podemos extenderla a un homeo $\tilde{\phi}_i\colon\tilde{P}_1\to\tilde{P}_1'$, y por lo tanto $\tilde{P}_1'$ es una $n$-bola. De la misma forma podemos hacer esto con cada $\phi_i$ y $\psi_i$, y obtener que todos los $\tilde{P}_i$ y $\tilde{P}_i'$ son $n$-bolas.
+
+Definimos $F_1:=\cup_{i=1}^\infty\tilde{P}_i$, luego $F_1$ es una $n$-bola.\comm{no me convence, justificar}
+
+Observamos que $\partial(D_{2i-1}\cup D_{2i}) = \partial\tilde{P}_i$. Como $D_{2i-1}\cup D_{2i}$ y $\tilde{P}_i$ son $n$-bolas, el homeomorfismo entre sus bordes dado por la identidad se extiende a un homeomorfismo entre $D_{2i-1}\cup D_{2i}$ y $\tilde{P}_i$.\comm{no entiendo el punto de esto, como ya sé que son $n$-bolas no tengo siempre el homeomorfismo? mm capaz para asegurar q sea Id en el borde}
+
+Tomando estas extensiones para todo $i$ obtenemos un homeo de $F$ en $F_1$. \comm{de nuevo no me convence, justificar. entiendo que la sucesión que es ir sumando de a un homeo converge, escribir bien}
+
+Observamos que $F_1$
+
+Consideramos $\tilde{P}_1 - R_1$
 
 \end{proof}
 
@@ -81,9 +116,6 @@ Observamos que
 \begin{teo}
 Teo 3.3.3: Sea $\Sigma$ una $(n-1)$-esfera en $\s^n$ con $n\geq 4$, $p\in\Sigma$ un punto. Sean $D\subset \s^n - \Sigma$ una de las componentes conexas del complemento. Si $\Sigma$ es localmente plana en $\s^n$ y $\Sigma$ tiene entornos de collar locales en $\overline{D}$, entonces $\Sigma$ es plana en $\s^n$.
 \end{teo}
-
-Definimos $C_t:=\{(x_1,\dots,x_n)\in\R^n | x_1^2+x_2^2+\dots+x_{n-1}^2+(x_n + t)^2 \leq (1-t)^2 \}$
-\comm{imagen}
 
 \begin{lema}
 Lema 3.3.1: Sea $\Sigma$ una $(n-1)$-esfera en $\s^n$, $p\in\Sigma$ un punto, $D$ y $D'$ las componentes conexas de $\s^n - \Sigma$. Supongamos que $\Sigma-\{p\}$ es localmente plana en $\s^n$, $\Sigma$ tiene entornos de collar locales en $\overline{D}$, y existe un homeo $h\colon\partial B(0,1)\to\Sigma$ tal que $h\left((0,\dots,0,1)\right)=p$.
