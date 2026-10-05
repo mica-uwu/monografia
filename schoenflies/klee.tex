@@ -1,0 +1,46 @@
+\section{truco de Klee}
+
+\begin{teo}
+    Extensión de Tietze: Sea $X$ un espacio topológico normal y $C\subset X$ un cerrado. 
+    Entonces, cualquier función continua $f:C\to [0,1]$ se extiende a una función continua de dominio $X$.
+\end{teo}
+
+\begin{obs}
+    Esto vale en general para productos de $[0,1]$, podemos observar eso viendo $f\colon C\to[0,1]^k$ como funciones coordenadas $f_i\colon C\to [0,1]$ para $i\in\{1,\dots,k\}$.
+\end{obs}
+
+\comm{definir normal}
+
+\begin{teo}
+    2.5.1 Klee trick: Sea $D$ una $k$-bola encajada en $\R^{n}$. Entonces, el encaje obtenido componiendo con la inclusión $\R^n\hookrightarrow \R^{n+k}$ es plano en $\R^{n+k}$.
+\end{teo}
+
+\begin{proof} (Rushing)
+
+    $D$ es una $k$-bola, entonces tenemos un homeo $h_*\colon D\to \D \subset\R^k$. Por el teorema de extensión de Tietze, puedo extender este homeo a una función continua $\tilde{h}\colon\R^{k}\to [0,1]^k$.
+
+    Consideramos la función $\phi_f\colon \R^{n+k}\to \R^{n+k}$ dada por $\phi_f(x,y):=\left(x,y+f(x)\right)$ para $x\in\R^n$, $y\in\R^k$. Observar que esta función "preserva" los planos $\{r\}\times\R^k$
+
+    Si tomamos un punto $x\in D\subset \R^n$, al pasar por la inclusión podemos verlo como $(x,0)\in\R^{n+k}$. Aplicando $\phi_f$ a $(x,0)$ obtenemos $(x, f(x))$.
+
+    Como $f\colon D\to[0,1]^k$ es un homeo, en particular es inyectiva, y con esto tenemos que $\phi_f$ es inyectiva en $D\times\{0\}$.
+
+\end{proof} 
+
+\begin{teo}(Davenma y Venema)
+
+    Sea $C$ un espacio compacto $T_1$, y sean $\lambda\colon C\to\R^n$ y $\lambda'\colon C\to R^m$ encajes. Entonces, los encajes $e, e'\colon C\to R^n\times\R^m$ dados por $e(c):=\left(\lambda(c),0\right)$ y $e'(c):=\left(0, \lambda'(c)\right)$ son equivalentes al encaje diagonal $d=\lambda\times\lambda'\colon C\to \R^n\times\R^m$.
+
+\end{teo}
+
+\begin{proof}
+
+Veamos que $e$ es equivalente a $d$, luego para $e'$ es un razonamiento análogo.
+
+Primero, observamos que por el teorema de extensión de Tietze podemos extender $\lambda'\circ\lambda^{-1}\colon \lambda(C)\to \R^m$ a una función continua $\psi\colon \R^n\to\R^m$. 
+
+Definimos $\Psi\colon\R^n\times\R^m\to\R^n\times\R^m$ dada por $\Psi(x,y)=\left(x,y+\psi(x)\right)$. Entonces, $\Psi$ es continua y además es un homeomorfismo, ya que su inversa está dada por $\Psi^{-1}(x,y)=\left(x,y-\psi(x)\right)$, que también es continua.
+
+Luego, $\Psi$ cumple $$\Psi\circ e(c)=\Psi\left(\lambda(c),0\right)=\left(\lambda(c),\psi\circ \lambda(c)\right)=\left(\lambda(c),\lambda'(c)\right)=d(c)$$ y con eso tenemos la equivalencia buscada.
+
+\end{proof}
