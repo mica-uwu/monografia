@@ -99,7 +99,7 @@ Decimos que una variedad $M^m$ está encajada en el interior de $N^n$ de forma \
 
 \begin{df}
 
-    Sea $M$ una $n$-variedad compacta con borde, $X_1,\dots,X_k$ subconjuntos cerrados y disjuntos dos a dos. Llamamos $\textbf{colapsar}$ $X_1,\dots ,X_k$ en $M$ a considerar el espacio cociente $M'=M/ \sim $ dado por $x\sim x'\iff x,x'\in X_i$ para algún $i\in\{1,\dots,k\}$.
+    Sea $M$ una $n$-variedad compacta con borde, $X_1,\dots,X_k$ subconjuntos cerrados y disjuntos dos a dos. Llamamos $\textbf{colapsar}$ $X_1,\dots ,X_k$ en $M$ a considerar el espacio cociente $M'=M/ \sim $ dado por $x\sim x'\iff \{x,x'\}\subset X_i$ para algún $i\in\{1,\dots,k\}$.
 
 \end{df}
 
@@ -108,7 +108,6 @@ Algo interesante de los conjuntos celulares es que al colapsarlos obtenemos una 
 \begin{lema}\label{colapsar}
     Sea $M$ una $n$-variedad compacta con borde, $X$ subconjunto celular de $\mathring{M}$. Entonces el espacio $M'$ obtenido al colapsar $X$ es homeomorfo a $M$.
 \end{lema}
-
 \begin{proof}
     Tenemos $X=\bigcap\limits^{\infty} D_i$, con $D_i$ discos encajados como en la definición. Construyamos un mapa sobreyectivo $f:M\to M$ tal que $f|_{M-X}$ es inyectiva y $f(X)=x_0$ para algún $x_0\in M$. Este mapa va a ser el límite de una sucesión de homeos que construimos inductivamente, empezando por $f_1:= \text{Id}$.
 
@@ -328,6 +327,14 @@ Con esto tenemos un resultado para variedades topológicas:
     \duda{por que son abiertos de M necesariamente?}
 
     Tomamos un entorno $U_p$ de $p$ en $M$ homeomorfo a $\D^n$, entonces $U_p - \{p\}$ es conexo, y por lo tanto está contenido en $U$ o en $V$. Supongamos que está en $U$, en ese caso $U_p-\{p\}\subset U$, y $U_p\cup U = U\cup\{p\}$, como ambos $U_p$ y $U$ son abiertos de $M$. Entonces $U\cup \{p\}$ es abierto en $M$ y obtenemos una descomposición de $M$ como dos abiertos disjuntos $(U\cup\{p\})\sqcup V$. Esto es absurdo ya que habíamos asumido $M$ conexa.
+\end{proof}
+
+\begin{teo}
+    Teo 1.8.3: Dada $\Sigma$ una $(n-1)$-esfera encajada en $\s^n$, sea $G$ uno de los dominios complementarios. Entonces, si $\overline{G}$ es una variedad, necesariamente es una $n$-bola.
+\end{teo}
+
+\begin{proof}
+Como es una variedad, entonces $\Sigma$ tiene entornos de collar locales. Por el teorema de Schoenflies generalizado entonces es una $n$-bola.
 \end{proof}
 
 % \comm{leer https://mathoverflow.net/questions/29737/understand-cech-cohomology}
