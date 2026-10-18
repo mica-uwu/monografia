@@ -1,0 +1,124 @@
+\documentclass[11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\usepackage{MnSymbol}
+
+\newcommand{\s}{\mathbb{S}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\im}{\text{Im}}
+
+\geometry{margin=2.8cm}
+
+\begin{document}
+
+\begin{center}
+    {\Large \textbf{Plan de trabajo para monografía de grado}}\\[1em]
+    {\large Micaela Berezan}\\[0.5em]
+    Orienta:  Juliana Xavier 
+\end{center}
+
+\vspace{1em}
+
+La presente tiene como objetivo presentar el plan de trabajo correspondiente a
+la monografía de grado de la estudiante Micaela Berezan, así como establecer un
+cronograma tentativo para su desarrollo y posterior defensa.
+
+\vspace{1em}
+
+\section*{Temática a abordar}
+
+% El objetivo de la monografía es estudiar diversas herramientas de topología
+% algebraica y topología geométrica vinculadas a la teoría de encajes de esferas,
+% con especial énfasis en la interacción entre resultados clásicos de homología y
+% ejemplos de encajes salvajes en  dimensión baja.\\
+
+En la categoría de los espacios topológicos, un encaje $f\,\colon\,\s^{n-1}\to\s^n$ es un homeomorfismo sobre su imagen, es decir, una función continua e inyectiva tal que $f^{-1}\,\colon\, \im(f)\to\s^{n-1}$ es continua. El objetivo de este trabajo es estudiar el espacio $\s^{n}-f(\s^{n-1})$.
+
+Como primer resultado se aborda el teorema de separación de Jordan-Brouwer, que caracteriza los grupos de homología de $\s^{n}-f(\s^{k})$ para todo encaje $f$, con $n, k\in\N$. Para llegar a esto se introducen nociones básicas de homología simplicial y singular, junto con algunas herramientas y resultados clásicos que a su vez nos permitirán calcular los grupos de homología de las esferas en general.
+
+En el caso de codimensión $1$, es decir, dada $f\,\colon\,\s^{n-1}\to\s^n$, el teorema de separación de Jordan-Brouwer garantiza que $\s^{n}-f(\s^{n-1})$ está compuesto por dos componentes conexas por caminos, y que además estas componentes son bolas homológicas. Esta última afirmación da el pie para presentar el isomorfismo de Hurewicz entre el primer grupo de homología de un espacio y el abelianizado de su primer grupo fundamental, con esto obtenemos que $\pi_1(\s^{n}-f(\s^{n-1}))$ siempre va a tener abelianizado nulo.
+
+A continuación nos enfocamos en dar hipótesis suficientes para garantizar que $\pi_1(\s^{n}-f(\s^{n-1}))$ sea trivial, es decir, que las clausuras de las componentes de $\s^{n}-f(\s^{n-1})$ sean $n$-bolas. Como punto de partida para esto se prueba el teorema generalizado de Schoenflies, que garantiza que una hipótesis suficiente es que $f\,\colon\,\s^{n-1}\to\s^n$ se extienda a un encaje $\tilde{f}\,\colon\,\s^{n-1}\times [-1,1]\to\s^n$, con $\tilde{f}\,|\,_{\s^{n-1}\times\{0\}} = f$. 
+
+Para encajes $f\,\colon\,\s^2\to\s^3$, la hipótesis de Schoenflies no puede debilitarse. Para verificar esto introducimos la noción de los entornos de collar locales para un encaje, y probamos que en general un encaje $g\,\colon\, Y\to X$ que presenta entornos de collar locales en todo punto admite un entorno de collar global, es decir, admite una extensión $\tilde{g}\,\colon\, Y\times [0,1]\to X$ con $\tilde{g}\,|\,_{Y\times\{0\}}=g$. Con este resultado reducimos la negación de la tesis del teorema generalizado de Schoenflies a una cuestión local del encaje. Esto nos permite construir un ejemplo $f\,\colon\,\s^2\to\s^3$ que presenta un único punto sin entornos de collar locales, y que además verifica que $\pi_1(\s^3 - f(\s^2))\neq 0$, confirmando que una mínima debilitación en la hipótesis ya no garantiza la tesis. 
+
+En el caso de un encaje $f\,\colon\,\s^{n-1}\to\s^n$ con $n>3$, la hipótesis si puede debilitarse, y la manera de hacerlo es agregar puntos al conjunto $C$, conformado por los puntos de $\s^{n-1}$ que no admiten entornos de collar locales. Probaremos que si $C$ consiste de un único punto, la tesis sigue estando garantizada. Luego se presentan, sin prueba de suficiencia, las hipótesis minimales para este caso: $C$ es un conjunto de Cantor, y cumple que alguno de los dos $C\subset\s^{n-1}$ o $f(C)\subset\s^n$ está encajado de manera no estándar. Junto con esto, se describen ejemplos de encajes $f\,\colon\,\s^{n-1}\to\s^n$ con $n>3$ para los cuales $C$ y $f(C)$ son conjuntos de Cantor encajados de forma estándar, y tales que se cumple $\pi_1(\s^n-f(\s^{n-1}))\neq 0$, verificando que esta última versión de las hipótesis efectivamente sería minimal.
+
+A la par de los resultados, se presentarán diversos ejemplos clásicos de encajes $f\,\colon\,\s^2\to\s^3$, en su mayoría cumpliendo $\pi_1(\s^3 - f(\s^2))\neq 0$, con el objetivo de exhibir distintas posibilidades para la topología del conjunto $C$, entre ellas un punto aislado, un conjunto de Cantor encajado de distintas maneras, una curva, e incluso es posible que abarque toda la esfera $\s^2$.
+
+
+
+
+
+
+
+% Como punto de partida se introducirán las nociones básicas de homología simplicial y singular, presentando las definiciones fundamentales, ejemplos y propiedades elementales necesarias para la construcción de los grupos de homología, así como el resultado que identifica el abelianizado del grupo fundamental con el primer grupo de homología para espacios conexos por caminos. A continuación se desarrollará la sucesión exacta de Mayer-Vietoris, obtenida a partir del lema de la serpiente aplicado a una sucesión exacta de complejos de cadenas. Esta herramienta permitirá calcular la homología de las esferas y servirá como ingrediente central en la demostración del teorema de separación de Jordan-Brouwer, que se estudiará a continuación.\\
+
+
+% Una vez desarrolladas estas herramientas se abordará el teorema generalizado de
+% Schoenflies, siguiendo la demostración de Morton Brown, que establece que, dado
+% un encaje de $S^{n}\times I$ en $S^{n+1}$, la clausura de cada componente conexa
+% del complemento es una $(n+1)$-bola.\\
+
+% Para completar el panorama de cómo se ven los encajes topológicos se presentarán resultados sobre la estructura del conjunto de puntos no localmente planos de encajes de codimensión uno en dimensión mayor que tres, en particular el teorema de Robion Kirby que describe las restricciones topológicas que debe satisfacer dicho conjunto cuando es no trivial.\\
+
+% Finalmente, se estudiarán diversos ejemplos clásicos de encajes de $S^{2}$ en
+% $S^{3}$, entre ellos la esfera de Alexander, la esfera de Antoine, la alfombra
+% de Bing y la esfera de Fox-Artin. Para cada uno de estos ejemplos se describirá
+% su construcción, se verificará que el espacio obtenido es una esfera topológica
+% y se analizarán las propiedades de sus regiones complementarias, así como la
+% naturaleza de sus puntos no localmente planos. Estos ejemplos ilustran los
+% fenómenos que distinguen a los encajes salvajes de los encajes localmente planos
+% y permiten apreciar el alcance de los resultados desarrollados previamente.\\
+
+% Sugerimos el siguiente tribunal: Richard Mu\~niz, Aldo Portela y Rafael Potrie, Suplente: Juliana Xavier (orientadora).
+
+\section*{Cronograma tentativo}
+
+El siguiente cronograma es tentativo y podrá sufrir modificaciones durante el
+desarrollo de la monografía.\\
+
+Ya se comenz\'o a trabajar el a\~no pasado habiendo completado el estudio preliminar de la homología simplicial y singular, la sucesión de Mayer--Vietoris, el teorema de
+    Jordan--Brouwer, la relación entre el grupo fundamental y el primer grupo de
+    homología, y el teorema generalizado de Schoenflies.  Lo que sigue es el cronograma para este semestre que comienza y la posterior defensa a fin de a\~no:
+
+\begin{itemize}
+    \item \textbf{Agosto:}  Estudio de los resultados de Kirby sobre puntos no
+    localmente planos y análisis de ejemplos clásicos de encajes salvajes:
+    esfera de Alexander, esfera de Antoine, alfombra de Bing y esfera de
+    Fox--Artin.
+
+
+   \item \textbf{Setiembre-Octubre:} Redacción de la monografía.
+   
+    
+\item \textbf{Noviembre:} Correcciones finales, entrega al tribunal y
+    preparación de la defensa.
+    
+    \item \textbf{Diciembre:} Defensa.
+
+    
+\end{itemize}
+
+\section*{Bibliografía principal}
+
+\begin{itemize}
+    \item A. Hatcher, \emph{Algebraic Topology}.
+    % \item S. Mac Lane, \emph{Categories for the Working Mathematician}.
+    \item M. Brown, \emph{A Proof of the Generalized Schoenflies Theorem}.
+    \item R. Kirby, \emph{On the Set of Non-Locally Flat Points of a Submanifold of Codimension One}.
+    \item R. Daverman, G. Venema, \emph{Embeddings in Manifolds}.
+    \item R. H. Bing, \emph{A Wild Surface Each of Whose Arcs is Tame}.
+\end{itemize}
+
+\vspace{2cm}
+
+\begin{flushright}
+Micaela Berezan \hfill Orientadora 
+\end{flushright}
+
+\end{document}
