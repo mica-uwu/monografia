@@ -1,0 +1,31 @@
+\section{Entornos de collar}
+
+\begin{df}
+Dado un encaje $f\colon Y\to X$ entre dos espacios topológicos, decimos que $Y$ tiene un \textbf{entorno de collar} en $X$ si $f$ se extiende a un encaje $\tilde{f}\colon Y\times[0,1)\to X$ tal que $\tilde{f}|_{Y\times \{0\}}=f$ y $\im (\tilde{f})$ es un abierto de $X$.
+\end{df}
+
+También podemos omitir el encaje y dar una definición equivalente para subespacios $Y\subset X$ de un espacio topológico:
+
+\begin{df}
+Dado $Y$ un subespacio de $X$, decimos que $Y$ tiene \textbf{entorno de collar} en $X$ si existe un homeomorfismo $\tilde{f}$ que manda $Y\times[0,1)$ a un entorno abierto de $Y$ en $X$, y que cumple $\tilde{f}(y,0)=y$ para todo $y\in Y$.
+\end{df}
+
+\begin{lema}
+Las dos definiciones anteriores son equivalentes. Que la primer definición es 
+\end{lema}
+
+\begin{ex}
+Por ejemplo, si tomamos $X=\D^n$, $Y = \s^{n-1}$ y $f$ la inclusión $\s^n = \partial\D^n$, entonces para obtener un entorno de collar podemos extender $f$ radialmente definiendo $\tilde{f}\colon \s^{n-1}\times[0,1)\to \D^n$ dada por $\tilde{f}(x,t):=(1-\frac{1}{2}\cdot t)f(x)$.
+
+Observar que $\im (f)$ es un abierto de $\D^n$ que contiene a $\partial\D^n$.
+\end{ex}
+
+También tenemos una noción de collar local:
+
+\begin{df}
+Decimos que un subespacio $Y\subset X$ de un espacio topológico tiene \textbf{entornos de collar locales} si podemos cubrirlo por una familia $\{U_i\}$ de abiertos de $Y$ tales que los $U_i$ tienen entorno de collar en $X$.
+\end{df}
+
+En nuestro caso vamos a trabajar con encajes $f\colon\s^{n-1}\to\s^n$, entonces nuestro subconjunto encajado siempre va a ser un cerrado. Esto nos permite dar una definición que es equivalente en cerrados de un espacio métrico:
+
+Decimos que un subespacio cerrado $Y\subset X$ tiene \textbf{entornos de collar locales} si podemos cubrirlo por una familia $\{U_i\}$ de abiertos de $Y$ tales que
