@@ -6,7 +6,7 @@ Las clausuras de las componentes del complemento cuando no son variedades se lla
 
 Puede pasar q las dos componentes sean crumpled cubes, x ejemplo agarras la esfera de alexander y le pones cuernos para el otro lado tb. también hay una prueba de q agarrar la esfera y hacerle el doubling queda $S^3$}
 
-\cite{mbsch}
+% \cite{mbsch}
 
 % La idea de la prueba es empezar asumiendo que una de las componentes es una variedad $A$, y en ese caso encontrar un entorno de collar para $A$. Teniendo ese entorno uno se considera un disco $D_1$ qu eesté contenido en $\partial A\times [0,1]\subset A$. Tomamos $D_2=S^n-D_1$ y se cumple que $D_2\simeq \D^n$. La idea después es probar que el homeo $D_2\simeq \D^n$ se extiende a un homeo $A\simeq \D^n$, esta es la parte que lleva más trabajo, la meat and potato de la prueba.
 
@@ -16,41 +16,43 @@ Puede pasar q las dos componentes sean crumpled cubes, x ejemplo agarras la esfe
 %     	\caption{M. Brown, Locally ﬂat imbeddings of topological manifolds}
 % \end{figure}
 
-Decimos que una variedad $M^m$ está encajada en el interior de $N^n$ de forma \textbf{localmente plana} si para todo $x\in\mathring{M}$ existe un entorno $U_x$ de $N$ que contiene a $x$ y un homeomorfismo $\phi\colon U_x\to \R^n$ tal que $\phi(U_x\cap M) = \R^m$. 
+% Decimos que una variedad $M^m$ está encajada en el interior de $N^n$ de forma \textbf{localmente plana} si para todo $x\in\mathring{M}$ existe un entorno $U_x$ de $N$ que contiene a $x$ y un homeomorfismo $\phi\colon U_x\to \R^n$ tal que $\phi(U_x\cap M) = \R^m$. 
+
+Ahora vamos a centrarnos en dar hipótesis suficientes para asegurar que dada una esfera $\s^{n-1}$ encajada en $\s^n$, las clausuras de sus dominios complementarios sean homeomorfas a $\D^n$.\\
+
+Veremos que es suficiente pedir que el dominio del encaje se extienda a $\s^{n-1}\times [-1,1]$, identificando $\s^{n-1}\times\{0\}$ con el dominio original $\s^{n-1}$. Este teorema es conocido como el \textbf{Teorema Generalizado de Schoenflies}, y fue probado de forma paralela por Barry Mazur y Morton Brown sobre 1960, usando técnicas distintas. En esta sección nos vamos a enfocar en la prueba de Morton Brown. \comm{agregar cita al paper} 
+
+Empecemos probando el siguente resultado:
 
 \begin{lema}\label{lema1}
-    Sea $f:D\to \s^n$ una función continua, siendo $D$ un disco $D\simeq \D^n$. Llamamos $X=\{x\in\s^n :\# f^{-1}(x)> 1\}$ a los puntos donde $f$ no es inyectiva. Suponemos que $X$ es finito y $f^{-1}(X)$ está contenido en el interior de $D$.
+    Sea $f:\D^n\to \s^n$ una función continua. Llamamos $X=\{x\in\s^n :\# f^{-1}(x)> 1\}$ a los puntos donde $f$ no es inyectiva. Suponemos que $X$ es finito y $f^{-1}(X)$ está contenido en el interior de $\D^n$.
 
-    Entonces, si $\s^n - f(\partial D)= D_1\sqcup D_2$, se cumple una de las dos opciones:
+    Entonces, si identificamos $\partial\D^n = \s^{n-1}$ y notamos $D$, $D'$ a los dominios complementarios de $\s^n-f(\s^{n-1})$, se cumple una de las dos opciones:
 
     \begin{itemize}
-        \item $f(D)=D_1\cup f(\partial D)$
-        \item $f(D)=D_2\cup f(\partial D)$
+        \item $f(\D^n)=D\cup f(\s^{n-1})$
+        \item $f(\D^n)=D'\cup f(\s^{n-1})$
     \end{itemize}
 \end{lema}
 
 \begin{proof}
 
-    Llamamos $h:=f|_{\partial D}$. Como $f^{-1}(X)\cap D=\varnothing$, $h$ es inyectiva. Con eso $h$ es continua e inyectiva entre espacios métricos compactos, entonces es un homeo sobre su imagen. Por el teorema de separación de Jordan-Brouwer, $h(\partial D)$ separa $\s^n$ en dos componentes conexas (y estas componentes son bolas homológicas, aunque no vamos a usar eso en este caso). Llamamos a estas componentes $D_1$ y $D_2$ como en el enunciado.
-
-    En principio tenemos dos opciones:
+    La primera observación es que como $f^{-1}(X)\cap \s^{n-1}=\varnothing$, entonces $f|_{\s^{n-1}}$ es inyectiva. Con eso $f|_{\s^{n-1}}\colon\s^{n-1}\to\s^n$ es continua e inyectiva entre espacios métricos compactos, entonces es un homeo sobre su imagen. 
+    
+    Por el teorema de separación de Jordan-Brouwer, $f(\s^{n-1})$ separa $\s^n$ en dos componentes conexas cuyo borde es $f(\s^{n-1})$ (y estas componentes son bolas homológicas, aunque no vamos a usarlo en este caso). Llamamos a estas componentes $D$ y $D'$ como en el enunciado. En principio tenemos dos opciones:
 
     \begin{itemize}
-        \item $f(D)\subset f(\partial D)$
-        \item $f(\mathring{D})$ intersecta $D_1\sqcup D_2$
+        \item $f(\D^n)\subset f(\s^{n-1})$
+        \item $f(\int(\D^n))\cap (D\sqcup D')\neq\varnothing$
     \end{itemize}
     
-    Supongamos $f(D)\subset f(\partial D)$. En ese caso podríamos considerar la composición $h^{-1}\circ f$. Esta sería una función continua que fija $\partial D$ y manda $D$ en $\partial D$, esto es absurdo. 
+    Supongamos $f(\D^n)\subset f(\s^{n-1})$. En ese caso podríamos considerar la composición $$(f|_{\s^{n-1}})^{-1}\circ f\colon \D^n\to\s^{n-1}$$ Esta sería una función continua que fija $\s^{n-1}$ y manda $\D^n$ en $\s^{n-1}$, lo que es absurdo. Obtuvimos entonces que $f(\D^n)$ intersecta por lo menos a una de las regiones $D$, $D'$. 
     
-    \comm{escribir esto con más detalle?}
+    Sin pérdida de generalidad suponemos $f(\D^n)\cap D\neq\varnothing$. Como $f^{-1}(X)\cap \s^{n-1} =\varnothing$, entonces se cumple $f(\int(\D^n))\cap f(\s^{n-1})=\varnothing$. Sabemos que $\D^n-\s^{n-1}=\int(\D^n)$ tiene una única componente conexa, y $\D^n - f(\s^{n-1})$ tiene dos componentes disjuntas $D$ y $D'$. Como $f|_{\int{\D^n}}$ es continua, manda componentes conexas en componentes conexas, y como $f(\int(\D^n))\cap D\neq\varnothing$, entonces $f(\int(\D^n))$ va a estar contenida en $D$.
 
-    Obtuvimos entonces que $f(D)$ intersecta por lo menos a una de las regiones $D_1$, $D_2$. Sin pérdida de generalidad suponemos $f(D)\cap D_1=\varnothing$.
+    Por el teorema de separación de Jordan Brouwer además tenemos que $f(\s^{n-1})=\partial D=\partial D'$. Por lo tanto concluimos que $f(\D^n)\subset \overline{D}$.
 
-    Sabemos que $\partial D$ no separa $D$, y $f(\partial D)$ si separa $\s^n$. Como $f^{-1}(X)\subset\mathring{D}$, entonces $f$ cumple $f(\mathring{D})\cap f(\partial D)=\varnothing$. Como $f$ es continua, manda componentes conexas en componentes conexas, y como $f(\partial D)$ separa $\s^n$ en dos componentes, entonces $f(\mathring{D})$ va a estar contenida en $D_1$.
-
-    Por el teorema de separación de Jordan Brouwer además tenemos que $f(\partial D)=\partial D_1=\partial D_2$. Por lo tanto concluimos que $f(D)\subset \overline{D_1}$.
-
-    Probemos ahora la otra inclusión. Si nos restrinigmos a los puntos en $D-f^{-1}(X)$, $f$ es continua e inyectiva, entonces por el teorema de invariancia del dominio la imagen por $f$ del abierto $\mathring{D}-f^{-1}(X)$ es un abierto de $\s^n$. Como $f(\partial D)=\partial D_1$, los únicos posibles puntos de $\partial(f(D))$ en el interior de $D_1$ son exactamente los elementos de $X$, que son una cantidad finita.
+    Probemos ahora la otra inclusión. Si restrinigmos el dominio a los puntos en $\D^n-f^{-1}(X)$, $f$ es continua e inyectiva, entonces por el teorema de invariancia del dominio la imagen por $f$ del abierto $\int(\D^n)-f^{-1}(X)$ es un abierto de $\s^n$ (recordamos que $X$ es finito, y por lo tanto cerrado). Como $f(\s^{n-1})=\partial D$, los únicos posibles puntos de $\partial(f(\D^n))$ en el interior de $D$ son exactamente los elementos de $X$, que son una cantidad finita.
 
     Supongamos por absurdo que $\overline{D_1}\not\subset f(D)$. En ese caso, los puntos en $D_1$ se separan en tres tipos:
 
@@ -99,7 +101,7 @@ Decimos que una variedad $M^m$ está encajada en el interior de $N^n$ de forma \
 
 \begin{df}
 
-    Sea $M$ una $n$-variedad compacta con borde, $X_1,\dots,X_k$ subconjuntos cerrados y disjuntos dos a dos. Llamamos $\textbf{colapsar}$ $X_1,\dots ,X_k$ en $M$ a considerar el espacio cociente $M'=M/ \sim $ dado por $x\sim x'\iff \{x,x'\}\subset X_i$ para algún $i\in\{1,\dots,k\}$.
+    Sea $M$ una $n$-variedad compacta con borde, $X_1,\dots,X_k$ subconjuntos cerrados y disjuntos dos a dos. Llamamos $\textbf{colapsar}$ $X_1,\dots ,X_k$ en $M$ a considerar el espacio cociente $M'=M/ {\sim} $ dado por $x\sim{} x'\iff \{x,x'\}\subset X_i$ para algún $i\in\{1,\dots,k\}$.
 
 \end{df}
 
