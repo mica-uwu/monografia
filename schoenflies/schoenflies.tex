@@ -1,10 +1,10 @@
 \chapter{Schoenflies}
 
-\comm{Agregar: Toda variedad compacta con borde tiene entorno collar.
+% \comm{Agregar: Toda variedad compacta con borde tiene entorno collar.
 
-Las clausuras de las componentes del complemento cuando no son variedades se llaman crumpled cubes, y bing prueba que un crumpled $n$-cube siempre es un retracto de $R^n$, esto implica q son contractibles.
+% Las clausuras de las componentes del complemento cuando no son variedades se llaman crumpled cubes, y bing prueba que un crumpled $n$-cube siempre es un retracto de $R^n$, esto implica q son contractibles.
 
-Puede pasar q las dos componentes sean crumpled cubes, x ejemplo agarras la esfera de alexander y le pones cuernos para el otro lado tb. también hay una prueba de q agarrar la esfera y hacerle el doubling queda $S^3$}
+% Puede pasar q las dos componentes sean crumpled cubes, x ejemplo agarras la esfera de alexander y le pones cuernos para el otro lado tb. también hay una prueba de q agarrar la esfera y hacerle el doubling queda $S^3$}
 
 % \cite{mbsch}
 
@@ -18,14 +18,14 @@ Puede pasar q las dos componentes sean crumpled cubes, x ejemplo agarras la esfe
 
 % Decimos que una variedad $M^m$ está encajada en el interior de $N^n$ de forma \textbf{localmente plana} si para todo $x\in\mathring{M}$ existe un entorno $U_x$ de $N$ que contiene a $x$ y un homeomorfismo $\phi\colon U_x\to \R^n$ tal que $\phi(U_x\cap M) = \R^m$. 
 
-Ahora vamos a centrarnos en dar hipótesis suficientes para asegurar que dada una esfera $\s^{n-1}$ encajada en $\s^n$, las clausuras de sus dominios complementarios sean homeomorfas a $\D^n$.\\
+Ahora vamos a centrarnos en dar hipótesis suficientes para asegurar que dada una esfera $\s^{n-1}$ encajada en $\s^n$, las clausuras de sus dominios complementarios sean homeomorfas a $\D^n$.
 
 Veremos que es suficiente pedir que el dominio del encaje se extienda a $\s^{n-1}\times [-1,1]$, identificando $\s^{n-1}\times\{0\}$ con el dominio original $\s^{n-1}$. Este teorema es conocido como el \textbf{Teorema Generalizado de Schoenflies}, y fue probado de forma paralela por Barry Mazur y Morton Brown sobre 1960, usando técnicas distintas. En esta sección nos vamos a enfocar en la prueba de Morton Brown. \comm{agregar cita al paper} 
 
 Empecemos probando el siguente resultado:
 
 \begin{lema}\label{lema1}
-    Sea $f:\D^n\to \s^n$ una función continua. Llamamos $X=\{x\in\s^n :\# f^{-1}(x)> 1\}$ a los puntos donde $f$ no es inyectiva. Suponemos que $X$ es finito y $f^{-1}(X)$ está contenido en el interior de $\D^n$.
+    Sea $f:\D^n\to \s^n$ una función continua, $n\geq 2$. Llamamos $X=\{x\in\s^n :\# f^{-1}(x)> 1\}$ a los puntos donde $f$ no es inyectiva. Suponemos que $X$ es finito y $f^{-1}(X)$ está contenido en el interior de $\D^n$.
 
     Entonces, si identificamos $\partial\D^n = \s^{n-1}$ y notamos $D$, $D'$ a los dominios complementarios de $\s^n-f(\s^{n-1})$, se cumple una de las dos opciones:
 
@@ -46,15 +46,19 @@ Empecemos probando el siguente resultado:
         \item $f(\int(\D^n))\cap (D\sqcup D')\neq\varnothing$
     \end{itemize}
     
-    Supongamos $f(\D^n)\subset f(\s^{n-1})$. En ese caso podríamos considerar la composición $$(f|_{\s^{n-1}})^{-1}\circ f\colon \D^n\to\s^{n-1}$$ Esta sería una función continua que fija $\s^{n-1}$ y manda $\D^n$ en $\s^{n-1}$, lo que es absurdo. Obtuvimos entonces que $f(\D^n)$ intersecta por lo menos a una de las regiones $D$, $D'$. 
+    El caso $f(\D^n)\subset f(\s^{n-1})$ es absurdo, porque podríamos considerar la composición $$(f|_{\s^{n-1}})^{-1}\circ f\colon \D^n\to\s^{n-1}$$ que es una función continua que fija $\s^{n-1}$ y manda $\D^n$ en $\s^{n-1}$. 
     
-    Sin pérdida de generalidad suponemos $f(\D^n)\cap D\neq\varnothing$. Como $f^{-1}(X)\cap \s^{n-1} =\varnothing$, entonces se cumple $f(\int(\D^n))\cap f(\s^{n-1})=\varnothing$. Sabemos que $\D^n-\s^{n-1}=\int(\D^n)$ tiene una única componente conexa, y $\D^n - f(\s^{n-1})$ tiene dos componentes disjuntas $D$ y $D'$. Como $f|_{\int(\D^n)}$ es continua, manda componentes conexas en componentes conexas, y como $f(\int(\D^n))\cap D\neq\varnothing$, entonces $f(\int(\D^n))$ va a estar contenida en $D$.
+    Obtuvimos entonces que $f(\int(\D^n))$ intersecta por lo menos a una de las regiones $D$, $D'$. Sin pérdida de generalidad suponemos $f(\int(\D^n))\cap D\neq\varnothing$, y vamos a probar que en ese caso $f(\D^n)\subset\overline{D}$.
+    
+    Como $f^{-1}(X)\cap \s^{n-1} =\varnothing$, entonces $f(\int(\D^n))\cap f(\s^{n-1})=\varnothing$, es decir, la imagen por $f$ de $\int(\D^n)$ va a estar contenida en $D\sqcup D'$. Por continuidad de $f$ y conexión de $\int(\D^n)$, $f(\int(\D^n))\cap D\neq\varnothing$ implica que $f(\int(\D^n))\subset D$.
+    
+    Por el teorema de separación de Jordan Brouwer ya teníamos que $f(\s^{n-1})=\partial D=\partial D'$, y por lo tanto concluimos que $f(\D^n)\subset D\cup f(\s^{n-1})$.
 
-    Por el teorema de separación de Jordan Brouwer además tenemos que $f(\s^{n-1})=\partial D=\partial D'$. Por lo tanto concluimos que $f(\D^n)\subset \overline{D}$.
+    Ahora vamos a probar la otra inclusión. Si restrinigmos el dominio a los puntos en $\D^n-f^{-1}(X)$, $f$ es continua e inyectiva, entonces por el teorema de invariancia del dominio la imagen por $f$ de un abierto de $\int(D^n) - f^{-1}(X)$ es un abierto de $\s^n$, lo que implica que $f|_{\D^n-f^{-1}(X)}$ es un homeo sobre su imagen. Luego $$\partial f\left(\D^n-f^{-1}(X)\right) = f\left(\partial(\D^n-f^{-1}(X))\right)$$ Como $f(\s^{n-1})=\partial D$, los únicos posibles puntos de $\partial(f(\D^n))$ en el interior de $D$ son exactamente los elementos de $X$, que son una cantidad finita.
 
-    Probemos ahora la otra inclusión. Si restrinigmos el dominio a los puntos en $\D^n-f^{-1}(X)$, $f$ es continua e inyectiva, entonces por el teorema de invariancia del dominio la imagen por $f$ del abierto $\int(\D^n)-f^{-1}(X)$ es un abierto de $\s^n$ (recordamos que $X$ es finito, y por lo tanto cerrado). Como $f(\s^{n-1})=\partial D$, los únicos posibles puntos de $\partial(f(\D^n))$ en el interior de $D$ son exactamente los elementos de $X$, que son una cantidad finita.
+    %Recordamos que $X$ es finito, y por lo tanto cerrado, entonces $\int(\D^n)-f^{-1}(X)$ es abierto.
 
-    Supongamos por absurdo que $\overline{D_1}\not\subset f(D)$. En ese caso, los puntos en $D_1$ se separan en tres tipos:
+    Supongamos por absurdo que $D\cup f(\s^{n-1})\not\subset f(\D^n)$. En ese caso, los puntos en $D$ se separan en tres tipos:
 
     % \begin{itemize}
     %     \item $x\in \overline{D_1}\cap f(\mathring{D})$
@@ -65,15 +69,35 @@ Empecemos probando el siguente resultado:
     % Como $f(\partial D)=\partial D_1$ y $f^{-1}(X)\cap\partial D=\varnothing$, entonces en realidad vale
 
     \begin{itemize}
-        \item $x\in D_1\cap \mathring{f(D)}$
-        \item $x\in D_1\cap \partial f(D)$
-        \item $x\in D_1 - f(D)$
+        \item $x\in D\cap \int(f(\D^n))$
+        \item $x\in D\cap \partial f(\D^n)$
+        \item $x\in D - f(\D^n)$
     \end{itemize}
 
-    Como $D$ es compacto y $f$ es continua entonces $f(D)$ es un compacto en $\s^n$ y por lo tanto es cerrado. Entonces los conjuntos $D_1\cap \mathring{f(D)}$ y $D_1 - f(D)$ son abiertos disjuntos. Como $D_1$ es abierto y conexo, un subconjunto que lo separe en dos componentes conexas necesariamente debe tener una cantidad infinita de puntos. Esto es absurdo, ya que antes observamos que $D_1\cap \partial(f(D))$ tiene cardinal finito.
+    Como $\D^n$ es compacto y $f$ es continua entonces $f(\D^n)$ es un compacto en $\s^n$ y por lo tanto es cerrado. Entonces $D - f(\D^n)$ es un abierto de $D$ disjunto a $\int(f(\D^n))\subset D$. Como $D$ es abierto y conexo, un subconjunto que lo separe en dos componentes conexas necesariamente debe tener una cantidad infinita de puntos (para asegurarnos, vamos a probarlo a continuación). Esto es absurdo, ya que antes observamos que $D\cap \partial f(\D^n)$ tiene cardinal finito.
 
-    Con esto concluimos que $f(D)=\overline{D_1}$, probando el lema.
+    Con esto concluimos que $f(D)=D\cup f(\s^{n-1})=\overline{D}$, probando el lema.
 \end{proof}
+
+\begin{lema}\label{puntos separan}
+    Sea $M$ una $n$-variedad conexa con $n\geq 2$, $P\subset M$ un conjunto finito, entonces $M-P$ es conexo.
+\end{lema}
+
+% \comm{esta prueba es de las notas de Nikil Sahoo}
+
+\begin{proof}
+
+    Primero observamos que como $M$ es Hausdorff, entonces los singleton $\{p\}$ son conjuntos cerrados. Por esta razón, el complemento de finitos puntos es un abierto de $M$, y entonces es una $n$-variedad. Sabiendo eso, es suficiente probar el lema para $P=\{p\}$ un singleton. 
+
+    Supongamos por absurdo que $M-\{p\}$ no es conexo, es decir, tenemos $U, V$ dos abiertos de $M-\{p\}$ tales que $M-\{p\}=U\sqcup V$. Como la topología es la inducida por $M$, $U$ y $V$ están dados por intersectar un abierto de $M$ con $M-\{p\}$, por lo tanto $U$ y $V$ también van a ser abiertos de $M$.
+
+    La idea ahora es tomar un entorno $U_p$ de $p$ en $M$ homeomorfo a $\D^n$ y usar que $\D^n -\{p\}$ es conexo. En particular, como $\D^n$ es convexo, es fácil ver que al sacar un punto queda conexo por caminos. Dados dos puntos $x,y\in\D^n-\{p\}$, consideramos el segmento de recta $R_{xy}$ entre ambos. Si este segmento no contiene a $p$, entonces es un camino en $\D^n-\{p\}$ que une $x$ e $y$. En caso contrario, tomamos un tercer punto $z\in\D^n-R_{xy}$ (podemos hacer esto porque $n\geq 2$, entonces $R_{xy}\neq \D^n$) y ahora la concatenación de los segmentos $R_{xz}$ y $R_{zy}$ si es un camino en $\D^n-\{p\}$ que une $x$ e $y$. 
+
+    %\duda{por que son abiertos de M necesariamente?}
+
+    Volviendo a nuestro entorno $U_p$, tenemos que $U_p - \{p\}$ es conexo, y por lo tanto está contenido en $U$ o en $V$. Supongamos que está en $U$, en ese caso $U_p\cup U = U\cup\{p\}$. Como ambos $U_p$ y $U$ son abiertos de $M$, entonces $U\cup \{p\}$ es abierto también es abierto de $M$, y obtenemos una descomposición de $M$ como dos abiertos disjuntos $(U\cup\{p\})\sqcup V$. Esto es absurdo ya que habíamos asumido que $M$ era conexa.
+\end{proof}
+
 
 %\comm{ahora una prueba como la gente aver}
 
@@ -81,17 +105,19 @@ Empecemos probando el siguente resultado:
 
 % Si $D$ es una variedad con borde, el borde tiene un entorno homeomorfo a $\s^{n-1}\times [0,1]$ en $D$. Llamamos $\hat{\phi}:\s^{n-1}\times [0,1]\to\s^n$ al encaje, que es una extensión de $\phi$.
 
-% Sean $X, Y$ las dos componentes de $\s^n-\hat{\phi}(\s^{n-1}\times [0,1])$ tal que $X\subset D$. Vamos a ver que existe un mapa sobreyectivo $f:\s^n\to\s^n$ tal que manda $X$, $Y$ en dos puntos distintos $x$, $y$, y es inyectiva en $\s^n-X\cup Y$. Una vez tenemos eso, restringiendo $f$ a $D$ tenemos como imagen un disco $\D\subset\s^n$.
+% Sean $X, D'$ las dos componentes de $\s^n-\hat{\phi}(\s^{n-1}\times [0,1])$ tal que $X\subset D$. Vamos a ver que existe un mapa sobreyectivo $f:\s^n\to\s^n$ tal que manda $X$, $D'$ en dos puntos distintos $x$, $y$, y es inyectiva en $\s^n-X\cup D'$. Una vez tenemos eso, restringiendo $f$ a $D$ tenemos como imagen un disco $\D\subset\s^n$.
 
 % La clave para esto es probar que bajo estas hipótesis $D$ cumple $D\simeq D/X$. Más específicamente, $D$ va a ser un $\textbf{conjunto celular}$.
 
+Ahora vamos a enfocarnos en probar algunas propiedades conjuntos celulares.
+
 \begin{df}
-    Un subconjunto $X$ de una $n$-variedad es $\textbf{celular}$ si para todo abierto $U$ que contiene a $X$ existe una familia de conjuntos $\{D_i,i\in\N\}$ tales que 
+    Decimos que un subconjunto $X$ de una $n$-variedad es $\textbf{celular}$ si para todo abierto $U$ que contiene a $X$ existe una familia de conjuntos $\{D_i\}_{i\in\N}$ tales que 
     
     \begin{itemize}
+        \item $D_{i+1}\subset\int(D_i)$
         \item $X=\cap_{i=1}^\infty D_i$
-        \item $D_i\simeq\D$, $D_i\subset U$ para todo $i\in\N$
-        \item Los $D_i$ están encajados: $D_{i+1}\subset\mathring{D_i}$
+        \item $D_i\simeq\D^n$, $D_i\subset U$ para todo $i\in\N$
     \end{itemize}
 \end{df}
 
@@ -101,28 +127,32 @@ Empecemos probando el siguente resultado:
 
 \begin{df}
 
-    Sea $M$ una $n$-variedad compacta con borde, $X_1,\dots,X_k$ subconjuntos cerrados y disjuntos dos a dos. Llamamos $\textbf{colapsar}$ $X_1,\dots ,X_k$ en $M$ a considerar el espacio cociente $M'=M/ {\sim} $ dado por $x\sim{} x'\iff \{x,x'\}\subset X_i$ para algún $i\in\{1,\dots,k\}$.
+    Sea $M$ una $n$-variedad compacta con borde, $X_1,\dots,X_k$ subconjuntos cerrados y disjuntos dos a dos. Llamamos $\textbf{colapsar}$ $X_1,\dots ,X_k$ en $M$ a considerar el espacio cociente $M_{/_{X_1,\dots,X_k}}:=M_{/_\sim} $ dado por $x\sim{} x'\iff \{x,x'\}\subset X_i$ para algún $i\in\{1,\dots,k\}$.
 
 \end{df}
 
 Algo interesante de los conjuntos celulares es que al colapsarlos obtenemos una variedad homeomorfa a la que teníamos originalmente.
 
 \begin{lema}\label{colapsar}
-    Sea $M$ una $n$-variedad compacta con borde, $X$ subconjunto celular de $\mathring{M}$. Entonces el espacio $M'$ obtenido al colapsar $X$ es homeomorfo a $M$.
+    Sea $M$ una $n$-variedad compacta con borde y $X$ un subconjunto celular de $\int(M)$. Entonces, $M_{/_X}$ es homeomorfo a $M$.
 \end{lema}
 \begin{proof}
-    Tenemos $X=\bigcap\limits^{\infty} D_i$, con $D_i$ discos encajados como en la definición. Construyamos un mapa sobreyectivo $f:M\to M$ tal que $f|_{M-X}$ es inyectiva y $f(X)=x_0$ para algún $x_0\in M$. Este mapa va a ser el límite de una sucesión de homeos que construimos inductivamente, empezando por $f_1:= \text{Id}$.
+    Tenemos una familia de discos encajados $\{D_i\}$ tales que $X=\bigcap\limits^{\infty}D_i$. Para conseguir un homeo entre $M$ y $M_{/_X}$, vamos a construir un mapa sobreyectivo $f:M\to M$ que sea inyectivo en $M-X$ y mande $f(X)$ a un punto $x_0\in M$. Este mapa va a ser el límite de una sucesión de homeos $\{f_k\colon M\to M\}_{k\in\N}$ que definimos inductivamente, empezando por $f_1:= \text{Id}$.
 
     Para definir $f_{k+1}$, vamos a asumir que ya tenemos definido un homeo $f_k$. Lo modificamos de la siguiente manera:
 
-    Vamos a elegir un homeomorfismo auxiliar $\hat{g}_{k+1}:f_k(D_k)\to f_k(D_k)$ tal que 
+    Tomamos un homeomorfismo auxiliar $\hat{g}_{k+1}:f_k(D_k)\to f_k(D_k)$ tal que 
     
     \begin{itemize}
-        \item $\hat{g}_{k+1}|_{\partial(f_k(D_k))}\equiv Id$
+        \item $\hat{g}_{k+1}|_{\partial(f_k(D_k))} = Id$
         \item $\diam\big(\hat{g}_{k+1}(f_k(D_{k+1}))\big)<\frac{1}{k+1}$
     \end{itemize}
 
-    \comm{para el primer punto, entiendo que se está usando que el mapping class group de $\D^n$ es trivial, para poder "isotopar" $f_k|_{\partial D_k}$ a $\text{Id}$.}
+    Sabemos que existe una $\hat{g}_{k+1}$ de esta manera porque al ser discos los $D_k$, los $f_k(D_k)$ también lo son, tenemos un homeo $\varphi\colon f_k(D_k)\to \D^n$. Podemos usar $\varphi$ para conjugar con el homeo que contrae radialmente y deja fijo el borde, $(\rho,t)\mapsto (\rho, \frac{t}{N})$
+    
+    %$\D^n=\{(\rho,t)\colon \rho\in[0,2\pi),\,t\in[0,1]\}$
+
+    Entonces podemos conjugar el homeo $\hat{g}'_{k+1}\colon \D^n\to\D^n$ dado por 
     
     Una vez tenemos eso, lo extendemos a un homeo $g_{k+1}:M\to M$ como $g_{k+1}\equiv \text{Id}$ afuera de $f_k(D_k)$. Definimos $f_{k+1}:= g_{k+1}\circ f_k$.
     
@@ -159,35 +189,39 @@ Algo interesante de los conjuntos celulares es que al colapsarlos obtenemos una 
 Inductivamente obtenemos el mismo resultado para un espacio con finitos conjuntos celulares disjuntos dos a dos.
 
 \begin{cor}\label{colapsar2}
-Sea $M$ una $n$-variedad compacta con borde, sean $X_1,\dots,X_n$ subconjuntos celulares de $\mathring{M}$ disjuntos dos a dos. Entonces el espacio $M'$ obtenido al colapsar $X_1,\dots,X_n$ es homeomorfo a $M$.
+Sea $M$ una $n$-variedad compacta con borde, sean $X_1,\dots,X_n$ subconjuntos celulares de $\int(M)$ disjuntos dos a dos. Entonces el espacio $M_{/_{X_1,\dots,X_n}}$ es homeomorfo a $M$.
 \end{cor}
 
 \begin{proof}
-    Lo único que nos falta observar para usar inductivamente el lema anterior es que dados dos conjuntos celulares disjuntos $X_1$ y $X_2$, el conjunto $X_2$ sigue siendo celular en $M/\sim$ al colapsar $X_1$.
+    Lo único que nos falta observar para usar inductivamente el lema anterior es que dados dos conjuntos celulares disjuntos $X_1$ y $X_2$, el conjunto $\pi(X_2)=X_2$ va a seguir siendo celular en $M_{/_{X_1}}$, siendo $\pi\colon M\to M_{/_{X_1}}$ la proyección.
 
-    En efecto, esto se cumple. Como $M$ es un espacio métrico, dados dos cerrados disjuntos tengo entornos disjuntos. Dados dos abiertos disjuntos de $X_1$ y $X_2$, estos van a seguir siendo abiertos en $M/_{\sim}$ al pasar por la proyección, entonces $\pi(X_2)\subset M/_{\sim}$ es celular.
+    En efecto, esto se cumple. Sea $U$ un abierto de $M_{/_{X_1}}$ que contiene a $X_2$, si el punto $\pi(X_1)$ no está en $U$, entonces $\pi$ es la identidad al restringirla a $\pi^{-1}(U)$. En ese caso, la familia de discos $\{D_i\}$ contenidos en el abierto $\pi^{-1}(U)$ dados por la celularidad de $X_2$ en $M$ nos da la familia en $M_{/_{X_1}}$ que buscamos. 
     
-    \comm{terminar de escribir esto, hacer la cadena de implicaciones para concluir que $M$ es metrizable y así poder usar que tengo los entornos disjuntos. o sea no es directo de ser $n$-variedad que tienen entornos que separan conjuntos pero si se puede probar, en particular $M$ admite una métrica y todo espacio metrico va a cumplir lo q buscamos.}
+    Si $\pi(X_1)$ está en $U$, la idea es que podemos tomar un abierto $V$ de $M_{/_{X_1}}$ tal que $\pi(X_1)\not\in V$, en ese caso $U\cap V$ es un abierto contenido en $U$ que no contiene a $\pi(X_1)$, entonces podemos usar la celularidad de $X_2$ en $M$ y obtener la celularidad en $M_{/_{X_1}}$ igual que antes.
+    
+    En general, las variedades son espacios metrizables, es decir, existe una métrica que induce la topología de la variedad. Por esta razón podemos afirmar que dados dos cerrados disjuntos existen dos abiertos disjuntos que los contienen.
+    
+    % \comm{terminar de escribir esto, hacer la cadena de implicaciones para concluir que $M$ es metrizable y así poder usar que tengo los entornos disjuntos. o sea no es directo de ser $n$-variedad que tienen entornos que separan conjuntos pero si se puede probar, en particular $M$ admite una métrica y todo espacio metrico va a cumplir lo q buscamos.}
 \end{proof}
 
 Para poder usar esta propiedad tan útil sobre los conjuntos celulares, va a ser necesario un criterio que nos permita identificarlos. Para eso vamos a dar una definición que nos permite distinguir los subconjuntos en los que una función es inyectiva.
 
 \begin{df}
-Dada una función $f:X\to Y$, llamamos \textbf{conjunto preimagen no trivial} a los subconjuntos de $X$ que cumplen $Z=f^{-1}(y_0)$ para algún $y_0\in Y$ y tienen $\#Z > 1$.
-\end{df}\comm{también podría llamarle \textbf{fibra no trivial}?}\duda{pregunta pra juliana}
+Dada una función $f:X\to Y$, llamamos \textbf{fibra no trivial} a los subconjuntos de $X$ que cumplen $Z=f^{-1}(y_0)$ para algún $y_0\in Y$ y tienen $\#Z > 1$.
+\end{df}%\comm{también podría llamarle \textbf{conjunto preimagen no trivial}?}%\duda{pregunta pra juliana}
 
 % \begin{lema}
 %     Sean $X_1,\dots, X_m\subset\mathring{\D}^n$ cerrados disjuntos. Sea $M/_{\sim}$ el espacio obtenido al colapsar $X_1,\dots, X_m$ y sea $\pi:M\to M/_{\sim}$ la proyección.
 % \end{lema}
 
 \begin{lema}\label{celulares}
-    Sea $f:\D^n\to \s^n$ continua, sea $M\subset \mathring{\D^n}$ el único conjunto preimagen no trivial de $f$. Entonces, $M$ es un conjunto celular en $\D^n$
+    Sea $f:\D^n\to \s^n$ continua, sea $X\subset \int(\D^n)$ la única fibra no trivial de $f$. Entonces, $X$ es un conjunto celular.
 \end{lema}
 
 \begin{proof}
-    Por Jordan-Brouwer tenemos que $h(\partial\D^n)$ separa $\s^n$ en dos regiones. Por otro de los lemas anteriores (ordenar bien) tenemos que $h(\D^n)=h(\partial\D^n)\cup D$ siendo $D$ una de esas dos regiones.
+    Como $X\subset\int(\D^n)$, $f|_{\s^{n-1}}\colon\s^{n-1}\to\D^n$ es un homeo sobre la imagen, por Jordan-Brouwer entonces tenemos que $f(\partial\D^n)$ separa $\s^n$ en dos abiertos disjuntos, y por el lema \ref{lema1} tenemos que $f(\D^n)=f(\s^{n-1})\cup D$, siendo $D$ uno de esos dos abiertos.
 
-    Tomamos un abierto $U$ que contenga a $M$. Como $f$ es inyectiva en $\D^n-M$ y es continua, entonces $f|_{\D^n-M}$ es un homeo, y por lo tanto $f(U)$ es abierto.
+    Tomamos un abierto $U$ que contenga a $X$. Como $f$ es inyectiva en $\D^n-X$ y es continua, entonces $f|_{\D^n-M}$ es un homeo, y por lo tanto $f(U)$ es abierto.
 
     Tomamos $h:\s^n\to\s^n$ un homeo que mande $\overline{D}$ en $f(U)$ y tal que $h=\text{Id}$ en un entorno $V$ de $x_0$. \comm{dice que el entorno tiene que ser chico, ver bien pq}
 
@@ -214,26 +248,26 @@ Dada una función $f:X\to Y$, llamamos \textbf{conjunto preimagen no trivial} a 
 \end{figure}
 
 \begin{lema}\label{2ctos}
-    Sea $f:\s^n\to\s^n$ una función continua con exactamente dos conjuntos preimagen no triviales $A$ y $B$. Entonces, $A$ y $B$ son conjuntos celulares en $\s^n$.
+    Sea $f:\s^n\to\s^n$ una función continua con exactamente dos fibras no triviales $X$, $Y$. Entonces, $X$, $Y$ son conjuntos celulares en $\s^n$.
 \end{lema}
 
 \begin{proof}
-    Consideramos $\Sigma$ una $(n-1)$-esfera en $\s^n-(A\cup B)$ encajada de manera que sus dos regiones complementarias sean homeomorfas a $n$-bolas. Podemos encontrar una $\Sigma$ de esta manera porque $A$ y $B$ son cerrados, entonces $\s^n - (A\cup B)$ es abierto y hereda la base de la topología de $\s^n$, que son bolas abiertas estándar.
+    Consideramos $\Sigma$ una $(n-1)$-esfera en $\s^n-(X\cup Y)$ encajada de manera que sus dos regiones complementarias sean homeomorfas a $n$-bolas en $\s^n$. Podemos encontrar una $\Sigma$ de esta manera porque $X$, $Y$ son cerrados, entonces $\s^n - (X\cup Y)$ es abierto y hereda la base de la topología de $\s^n$, que son bolas abiertas estándar.
 
-    % \duda{por qué puedo tomar $\Sigma$ encajada así? porque $A$ y $B$ son cerrados entonces en el complemento me puedo encontrar una esfera bien encajada adentro de un abierto pq las bolas estandar son base de la topología.}
+    % \duda{por qué puedo tomar $\Sigma$ encajada así? porque $X$ y $Y$ son cerrados entonces en el complemento me puedo encontrar una esfera bien encajada adentro de un abierto pq las bolas estandar son base de la topología.}
 
-    Sean $X$, $Y$ las clausuras de las componentes conexas del complemento de $\Sigma$. Por el teorema de separación de Jordan Brouwer el borde de ambas componentes va a ser $\Sigma$. Tenemos dos opciones, puede ser que $A$ y $B$ estén en la misma componente conexa del complemento de $\Sigma$ o puede ser que estén separadas. 
+    Sean $D$, $D'$ las clausuras de las componentes conexas del complemento de $\Sigma$.  Tenemos dos opciones, puede ser que $X$, $Y$ estén en la misma componente conexa del complemento de $\Sigma$ o puede ser que estén separadas. 
     
-    Supongamos que se cumple $A\subset\mathring{X}$ y $B\subset\mathring{Y}$. Entonces, por el lema anterior, considerando las funciones $f|_{X}:X\to\s^n$ y $f|_{Y}:Y\to\s^n$ obtendríamos que $A$ y $B$ son sus únicos conjuntos preimagen no triviales y por lo tanto son conjuntos celulares, concluyendo la prueba.
+    Supongamos que se cumple $X\subset\int(D)$ y $Y\subset\int(D')$. En ese caso, estos conjuntos serían las únicas fibras no triviales de las funciones $f|_{D}$ y $f|_{D'}$ respectivamente y entonces por el lema \ref{celulares} tendríamos que son conjuntos celulares.
 
-    Consideramos ahora el caso en el que $A$ y $B$ están contenidos en la misma región complementaria de $\Sigma$, digamos que $A\cup B\subset\mathring{X}$. Sean $x_A,\, x_B$ puntos de $\s^n$ tales que $A=f^{-1}(x_A)$ y $B=f^{-1}(x_B)$. Por el primer lema tenemos que $f(X)=f(\Sigma)\cup D$, con $D$ una componente conexa del complemento de $f(\Sigma)$ que va a contener a $x_A$ y $x_B$.
+    Consideramos ahora el caso en el que $X$, $Y$ están contenidos en la misma región complementaria de $\Sigma$, digamos que $X\cup Y\subset\mathring{D}$. Sean $x,\, y$ puntos de $\s^n$ tales que $X=f^{-1}(x)$ y $Y=f^{-1}(y)$. Por el primer lema tenemos que $f(D)=f(\Sigma)\cup D$, con $D$ una componente conexa del complemento de $f(\Sigma)$ que va a contener a $x$ y $y$.
 
-    Sea $U$ un abierto contenido en $D$ tal que $x_A\in D$, $x_B\not\in D$. Sea $h:\s^n\to\s^n$ un homeo que manda $f(X)$ en $U$ y que deja fijo un entorno $V$ de $x_A$. Definimos un homeo $g:\s^n\to\s^n$ dado por $$g(x)=
+    Sea $U$ un abierto contenido en $D$ tal que $x_X\in D$, $x_B\not\in D$. Sea $h:\s^n\to\s^n$ un homeo que manda $f(D)$ en $U$ y que deja fijo un entorno $V$ de $x_X$. Definimos un homeo $g:\s^n\to\s^n$ dado por $$g(x)=
     \begin{cases}
-    x \quad &\text{si } x\in A\\ 
-    f^{-1}\circ h\circ f(x)\quad &\text{si } x\in X-A
+    x \quad &\text{si } x\in X\\ 
+    f^{-1}\circ h\circ f(x)\quad &\text{si } x\in D-X
     \end{cases}$$
-    Observar que $f^{-1}\circ h\circ f=\text{Id}$ en $f^{-1}(V)$ y por lo tanto $g$ está bien definido y es continuo. Además, el único conjunto preimagen no trivial de $g$ es $B$, entonces por el lema anterior tenemos que $B$ es celular. De la misma forma podemos obtener que $A$ es celular, y con eso probamos el lema.
+    Observar que $f^{-1}\circ h\circ f=\text{Id}$ en $f^{-1}(V)$ y por lo tanto $g$ está bien definido y es continuo. Además, el único conjunto preimagen no trivial de $g$ es $B$, entonces por el lema anterior tenemos que $B$ es celular. De la misma forma podemos obtener que $X$ es celular, y con eso probamos el lema.
 \end{proof}
 
 \comm{insertarbien las referencias}
@@ -314,7 +348,7 @@ Con esto tenemos un resultado para variedades topológicas:
 % Podemos usar la invariancia del dominio para probar lo siguiente:
 
 \begin{lema}\label{puntos separan}
-    Sea $M$ una $n$-variedad conexa con $n<1$, $P\subset M$ un conjunto finito, entonces $M-P$ es conexo.
+    Sea $M$ una $n$-variedad conexa con $n>1$, $P\subset M$ un conjunto finito, entonces $M-P$ es conexo.
 \end{lema}
 
 % \comm{esta prueba es de las notas de Nikil Sahoo}

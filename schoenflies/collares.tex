@@ -1,31 +1,73 @@
 \section{Entornos de collar}
 
-\begin{df}
-Dado un encaje $f\colon Y\to X$ entre dos espacios topológicos, decimos que $Y$ tiene un \textbf{entorno de collar} en $X$ si $f$ se extiende a un encaje $\tilde{f}\colon Y\times[0,1)\to X$ tal que $\tilde{f}|_{Y\times \{0\}}=f$ y $\im (\tilde{f})$ es un abierto de $X$.
-\end{df}
+\begin{teo}
+El borde de una variedad compacta $M$ tiene un entorno de collar en $M$.
+\end{teo}
 
-También podemos omitir el encaje y dar una definición equivalente para subespacios $Y\subset X$ de un espacio topológico:
+\begin{proof}
 
-\begin{df}
-Dado $Y$ un subespacio de $X$, decimos que $Y$ tiene \textbf{entorno de collar} en $X$ si existe un homeomorfismo $\tilde{f}$ que manda $Y\times[0,1)$ a un entorno abierto de $Y$ en $X$, y que cumple $\tilde{f}(y,0)=y$ para todo $y\in Y$.
-\end{df}
 
-\begin{lema}
-Las dos definiciones anteriores son equivalentes. Que la primer definición es 
-\end{lema}
+\end{proof}
 
-\begin{ex}
-Por ejemplo, si tomamos $X=\D^n$, $Y = \s^{n-1}$ y $f$ la inclusión $\s^n = \partial\D^n$, entonces para obtener un entorno de collar podemos extender $f$ radialmente definiendo $\tilde{f}\colon \s^{n-1}\times[0,1)\to \D^n$ dada por $\tilde{f}(x,t):=(1-\frac{1}{2}\cdot t)f(x)$.
+% \begin{df}
+% Dado un encaje $f\colon Y\to X$ entre dos espacios topológicos, decimos que $Y$ tiene un \textbf{entorno de collar} en $X$ si $f$ se extiende a un encaje $\tilde{f}\colon Y\times[0,1)\to X$ tal que $\tilde{f}|_{Y\times \{0\}}=f$ y $\im (\tilde{f})$ es un abierto de $X$.
+% \end{df}
 
-Observar que $\im (f)$ es un abierto de $\D^n$ que contiene a $\partial\D^n$.
-\end{ex}
+% También podemos omitir el encaje y dar una definición equivalente para subespacios $Y\subset X$ de un espacio topológico:
 
-También tenemos una noción de collar local:
+% \begin{df}
+% Dado $Y$ un subespacio de $X$, decimos que $Y$ tiene \textbf{entorno de collar} en $X$ si existe un homeomorfismo $\tilde{f}$ que manda $Y\times[0,1)$ a un entorno abierto de $Y$ en $X$, y que cumple $\tilde{f}(y,0)=y$ para todo $y\in Y$.
+% \end{df}
 
-\begin{df}
-Decimos que un subespacio $Y\subset X$ de un espacio topológico tiene \textbf{entornos de collar locales} si podemos cubrirlo por una familia $\{U_i\}$ de abiertos de $Y$ tales que los $U_i$ tienen entorno de collar en $X$.
-\end{df}
+% \begin{lema}
+% Las dos definiciones anteriores son equivalentes. Que la primer definición es 
+% \end{lema}
 
-En nuestro caso vamos a trabajar con encajes $f\colon\s^{n-1}\to\s^n$, entonces nuestro subconjunto encajado siempre va a ser un cerrado. Esto nos permite dar una definición que es equivalente en cerrados de un espacio métrico:
+% \begin{ex}
+% Por ejemplo, si tomamos $X=\D^n$, $Y = \s^{n-1}$ y $f$ la inclusión $\s^n = \partial\D^n$, entonces para obtener un entorno de collar podemos extender $f$ radialmente definiendo $\tilde{f}\colon \s^{n-1}\times[0,1)\to \D^n$ dada por $\tilde{f}(x,t):=(1-\frac{1}{2}\cdot t)f(x)$.
 
-Decimos que un subespacio cerrado $Y\subset X$ tiene \textbf{entornos de collar locales} si podemos cubrirlo por una familia $\{U_i\}$ de abiertos de $Y$ tales que
+% Observar que $\im (f)$ es un abierto de $\D^n$ que contiene a $\partial\D^n$.
+% \end{ex}
+
+% También tenemos una noción de collar local:
+
+% \begin{df}
+% Decimos que un subespacio $Y\subset X$ de un espacio topológico tiene \textbf{entornos de collar locales} si podemos cubrirlo por una familia $\{U_i\}$ de abiertos de $Y$ tales que los $U_i$ tienen entorno de collar en $X$.
+% \end{df}
+
+% En nuestro caso vamos a trabajar con encajes $f\colon\s^{n-1}\to\s^n$, entonces nuestro subconjunto encajado siempre va a ser un cerrado. Esto nos permite dar una definición que es equivalente en cerrados de un espacio métrico:
+
+% Decimos que un subespacio cerrado $Y\subset X$ tiene \textbf{entornos de collar locales} si podemos cubrirlo por una familia $\{U_i\}$ de abiertos de $Y$ tales que
+
+% \comm{emm}
+
+% Dados dos cubrimientos por abiertos $\mathcal{U} = \{U_i\}_{i\in I}$ y $\mathcal{V} = \{V_j\}_{j\in J}$ de un espacio topológico, decimos que $\mathcal{V}$ es un \textbf{refinamiento} de $\mathcal{U}$ si para todo $j\in J$ existe un $i\in I$ tal que $V_j\subset U_i$. 
+
+% Observación: Un subcubrimiento es un refinamiento.
+
+% Si $X$ es Hausdorff, entonces ser compacto es equivalente a tener un refinamiento finito. Claramente compacidad $\Rightarrow$ subcubrimiento (refinamiento) finito $\Rightarrow$. 
+
+% Un espacio es $T_1$ si dados dos puntos $x_1$ y $x_2$, existe un abierto $U$ tal que $x_1\in U$ y $x_2\not\in U$.
+
+% Para un espacio $X$ $T_1$, son equivalentes:\begin{itemize}
+%     \item $X$ es paracompacto
+%     \item Todo cubrimiento por abiertos de $X$ tiene una partición de la unidad subordinada.
+% \end{itemize}
+
+% Una familia $\{X_i\}_{i\in I}$ de subconjuntos de un espacio $X$ es \textbf{localmente finita} si cada $x\in X$ tiene un entorno $U_x$ tal que el conjunto $\{i\in I\colon U_x\cap X_i\neq \varnothing\}$.
+
+% $X$ es \textbf{paracompacto} si es Hausdorff y todo cubrimiento por abiertos de $X$ tiene un refinamiento localmente finito por abiertos. 
+
+% Observación: Un compacto es un paracompacto.
+
+% Probemos $X$ compacto y Hausdorff $\Rightarrow$ Todo cubrimiento por abiertos tiene una partición de la unidad subordinada:
+
+% \begin{proof}
+% Sea $\mathcal{U} = \{U_i\}_{i\in I}$ un cubrimiento por abiertos de $X$, y $\mathcal{V} = \{V_j\}_{j\in J}$ un subcubrimiento finito.
+
+
+% \end{proof}
+
+% Lema: Si todo cubrimiento por abiertos de $X$ tiene un refinamiento localmente finito, entonces para cada cubrimiento por abiertos $\{U_i\}_{i\in I}$ existe un cubrimiento por cerrados $\{C_i\}_{i\in I}$ tales que para cada $i\in I$ se cumple $C_i\subset U_i$.
+
+% Sea $M$ una $n$-variedad compacta, entonces $\partial M$ tiene entorno de collar.
