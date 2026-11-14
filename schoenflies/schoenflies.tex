@@ -25,9 +25,7 @@ Veremos que es suficiente pedir que el dominio del encaje se extienda a $\s^{n-1
 Empecemos probando el siguente resultado:
 
 \begin{lema}\label{lema1}
-    Sea $f:\D^n\to \s^n$ una función continua, $n\geq 2$. Llamamos $X=\{x\in\s^n :\# f^{-1}(x)> 1\}$ a los puntos donde $f$ no es inyectiva. Suponemos que $X$ es finito y $f^{-1}(X)$ está contenido en el interior de $\D^n$.
-
-    Entonces, si identificamos $\partial\D^n = \s^{n-1}$ y notamos $D$, $D'$ a los dominios complementarios de $\s^n-f(\s^{n-1})$, se cumple una de las dos opciones:
+    Sea $f:\D^n\to \s^n$ una función continua, $n\geq 2$. Llamamos $X=\{x\in\s^n :\# f^{-1}(x)> 1\}$ a los puntos donde $f$ no es inyectiva. Suponemos que $X$ es finito y $f^{-1}(X)$ está contenido en el interior de $\D^n$. Entonces, si identificamos $\partial\D^n = \s^{n-1}$ y notamos $D$, $D'$ a los dominios complementarios de $\s^n-f(\s^{n-1})$, se cumple una de las dos opciones:
 
     \begin{itemize}
         \item $f(\D^n)=D\cup f(\s^{n-1})$
@@ -109,7 +107,7 @@ Empecemos probando el siguente resultado:
 
 % La clave para esto es probar que bajo estas hipótesis $D$ cumple $D\simeq D/X$. Más específicamente, $D$ va a ser un $\textbf{conjunto celular}$.
 
-Ahora vamos a enfocarnos en probar algunas propiedades conjuntos celulares.
+Ahora vamos a introducir la noción de conjunto celular en una variedad, una propiedad interesante sore estos conjuntos es que al colapsarlos a un punto nos queda un espacio homeomorfo al original. Esto va a ser una herramienta clave para generar un homeomorfismo de la variedad a partir de una función continua, ya que vamos a probar que bajo algunas hipótesis, el conjunto de puntos donde la función no es inyectiva es un conjunto celular, y con esto podremos colapsarlo y obtener un homeo de la variedad a partir de la función continua.
 
 \begin{df}
     Decimos que un subconjunto $X$ de una $n$-variedad es $\textbf{celular}$ si para todo abierto $U$ que contiene a $X$ existe una familia de conjuntos $\{D_i\}_{i\in\N}$ tales que 
@@ -131,7 +129,7 @@ Ahora vamos a enfocarnos en probar algunas propiedades conjuntos celulares.
 
 \end{df}
 
-Algo interesante de los conjuntos celulares es que al colapsarlos obtenemos una variedad homeomorfa a la que teníamos originalmente.
+Veamos que al colapsar los conjuntos celulares obtenemos una variedad homeomorfa a la que teníamos originalmente.
 
 \begin{lema}\label{colapsar}
     Sea $M$ una $n$-variedad compacta con borde y $X$ un subconjunto celular de $\int(M)$. Entonces, $M_{/_X}$ es homeomorfo a $M$.
@@ -148,13 +146,11 @@ Algo interesante de los conjuntos celulares es que al colapsarlos obtenemos una 
         \item $\diam\big(\hat{g}_{k+1}(f_k(D_{k+1}))\big)<\frac{1}{k+1}$
     \end{itemize}
 
-    Sabemos que existe una $\hat{g}_{k+1}$ de esta manera porque al ser discos los $D_k$, los $f_k(D_k)$ también lo son, tenemos un homeo $\varphi\colon f_k(D_k)\to \D^n$. Podemos usar $\varphi$ para conjugar con el homeo que contrae radialmente y deja fijo el borde, $(\rho,t)\mapsto (\rho, \frac{t}{N})$
+    Sabemos que existe una $\hat{g}_{k+1}$ de esta manera porque al ser discos los $D_k$, entonces los $f_k(D_k)$ también lo son, y por lo tanto tenemos un homeo $\varphi\colon f_k(D_k)\to \D^n$. Luego podemos definir un homeo $\psi\colon\D^n\to\D^n$ dado por fluir radialmente hacia el centro dejando fijo el borde, y como $\varphi(f_k(D_{k+1}))$ es compacto, podemos definir el homeo para que $\varphi^{-1}\psi\varphi(f_k(D_{k+1}))$ tenga diámetro menor al buscado.
     
     %$\D^n=\{(\rho,t)\colon \rho\in[0,2\pi),\,t\in[0,1]\}$
-
-    Entonces podemos conjugar el homeo $\hat{g}'_{k+1}\colon \D^n\to\D^n$ dado por 
     
-    Una vez tenemos eso, lo extendemos a un homeo $g_{k+1}:M\to M$ como $g_{k+1}\equiv \text{Id}$ afuera de $f_k(D_k)$. Definimos $f_{k+1}:= g_{k+1}\circ f_k$.
+    Una vez tenemos eso, lo extendemos a un homeo $g_{k+1}:M\to M$ como $g_{k+1}\equiv \text{Id}$ afuera de $f_k(D_k)$. Con eso definimos $$f_{k+1}:= g_{k+1}\circ f_k$$
     
 %    Por ser un homeo, $f_k$ va a cumplir:
 
@@ -163,7 +159,7 @@ Algo interesante de los conjuntos celulares es que al colapsarlos obtenemos una 
 %        \item $f_k(D_{k+1})\subset\mathring{f(D_k)}$
 %    \end{itemize}
 
-    Ahora hay que verificar que la familia de funciones $\{f_k\}$ converge punto a punto. Veamos que la sucesión $f_k(p)$ converge para todo $p\in M$. Para esto separamos en los casos $p\in X$, $p\in M-X$.
+    Ahora hay que verificar que la familia de funciones $\{f_k\}_{k\in\N}$ converge punto a punto. Veamos que la sucesión $f_k(p)$ converge para todo $p\in M$. Para esto separamos en los casos $p\in X$, $p\in M-X$.
 
     Veamos el caso $p\in X$. Se tiene $f_k(p)\in f_k(D_k)$ para todo $k\in\N$. Por construcción, las $f_k$ cumplen 
     
@@ -173,13 +169,13 @@ Algo interesante de los conjuntos celulares es que al colapsarlos obtenemos una 
     \end{itemize}
     Por lo tanto, la intersección $\bigcap\limits^\infty f_k(D_k)$ consiste de un único punto $x_0$, y se cumple que $\lim\limits_{k\to\infty}f_k(p)=x_0$.
 
-    Tomemos ahora $p\in M-X$. Como los $D_k$ están encajados y $p\not\in\cap_{k=1}^\infty D_k$, existe un $K\in\N$ tal que $p\not\in D_k$ para todo $k\geq K$. Por lo tanto, la sucesión $f_k(p)$ es constante a partir de $K$.
-
-    Con esto tenemos que las $f_k$ convergen puntualmente, llamamos $f$ al límite.
+    Tomemos ahora $p\in M-X$. Como los $D_k$ están encajados y $p\not\in\cap_{k=1}^\infty D_k$, existe un $K\in\N$ tal que $p\not\in D_k$ para todo $k\geq K$. Por lo tanto, la sucesión $f_k(p)$ es constante a partir de $K$. Con esto tenemos que las $f_k$ convergen puntualmente, llamamos $f$ al límite.
 
     Sabemos que $f$ es continua por definición, y que $f^{-1}(x_0)=X$. Verifiquemos que $f$ es inyectiva en $M-X$ y sobreyectiva.
 
-    Para probar que $f$ es sobreyectiva, vamos a ver que alcanza todo elemento de $M$. Ya sabemos que $f(X)=\{x_0\}$, entonces basta verificar que un punto arbitrario $x\in M-\{x_0\}$ está en la imagen de $f$. Efectivamente, si $x\in M-\{x_0\}$ entonces $x\not\in \cap^\infty_{k=1} f_k(D_k)$, y por lo tanto a partir de un $K\in\N$ se tiene $x\not\in f_K(D_K)$, entonces $f_K^{-1}(x)\cap D_K=\varnothing$. Luego la sucesión $f_k(x)$ es constante a partir de $K$, y se cumple que $f(f^{-1}_K(x))=f_K(f^{-1}_K(x))=x$, por lo tanto $x$ está en la imagen de $f$.
+    Veamos que $\im(f)$ alcanza todo elemento de $M$. Ya sabemos que $f(X)=\{x_0\}$, entonces basta verificar que un punto arbitrario $x\in M-\{x_0\}$ está en la imagen de $f$. Efectivamente, si $x\in M-\{x_0\}$ entonces $x\not\in \cap^\infty_{k=1} f_k(D_k)$, y por lo tanto a partir de un $K\in\N$ se tiene $x\not\in f_K(D_K)$. Luego la sucesión $f_k\left(f_K(x)\right)$ es constante a partir de $K$, entonces se cumple que $f(f^{-1}_K(x))=f_K(f^{-1}_K(x))=x$ y por lo tanto $x$ está en la imagen de $f$.
+
+    %Efectivamente, si $x\in M-\{x_0\}$ entonces $x\not\in \cap^\infty_{k=1} f_k(D_k)$, y por lo tanto a partir de un $K\in\N$ se tiene $x\not\in f_K(D_K)$, entonces $f_K^{-1}(x)\cap D_K=\varnothing$
 
     Ahora veamos que $f$ es inyectiva en $M-X$. Para eso tomamos dos puntos $x\neq y\in M-X$. Como no están en $X$, las sucesiones $f_k(x), f_k(y)$ son eventualmente constantes, y por lo tanto podemos encontrar un $K\in\N$ tal que $f(x) = f_K(x)$, $f(y) = f_K(y)$. Como $f_K$ es un homeo y $x\neq y$, entonces $f(x)\neq f(y)$.
 
@@ -197,11 +193,7 @@ Sea $M$ una $n$-variedad compacta con borde, sean $X_1,\dots,X_n$ subconjuntos c
 
     En efecto, esto se cumple. Sea $U$ un abierto de $M_{/_{X_1}}$ que contiene a $X_2$, si el punto $\pi(X_1)$ no está en $U$, entonces $\pi$ es la identidad al restringirla a $\pi^{-1}(U)$. En ese caso, la familia de discos $\{D_i\}$ contenidos en el abierto $\pi^{-1}(U)$ dados por la celularidad de $X_2$ en $M$ nos da la familia en $M_{/_{X_1}}$ que buscamos. 
     
-    Si $\pi(X_1)$ está en $U$, la idea es que podemos tomar un abierto $V$ de $M_{/_{X_1}}$ tal que $\pi(X_1)\not\in V$, en ese caso $U\cap V$ es un abierto contenido en $U$ que no contiene a $\pi(X_1)$, entonces podemos usar la celularidad de $X_2$ en $M$ y obtener la celularidad en $M_{/_{X_1}}$ igual que antes.
-    
-    En general, las variedades son espacios metrizables, es decir, existe una métrica que induce la topología de la variedad. Por esta razón podemos afirmar que dados dos cerrados disjuntos existen dos abiertos disjuntos que los contienen.
-    
-    % \comm{terminar de escribir esto, hacer la cadena de implicaciones para concluir que $M$ es metrizable y así poder usar que tengo los entornos disjuntos. o sea no es directo de ser $n$-variedad que tienen entornos que separan conjuntos pero si se puede probar, en particular $M$ admite una métrica y todo espacio metrico va a cumplir lo q buscamos.}
+    Si $\pi(X_1)$ está en $U$, la idea es que podemos tomar un abierto $V$ de $M_{/_{X_1}}$ tal que $\pi(X_1)\not\in V$. Podemos hacer esto porque en general, las variedades son espacios metrizables, es decir, existe una métrica que induce la topología de la variedad. Por esta razón podemos afirmar que dados dos cerrados disjuntos existen dos abiertos disjuntos que los contienen. Teniendo eso, $U\cap V$ es un abierto contenido en $U$ que no contiene a $\pi(X_1)$, entonces podemos usar la celularidad de $X_2$ en $M$ para obtener la celularidad en $M_{/_{X_1}}$ igual que antes.    % \comm{terminar de escribir esto, hacer la cadena de implicaciones para concluir que $M$ es metrizable y así poder usar que tengo los entornos disjuntos. o sea no es directo de ser $n$-variedad que tienen entornos que separan conjuntos pero si se puede probar, en particular $M$ admite una métrica y todo espacio metrico va a cumplir lo q buscamos.}
 \end{proof}
 
 Para poder usar esta propiedad tan útil sobre los conjuntos celulares, va a ser necesario un criterio que nos permita identificarlos. Para eso vamos a dar una definición que nos permite distinguir los subconjuntos en los que una función es inyectiva.
