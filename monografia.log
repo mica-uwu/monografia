@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.6.19)  15 NOV 2026 04:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.6.19)  16 NOV 2026 01:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -723,19 +723,13 @@ Package hyperref Info: bookmark level for unknown todo defaults to 0 on input li
 
 
 
-] [2] [3] [4] [5]
-<img mono/schoenflies/sch.jpeg, id=72, 4047.12pt x 3035.34pt>
-File: img mono/schoenflies/sch.jpeg Graphic file (type jpg)
-<use img mono/schoenflies/sch.jpeg>
-Package pdftex.def Info: img mono/schoenflies/sch.jpeg  used on input line 240.
-(pdftex.def)             Requested size: 313.69162pt x 235.23642pt.
- [6] [7 <./img mono/schoenflies/sch.jpeg>] [8]
-<img mono/schoenflies/inv dominio.png, id=95, 837.1275pt x 247.92625pt>
+] [2] [3] [4] [5] [6] [7]
+<img mono/schoenflies/inv dominio.png, id=85, 837.1275pt x 247.92625pt>
 File: img mono/schoenflies/inv dominio.png Graphic file (type png)
 <use img mono/schoenflies/inv dominio.png>
-Package pdftex.def Info: img mono/schoenflies/inv dominio.png  used on input line 339.
+Package pdftex.def Info: img mono/schoenflies/inv dominio.png  used on input line 358.
 (pdftex.def)             Requested size: 313.69162pt x 92.90024pt.
-) [9 <./img mono/schoenflies/inv dominio.png>] [10
+) [8] [9 <./img mono/schoenflies/inv dominio.png>] [10
 
 
 
@@ -757,21 +751,21 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `monografia.out' has not changed.
-(rerunfilecheck)             Checksum: 79B151AF48207D4E948223C90B401870;274.
+(rerunfilecheck)             Checksum: 509193E559B724968AC6F4B0A759B5E7;274.
  ) 
 Here is how much of TeX's memory you used:
- 27721 strings out of 474222
- 528210 string characters out of 5748733
+ 27701 strings out of 474222
+ 527748 string characters out of 5748733
  1938975 words of memory out of 5000000
- 49292 multiletter control sequences out of 15000+600000
+ 49276 multiletter control sequences out of 15000+600000
  571362 words of font info for 87 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 117i,9n,121p,1041b,997s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 117i,9n,121p,1029b,995s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on monografia.pdf (13 pages, 3089481 bytes).
+Output written on monografia.pdf (13 pages, 266482 bytes).
 PDF statistics:
- 193 PDF objects out of 1000 (max. 8388607)
- 139 compressed objects within 2 object streams
- 35 named destinations out of 1000 (max. 500000)
- 39 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 189 PDF objects out of 1000 (max. 8388607)
+ 136 compressed objects within 2 object streams
+ 31 named destinations out of 1000 (max. 500000)
+ 34 words of extra memory for PDF output out of 10000 (max. 10000000)
 

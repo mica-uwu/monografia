@@ -110,17 +110,17 @@ Empecemos probando el siguente resultado:
 Ahora vamos a introducir la noción de conjunto celular en una variedad, una propiedad interesante sore estos conjuntos es que al colapsarlos a un punto nos queda un espacio homeomorfo al original. Esto va a ser una herramienta clave para generar un homeomorfismo de la variedad a partir de una función continua, ya que vamos a probar que bajo algunas hipótesis, el conjunto de puntos donde la función no es inyectiva es un conjunto celular, y con esto podremos colapsarlo y obtener un homeo de la variedad a partir de la función continua.
 
 \begin{df}
-    Decimos que un subconjunto $X$ de una $n$-variedad es $\textbf{celular}$ si para todo abierto $U$ que contiene a $X$ existe una familia de conjuntos $\{D_i\}_{i\in\N}$ tales que 
+    Decimos que un subconjunto $X$ de una $n$-variedad es $\textbf{celular}$ si para todo abierto $U$ que contiene a $X$ existe una familia de conjuntos $\{D_k\}_{k\in\N}$ tales que 
     
     \begin{itemize}
-        \item $D_{i+1}\subset\int(D_i)$
-        \item $X=\cap_{i=1}^\infty D_i$
-        \item $D_i\simeq\D^n$, $D_i\subset U$ para todo $i\in\N$
+        \item $D_{k+1}\subset\int(D_k)$
+        \item $X=\cap_{k=1}^\infty D_k$
+        \item $D_k\simeq\D^n$, $D_k\subset U$ para todo $k\in\N$
     \end{itemize}
 \end{df}
 
 \begin{obs}
-    Los $D_i$ son compactos, como la variedad es Hausdorff, entonces son cerrados. Por lo tanto $X$ necesariamente es cerrado.
+    Los $D_k$ son compactos, como la variedad es Hausdorff, entonces son cerrados. Por lo tanto $X$ necesariamente es cerrado.
 \end{obs}
 
 \begin{df}
@@ -185,7 +185,7 @@ Veamos que al colapsar los conjuntos celulares obtenemos una variedad homeomorfa
 Inductivamente obtenemos el mismo resultado para un espacio con finitos conjuntos celulares disjuntos dos a dos.
 
 \begin{cor}\label{colapsar2}
-Sea $M$ una $n$-variedad compacta con borde, sean $X_1,\dots,X_n$ subconjuntos celulares de $\int(M)$ disjuntos dos a dos. Entonces el espacio $M_{/_{X_1,\dots,X_n}}$ es homeomorfo a $M$.
+Sea $M$ una $n$-variedad compacta con borde, sean $X_1,\dots,X_k$ subconjuntos celulares de $\int(M)$ disjuntos dos a dos. Entonces el espacio $M_{/_{X_1,\dots,X_k}}$ es homeomorfo a $M$.
 \end{cor}
 
 \begin{proof}
@@ -193,10 +193,10 @@ Sea $M$ una $n$-variedad compacta con borde, sean $X_1,\dots,X_n$ subconjuntos c
 
     En efecto, esto se cumple. Sea $U$ un abierto de $M_{/_{X_1}}$ que contiene a $X_2$, si el punto $\pi(X_1)$ no está en $U$, entonces $\pi$ es la identidad al restringirla a $\pi^{-1}(U)$. En ese caso, la familia de discos $\{D_i\}$ contenidos en el abierto $\pi^{-1}(U)$ dados por la celularidad de $X_2$ en $M$ nos da la familia en $M_{/_{X_1}}$ que buscamos. 
     
-    Si $\pi(X_1)$ está en $U$, la idea es que podemos tomar un abierto $V$ de $M_{/_{X_1}}$ tal que $\pi(X_1)\not\in V$. Podemos hacer esto porque en general, las variedades son espacios metrizables, es decir, existe una métrica que induce la topología de la variedad. Por esta razón podemos afirmar que dados dos cerrados disjuntos existen dos abiertos disjuntos que los contienen. Teniendo eso, $U\cap V$ es un abierto contenido en $U$ que no contiene a $\pi(X_1)$, entonces podemos usar la celularidad de $X_2$ en $M$ para obtener la celularidad en $M_{/_{X_1}}$ igual que antes.    % \comm{terminar de escribir esto, hacer la cadena de implicaciones para concluir que $M$ es metrizable y así poder usar que tengo los entornos disjuntos. o sea no es directo de ser $n$-variedad que tienen entornos que separan conjuntos pero si se puede probar, en particular $M$ admite una métrica y todo espacio metrico va a cumplir lo q buscamos.}
+    Si $\pi(X_1)$ está en $U$, la idea es que podemos tomar un abierto $V$ de $M_{/_{X_1}}$ tal que $\pi(X_1)\not\in V$. Podemos hacer esto porque las variedades son espacios metrizables, es decir, existe una métrica que induce la topología de la variedad. Por esta razón podemos afirmar que dados dos cerrados disjuntos existen dos abiertos disjuntos que los contienen. Teniendo eso, $U\cap V$ es un abierto contenido en $U$ que no contiene a $\pi(X_1)$, entonces podemos usar la celularidad de $X_2$ en $M$ para obtener la celularidad en $M_{/_{X_1}}$ igual que antes.    % \comm{terminar de escribir esto, hacer la cadena de implicaciones para concluir que $M$ es metrizable y así poder usar que tengo los entornos disjuntos. o sea no es directo de ser $n$-variedad que tienen entornos que separan conjuntos pero si se puede probar, en particular $M$ admite una métrica y todo espacio metrico va a cumplir lo q buscamos.}
 \end{proof}
 
-Para poder usar esta propiedad tan útil sobre los conjuntos celulares, va a ser necesario un criterio que nos permita identificarlos. Para eso vamos a dar una definición que nos permite distinguir los subconjuntos en los que una función es inyectiva.
+Para poder usar esta propiedad tan útil sobre los conjuntos celulares, va a ser necesario un criterio que nos permita identificarlos.
 
 \begin{df}
 Dada una función $f:Y\to Z$, llamamos \textbf{fibra no trivial} a los subconjuntos $X\subset Y$ que cumplen $X=f^{-1}(z_0)$ para algún $z_0\in Z$ y tienen $\#X > 1$.
@@ -215,32 +215,32 @@ Dada una función $f:Y\to Z$, llamamos \textbf{fibra no trivial} a los subconjun
 
     Como $X\subset\int(\D^n)$, $f|_{\s^{n-1}}\colon\s^{n-1}\to\D^n$ es un homeo sobre su imagen, por Jordan-Brouwer entonces tenemos que $f(\s^{n-1})$ separa $\s^n$ en dos abiertos disjuntos, y por el lema \ref{lema1} tenemos que $f(\D^n)=f(\s^{n-1})\cup D$, siendo $D$ uno de esos dos abiertos.
 
-    Tomamos $h:\s^n\to\s^n$ un homeo tal que\begin{itemize}
-    \item $h(\overline{D})\subset f(U)$
-    \item $\exst V$ entorno de $x_0$ tal que $h|_{V}=\id$
+    Tomamos $\varphi:\s^n\to\s^n$ un homeo tal que\begin{itemize}
+    \item $\varphi(\overline{D})\subset f(U)$
+    \item $\exst V$ entorno de $x_0$ tal que $\varphi|_{V}=\id$
     \end{itemize}  %\comm{dice que el entorno tiene que ser chico, ver bien pq}
 
     Definimos $g:\D^n\to\D^n$ como $$ g(x)=
     \begin{cases}
     x \quad &\text{si } x\in X\\ 
-    f^{-1}hf(x)\quad &\text{si } x\not\in X
+    f^{-1}\varphi f(x)\quad &\text{si } x\not\in X
     \end{cases}$$
 
-    Como $h=\text{Id}$ en $f^{-1}(V)$ entonces las funciones se pegan bien y tenemos que $g$ es un homeo.
+    Como $\varphi=\text{Id}$ en $V$ entonces $f^{-1}\varphi f=\text{Id}$ en $f^{-1}(V)$, por lo tanto las funciones se pegan bien y tenemos que $g$ es un homeo.
 
-    Concluimos que $M$ es celular porque $g\left(\int(\D^n)\right)\subset )$ van a ser discos que aproximan $f^{-1}(V)$.
+    Concluimos que $X$ es celular porque dado un abierto arbitrario $U$ encontramos un disco $g(\D^n)\subset U$ que contiene a $X$. Como estamos en un espacio métrico (en particular en uno compacto, aunque no estoy segura de que sea necesario), podemos tomar entornos $U_k$ tales que $\text{dist}(U_k,X)<\frac{1}{k}$, luego los discos contenidos en estos abiertos van a formar una sucesión de discos encajados $\{D_k\}_{k\in\N}$ que tienen a $X$ como intersección.
 \end{proof}
 
-\duda{me falta el paso de por qué aproximar $f^{-1}(V)$ es suficiente. creo que más bien la idea es que puedo ir definiendo $g_k$ con los entornos $V$ cada vez más chicos y ahí eee. claro creo q ya entendi. el entorno $U$ del principio es arbitrario y me consegui un disco adentro. }
+% \duda{me falta el paso de por qué aproximar $f^{-1}(V)$ es suficiente. creo que más bien la idea es que puedo ir definiendo $g_k$ con los entornos $V$ cada vez más chicos y ahí eee. claro creo q ya entendi. el entorno $U$ del principio es arbitrario y me consegui un disco adentro. }
 
-\comm{insertar bien la referencia}
+% \comm{insertar bien la referencia}
 
-\begin{figure}
-    	\centering
-    	\includegraphics[width=0.75\linewidth]{img mono/schoenflies/sch.jpeg}
-    	\caption{Dibujito}
-        \label{dibujo1}
-\end{figure}
+% \begin{figure}
+%     	\centering
+%     	\includegraphics[width=0.75\linewidth]{img mono/schoenflies/sch.jpeg}
+%     	\caption{Dibujito}
+%         \label{dibujo1}
+% \end{figure}
 
 \begin{lema}\label{2ctos}
     Sea $f:\s^n\to\s^n$ una función continua con exactamente dos fibras no triviales $X_1$, $X_2$. Entonces, $X_1$ y $X_2$ son conjuntos celulares en $\s^n$.
@@ -257,30 +257,49 @@ Dada una función $f:Y\to Z$, llamamos \textbf{fibra no trivial} a los subconjun
 
     Consideramos ahora el caso en el que $X_1$, $X_2$ están contenidos en la misma región complementaria de $\Sigma$, digamos que $X_1\cup X_2\subset\int(D)$. Sean $x_1,\, x_2$ puntos de $\s^n$ tales que $X_1=f^{-1}(x_1)$ y $X_2=f^{-1}(x_2)$. Por el primer lema tenemos que $f(D)=f(\Sigma)\cup D_\Sigma$, con $D_\Sigma$ una componente conexa del complemento de $f(\Sigma)$ que va a contener a $x_1$ y $x_2$.
 
-    Sea $U$ un abierto contenido en $D_\Sigma$ tal que $x_1\in D_\Sigma$, $x_2\not\in D_\Sigma$. Sea $h:\s^n\to\s^n$ un homeo que manda $f(D_\Sigma)$ en $U$ y que deja fijo un entorno $V$ de $x_X$. Definimos un homeo $g:\s^n\to\s^n$ dado por $$g(x)=
+    Sea $U$ un abierto contenido en $D_\Sigma$ tal que $x_1\in D_\Sigma$, $x_2\not\in D_\Sigma$. De igual manera que antes, consideramos $\varphi:\s^n\to\s^n$ un homeo tal que\begin{itemize}
+        \item $\varphi(\overline{D_\Sigma})\subset U$
+        \item $\exst V$ entorno de $x_1$ tal que $\varphi|_{V}=\id$
+    \end{itemize}
+    
+    Definimos un homeo $g:\s^n\to\s^n$ dado por $$g(x)=
     \begin{cases}
     x \quad &\text{si } x\in X_1\\ 
-    f^{-1} h f(x)\quad &\text{si } x\in D-X_1
+    f^{-1} \varphi f(x)\quad &\text{si } x\in D-X_1
     \end{cases}$$
-    Observar que $f^{-1} h f=\text{Id}$ en $f^{-1}(V)$ y por lo tanto $g$ está bien definido y es continuo. Además, el único conjunto preimagen no trivial de $g$ es $B$, entonces por el lema anterior tenemos que $B$ es celular. De la misma forma podemos obtener que $X_1$ es celular, y con eso probamos el lema.
+    Igual que antes, $f^{-1}\varphi f=\text{Id}$ en $f^{-1}(V)$ y por lo tanto $g$ está bien definida y es continua. Además, el único conjunto preimagen no trivial de $g$ es $X_2$, entonces por el lema anterior tenemos que $X_2$ es celular. De la misma forma podemos obtener que $X_1$ es celular, y con eso probamos el lema.
 \end{proof}
-
-\comm{insertarbien las referencias}
-
+% \comm{insertarbien las referencias}
 % \begin{lema}
 %     Sea $S\subset \s^n$ una $(n-1)$-esfera encajada en $\s^n$, sea $D$ una de las componentes conexas de $\s^n-S$. Sea $f:\overline{D}\to R\simeq \D^n$ continua, tal que es inyectiva en $\overline{D}-M$, siendo $M$ un conjunto celular. Entonces, $\overline{D}\simeq\D^n$
 % \end{lema}
 
 \begin{lema}\label{remate}
-    Sea $h\colon\s^{n-1}\times I\to\s^n$ un encaje. Entonces, la clausura de cada componente de $h\left(\s^{n-1}\times \{\frac{1}{2}\}\right)^c$ es una $n$-bola.
+    Sea $f\colon\s^{n-1}\times [-1,1]\to\s^n$ un encaje. Entonces, la clausura de cada componente de $f\left(\s^{n-1}\times \{0\}\right)^c$ es homeomorfa a $\D^n$.
 \end{lema}
 \begin{proof}
 
-    Llamamos $A$ a la componente de $h\left(\s^{n-1}\times \{\frac{1}{2}\}\right)^c$ que contiene a $h\left(\s^{n-1}\times \{0\}\right)$ y $B$ a la que contiene a $h\left(\s^{n-1}\times \{1\}\right)$.
+    Definimos $X_{-1}$ como la componente conexa de $f\left(\s^{n-1}\times \{-1\}\right)^c$ que no contiene a $f\left(\s^{n-1}\times \{1\}\right)$ y $X_1$ la componente de $f\left(\s^{n-1}\times \{1\}\right)^c$ que no contiene a $f\left(\s^{n-1}\times \{-1\}\right)$. Con esto tenemos una descomposición $$\s^n=X_{-1}\sqcup f(\s^{n-1}\times[-1,1])\sqcup X_1$$
 
-    Consideramos una función continua de $\s^n$ en sí misma que mande $A$ y $B$ a los polos norte y sur, tal que $h\left(\s^{n-1}\times \{\frac{1}{2}\}\right)$ es el ecuador, y tal que la función sea inyectiva en todos lados menos $A$ y $B$.
+    Ahora vamos a definir una función continua de $\s^n$ que tenga a $X_{-1}$ y $X_1$ como sus únicas fibras no triviales. Como $f$ es un homeo sobre su imagen, sabemos que $\im(f)$ es homeomorfa a un anillo, esto nos permite tomar una función continua $H\colon \im(f)\to\s^n$ que cumpla las siguentes condiciones:\begin{itemize}
+    \item $ H\Big(f\big(\s^{n-1}\times \{0\}\big)\Big)$ es el ecuador $\s^{n-1}\subset\s^n$
+    \item $H$ es inyectiva en $f\left(\s^{n-1}\times(-1,1)\right)$
+    \item $ H\Big(f\big(\s^{n-1}\times \{1\}\big)\Big)=\{N\}$ es el Norte de $\s^n$
+    \item $ H\Big(f\big(\s^{n-1}\times \{-1\}\big)\Big)=\{S\}$ es el Sur de $\s^n$
+    \end{itemize}
 
-    Llamamos $D_A$ y $D_B$ a las componentes de $h\left(\s^{n-1}\times \{\frac{1}{2}\}\right)^c$ que contienen $A$ y $B$ respectivamente.
+    Esta función puede extenderse a toda $\s^n=X_{-1}\sqcup\im(f)\sqcup X_1$, definiendo $H|_{X_{-1}}$ como constante $S$ y $H|_{X_1}$ como constante $N$. Luego $H\colon\s^n\to\s^n$ es una función continua cuyas únicas fibras no triviales son $X_{-1}$ y $X_1$, entonces por el lema \ref{2ctos} obtenemos que $X_{-1}$ y $X_1$ son celulares.
+
+    % Consideramos una función continua tal que \begin{itemize}
+    % \item $X_{-1}$ tiene como imagen el polo Norte $\{N\}$
+    % \item $X_1$ tiene como imagen el polo Sur $\{S\}$
+    % \item $\s^{n-1}\times \{0\}$ tiene como imagen el ecuador de $\s^n$.
+    % \item $h$ es inyectiva en $\s^n-(X_{-1}\cup X_1)$
+    % \end{itemize}
+
+
+
+    Llamamos $D_{-1}$ y $D_1$ a las componentes de $f\left(\s^{n-1}\times \{0\}\right)^c$ que contienen a $X_{-1}$ y $X_1$ respectivamente.
 
     Por lema anterior, $A$ y $B$ son conjuntos celulares en $D_A$ y $D_B$, y entonces por lema anterior, $\overline{D_A}$ y $\overline{D_B}$ son $n$-bolas.
 

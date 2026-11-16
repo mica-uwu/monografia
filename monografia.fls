@@ -378,11 +378,6 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm
-INPUT ./img mono/schoenflies/sch.jpeg
-INPUT ./img mono/schoenflies/sch.jpeg
-INPUT ./img mono/schoenflies/sch.jpeg
-INPUT ./img mono/schoenflies/sch.jpeg
-INPUT ./img mono/schoenflies/sch.jpeg
 INPUT ./img mono/schoenflies/inv dominio.png
 INPUT ./img mono/schoenflies/inv dominio.png
 INPUT ./img mono/schoenflies/inv dominio.png
