@@ -193,7 +193,7 @@ Sea $M$ una $n$-variedad compacta con borde, sean $X_1,\dots,X_k$ subconjuntos c
 
     En efecto, esto se cumple. Sea $U$ un abierto de $M_{/_{X_1}}$ que contiene a $X_2$, si el punto $\pi(X_1)$ no está en $U$, entonces $\pi$ es la identidad al restringirla a $\pi^{-1}(U)$. En ese caso, la familia de discos $\{D_i\}$ contenidos en el abierto $\pi^{-1}(U)$ dados por la celularidad de $X_2$ en $M$ nos da la familia en $M_{/_{X_1}}$ que buscamos. 
     
-    Si $\pi(X_1)$ está en $U$, la idea es que podemos tomar un abierto $V$ de $M_{/_{X_1}}$ tal que $\pi(X_1)\not\in V$. Podemos hacer esto porque las variedades son espacios metrizables, es decir, existe una métrica que induce la topología de la variedad. Por esta razón podemos afirmar que dados dos cerrados disjuntos existen dos abiertos disjuntos que los contienen. Teniendo eso, $U\cap V$ es un abierto contenido en $U$ que no contiene a $\pi(X_1)$, entonces podemos usar la celularidad de $X_2$ en $M$ para obtener la celularidad en $M_{/_{X_1}}$ igual que antes.    % \comm{terminar de escribir esto, hacer la cadena de implicaciones para concluir que $M$ es metrizable y así poder usar que tengo los entornos disjuntos. o sea no es directo de ser $n$-variedad que tienen entornos que separan conjuntos pero si se puede probar, en particular $M$ admite una métrica y todo espacio metrico va a cumplir lo q buscamos.}
+    Si $\pi(X_1)$ está en $U$, la idea es que podemos tomar un abierto $V$ de $M_{/_{X_1}}$ tal que $\pi(X_1)\not\in V$. Podemos hacer esto porque las variedades que estamos considerando (Hausdorff) son espacios metrizables, es decir, existe una métrica que induce la topología de la variedad. Por esta razón podemos afirmar que dados dos cerrados disjuntos existen dos abiertos disjuntos que los contienen. Teniendo eso, $U\cap V$ es un abierto contenido en $U$ que no contiene a $\pi(X_1)$, entonces podemos usar la celularidad de $X_2$ en $M$ para obtener la celularidad en $M_{/_{X_1}}$ igual que antes.    % \comm{terminar de escribir esto, hacer la cadena de implicaciones para concluir que $M$ es metrizable y así poder usar que tengo los entornos disjuntos. o sea no es directo de ser $n$-variedad que tienen entornos que separan conjuntos pero si se puede probar, en particular $M$ admite una métrica y todo espacio metrico va a cumplir lo q buscamos.}
 \end{proof}
 
 Para poder usar esta propiedad tan útil sobre los conjuntos celulares, va a ser necesario un criterio que nos permita identificarlos.
@@ -205,6 +205,14 @@ Dada una función $f:Y\to Z$, llamamos \textbf{fibra no trivial} a los subconjun
 % \begin{lema}
 %     Sean $X_1,\dots, X_m\subset\mathring{\D}^n$ cerrados disjuntos. Sea $M/_{\sim}$ el espacio obtenido al colapsar $X_1,\dots, X_m$ y sea $\pi:M\to M/_{\sim}$ la proyección.
 % \end{lema}
+
+\begin{lema}
+Sea $X\subset\int(\D^n)$ un conjunto celular. Entonces existe una función $f\colon\D^n\to\D^n$ tal que $f|_{\s^{n-1}}=Id$ y $X$ es la única fibra no trivial de $f$.
+\end{lema}
+
+\begin{lema}
+    Sea $\Sigma$ una $(n-1)$-esfera encajada en $\s^n$, y sea $D_\Sigma$ uno de sus dominios complementarios. Si tenemos una función $f\colon\overline{D_\Sigma}\to\D^n$ cuya única fibra no trivial es un conjunto celular $X\subset D_\Sigma$, entonces $\overline{D_\Sigma}$ es homeomorfa a un disco $\D^n$.
+\end{lema}
 
 \begin{lema}\label{celulares}
     Sea $f:\D^n\to \s^n$ continua, sea $X\subset \int(\D^n)$ la única fibra no trivial de $f$. Entonces, $X$ es un conjunto celular.
