@@ -59,9 +59,9 @@ Empecemos probando el siguente resultado:
     Supongamos por absurdo que $D\cup f(\s^{n-1})\not\subset f(\D^n)$. En ese caso, los puntos en $D$ se separan en tres tipos:
 
     % \begin{itemize}
-    %     \item $x\in \overline{D_1}\cap f(\mathring{D})$
-    %     \item $x\in \overline{D_1}\cap f(\partial D)$
-    %     \item $x\in \overline{D_1} - f(D)$
+    %     \item $x\in D_1\cap f(\mathring{D})$
+    %     \item $x\in D_1\cap f(\partial D)$
+    %     \item $x\in D_1 - f(D)$
     % \end{itemize}
 
     % Como $f(\partial D)=\partial D_1$ y $f^{-1}(X)\cap\partial D=\varnothing$, entonces en realidad vale
@@ -78,7 +78,7 @@ Empecemos probando el siguente resultado:
 \end{proof}
 
 \begin{lema}\label{puntos separan}
-    Sea $M$ una $n$-variedad conexa con $n\geq 2$, $P\subset M$ un conjunto finito, entonces $M-P$ es conexo.
+    Sea $M$ una $n$-variedad conexa con $n\geq 2$ y $P\subset M$ un conjunto finito. Entonces, $M-P$ es conexo.
 \end{lema}
 
 % \comm{esta prueba es de las notas de Nikil Sahoo}
@@ -206,13 +206,13 @@ Dada una función $f:Y\to Z$, llamamos \textbf{fibra no trivial} a los subconjun
 %     Sean $X_1,\dots, X_m\subset\mathring{\D}^n$ cerrados disjuntos. Sea $M/_{\sim}$ el espacio obtenido al colapsar $X_1,\dots, X_m$ y sea $\pi:M\to M/_{\sim}$ la proyección.
 % \end{lema}
 
-\begin{lema}
-Sea $X\subset\int(\D^n)$ un conjunto celular. Entonces existe una función $f\colon\D^n\to\D^n$ tal que $f|_{\s^{n-1}}=Id$ y $X$ es la única fibra no trivial de $f$.
-\end{lema}
+% \begin{lema}
+% Sea $X\subset\int(\D^n)$ un conjunto celular. Entonces existe una función $f\colon\D^n\to\D^n$ tal que $f|_{\s^{n-1}}=Id$ y $X$ es la única fibra no trivial de $f$.
+% \end{lema}
 
-\begin{lema}
-    Sea $\Sigma$ una $(n-1)$-esfera encajada en $\s^n$, y sea $D_\Sigma$ uno de sus dominios complementarios. Si tenemos una función $f\colon\overline{D_\Sigma}\to\D^n$ cuya única fibra no trivial es un conjunto celular $X\subset D_\Sigma$, entonces $\overline{D_\Sigma}$ es homeomorfa a un disco $\D^n$.
-\end{lema}
+% \begin{lema}
+%     Sea $\Sigma$ una $(n-1)$-esfera encajada en $\s^n$, y sea $D_\Sigma$ uno de sus dominios complementarios. Si tenemos una función $f\colon\overline{D_\Sigma}\to\D^n$ cuya única fibra no trivial es un conjunto celular $X\subset D_\Sigma$, entonces $\overline{D_\Sigma}$ es homeomorfa a un disco $\D^n$.
+% \end{lema}
 
 \begin{lema}\label{celulares}
     Sea $f:\D^n\to \s^n$ continua, sea $X\subset \int(\D^n)$ la única fibra no trivial de $f$. Entonces, $X$ es un conjunto celular.
@@ -263,7 +263,7 @@ Sea $X\subset\int(\D^n)$ un conjunto celular. Entonces existe una función $f\co
     
     Supongamos que se cumple $X_1\subset\int(D)$ y $X_2\subset\int(D')$. En ese caso, estos conjuntos serían las únicas fibras no triviales de las funciones $f|_{D}$ y $f|_{D'}$ respectivamente y entonces por el lema \ref{celulares} tendríamos que son conjuntos celulares.
 
-    Consideramos ahora el caso en el que $X_1$, $X_2$ están contenidos en la misma región complementaria de $\Sigma$, digamos que $X_1\cup X_2\subset\int(D)$. Sean $x_1,\, x_2$ puntos de $\s^n$ tales que $X_1=f^{-1}(x_1)$ y $X_2=f^{-1}(x_2)$. Por el primer lema tenemos que $f(D)=f(\Sigma)\cup D_\Sigma$, con $D_\Sigma$ una componente conexa del complemento de $f(\Sigma)$ que va a contener a $x_1$ y $x_2$.
+    Consideramos ahora el caso en el que $X_1$, $X_2$ están contenidos en la misma región complementaria de $\Sigma$, digamos que $X_1\cup X_2\subset\int(D)$. Sean $x_1,\, x_2$ puntos de $\s^n$ tales que $X_1=f^{-1}(x_1)$ y $X_2=f^{-1}(x_2)$. Por el lema \ref{lema1} tenemos que $f(D)=f(\Sigma)\cup D_\Sigma$, con $D_\Sigma$ una componente conexa del complemento de $f(\Sigma)$ que va a contener a $x_1$ y $x_2$.
 
     Sea $U$ un abierto contenido en $D_\Sigma$ tal que $x_1\in D_\Sigma$, $x_2\not\in D_\Sigma$. De igual manera que antes, consideramos $\varphi:\s^n\to\s^n$ un homeo tal que\begin{itemize}
         \item $\varphi(\overline{D_\Sigma})\subset U$
@@ -287,9 +287,11 @@ Sea $X\subset\int(\D^n)$ un conjunto celular. Entonces existe una función $f\co
 \end{lema}
 \begin{proof}
 
-    Definimos $X_{-1}$ como la componente conexa de $f\left(\s^{n-1}\times \{-1\}\right)^c$ que no contiene a $f\left(\s^{n-1}\times \{1\}\right)$ y $X_1$ la componente de $f\left(\s^{n-1}\times \{1\}\right)^c$ que no contiene a $f\left(\s^{n-1}\times \{-1\}\right)$. Con esto tenemos una descomposición $$\s^n=X_{-1}\sqcup f(\s^{n-1}\times[-1,1])\sqcup X_1$$
+    Definimos $X_{-1}$ como la clausura de la componente conexa de $f\left(\s^{n-1}\times \{-1\}\right)^c$ que no contiene a $f\left(\s^{n-1}\times \{1\}\right)$ y $X_1$ la clausura de la componente de $f\left(\s^{n-1}\times \{1\}\right)^c$ que no contiene a $f\left(\s^{n-1}\times \{-1\}\right)$. Con esto tenemos una descomposición $$\s^n=X_{-1}\sqcup f\left(\s^{n-1}\times(-1,1)\right)\sqcup X_1$$
 
-    Ahora vamos a definir una función continua de $\s^n$ que tenga a $X_{-1}$ y $X_1$ como sus únicas fibras no triviales. Como $f$ es un homeo sobre su imagen, sabemos que $\im(f)$ es homeomorfa a un anillo, esto nos permite tomar una función continua $H\colon \im(f)\to\s^n$ que cumpla las siguentes condiciones:\begin{itemize}
+    Llamamos $D_{-1}$ y $D_1$ a las clausuras de las componentes de $f\left(\s^{n-1}\times \{0\}\right)^c$ que contienen a $X_{-1}$ y $X_1$ respectivamente. Nuestro objetivo es probar que son homoeomorfas a $\D^n$. 
+    
+    Vamos a definir una función continua de $\s^n$ que tenga a $X_{-1}$ y $X_1$ como sus únicas fibras no triviales. Como $f$ es un homeo sobre su imagen, sabemos que $\im(f)$ es homeomorfa a un anillo, esto nos permite tomar una función continua $H\colon \im(f)\to\s^n$ que cumpla las siguentes condiciones:\begin{itemize}
     \item $ H\Big(f\big(\s^{n-1}\times \{0\}\big)\Big)$ es el ecuador $\s^{n-1}\subset\s^n$
     \item $H$ es inyectiva en $f\left(\s^{n-1}\times(-1,1)\right)$
     \item $ H\Big(f\big(\s^{n-1}\times \{1\}\big)\Big)=\{N\}$ es el Norte de $\s^n$
@@ -305,29 +307,35 @@ Sea $X\subset\int(\D^n)$ un conjunto celular. Entonces existe una función $f\co
     % \item $h$ es inyectiva en $\s^n-(X_{-1}\cup X_1)$
     % \end{itemize}
 
-
-
-    Llamamos $D_{-1}$ y $D_1$ a las componentes de $f\left(\s^{n-1}\times \{0\}\right)^c$ que contienen a $X_{-1}$ y $X_1$ respectivamente.
-
-    Por lema anterior, $A$ y $B$ son conjuntos celulares en $D_A$ y $D_B$, y entonces por lema anterior, $\overline{D_A}$ y $\overline{D_B}$ son $n$-bolas.
-
+    Como $X_{-1}$ y $X_1$ son celulares en $\s^n$ y están contenidos en los interiores de $D_{-1}$ y $D_1$, entonces también son celulares en $D_{-1}$ y $D_1$. Luego por el lema \ref{colapsar2} tenemos que  $${D_{-1}}_{/_{X_{-1}}}\simeq D_{-1}\text{$\quad$ y $\quad$} {D_{1}}_{/_{X_1}}\simeq D_1$$
+    
+    Para concluir, observamos que $H$ baja al cociente $\s^n_{/_{X_{-1},X_1}}$ como un homeomorfismo. Luego, si notamos $\D^n_+$ y $\D^n_-$ a los hemisferios Norte y Sur cerrados de $\s^n$, obtenemos que las restricciones de $H$ a cada componente\begin{align*}
+    &H|_{D_{-1}}\colon D_{-1} \to \D^n_-\\
+    &H|_{D_{1}}\colon D_{1} \to \D^n_+
+    \end{align*} bajan al cociente como homeomorfismos \begin{align*}
+    &\tilde{H}|_{D_{-1}}\colon {D_{-1}}_{/_{X_{-1}}}\to \D^n_- \\
+    &\tilde{H}|_{D_{1}}\colon {D_{1}}_{/_{X_{1}}}\to \D^n_+
+    \end{align*} y por lo tanto obtenemos que ${D_{-1}}_{/_{X_{-1}}}$ y ${D_{1}}_{/_{X_{1}}}$ son homeomorfos a discos. Componiendo con los homeomorfismos ${D_{-1}}_{/_{X_{-1}}}\simeq D_{-1}$ y ${D_{1}}_{/_{X_1}}\simeq D_1$ de antes, concluimos que las clausuras de las componentes complementarias a $f(\s^{n-1}\times\{0\})$ en $\s^n$ son homeomorfas a $n$-bolas.
+    % constante en $X_{-1}$consideramos las restricciones $$H|_{D_{-1}}\colon D_{-1} \rightarrow \D^n_- \text{$\quad$ y $\quad$}H|_{D_{1}}\colon D_{1} \rightarrow \D^n_+$$ donde $\D^n_+$ y $\D^n_-$ son los hemisferios norte y sur cerrados de $\s^n$. Como en ambos casos $H$ es continua, inyectiva en el interior de los discos $D_{-1}$, $D_1$ y constante en $X_{-1}$, $X_1$. Entonces baja al cociente 
 \end{proof}
 
+% \begin{teo}
+%     Dado un conjunto celular $X$ contenido en $\int(\D^n)$, existe una función $f\colon \^^n\to \^^n$ tal que $f|_{\s^{n-1}}=\text{Id}$ y $X$ es el único  
+% \end{teo}
+
 \begin{teo}\label{inv dominio}
-    $U$ abierto de $\R^n$, $h:U\to\R^n$ continua e inyectiva, entonces $h(U)$ es abierto de $\R^n$.
+    Sea $U$ un abierto de $\R^n$ y $h:U\to\R^n$ una función continua e inyectiva. Entonces, $h(U)$ es abierto de $\R^n$.
 \end{teo}
 
 
 \begin{proof}
 
-    Vemos $S^n$ como la compactificación de $R^n$, queremos probar que $h(U)$ es abierto en $S^n$. Consideramos un punto $x\in U$, entonces $x$ es centro de un disco $D$ de dimensión $n$ contenido en $U$.
+    En general, una función continua e inyectiva que va de un espacio compacto a uno Hausdorff es un encaje, es decir, un homeomorfismo sobre su imagen. 
 
-    Probemos que $h(D-\partial D)$ es un abierto de $\S^n$:
+    Identificando $\s^n$ con $\R^n\cup\{\infty\}$, vamos a pensar $h$ como una función de $U$ en $\s^n$. queremos probar que $h(U)$ es abierto en $\s^n$. Consideramos un punto $x\in U$, entonces $x$ es centro de un disco $D$ de dimensión $n$ contenido en $U$. Como $h$ es continua e inyectiva, entonces $h|_{\partial D}$ y $h|_{D}$ son encajes.Probemos que $h(D-\partial D)$ es un abierto de $\s^n$:
 
-    Como $h$ es continua e inyectiva, entonces $h|_{\partial D}$, $h|_{D}$ son encajes.
-
-    Por el teorema de la sección anterior \comm{insertar bien la referencia} tenemos que $\tilde{H}_0(\s^n - h(\partial D))=\Z$, es decir, $H_0(\s^n - h(\partial D))=\Z\oplus\Z$. O sea, $\s^n - h(\partial D)$ está conformado por dos componentes conexas por caminos que son disjuntas entre sí. 
-    
+    Por el teorema de separación de Jordan-Brouwer sabemos que el grupo de homología $H_0(\s^n - h(\partial D))$ es isomorfo a $\Z\oplus\Z$. Esto implica que $\s^n - h(\partial D)$ está conformado por dos componentes conexas por caminos que son disjuntas entre sí. 
+    % la homología reducida $\widetilde{H}_0(\s^n - h(\partial D))$ es isomorfo a $\Z$, es decir,
     Estas componentes van a ser $\s^n-h(D)$ y $h(D-\partial D)$. Para asegurarnos, tenemos que comprobar que las dos son conexas por caminos. Como $D-\partial D$ es conexo por caminos, entonces $h(D-\partial D)$ también.
     
     Ahora, el mismo teorema nos dice que $\tilde{H}_i(\s^n - h(D))=0\fall i\in\N$, por lo tanto $H_0(\s^n - h(\partial D))=\Z$ y entonces $\s^n - h(\partial D)$ es conexo por caminos.
