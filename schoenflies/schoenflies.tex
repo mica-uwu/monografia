@@ -235,7 +235,9 @@ Dada una función $f:Y\to Z$, llamamos \textbf{fibra no trivial} a los subconjun
 \begin{proof}
     Sea $U$ un abierto que contenga a $X$, queremos encontrar una sucesión de discos encajados contenidos en $U$ que tengan como intersección a $X$. Como $f$ es continua e inyectiva en $\D^n-X$, entonces $f|_{\D^n-X}$ es un homeo, y por lo tanto $f(U)$ es abierto y contiene a $x_0=f(X)$.
 
-    Como $X\subset\int(\D^n)$, $f|_{\s^{n-1}}\colon\s^{n-1}\to\D^n$ es un homeo sobre su imagen, por Jordan-Brouwer entonces tenemos que $f(\s^{n-1})$ separa $\s^n$ en dos abiertos disjuntos, y por el lema \ref{lema1} tenemos que $f(\D^n)=f(\s^{n-1})\cup D$, siendo $D$ uno de esos dos abiertos.
+    Como $X\subset\int(\D^n)$, $f|_{\s^{n-1}}\colon\s^{n-1}\to\s^n$ es un homeo sobre su imagen, por Jordan-Brouwer entonces tenemos que $f(\s^{n-1})$ separa $\s^n$ en dos abiertos disjuntos, y por el lema \ref{lema1} tenemos que $f(\D^n)=f(\s^{n-1})\cup D$, siendo $D$ uno de esos dos abiertos.
+
+    \comm{errata: $\D^n\mapsto \s^n$}
 
     Tomamos $\varphi:\s^n\to\s^n$ un homeo tal que\begin{itemize}
     \item $\varphi(\overline{D})\subset f(U)$
@@ -286,17 +288,17 @@ Dada una función $f:Y\to Z$, llamamos \textbf{fibra no trivial} a los subconjun
 
     Consideramos ahora el caso en el que $X_1$, $X_2$ están contenidos en la misma región complementaria de $\Sigma$, digamos que $X_1\cup X_2\subset\int(D)$. Sean $x_1,\, x_2$ puntos de $\s^n$ tales que $X_1=f^{-1}(x_1)$ y $X_2=f^{-1}(x_2)$. Por el lema \ref{lema1} tenemos que $f(D)=f(\Sigma)\cup D_\Sigma$, con $D_\Sigma$ una componente conexa del complemento de $f(\Sigma)$ que va a contener a $x_1$ y $x_2$.
 
-    Sea $U$ un abierto contenido en $D_\Sigma$ tal que $x_1\in D_\Sigma$, $x_2\not\in D_\Sigma$. De igual manera que antes, consideramos $\varphi:\s^n\to\s^n$ un homeo tal que\begin{itemize}
+    Sea $U$ un abierto contenido en $D_\Sigma$ tal que $x_1\in U$, $x_2\not\in U$. De igual manera que antes, consideramos $\varphi:\s^n\to\s^n$ un homeo tal que\begin{itemize}
         \item $\varphi(\overline{D_\Sigma})\subset U$
         \item $\exst V$ entorno de $x_1$ tal que $\varphi|_{V}=\id$
     \end{itemize}
     
-    Definimos un homeo $g:\s^n\to\s^n$ dado por $$g(x)=
+    Definimos una función $g:D\to \s^n$ dada por $$g(x)=
     \begin{cases}
     x \quad &\text{si } x\in X_1\\ 
     f^{-1} \varphi f(x)\quad &\text{si } x\in D-X_1
     \end{cases}$$
-    Igual que antes, $f^{-1}\varphi f=\text{Id}$ en $f^{-1}(V)$ y por lo tanto $g$ está bien definida y es continua. Además, el único conjunto preimagen no trivial de $g$ es $X_2$, entonces por el lema anterior tenemos que $X_2$ es celular. De la misma forma podemos obtener que $X_1$ es celular, y con eso probamos el lema.
+    Igual que antes, $f^{-1}\varphi f=\text{Id}$ en $f^{-1}(V)$ y por lo tanto $g$ es continua. Se cumple que $$g(X_2)=f^{-1} \varphi f(X_2)=f^{-1} \varphi (\{x_2\})$$ es un único punto porque $x_1,x_2\not\in U-V$ implica que $f^{-1}|_{U-V}$ es un homeo. Como $g$ es la identidad en $X_1$, concluimos que $X_2$ es la única fibra no trivial de $g$. Entonces, por el lema \ref{celulares} tenemos que $X_2$ es celular. De la misma forma podemos obtener que $X_1$ es celular, y con eso probamos el lema.
 \end{proof}
 % \comm{insertarbien las referencias}
 % \begin{lema}
@@ -345,7 +347,7 @@ Dada una función $f:Y\to Z$, llamamos \textbf{fibra no trivial} a los subconjun
     \end{align*} bajan al cociente como homeomorfismos \begin{align*}
     &\tilde{H}|_{D_{-1}}\colon {D_{-1}}_{/_{X_{-1}}}\to \D^n_- \\
     &\tilde{H}|_{D_{1}}\colon {D_{1}}_{/_{X_{1}}}\to \D^n_+
-    \end{align*} y por lo tanto obtenemos que ${D_{-1}}_{/_{X_{-1}}}$ y ${D_{1}}_{/_{X_{1}}}$ son homeomorfos a discos. Componiendo con los homeomorfismos ${D_{-1}}_{/_{X_{-1}}}\simeq D_{-1}$ y ${D_{1}}_{/_{X_1}}\simeq D_1$ de antes, concluimos que las clausuras de las componentes complementarias a $f(\s^{n-1}\times\{0\})$ en $\s^n$ son homeomorfas a $n$-bolas.
+    \end{align*} y por lo tanto obtenemos que ${D_{-1}}_{/_{X_{-1}}}$ y ${D_{1}}_{/_{X_{1}}}$ son homeomorfos a discos. Componiendo con los homeomorfismos ${D_{-1}}_{/_{X_{-1}}}\simeq D_{-1}$ y ${D_{1}}_{/_{X_1}}\simeq D_1$ de antes, concluimos que las clausuras de los dominios complementarios a $f(\s^{n-1}\times\{0\})$ en $\s^n$ son homeomorfas a $n$-bolas.
     % constante en $X_{-1}$consideramos las restricciones $$H|_{D_{-1}}\colon D_{-1} \rightarrow \D^n_- \text{$\quad$ y $\quad$}H|_{D_{1}}\colon D_{1} \rightarrow \D^n_+$$ donde $\D^n_+$ y $\D^n_-$ son los hemisferios norte y sur cerrados de $\s^n$. Como en ambos casos $H$ es continua, inyectiva en el interior de los discos $D_{-1}$, $D_1$ y constante en $X_{-1}$, $X_1$. Entonces baja al cociente 
 \end{proof}
 

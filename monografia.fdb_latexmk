@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex monografia"] 1795165022.32042 "monografia.aux" "monografia.bbl" "monografia" 1795167119.93049 0
+["bibtex monografia"] 1795388395.3264 "monografia.aux" "monografia.bbl" "monografia" 1795389166.78946 0
   "./biblio.bib" 1786313589.75713 654 7434d96fcd44fe64176691410f4d0667 ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/alpha.bst" 1292289607 23907 a5f93555796fb564b924339521f10a7c ""
-  "monografia.aux" 1795167119.41667 777 43bcd093bc47fddda740fc4c691a8f34 "pdflatex"
-  "schoenflies/schoenflies.aux" 1795167119.41267 2196 b545178b92292aef7928ad73cea08c2e "pdflatex"
+  "monografia.aux" 1795389166.28319 821 20cda314ecd56d9b3c37f0bac8af9a18 "pdflatex"
+  "schoenflies/schoenflies.aux" 1795389166.27819 2345 18a8ac839ffc3cae3d19142b1e8a54ae "pdflatex"
   (generated)
   "monografia.bbl"
   "monografia.blg"
   (rewritten before read)
-["pdflatex"] 1795167118.20996 "/home/franco/mica/monografia/monografia.tex" "monografia.pdf" "monografia" 1795167119.93157 0
+["pdflatex"] 1795389164.97305 "/home/franco/mica/monografia/monografia.tex" "monografia.pdf" "monografia" 1795389166.79012 0
   "/etc/texmf/web2c/texmf.cnf" 1750372886.16401 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/franco/mica/monografia/monografia.tex" 1795164042.72844 3451 7323fb380565c0a7c82284864d561624 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -230,12 +230,12 @@
   "img mono/schoenflies/colapsar celular.jpg" 1795155914 211614 4983a9af43adb71bfe59f8d6160dbe32 ""
   "img mono/schoenflies/es celular.jpg" 1795155914 434324 8a140c7cebbb8e91401ea1203acfcf58 ""
   "img mono/schoenflies/remate final.jpg" 1795155914 237139 e9d7722870167e11a66b4f6a54b39af4 ""
-  "monografia.aux" 1795167119.41667 777 43bcd093bc47fddda740fc4c691a8f34 "pdflatex"
-  "monografia.bbl" 1795165022.47779 207 457914403e6fe5084be04f6c7550eec7 "bibtex monografia"
-  "monografia.out" 1795167119.41967 274 509193e559b724968ac6f4b0a759b5e7 "pdflatex"
+  "monografia.aux" 1795389166.28319 821 20cda314ecd56d9b3c37f0bac8af9a18 "pdflatex"
+  "monografia.bbl" 1795388395.47307 207 457914403e6fe5084be04f6c7550eec7 "bibtex monografia"
+  "monografia.out" 1795389166.28519 274 d9168648e15ae002f8e822eca9b443e5 "pdflatex"
   "monografia.tex" 1795164042.72844 3451 7323fb380565c0a7c82284864d561624 ""
-  "schoenflies/schoenflies.aux" 1795167119.41267 2196 b545178b92292aef7928ad73cea08c2e "pdflatex"
-  "schoenflies/schoenflies.tex" 1795167117.80563 34464 5b9ca1e2acd4d11dcb36e69c0f5a8156 ""
+  "schoenflies/schoenflies.aux" 1795389166.27819 2345 18a8ac839ffc3cae3d19142b1e8a54ae "pdflatex"
+  "schoenflies/schoenflies.tex" 1795389164.55104 34662 adb9a686431dc9e5136653bc2dc4b111 ""
   (generated)
   "monografia.aux"
   "monografia.log"

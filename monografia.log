@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.6.19)  20 NOV 2026 06:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.6.19)  22 NOV 2026 20:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -733,22 +733,27 @@ File: img mono/schoenflies/colapsar celular.jpg Graphic file (type jpg)
 Package pdftex.def Info: img mono/schoenflies/colapsar celular.jpg  used on input line 193.
 (pdftex.def)             Requested size: 209.12775pt x 86.40546pt.
  [5 <./img mono/schoenflies/colapsar celular.jpg>]
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 240.
 <img mono/schoenflies/es celular.jpg, id=74, 1539.64398pt x 1431.23898pt>
 File: img mono/schoenflies/es celular.jpg Graphic file (type jpg)
 <use img mono/schoenflies/es celular.jpg>
-Package pdftex.def Info: img mono/schoenflies/es celular.jpg  used on input line 255.
+Package pdftex.def Info: img mono/schoenflies/es celular.jpg  used on input line 257.
 (pdftex.def)             Requested size: 209.12775pt x 194.38823pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [6] [7 <./img mono/schoenflies/es celular.jpg>]
-<img mono/schoenflies/remate final.jpg, id=90, 1537.20244pt x 750.04541pt>
+<img mono/schoenflies/remate final.jpg, id=92, 1537.20244pt x 750.04541pt>
 File: img mono/schoenflies/remate final.jpg Graphic file (type jpg)
 <use img mono/schoenflies/remate final.jpg>
-Package pdftex.def Info: img mono/schoenflies/remate final.jpg  used on input line 327.
+Package pdftex.def Info: img mono/schoenflies/remate final.jpg  used on input line 329.
 (pdftex.def)             Requested size: 209.12775pt x 102.03pt.
- [8 <./img mono/schoenflies/remate final.jpg>]) [9] [10
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[8]) [9 <./img mono/schoenflies/remate final.jpg>] [10
 
 
 
@@ -771,21 +776,21 @@ L3 programming layer <2024-01-22>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `monografia.out' has not changed.
-(rerunfilecheck)             Checksum: 509193E559B724968AC6F4B0A759B5E7;274.
+(rerunfilecheck)             Checksum: D9168648E15AE002F8E822ECA9B443E5;274.
  ) 
 Here is how much of TeX's memory you used:
- 27657 strings out of 474222
- 526794 string characters out of 5748733
+ 27722 strings out of 474222
+ 528497 string characters out of 5748733
  1938975 words of memory out of 5000000
- 49233 multiletter control sequences out of 15000+600000
+ 49297 multiletter control sequences out of 15000+600000
  571362 words of font info for 87 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 117i,10n,121p,1066b,645s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 117i,10n,121p,1066b,1030s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on monografia.pdf (13 pages, 1121537 bytes).
+Output written on monografia.pdf (13 pages, 1122454 bytes).
 PDF statistics:
- 196 PDF objects out of 1000 (max. 8388607)
- 140 compressed objects within 2 object streams
- 30 named destinations out of 1000 (max. 500000)
+ 199 PDF objects out of 1000 (max. 8388607)
+ 143 compressed objects within 2 object streams
+ 31 named destinations out of 1000 (max. 500000)
  44 words of extra memory for PDF output out of 10000 (max. 10000000)
 
